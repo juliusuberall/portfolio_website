@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*------------------------FONTS--------------------------*/
+@font-face{/*Main Font import*/
+  font-family:Poppins Thin;
+  src:url(../fonts/Poppins-Thin.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Light;
+  src:url(../fonts/Poppins-Light.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Regular;
+  src:url(../fonts/Poppins-Regular.ttf);
+}
+/*------------------------ION-ICON--------------------------*/
+ion-icon {
+  color: #ffffff;
+  font-size: 25px;
+  padding: 19px 30px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: fixed;
+  --ionicon-stroke-width: 20px;
+}
+/*------------------------STYLE_CLASSES--------------------------*/
+.fixed{
+  position: relative;
+}
+.page{
+  position: relative;
+}
+.right_column{
+  float: left;
+  width: 75%;
+  border: 0.5px solid #444444;
+}
+.cell_content{
+  float: left;
+  width: 50%;
+  border: 0.5px solid #444444;
+}
+.content{
+  width: 100%;
+}
+.empty_left_column{
+  float: left;
+  width: 25%;
+  height: 100%;
+  padding: 19px 19px 19px 30px;
+}
+.content_left_column{
+  float: left;
+  width: 25%;
+  height: 100%;
+  padding: 19px 19px 19px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.project_headline{
+  font-family: Poppins Regular;
+  font-size: 20px;
+  color: white;
+}
+.project_description{
+  padding-top: 12px;
+  font-family: Poppins Thin;
+  font-size: 16px;
+  color: white;
+}
+.project_details{
+  padding-top: 19px;
+  font-family: Poppins Regular;
+  font-size: 12.8px;
+  color: white;
+}
+/*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
+/*TABLET*/
+@media(max-width:1250px){
+  .content_left_column{
+    width: 100%;
+    position: unset;
+    border: 0.5px solid #444444;
+  }
+  .empty_left_column{
+    display: none;
+  }
+  .right_column{
+    width: 100%;
+  }
+}                               
+/*MOBILE*/
+@media(max-width:767px){
+  .cell_content{
+    width: 100%;
+  }
+}   

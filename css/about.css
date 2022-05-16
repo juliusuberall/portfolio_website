@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*------------------------FONTS--------------------------*/
+@font-face{/*Main Font import*/
+  font-family:Poppins Thin;
+  src:url(../fonts/Poppins-Thin.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Light;
+  src:url(../fonts/Poppins-Light.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Regular;
+  src:url(../fonts/Poppins-Regular.ttf);
+}
+/*------------------------STYLE_CLASSES--------------------------*/
+.main_area{
+  width: 100%;
+  height: 100%;
+  padding: 21px 20% 19px 20%;
+}
+#hello{
+  font-family: Poppins Regular;
+  font-size: 48.83px;
+  color: white;
+  padding: 0 0 8px 0;
+}
+#aboutme_text{
+  font-family: Poppins Thin;
+  font-size: 16px;
+  color: white;
+}
+#portrait{
+  width: 100%;
+}
+.contact_details{
+  padding: 27px 0 0 0;
+  float: left;
+}
+.contact_line{
+  position: relative;
+  padding: 19px 0 19px 0;
+  width: 100%;
+}
+.contact_icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: unset;
+}
+.contact_info{
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Poppins Regular';
+  font-size: 12.8px;
+  color: #ffffff;
+  padding: 3px 0 0 39px;
+}
+.image_column_desktop{
+  width: 50%;
+  float: left;
+}
+.image_column_mobile{
+  display: none;
+}
+.text_column{
+  width: 50%;
+  float: left;
+  padding: 0 0 0 30px;
+}
+/*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
+/*TABLET*/
+@media(max-width:1250px){
+  .main_area{
+    padding: 21px 30px 19px 30px;
+  }
+}                               
+/*MOBILE*/
+@media(max-width:767px){
+  .image_column_desktop{
+    display: none;
+  }
+  .image_column_mobile{
+    display: unset;
+    width: 100%;
+  }
+  .text_column{
+    padding: 0 0 19px 0;
+    width: 100%;
+  }
+} 
