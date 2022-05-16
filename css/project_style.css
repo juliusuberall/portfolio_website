@@ -84,7 +84,7 @@ ion-icon {
 /*TABLET*/
 @media(max-width:1250px){
   .project_description{
-    font-size: 50px;
+    font-size: 39.06px;
   }
   .content_left_column{
     width: 100%;
