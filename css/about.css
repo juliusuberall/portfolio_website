@@ -41,6 +41,9 @@ ion-icon{
 #portrait{
   width: 100%;
 }
+#portrait:hover{
+  
+}
 .contact_details{
   padding: 27px 0 0 0;
   float: left;
