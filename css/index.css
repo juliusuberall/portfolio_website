@@ -4,7 +4,7 @@
   padding: 0;
 }
 /*------------------------FONTS--------------------------*/
-/*---8.19px---10.24px---12.8px---16px---20px---25px---31.25px---39.06px---48.83---*/
+/*---8.19px---10.24px---12.8px---16px---20px---25px---31.25px---39.06px---48.83---61.04px---76.29px---*/
 @font-face{/*Main Font import*/
   font-family:Poppins Thin;
   src:url(../fonts/Poppins-Thin.ttf);
@@ -32,8 +32,10 @@ p{/*Main Text*/
 /*------------------------ION-ICON--------------------------*/
 ion-icon {
   color: #ffffff;
-  font-size: 25px;
   float: right;
+}
+.icon_scale{
+  font-size: 25px;
 }
 .icons{
   padding-right: 13px;
@@ -50,6 +52,10 @@ ion-icon {
 }
 #categories_about_line{
   display: inline-flex;
+}
+.head_desktop{
+  border: 0.5px solid #444444;
+  padding: 19px 30px 19px 30px;
 }
 .row{
   border: 0.5px solid #444444;
@@ -106,7 +112,10 @@ ion-icon {
 }
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
  /*DESKTOP*/                                                                     
-@media(min-width:992px){
+@media(min-width:1251px){
+  .head_mobile{
+    display: none;
+  }
   .grid_cell{
     float: left;
     width: 20%;
@@ -116,17 +125,80 @@ ion-icon {
   }
 }                                            
 /*TABLET*/
-@media(min-width:768px) and (max-width:1250px){
+@media(max-width:1250px){
+  /*-----------------HEAD------------------*/
+  .head_desktop{
+    display: none;
+  }
+  .head_mobile{
+    padding: 12px 19px 0px 19px;
+  }
+  .head_line{
+    width: 100%;
+    font-family: 'Poppins Light';
+    color: #ffffff;
+    font-size: 39.06px;
+    text-align: left;
+  }
+  #categories{
+    font-size: 31.25px;
+    font-family: 'Poppins Thin';
+    color: #ffffff;
+    padding: 0 0 9px 0;
+  }
+  #soc_about_line{
+    width: 100%;
+    position: relative;
+    height: 65px;
+  }
+  #rectangle{
+    margin: 0px -19px 0px -19px;
+    width: 100% + 38px ;
+    height: 100%;
+    border: 1px solid #444444;
+  }
+  #social_icons{
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+  ion-icon{
+    float: unset;
+  }
+  .icon_scale{
+    font-size: 32px;
+  }
+  .icons{
+    padding: 0 0 0 22px;
+  }
+  #about_me{
+    position: absolute;
+    top: 9px;
+    right: 0;
+    font-size: 31.25px;
+  }
+  /*-----------------GRID------------------*/
+  .cell_hover{
+    display: none;
+  }
+  .cell_title{
+    font-size: 31.25px;
+  }
+  .cell_description{
+    display: none;
+  }
   .grid_cell{
+    border: 1px solid #444444;
     float: left;
     width: 50%;
   }
   .footer{
     width: 100%;
-    height: 51px;
+    height: 102px;
     position: relative;
   }
   .copyright{
+    font-size: 25px;
     position: absolute;
     top: 0;
     left: 0;
@@ -144,20 +216,27 @@ ion-icon {
     float: left;
     width: 100%;
   }
-  .footer{
-    width: 100%;
-    height: 51px;
-    position: relative;
+}
+@media(max-width:450px){
+  #soc_about_line{
+    height: 104px;
   }
-  .copyright{
+  #social_icons{
+    position: unset;
+    width: 100%;
+    float: left;
+    padding: 15px 0 0 0;
+  }
+  #about_me{
+    position: unset;
+    float: left;
+  }
+  #rectangle{
+    margin: 0px -19px 0px -19px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: calc(100% + 38px);
+    border: 1px solid #444444;
   }
-}                                   
+}                                     
