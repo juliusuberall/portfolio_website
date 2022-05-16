@@ -4,7 +4,7 @@
   padding: 0;
 }
 /*------------------------FONTS--------------------------*/
-/*---8.19px---10.24px---12.8px---16px---20px---25px---31.25px---39.06px---48.83---*/
+/*---8.19px---10.24px---12.8px---16px---20px---25px---31.25px---39.06px---48.83---61.04px---76.29px---*/
 @font-face{/*Main Font import*/
   font-family:Poppins Thin;
   src:url(../fonts/Poppins-Thin.ttf);
@@ -21,7 +21,7 @@
 .home_button {
   color: #ffffff;
   font-size: 25px;
-  padding: 19px 30px 0 0;
+  padding: 25px 30px 0 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -85,11 +85,11 @@
 /*TABLET*/
 @media(max-width:1250px){
   .home_button{
-    font-size: 34px;
-    padding: 32px 30px 0 0;
+    font-size: 61px;
+    padding: 47px 30px 0 0;
   }
   .project_headline{
-    font-size: 39.06px;
+    font-size: 76.29px;
   }
   .project_description{
     font-size: 31.25px;
