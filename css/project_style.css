@@ -4,6 +4,7 @@
   padding: 0;
 }
 /*------------------------FONTS--------------------------*/
+/*---8.19px---10.24px---12.8px---16px---20px---25px---31.25px---39.06px---48.83---*/
 @font-face{/*Main Font import*/
   font-family:Poppins Thin;
   src:url(../fonts/Poppins-Thin.ttf);
@@ -83,8 +84,14 @@ ion-icon {
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media(max-width:1250px){
+  .project_headline{
+    font-size: 39.06px;
+  }
   .project_description{
     font-size: 31.25px;
+  }
+  .project_details{
+    font-size: 25px;
   }
   .content_left_column{
     width: 100%;
