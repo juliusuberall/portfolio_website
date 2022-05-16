@@ -83,6 +83,9 @@ ion-icon {
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media(max-width:1250px){
+  .project_description{
+    font-size: 25px;
+  }
   .content_left_column{
     width: 100%;
     position: unset;
