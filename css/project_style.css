@@ -18,7 +18,7 @@
   src:url(../fonts/Poppins-Regular.ttf);
 }
 /*------------------------ION-ICON--------------------------*/
-ion-icon {
+.home_button {
   color: #ffffff;
   font-size: 25px;
   padding: 19px 30px 0 0;
@@ -84,6 +84,10 @@ ion-icon {
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media(max-width:1250px){
+  .home_button{
+    font-size: 34px;
+    padding: 32px 30px 0 0;
+  }
   .project_headline{
     font-size: 39.06px;
   }
