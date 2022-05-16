@@ -131,42 +131,42 @@ ion-icon {
     display: none;
   }
   .head_mobile{
-    padding: 12px 19px 0px 19px;
+    padding: 19px 70px 0px 70px;
   }
   .head_line{
     width: 100%;
     font-family: 'Poppins Light';
     color: #ffffff;
-    font-size: 39.06px;
+    font-size: 48.83px;
     text-align: left;
   }
   #categories{
-    font-size: 31.25px;
+    font-size: 39.06px;
     font-family: 'Poppins Thin';
     color: #ffffff;
-    padding: 0 0 9px 0;
+    padding: 0 0 30px 0;
   }
   #soc_about_line{
     width: 100%;
     position: relative;
-    height: 65px;
+    height: 79px;
   }
   #rectangle{
-    margin: 0px -19px 0px -19px;
-    width: 100% + 38px ;
+    margin: 0px -70px 0px -70px;
+    width: 100% + 140px ;
     height: 100%;
     border: 1px solid #444444;
   }
   #social_icons{
     position: absolute;
-    top: 15px;
+    top: 22px;
     left: 0;
   }
   ion-icon{
     float: unset;
   }
   .icon_scale{
-    font-size: 32px;
+    font-size: 34px;
   }
   .icons{
     padding: 0 0 0 22px;
@@ -175,7 +175,7 @@ ion-icon {
     position: absolute;
     top: 9px;
     right: 0;
-    font-size: 31.25px;
+    font-size: 39.06px;
   }
   /*-----------------GRID------------------*/
   .cell_hover{
@@ -217,9 +217,9 @@ ion-icon {
     width: 100%;
   }
 }
-@media(max-width:450px){
+@media(max-width:590px){
   #soc_about_line{
-    height: 104px;
+    height: 114px;
   }
   #social_icons{
     position: unset;
@@ -232,11 +232,11 @@ ion-icon {
     float: left;
   }
   #rectangle{
-    margin: 0px -19px 0px -19px;
+    margin: 0px -70px 0px -70px;
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% + 38px);
+    width: calc(100% + 140px);
     border: 1px solid #444444;
   }
 }                                     
