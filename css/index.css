@@ -112,7 +112,7 @@ ion-icon {
 }
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
  /*DESKTOP*/                                                                     
-@media(min-width:1251px){
+@media all and (orientation:landscape){
   .head_mobile{
     display: none;
   }
@@ -125,7 +125,7 @@ ion-icon {
   }
 }                                            
 /*TABLET*/
-@media(max-width:1250px){
+@media all and (orientation:portrait){
   /*-----------------HEAD------------------*/
   .head_desktop{
     display: none;

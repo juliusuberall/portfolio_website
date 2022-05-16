@@ -81,7 +81,7 @@ ion-icon{
 }
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*//*MOBILE*/
-@media(max-width:1250px){
+@media all and (orientation:portrait){
   #hello{
     font-size: 74px;
     color: white;
