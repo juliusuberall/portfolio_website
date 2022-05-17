@@ -57,10 +57,6 @@ ion-icon {
   border: 0.5px solid #444444;
   padding: 19px 30px 19px 30px;
 }
-.row{
-  border: 0.5px solid #444444;
-  padding: 19px 30px 19px 30px;
-}
 .grid_cell{ /*basic grid cell*/
   border: 0.5px solid #444444;
   position: relative;
@@ -101,6 +97,7 @@ ion-icon {
   color: #ffffff;
 }
 .footer{
+  border: 0.5px solid #444444;
   padding: 19px 30px 19px 30px;
   display: flex;
 }
@@ -176,6 +173,9 @@ ion-icon {
     top: 9px;
     right: 0;
     font-size: 39.06px;
+  }
+  .footer{
+    border: 1px solid #444444;
   }
   /*-----------------GRID------------------*/
   .cell_hover{
