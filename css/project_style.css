@@ -145,15 +145,12 @@
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media all and (orientation:portrait){
-  .home_button_black {
-    font-size: 61px;
-    padding: 47px 30px 0 0;
-  }
-  .home_button_white{
-    font-size: 61px;
-    padding: 47px 30px 0 0;
+  .home_button_black, .home_button_white{
+    font-size: 64px;
+    padding: 44px 30px 0 0;
   }
   .project_headline, .project_headline_bright{
+    padding-top: 100px;
     font-size: 76.29px;
   }
   .project_description, .project_description_bright{
@@ -165,7 +162,6 @@
   .content_left_column{
     width: 100%;
     position: unset;
-    border: 1px solid #444444;
   }
   .empty_left_column{
     display: none;
