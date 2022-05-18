@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 4961 3508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="regolith" transform="matrix(1,0,0,1,-112.48,458.555)">
+        <g transform="matrix(0.939297,0,0,1,56.1535,-7.15995)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1034.97,1538.32 1015.94,1538.32L739.162,1538.32C720.128,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.128,1667.89 739.162,1667.89L1015.94,1667.89C1034.97,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;"/>
+            <path d="M1059.29,1570.71C1059.29,1548.24 1039.87,1529.99 1015.94,1529.99L739.162,1529.99C715.232,1529.99 695.804,1548.24 695.804,1570.71L695.804,1635.5C695.804,1657.98 715.232,1676.22 739.162,1676.22C739.162,1676.22 1015.94,1676.22 1015.94,1676.22C1039.87,1676.22 1059.29,1657.98 1059.29,1635.5C1059.29,1635.5 1059.29,1570.71 1059.29,1570.71ZM1050.42,1570.71C1050.42,1552.83 1034.97,1538.32 1015.94,1538.32L739.162,1538.32C720.128,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.128,1667.89 739.162,1667.89L1015.94,1667.89C1034.97,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1201.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">REGOLITH</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Mondstaub</text>
+        </g>
+    </g>
+    <g id="regolith1" serif:id="regolith" transform="matrix(1,0,0,1,-112.48,978.655)">
+        <g transform="matrix(0.825586,0,0,1,175.599,-7.15995)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1032.84,1538.32 1011.19,1538.32L743.912,1538.32C722.257,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 722.257,1667.89 743.912,1667.89L1011.19,1667.89C1032.84,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;"/>
+            <path d="M1060.52,1570.71C1060.52,1548.24 1038.41,1529.99 1011.19,1529.99C1011.19,1529.99 743.912,1529.99 743.912,1529.99C716.686,1529.99 694.582,1548.24 694.582,1570.71L694.582,1635.5C694.582,1657.98 716.686,1676.22 743.912,1676.22L1011.19,1676.22C1038.41,1676.22 1060.52,1657.98 1060.52,1635.5C1060.52,1635.5 1060.52,1570.71 1060.52,1570.71ZM1050.42,1570.71C1050.42,1552.83 1032.84,1538.32 1011.19,1538.32L743.912,1538.32C722.257,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 722.257,1667.89 743.912,1667.89L1011.19,1667.89C1032.84,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-533.744,1201.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">KRA<tspan x="3128.24px 3191.45px " y="858.647px 858.647px ">TE</tspan>R</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">~300’000 Erd-Seite</text>
+        </g>
+    </g>
+    <g id="roxy" transform="matrix(1,0,0,1,361.669,458.555)">
+        <g transform="matrix(0.823914,0,0,1,137.461,-7.15995)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1032.81,1538.32 1011.11,1538.32L743.991,1538.32C722.292,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 722.292,1667.89 743.991,1667.89L1011.11,1667.89C1032.81,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.36px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1201.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">R.<tspan x="2993.18px 3079.2px 3105.99px 3192.45px 3208.39px " y="858.647px 858.647px 858.647px 858.647px 858.647px ">O.X.Y</tspan>.</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Mondstaub Reaktor</text>
+        </g>
+    </g>
+    <g id="sonne" transform="matrix(1,0,0,1,-50.3856,-359.398)">
+        <g transform="matrix(1.29396,0,0,1,-378.487,-7.15995)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1039.2,1538.32 1025.39,1538.32L729.709,1538.32C715.893,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.893,1667.89 729.709,1667.89L1025.39,1667.89C1039.2,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;"/>
+            <path d="M1056.86,1570.71C1056.86,1548.24 1042.76,1529.99 1025.39,1529.99L729.709,1529.99C712.339,1529.99 698.236,1548.24 698.236,1570.71C698.236,1570.71 698.236,1635.5 698.236,1635.5C698.236,1657.98 712.339,1676.22 729.709,1676.22L1025.39,1676.22C1042.76,1676.22 1056.86,1657.98 1056.86,1635.5C1056.86,1635.5 1056.86,1570.71 1056.86,1570.71ZM1050.42,1570.71C1050.42,1552.83 1039.2,1538.32 1025.39,1538.32L729.709,1538.32C715.893,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.893,1667.89 729.709,1667.89L1025.39,1667.89C1039.2,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:rgb(255,242,0);"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-722.193,1201.5)">
+            <text x="2795.68px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;fill:rgb(242,223,0);">S<tspan x="2873.07px 2963.4px " y="858.647px 858.647px ">ON</tspan>NEN<tspan x="3330.72px 3399.57px " y="858.647px 858.647px ">LI</tspan>CHT</text>
+            <text x="2795.68px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;fill:rgb(204,190,0);">2 Wochen Zyklus v Konstant</text>
+        </g>
+    </g>
+    <g id="wasser" transform="matrix(1,0,0,1,-29.4376,-645.394)">
+        <g transform="matrix(0.699114,0,0,1,225.405,-7.15995)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1029.66,1538.32 1004.09,1538.32L751.01,1538.32C725.437,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 725.437,1667.89 751.01,1667.89L1004.09,1667.89C1029.66,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;"/>
+            <path d="M1062.34,1570.71C1062.34,1548.24 1036.24,1529.99 1004.09,1529.99C1004.09,1529.99 751.01,1529.99 751.01,1529.99C718.859,1529.99 692.756,1548.24 692.756,1570.71C692.756,1570.71 692.756,1635.5 692.756,1635.5C692.756,1657.98 718.859,1676.22 751.01,1676.22C751.01,1676.22 1004.09,1676.22 1004.09,1676.22C1036.24,1676.22 1062.34,1657.98 1062.34,1635.5C1062.34,1635.5 1062.34,1570.71 1062.34,1570.71ZM1050.42,1570.71C1050.42,1552.83 1029.66,1538.32 1004.09,1538.32L751.01,1538.32C725.437,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 725.437,1667.89 751.01,1667.89L1004.09,1667.89C1029.66,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:rgb(0,174,239);"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1201.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;fill:rgb(0,174,239);">H</text>
+            <text x="2974.14px" y="876.771px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;fill:rgb(0,174,239);">₂</text>
+            <text x="3017.76px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;fill:rgb(0,174,239);">O</text>
+            <text x="3137.65px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;fill:rgb(0,174,239);">(<tspan x="3191.95px " y="858.647px ">a</tspan>sser)</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;fill:rgb(0,174,239);">Polarkappen-Eis</text>
+        </g>
+    </g>
+    <g id="kohlenstoff" transform="matrix(1,0,0,1,-91.3281,-970.916)">
+        <g transform="matrix(0.87812,0,0,1.30506,99.2639,-476.436)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1028.85,1538.32 1002.28,1538.32L752.817,1538.32C726.247,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 726.247,1667.89 752.817,1667.89L1002.28,1667.89C1028.85,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;"/>
+            <path d="M1059.91,1570.71C1059.91,1549.31 1034.09,1531.93 1002.28,1531.93C1002.28,1531.93 752.817,1531.93 752.817,1531.93C721.01,1531.93 695.186,1549.31 695.186,1570.71L695.186,1635.5C695.186,1656.9 721.01,1674.28 752.817,1674.28C752.817,1674.28 1002.28,1674.28 1002.28,1674.28C1034.09,1674.28 1059.91,1656.9 1059.91,1635.5C1059.91,1635.5 1059.91,1570.71 1059.91,1570.71ZM1050.42,1570.71C1050.42,1552.83 1028.85,1538.32 1002.28,1538.32L752.817,1538.32C726.247,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 726.247,1667.89 752.817,1667.89L1002.28,1667.89C1028.85,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:rgb(191,191,191);"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1201.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;fill:rgb(166,166,166);">C</text>
+            <text x="2996.72px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;fill:rgb(166,166,166);">(K<tspan x="3035.33px 3059.65px " y="858.647px 858.647px ">oh</tspan>lenstof<tspan x="3217.37px 3230.96px " y="858.647px 858.647px ">f)</tspan></text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;fill:rgb(166,166,166);">Unterirdischer Vorrat /</text>
+            <text x="2891.66px" y="1025.68px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;fill:rgb(166,166,166);">Emission</text>
+        </g>
+    </g>
+    <g id="Leben" transform="matrix(1,0,0,1,1435.24,-99.7317)">
+        <g transform="matrix(0.722738,0,0,1.03847,208.758,-66.3358)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1029.57,1538.32 1003.88,1538.32L751.219,1538.32C725.531,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 725.531,1667.89 751.219,1667.89L1003.88,1667.89C1029.57,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:rgb(236,0,140);stroke-width:1.4px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1202.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;fill:rgb(236,0,140);">LEBEN</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;fill:rgb(236,0,140);">Stoﬀwechsel</text>
+        </g>
+    </g>
+    <g id="Leben1" serif:id="Leben" transform="matrix(1,0,0,1,1375.63,-898.168)">
+        <g transform="matrix(1.05035,0,0,1.03847,-22.1021,-66.3358)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1036.07,1538.32 1018.4,1538.32L736.702,1538.32C719.026,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.026,1667.89 736.702,1667.89L1018.4,1667.89C1036.07,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:rgb(31,198,0);stroke-width:1.2px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1202.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;fill:rgb(31,198,0);">P<tspan x="2965.5px 3038.9px " y="858.647px 858.647px ">FL</tspan>ANZEN</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;fill:rgb(31,198,0);">Fotosynthese</text>
+        </g>
+    </g>
+    <g id="Leben2" serif:id="Leben" transform="matrix(1,0,0,1,1886.69,-898.168)">
+        <g transform="matrix(0.990709,0,0,1.03847,19.9254,-66.3358)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1035.21,1538.32 1016.47,1538.32L738.63,1538.32C719.89,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.89,1667.89 738.63,1667.89L1016.47,1667.89C1035.21,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.23px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1202.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">N<tspan x="2984.32px 3071.12px 3153.59px 3230.97px 3312.01px " y="858.647px 858.647px 858.647px 858.647px 858.647px ">AHRUN</tspan>G</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Pﬂanzlich</text>
+        </g>
+    </g>
+    <g id="Leben3" serif:id="Leben" transform="matrix(1,0,0,1,2464.99,-99.7317)">
+        <g transform="matrix(0.990709,0,0,1.03847,19.9254,-66.3358)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1035.21,1538.32 1016.47,1538.32L738.63,1538.32C719.89,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.89,1667.89 738.63,1667.89L1016.47,1667.89C1035.21,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.23px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1202.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">N<tspan x="2984.32px 3071.12px 3153.59px 3230.97px 3312.01px " y="858.647px 858.647px 858.647px 858.647px 858.647px ">AHRUN</tspan>G</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Tierisch</text>
+        </g>
+    </g>
+    <g id="Leben4" serif:id="Leben" transform="matrix(1,0,0,1,2528.7,-502.344)">
+        <g transform="matrix(0.838005,0,0,1.03847,127.532,-66.3358)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1032.43,1538.32 1010.28,1538.32L744.817,1538.32C722.663,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 722.663,1667.89 744.817,1667.89L1010.28,1667.89C1032.43,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.32px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1202.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">DÜNGER</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Nährstoﬀergänzung</text>
+        </g>
+    </g>
+    <g id="sauerstoff" transform="matrix(1,0,0,1,882.07,-85.6413)">
+        <g transform="matrix(0.693134,0,0,0.632062,229.619,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1037.19,1538.32 1020.88,1538.32L734.214,1538.32C717.912,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 717.912,1667.89 734.214,1667.89L1020.88,1667.89C1037.19,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.88px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-579.963,1204.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">O</text>
+            <text x="2982px" y="876.771px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">₂</text>
+            <text x="3055.17px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(S<tspan x="3094.43px 3118.79px " y="858.647px 858.647px ">au</tspan>erstof<tspan x="3258.13px 3271.72px " y="858.647px 858.647px ">f)</tspan></text>
+        </g>
+    </g>
+    <g id="silizium" transform="matrix(1,0,0,1,911.118,99.6237)">
+        <g transform="matrix(0.609234,0,0,0.632062,288.741,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1035.36,1538.32 1016.82,1538.32L738.282,1538.32C719.734,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.734,1667.89 738.282,1667.89L1016.82,1667.89C1035.36,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:2.01px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">Si</text>
+            <text x="3027.61px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(Silizium)</text>
+        </g>
+    </g>
+    <g id="silizium1" serif:id="silizium" transform="matrix(1,0,0,1,1247.13,1566.55)">
+        <g transform="matrix(0.683188,0,0,0.933672,236.628,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1030.59,1538.32 1006.15,1538.32L748.945,1538.32C724.512,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 724.512,1667.89 748.945,1667.89L1006.15,1667.89C1030.59,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.53px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">AKK<tspan x="3133px " y="858.647px ">U</tspan></text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Energiespeicher</text>
+        </g>
+    </g>
+    <g id="silizium2" serif:id="silizium" transform="matrix(1,0,0,1,1435.24,266.349)">
+        <g transform="matrix(1.47794,0,0,0.933672,-323.414,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1041.25,1538.32 1029.96,1538.32L725.139,1538.32C713.845,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 713.845,1667.89 725.139,1667.89L1029.96,1667.89C1041.25,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.01px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">ELEKTR<tspan x="3332.93px 3418.95px 3547.7px 3635.82px 3696.81px 3787.15px " y="858.647px 858.647px 858.647px 858.647px 858.647px 858.647px ">OOTOR</tspan></text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Energie</text>
+        </g>
+    </g>
+    <g id="silizium3" serif:id="silizium" transform="matrix(1,0,0,1,2113.16,266.349)">
+        <g transform="matrix(0.875758,0,0,0.933672,100.928,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1034.95,1538.32 1015.89,1538.32L739.21,1538.32C720.15,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.15,1667.89 739.21,1667.89L1015.89,1667.89C1034.95,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.38px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">S<tspan x="2966.28px 3021.85px 3108.64px " y="858.647px 858.647px 858.647px ">TAH</tspan>L</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Optimierter Werkstoﬀ</text>
+        </g>
+    </g>
+    <g id="silizium4" serif:id="silizium" transform="matrix(1,0,0,1,2629.3,451.614)">
+        <g transform="matrix(0.970724,0,0,0.933672,34.008,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1036.46,1538.32 1019.27,1538.32L735.832,1538.32C718.636,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 718.636,1667.89 735.832,1667.89L1019.27,1667.89C1036.46,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.31px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">3D-DR<tspan x="3253.56px 3334.59px " y="858.647px 858.647px ">UC</tspan>K</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Additive Fertigung</text>
+        </g>
+    </g>
+    <g id="silizium5" serif:id="silizium" transform="matrix(1,0,0,1,3554.24,650.538)">
+        <g transform="matrix(0.831311,0,0,0.933672,132.249,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1034.12,1538.32 1014.04,1538.32L741.057,1538.32C720.978,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.978,1667.89 741.057,1667.89L1014.04,1667.89C1034.12,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.41px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">HABIT<tspan x="3227.21px " y="858.647px ">A</tspan>T</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Lebensraum</text>
+        </g>
+    </g>
+    <g id="silizium6" serif:id="silizium" transform="matrix(1,0,0,1,3554.24,-1073.82)">
+        <g transform="matrix(1.04093,0,0,0.933672,-15.4636,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1037.4,1538.32 1021.37,1538.32L733.731,1538.32C717.695,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 717.695,1667.89 733.731,1667.89L1021.37,1667.89C1037.4,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.26px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">RECY<tspan x="3191.56px 3267.06px " y="858.647px 858.647px ">CL</tspan>ING</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Wiederverwendung</text>
+        </g>
+    </g>
+    <g id="silizium7" serif:id="silizium" transform="matrix(1,0,0,1,3554.24,845.029)">
+        <g transform="matrix(1.04886,0,0,1.53083,-21.0536,-812.51)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1029.24,1538.32 1003.14,1538.32L751.953,1538.32C725.86,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 725.86,1667.89 751.953,1667.89L1003.14,1667.89C1029.24,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:0.95px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">PLAS<tspan x="3197.1px 3260.31px " y="858.647px 858.647px ">TI</tspan>KEN</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Textilien</text>
+            <text x="2891.66px" y="1025.68px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Schläuche</text>
+            <text x="2891.66px" y="1109.2px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Behälter ...</text>
+        </g>
+    </g>
+    <g id="silizium8" serif:id="silizium" transform="matrix(1,0,0,1,3554.24,456.047)">
+        <g transform="matrix(0.944763,0,0,0.933672,52.3024,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1036.08,1538.32 1018.41,1538.32L736.688,1538.32C719.02,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.02,1667.89 736.688,1667.89L1018.41,1667.89C1036.08,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.33px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">R<tspan x="2969.05px 3059.38px 3138.98px 3227.1px 3290.31px " y="858.647px 858.647px 858.647px 858.647px 858.647px ">OBOTE</tspan>R</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Fertigung von Maschinen</text>
+        </g>
+    </g>
+    <g id="silizium9" serif:id="silizium" transform="matrix(1,0,0,1,3554.24,1116.89)">
+        <g transform="matrix(0.926172,0,0,0.933672,65.4025,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1035.79,1538.32 1017.77,1538.32L737.331,1538.32C719.308,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.308,1667.89 737.331,1667.89L1017.77,1667.89C1035.79,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.34px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">RAKETEN</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Weltraumerforschung</text>
+        </g>
+    </g>
+    <g id="silizium10" serif:id="silizium" transform="matrix(1,0,0,1,2629.3,1116.89)">
+        <g transform="matrix(1.84843,0,0,0.933672,-584.487,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1043.09,1538.32 1034.06,1538.32L721.038,1538.32C712.007,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 712.007,1667.89 721.038,1667.89L1034.06,1667.89C1043.09,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:0.85px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">RAKETENTREIBS<tspan x="3854.12px 3915.12px 4005.46px " y="858.647px 858.647px 858.647px ">TOF</tspan>F</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Tankstelle</text>
+        </g>
+    </g>
+    <g id="silizium11" serif:id="silizium" transform="matrix(1,0,0,1,3554.24,261.556)">
+        <g transform="matrix(0.453756,0,0,0.933672,398.303,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1020.56,1538.32 983.769,1538.32L771.328,1538.32C734.542,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 734.542,1667.89 771.328,1667.89L983.769,1667.89C1020.56,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.7px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2951.5px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">...</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Anything</text>
+        </g>
+    </g>
+    <g id="silizium12" serif:id="silizium" transform="matrix(1,0,0,1,3105.57,451.614)">
+        <g transform="matrix(0.89092,0,0,0.933672,90.2442,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1035.21,1538.32 1016.48,1538.32L738.623,1538.32C719.887,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.887,1667.89 738.623,1667.89L1016.48,1667.89C1035.21,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.37px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">TEIL X</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">On-Demand Fertigung</text>
+        </g>
+    </g>
+    <g id="silizium13" serif:id="silizium" transform="matrix(1,0,0,1,2629.3,638.378)">
+        <g transform="matrix(0.853055,0,0,0.933672,116.926,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1034.54,1538.32 1014.97,1538.32L740.13,1538.32C720.562,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.562,1667.89 740.13,1667.89L1014.97,1667.89C1034.54,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.4px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">LASER</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Industrielle Fertigung</text>
+        </g>
+    </g>
+    <g id="silizium14" serif:id="silizium" transform="matrix(1,0,0,1,1998.28,-305.487)">
+        <g transform="matrix(0.902979,0,0,0.933672,81.746,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1035.41,1538.32 1016.93,1538.32L738.169,1538.32C719.684,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.684,1667.89 738.169,1667.89L1016.93,1667.89C1035.41,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.36px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">ENS<tspan x="3271.82px 3347.32px " y="858.647px 858.647px ">CH</tspan></text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Lebensvorraussetzung</text>
+        </g>
+    </g>
+    <g id="silizium15" serif:id="silizium" transform="matrix(1,0,0,1,1998.64,-104.181)">
+        <g transform="matrix(0.902979,0,0,0.933672,81.746,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1035.41,1538.32 1016.93,1538.32L738.169,1538.32C719.684,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.684,1667.89 738.169,1667.89L1016.93,1667.89C1035.41,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.36px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">TIER</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Lebensvorraussetzung</text>
+        </g>
+    </g>
+    <g id="silizium16" serif:id="silizium" transform="matrix(1,0,0,1,1213.84,1370.37)">
+        <g transform="matrix(0.875758,0,0,0.933672,100.928,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1034.95,1538.32 1015.89,1538.32L739.21,1538.32C720.15,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.15,1667.89 739.21,1667.89L1015.89,1667.89C1034.95,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.38px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">ENER<tspan x="3219.79px 3300.49px " y="858.647px 858.647px ">GI</tspan>E</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Antrieb</text>
+        </g>
+    </g>
+    <g id="silizium17" serif:id="silizium" transform="matrix(1,0,0,1,-207.669,1370.37)">
+        <g transform="matrix(1.21461,0,0,0.933672,-137.854,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1039.27,1538.32 1025.52,1538.32L729.576,1538.32C715.833,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.833,1667.89 729.576,1667.89L1025.52,1667.89C1039.27,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;"/>
+            <path d="M1057.28,1570.71C1057.28,1547.91 1043.05,1529.39 1025.52,1529.39C1025.52,1529.39 729.576,1529.39 729.576,1529.39C712.047,1529.39 697.815,1547.91 697.815,1570.71C697.815,1570.71 697.815,1635.5 697.815,1635.5C697.815,1658.3 712.047,1676.82 729.576,1676.82C729.576,1676.82 1025.52,1676.82 1025.52,1676.82C1043.05,1676.82 1057.28,1658.3 1057.28,1635.5C1057.28,1635.5 1057.28,1570.71 1057.28,1570.71ZM1050.42,1570.71C1050.42,1552.83 1039.27,1538.32 1025.52,1538.32L729.576,1538.32C715.833,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.833,1667.89 729.576,1667.89L1025.52,1667.89C1039.27,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">GRA<tspan x="3129.57px 3216.36px 3247.47px 3303.04px 3382.19px 3445.41px " y="858.647px 858.647px 858.647px 858.647px 858.647px 858.647px ">VITATI</tspan>ON</text>
+            <text x="2891.66px" y="942.019px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">1.62 m/s</text>
+            <text x="3101.4px" y="942.019px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">²</text>
+        </g>
+    </g>
+    <g id="silizium18" serif:id="silizium" transform="matrix(1,0,0,1,-120.051,1173.19)">
+        <g transform="matrix(0.961194,0,0,0.933672,40.7233,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1036.32,1538.32 1018.96,1538.32L736.141,1538.32C718.775,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 718.775,1667.89 736.141,1667.89L1018.96,1667.89C1036.32,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;"/>
+            <path d="M1059.09,1570.71C1059.09,1547.91 1041.11,1529.39 1018.96,1529.39C1018.96,1529.39 736.141,1529.39 736.141,1529.39C713.99,1529.39 696.006,1547.91 696.006,1570.71L696.006,1635.5C696.006,1658.3 713.99,1676.82 736.141,1676.82C736.141,1676.82 1018.96,1676.82 1018.96,1676.82C1041.11,1676.82 1059.09,1658.3 1059.09,1635.5C1059.09,1635.5 1059.09,1570.71 1059.09,1570.71ZM1050.42,1570.71C1050.42,1552.83 1036.32,1538.32 1018.96,1538.32L736.141,1538.32C718.775,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 718.775,1667.89 736.141,1667.89L1018.96,1667.89C1036.32,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">AS<tspan x="3053.07px 3116.28px 3193px 3270.38px 3360.72px " y="858.647px 858.647px 858.647px 858.647px 858.647px ">TEROI</tspan>D</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Astronomischer Körper</text>
+        </g>
+    </g>
+    <g id="silizium19" serif:id="silizium" transform="matrix(1,0,0,1,1435.24,451.614)">
+        <g transform="matrix(0.609238,0,0,0.933672,288.738,106.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1028.18,1538.32 1000.78,1538.32L754.318,1538.32C726.92,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 726.92,1667.89 754.318,1667.89L1000.78,1667.89C1028.18,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.59px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1206.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">GLAS</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Transparenz</text>
+        </g>
+    </g>
+    <g id="silizium20" serif:id="silizium" transform="matrix(1,0,0,1,1435.24,80.0838)">
+        <g transform="matrix(1.34365,0,0,0.933672,-228.787,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1040.34,1538.32 1027.91,1538.32L727.185,1538.32C714.762,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 714.762,1667.89 727.185,1667.89L1027.91,1667.89C1040.34,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.08px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">S<tspan x="2969.05px 3059.38px " y="858.647px 858.647px ">OL</tspan>AR<tspan x="3291.31px 3373.56px 3450.28px 3517.14px 3586px " y="858.647px 858.647px 858.647px 858.647px 858.647px ">ZELLE</tspan>N</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Energiegewinnung</text>
+        </g>
+    </g>
+    <g id="silizium21" serif:id="silizium" transform="matrix(1,0,0,1,2464.99,-306.487)">
+        <g transform="matrix(1.20607,0,0,0.933672,-131.836,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1039.19,1538.32 1025.35,1538.32L729.752,1538.32C715.912,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.912,1667.89 729.752,1667.89L1025.35,1667.89C1039.19,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.16px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">EXKREENT</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Menschlich / Tierisch</text>
+        </g>
+    </g>
+    <g id="silizium22" serif:id="silizium" transform="matrix(1,0,0,1,1879.15,-1098.13)">
+        <g transform="matrix(1.49324,0,0,0.933672,-334.2,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1041.35,1538.32 1030.17,1538.32L724.93,1538.32C713.751,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 713.751,1667.89 724.93,1667.89L1030.17,1667.89C1041.35,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">OHLBEFINDEN</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Lebensraum mit Qualität</text>
+        </g>
+    </g>
+    <g id="silizium23" serif:id="silizium" transform="matrix(1,0,0,1,3024.45,-704.972)">
+        <g transform="matrix(1.17006,0,0,0.933672,-106.458,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1038.84,1538.32 1024.57,1538.32L730.524,1538.32C716.258,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 716.258,1667.89 730.524,1667.89L1024.57,1667.89C1038.84,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.18px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">FORS<tspan x="3211.82px 3287.32px " y="858.647px 858.647px ">CH</tspan>UNG</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Auf dem Mond</text>
+        </g>
+    </g>
+    <g id="silizium24" serif:id="silizium" transform="matrix(1,0,0,1,2528.7,-1098.13)">
+        <g transform="matrix(0.819424,0,0,0.933672,140.626,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1033.88,1538.32 1013.51,1538.32L741.585,1538.32C721.214,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 721.214,1667.89 741.585,1667.89L1013.51,1667.89C1033.88,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.42px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">P<tspan x="2958.75px 3045.54px " y="858.647px 858.647px ">AR</tspan>K</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Grünﬂächen, Gärten</text>
+        </g>
+    </g>
+    <g id="silizium25" serif:id="silizium" transform="matrix(1,0,0,1,3024.45,-507.794)">
+        <g transform="matrix(1.00937,0,0,0.933672,6.77424,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1037,1538.32 1020.46,1538.32L734.639,1538.32C718.102,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 718.102,1667.89 734.639,1667.89L1020.46,1667.89C1037,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.29px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;"><tspan x="3015.76px 3102.56px 3180.16px 3243.37px " y="858.647px 858.647px 858.647px 858.647px ">ARTU</tspan>NG</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Bspl. Maschinen</text>
+        </g>
+    </g>
+    <g id="silizium26" serif:id="silizium" transform="matrix(1,0,0,1,2528.7,-709.1)">
+        <g transform="matrix(0.743166,0,0,0.933672,194.363,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1032.19,1538.32 1009.73,1538.32L745.372,1538.32C722.911,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 722.911,1667.89 745.372,1667.89L1009.73,1667.89C1032.19,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.48px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">ARBEIT</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Bspl. Maschinen</text>
+        </g>
+    </g>
+    <g id="silizium27" serif:id="silizium" transform="matrix(1,0,0,1,-599.943,-653.335)">
+        <g transform="matrix(1.23122,0,0,0.933672,-149.56,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1039.41,1538.32 1025.86,1538.32L729.24,1538.32C715.683,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.683,1667.89 729.24,1667.89L1025.86,1667.89C1039.41,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.14px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">SHA<tspan x="3134.44px 3209.94px 3286.1px 3354.96px 3431.68px 3492.68px 3583.01px " y="858.647px 858.647px 858.647px 858.647px 858.647px 858.647px 858.647px ">CKLETON</tspan></text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Krater am mondlichen Südpol</text>
+        </g>
+    </g>
+    <g id="silizium28" serif:id="silizium" transform="matrix(1,0,0,1,1998.64,80.0838)">
+        <g transform="matrix(1.53818,0,0,0.933672,-365.868,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1041.61,1538.32 1030.76,1538.32L724.338,1538.32C713.486,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 713.486,1667.89 724.338,1667.89L1030.76,1667.89C1041.61,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:0.98px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">C<tspan x="2966.06px 3052.07px " y="858.647px 858.647px ">O</tspan>PUTER<tspan x="3554.34px 3629.84px " y="858.647px 858.647px ">CH</tspan>IPS</text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Software / Maschinen</text>
+        </g>
+    </g>
+    <g id="silizium29" serif:id="silizium" transform="matrix(1,0,0,1,454.043,1172.19)">
+        <g transform="matrix(1.93123,0,0,0.933672,-642.836,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1043.4,1538.32 1034.76,1538.32L720.336,1538.32C711.693,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 711.693,1667.89 720.336,1667.89L1034.76,1667.89C1043.4,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:0.82px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">AS<tspan x="3053.07px 3116.28px 3193px 3270.38px 3360.72px " y="858.647px 858.647px 858.647px 858.647px 858.647px ">TEROI</tspan>DENBER<tspan x="3881.14px 3961.84px 4038.89px 4121.36px " y="858.647px 858.647px 858.647px 858.647px ">GBAU</tspan></text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Ressourcenquelle</text>
+        </g>
+    </g>
+    <g id="silizium30" serif:id="silizium" transform="matrix(1,0,0,1,2629.3,80.0838)">
+        <g transform="matrix(1.2683,0,0,0.933672,-175.683,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1039.74,1538.32 1026.58,1538.32L728.522,1538.32C715.361,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.361,1667.89 728.522,1667.89L1026.58,1667.89C1039.74,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.12px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">SILIK<tspan x="3173.52px 3263.85px " y="858.647px 858.647px ">ON</tspan></text>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Temperaturbeständiger Kunststoﬀ</text>
+        </g>
+    </g>
+    <g id="silizium31" serif:id="silizium" transform="matrix(1,0,0,1,1019.28,-1098.13)">
+        <g transform="matrix(1.21601,0,0,0.933672,-138.841,107.112)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1039.28,1538.32 1025.55,1538.32L729.547,1538.32C715.82,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 715.82,1667.89 729.547,1667.89L1025.55,1667.89C1039.28,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.15px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1207.5)">
+            <text x="2891.66px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">K<tspan x="2967.83px 3048.86px 3146.17px 3220.79px 3283.22px 3357.84px 3418.84px 3509.17px " y="858.647px 858.647px 858.647px 858.647px 858.647px 858.647px 858.647px 858.647px ">UNSTSTOF</tspan>F</text>
+            <path d="M2900.74,783.922L2900.74,858.647L2913.8,858.647L2913.8,827.428L2921,827.428C2935.06,827.428 2937.72,828.535 2941.81,836.506L2953.22,858.647L2967.83,858.647L2955.76,835.178C2951.33,826.543 2947.9,822.668 2940.93,820.786C2947.01,818.129 2950.56,813.812 2953.88,807.17L2965.61,783.922L2951.55,783.922L2940.15,806.284C2935.95,814.476 2933.84,815.583 2921,815.583L2913.8,815.583L2913.8,783.922L2900.74,783.922ZM2903.46,786.64L2911.09,786.64C2911.09,786.64 2911.09,815.583 2911.09,815.583C2911.09,817.085 2912.3,818.302 2913.8,818.302L2921,818.302C2929.62,818.302 2933.86,817.596 2936.94,815.261C2939.03,813.669 2940.65,811.273 2942.57,807.526L2953.22,786.64C2953.22,786.64 2961.2,786.64 2961.2,786.64L2951.45,805.954C2948.45,811.942 2945.33,815.899 2939.84,818.294C2938.78,818.756 2938.13,819.836 2938.22,820.987C2938.3,822.138 2939.1,823.11 2940.22,823.411C2946.45,825.093 2949.38,828.699 2953.34,836.418L2963.37,855.928C2963.37,855.928 2954.87,855.928 2954.87,855.928C2954.87,855.928 2944.23,835.261 2944.23,835.261C2942.33,831.563 2940.62,829.198 2938.3,827.62C2935,825.376 2930.27,824.71 2921,824.71L2913.8,824.71C2912.3,824.71 2911.09,825.927 2911.09,827.428L2911.09,855.928C2911.09,855.928 2903.46,855.928 2903.46,855.928L2903.46,786.64Z"/>
+            <path d="M2976.35,783.922L2976.35,834.846C2976.35,850.566 2984.54,858.647 3000.49,858.647L3016.2,858.647C3032.15,858.647 3040.45,850.566 3040.45,834.846L3040.45,783.922L3027.61,783.922L3027.61,833.849C3027.61,841.266 3023.73,845.584 3015.32,845.584L3002.03,845.584C2993.4,845.584 2989.64,841.266 2989.64,833.849L2989.64,783.922L2976.35,783.922ZM2979.07,786.64L2986.92,786.64C2986.92,786.64 2986.92,833.849 2986.92,833.849C2986.92,838.404 2988.2,841.963 2990.68,844.427C2993.12,846.851 2996.82,848.303 3002.03,848.303C3002.03,848.303 3015.32,848.303 3015.32,848.303C3020.41,848.303 3024.09,846.857 3026.53,844.427C3029.02,841.963 3030.33,838.403 3030.33,833.849L3030.33,786.64C3030.33,786.64 3037.73,786.64 3037.73,786.64C3037.73,786.64 3037.73,834.846 3037.73,834.846C3037.73,841.828 3036.02,847.159 3032.4,850.699C3028.77,854.256 3023.32,855.928 3016.2,855.928C3016.2,855.928 3000.49,855.928 3000.49,855.928C2993.38,855.928 2987.95,854.26 2984.35,850.706C2980.76,847.164 2979.07,841.831 2979.07,834.846L2979.07,786.64Z"/>
+            <path d="M3070.89,799.531C3070.89,796.874 3072.44,795.214 3075.43,795.214C3077.76,795.214 3079.09,796.21 3080.08,798.424L3101.89,846.137C3104.99,854.662 3109.75,859.975 3120.16,859.975C3131.67,859.975 3137.32,853.444 3137.32,843.591L3137.32,783.922L3124.14,783.922L3124.14,843.038C3124.14,845.584 3122.48,847.244 3119.71,847.244C3117.28,847.244 3115.84,845.916 3114.95,844.145L3093.14,796.431C3090.05,787.907 3085.4,782.593 3074.99,782.593C3063.37,782.593 3057.83,789.125 3057.83,798.867L3057.83,858.647L3070.89,858.647L3070.89,799.531ZM3068.18,799.531L3068.18,855.928C3068.18,855.928 3060.55,855.928 3060.55,855.928C3060.55,855.928 3060.55,798.867 3060.55,798.867C3060.55,794.802 3061.61,791.373 3063.98,788.994C3066.38,786.577 3070.06,785.312 3074.99,785.312C3078.56,785.312 3081.35,785.992 3083.58,787.336C3086.96,789.383 3088.97,792.903 3090.59,797.36C3090.62,797.428 3090.64,797.496 3090.67,797.561L3112.48,845.275C3112.49,845.304 3112.51,845.332 3112.52,845.361C3113.85,848.023 3116.05,849.963 3119.71,849.963C3121.91,849.963 3123.64,849.219 3124.85,848.054C3126.11,846.844 3126.86,845.137 3126.86,843.038C3126.86,843.038 3126.86,786.64 3126.86,786.64C3126.86,786.64 3134.6,786.64 3134.6,786.64C3134.6,786.64 3134.6,843.591 3134.6,843.591C3134.6,847.709 3133.51,851.166 3131.13,853.56C3128.71,855.988 3125.03,857.257 3120.16,857.257C3116.58,857.257 3113.77,856.574 3111.52,855.228C3108.11,853.182 3106.07,849.664 3104.45,845.208C3104.42,845.14 3104.39,845.073 3104.36,845.007L3082.56,797.295C3081.04,793.934 3078.97,792.495 3075.43,792.495C3073.08,792.495 3071.34,793.26 3070.14,794.436C3068.9,795.651 3068.18,797.371 3068.18,799.531Z"/>
+            <path d="M3175.07,783.922C3158.46,783.922 3151.82,792.999 3151.82,805.398C3151.82,815.805 3156.47,826.986 3176.39,826.986L3193.78,826.986C3202.96,826.986 3205.51,831.414 3205.51,836.285C3205.51,841.709 3202.3,845.584 3195.21,845.584L3153.15,845.584L3153.15,858.647L3194.77,858.647C3211.82,858.647 3218.57,849.348 3218.57,836.728C3218.57,825.989 3213.81,814.697 3193.44,814.697L3175.95,814.697C3167.21,814.697 3164.88,810.38 3164.88,805.841C3164.88,800.638 3167.87,796.985 3174.62,796.985L3212.93,796.985L3212.93,783.922L3175.07,783.922ZM3175.07,786.64L3210.21,786.64C3210.21,786.64 3210.21,794.266 3210.21,794.266C3210.21,794.266 3174.62,794.266 3174.62,794.266C3170.36,794.266 3167.33,795.547 3165.31,797.523C3163.23,799.57 3162.16,802.435 3162.16,805.841C3162.16,808.84 3163.02,811.734 3165.23,813.91C3167.28,815.923 3170.61,817.416 3175.95,817.416C3175.95,817.416 3193.44,817.416 3193.44,817.416C3202.58,817.416 3208.27,819.766 3211.62,823.501C3214.9,827.155 3215.85,832.017 3215.85,836.728C3215.85,842.26 3214.47,847.097 3211.12,850.518C3207.72,853.996 3202.37,855.928 3194.77,855.928C3194.77,855.928 3155.87,855.928 3155.87,855.928C3155.87,855.928 3155.87,848.303 3155.87,848.303C3155.87,848.303 3195.21,848.303 3195.21,848.303C3199.64,848.303 3202.81,846.971 3204.92,844.915C3207.11,842.781 3208.23,839.8 3208.23,836.285C3208.23,833.099 3207.31,830.093 3204.97,827.849C3202.82,825.776 3199.33,824.267 3193.78,824.267L3176.39,824.267C3167.49,824.267 3161.93,821.947 3158.66,818.285C3155.47,814.701 3154.54,809.951 3154.54,805.398C3154.54,799.978 3155.89,795.251 3159.16,791.912C3162.48,788.518 3167.69,786.64 3175.07,786.64Z"/>
+            <path d="M3224,783.922L3224,796.985L3245.81,796.985L3245.81,858.647L3258.98,858.647L3258.98,796.985L3280.79,796.985L3280.79,783.922L3224,783.922ZM3226.72,786.64L3278.07,786.64C3278.07,786.64 3278.07,794.266 3278.07,794.266C3278.07,794.266 3258.98,794.266 3258.98,794.266C3257.48,794.266 3256.26,795.483 3256.26,796.985L3256.26,855.928C3256.26,855.928 3248.52,855.928 3248.52,855.928C3248.52,855.928 3248.52,796.985 3248.52,796.985C3248.52,795.483 3247.31,794.266 3245.81,794.266L3226.72,794.266L3226.72,786.64Z"/>
+            <path d="M3312.12,783.922C3295.51,783.922 3288.87,792.999 3288.87,805.398C3288.87,815.805 3293.52,826.986 3313.45,826.986L3330.83,826.986C3340.01,826.986 3342.56,831.414 3342.56,836.285C3342.56,841.709 3339.35,845.584 3332.27,845.584L3290.2,845.584L3290.2,858.647L3331.82,858.647C3348.87,858.647 3355.62,849.348 3355.62,836.728C3355.62,825.989 3350.86,814.697 3330.49,814.697L3313,814.697C3304.26,814.697 3301.93,810.38 3301.93,805.841C3301.93,800.638 3304.92,796.985 3311.68,796.985L3349.98,796.985L3349.98,783.922L3312.12,783.922ZM3312.12,786.64L3347.26,786.64C3347.26,786.64 3347.26,794.266 3347.26,794.266C3347.26,794.266 3311.68,794.266 3311.68,794.266C3307.41,794.266 3304.38,795.547 3302.37,797.523C3300.28,799.57 3299.21,802.435 3299.21,805.841C3299.21,808.84 3300.07,811.734 3302.28,813.91C3304.33,815.923 3307.66,817.416 3313,817.416C3313,817.416 3330.49,817.416 3330.49,817.416C3339.63,817.416 3345.32,819.766 3348.67,823.501C3351.95,827.155 3352.91,832.017 3352.91,836.728C3352.91,842.26 3351.52,847.097 3348.17,850.518C3344.77,853.996 3339.42,855.928 3331.82,855.928C3331.82,855.928 3292.92,855.928 3292.92,855.928C3292.92,855.928 3292.92,848.303 3292.92,848.303C3292.92,848.303 3332.27,848.303 3332.27,848.303C3336.69,848.303 3339.86,846.971 3341.97,844.915C3344.16,842.781 3345.28,839.8 3345.28,836.285C3345.28,833.099 3344.36,830.093 3342.02,827.849C3339.87,825.776 3336.38,824.267 3330.83,824.267L3313.45,824.267C3304.54,824.267 3298.98,821.947 3295.71,818.285C3292.52,814.701 3291.59,809.951 3291.59,805.398C3291.59,799.978 3292.94,795.251 3296.21,791.912C3299.53,788.518 3304.74,786.64 3312.12,786.64Z"/>
+            <path d="M3361.05,783.922L3361.05,796.985L3382.86,796.985L3382.86,858.647L3396.03,858.647L3396.03,796.985L3417.84,796.985L3417.84,783.922L3361.05,783.922ZM3363.77,786.64L3415.12,786.64C3415.12,786.64 3415.12,794.266 3415.12,794.266C3415.12,794.266 3396.03,794.266 3396.03,794.266C3394.53,794.266 3393.31,795.483 3393.31,796.985L3393.31,855.928C3393.31,855.928 3385.58,855.928 3385.58,855.928C3385.58,855.928 3385.58,796.985 3385.58,796.985C3385.58,795.483 3384.36,794.266 3382.86,794.266L3363.77,794.266L3363.77,786.64Z"/>
+            <path d="M3458.91,783.922C3437.21,783.922 3425.15,796.321 3425.15,821.45C3425.15,846.47 3437.1,858.647 3458.91,858.647L3469.1,858.647C3490.91,858.647 3502.86,846.47 3502.86,821.45C3502.86,796.321 3490.79,783.922 3469.1,783.922L3458.91,783.922ZM3458.91,786.64L3469.1,786.64C3479.06,786.64 3486.85,789.37 3492.11,795.101C3497.46,800.926 3500.14,809.723 3500.14,821.45C3500.14,833.115 3497.49,841.829 3492.16,847.584C3486.91,853.253 3479.11,855.928 3469.1,855.928C3469.1,855.928 3458.91,855.928 3458.91,855.928C3448.89,855.928 3441.1,853.253 3435.85,847.584C3430.52,841.829 3427.87,833.115 3427.87,821.45C3427.87,809.723 3430.55,800.926 3435.89,795.101C3441.16,789.37 3448.95,786.64 3458.91,786.64ZM3469.1,794.266L3458.91,794.266C3450.74,794.266 3444.93,796.512 3441.09,801.022C3437.39,805.378 3435.49,812.041 3435.49,821.45C3435.49,830.816 3437.37,837.398 3441.06,841.685C3444.88,846.113 3450.68,848.303 3458.91,848.303C3458.91,848.303 3469.1,848.303 3469.1,848.303C3477.27,848.303 3483.05,846.112 3486.86,841.663C3490.53,837.364 3492.41,830.758 3492.41,821.34C3492.41,811.989 3490.54,805.355 3486.86,801.013C3483.06,796.516 3477.27,794.266 3469.1,794.266ZM3469.1,796.985C3483.49,796.985 3489.69,804.291 3489.69,821.34C3489.69,838.499 3483.49,845.584 3469.1,845.584L3458.91,845.584C3444.41,845.584 3438.21,838.499 3438.21,821.45C3438.21,804.291 3444.52,796.985 3458.91,796.985L3469.1,796.985Z"/>
+            <path d="M3545.15,783.922C3525.33,783.922 3517.58,794.771 3517.58,809.716L3517.58,858.647L3530.65,858.647L3530.65,829.089L3575.7,829.089L3575.7,816.69L3530.65,816.69L3530.65,809.605C3530.65,802.631 3534.19,796.985 3546.03,796.985L3576.15,796.985L3576.15,783.922L3545.15,783.922ZM3545.15,786.64L3573.43,786.64C3573.43,786.64 3573.43,794.266 3573.43,794.266C3573.43,794.266 3546.03,794.266 3546.03,794.266C3539.16,794.266 3534.76,796.075 3532.01,798.723C3529.12,801.517 3527.93,805.339 3527.93,809.605L3527.93,816.69C3527.93,818.192 3529.15,819.409 3530.65,819.409L3572.99,819.409C3572.99,819.409 3572.99,826.37 3572.99,826.37C3572.99,826.37 3530.65,826.37 3530.65,826.37C3529.15,826.37 3527.93,827.588 3527.93,829.089L3527.93,855.928C3527.93,855.928 3520.3,855.928 3520.3,855.928C3520.3,855.928 3520.3,809.716 3520.3,809.716C3520.3,803.019 3521.94,797.206 3525.89,793.101C3529.89,788.954 3536.18,786.64 3545.15,786.64Z"/>
+            <path d="M3618.55,783.922C3598.73,783.922 3590.98,794.771 3590.98,809.716L3590.98,858.647L3604.04,858.647L3604.04,829.089L3649.1,829.089L3649.1,816.69L3604.04,816.69L3604.04,809.605C3604.04,802.631 3607.59,796.985 3619.43,796.985L3649.54,796.985L3649.54,783.922L3618.55,783.922ZM3618.55,786.64L3646.83,786.64C3646.83,786.64 3646.83,794.266 3646.83,794.266C3646.83,794.266 3619.43,794.266 3619.43,794.266C3612.56,794.266 3608.15,796.075 3605.41,798.723C3602.51,801.517 3601.33,805.339 3601.33,809.605C3601.33,809.605 3601.33,816.69 3601.33,816.69C3601.33,818.192 3602.54,819.409 3604.04,819.409L3646.38,819.409C3646.38,819.409 3646.38,826.37 3646.38,826.37C3646.38,826.37 3604.04,826.37 3604.04,826.37C3602.54,826.37 3601.33,827.588 3601.33,829.089L3601.33,855.928C3601.33,855.928 3593.7,855.928 3593.7,855.928C3593.7,855.928 3593.7,809.716 3593.7,809.716C3593.7,803.019 3595.33,797.206 3599.29,793.101C3603.29,788.954 3609.58,786.64 3618.55,786.64Z"/>
+            <text x="2891.66px" y="942.165px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:72.497px;">Polymere</text>
+            <path d="M2918.99,905.279C2918.99,910.612 2917.77,914.53 2915.33,917.031C2912.89,919.533 2909.27,920.784 2904.48,920.784L2900.8,920.784L2900.8,942.165L2897.33,942.165L2897.33,890.411L2904.41,890.411C2909.46,890.411 2913.15,891.603 2915.49,893.987C2917.82,896.37 2918.99,900.134 2918.99,905.279ZM2900.8,917.598L2904.26,917.598C2908.32,917.598 2911.2,916.642 2912.9,914.73C2914.6,912.819 2915.45,909.668 2915.45,905.279C2915.45,901.102 2914.57,898.111 2912.81,896.305C2911.06,894.5 2908.34,893.597 2904.66,893.597L2900.8,893.597L2900.8,917.598Z"/>
+            <path d="M2948.16,922.872C2948.16,929.338 2947.14,934.288 2945.1,937.722C2943.06,941.156 2940.14,942.873 2936.34,942.873C2932.59,942.873 2929.71,941.156 2927.72,937.722C2925.72,934.288 2924.73,929.338 2924.73,922.872C2924.73,909.633 2928.64,903.013 2936.48,903.013C2940.16,903.013 2943.03,904.748 2945.08,908.217C2947.13,911.686 2948.16,916.571 2948.16,922.872ZM2928.23,922.872C2928.23,928.418 2928.89,932.607 2930.21,935.439C2931.53,938.271 2933.6,939.687 2936.41,939.687C2941.91,939.687 2944.66,934.082 2944.66,922.872C2944.66,911.757 2941.91,906.199 2936.41,906.199C2933.53,906.199 2931.45,907.592 2930.16,910.376C2928.87,913.161 2928.23,917.326 2928.23,922.872Z"/>
+            <rect x="2956.62" y="887.084" width="3.363" height="55.081"/>
+            <path d="M2975.06,942.094L2965.47,903.757L2968.87,903.757L2974.67,927.722C2975.36,930.601 2976.02,933.846 2976.66,937.457L2976.94,937.457C2977.39,934.318 2978.01,931.049 2978.82,927.651L2984.48,903.757L2987.88,903.757L2976.66,949.421C2975.83,952.796 2974.75,955.333 2973.42,957.032C2972.08,958.731 2970.31,959.581 2968.09,959.581C2967.19,959.581 2966.18,959.38 2965.05,958.979L2965.05,955.935C2965.99,956.265 2966.91,956.43 2967.81,956.43C2969.22,956.43 2970.34,955.823 2971.17,954.607C2971.99,953.392 2972.73,951.439 2973.36,948.749L2975.06,942.094Z"/>
+            <path d="M3026,942.165L3026,916.005C3026,909.562 3024.12,906.341 3020.34,906.341C3017.74,906.341 3015.87,907.468 3014.73,909.721C3013.58,911.975 3013.01,915.297 3013.01,919.686L3013.01,942.165L3009.68,942.165L3009.68,916.005C3009.68,912.748 3009.22,910.323 3008.3,908.73C3007.38,907.137 3005.95,906.341 3004.02,906.341C3001.47,906.341 2999.62,907.497 2998.46,909.81C2997.31,912.123 2996.73,915.875 2996.73,921.067L2996.73,942.165L2993.37,942.165L2993.37,903.757L2996.2,903.757L2996.48,909.102L2996.8,909.102C2998.33,905.043 3000.94,903.013 3004.62,903.013C3006.74,903.013 3008.42,903.58 3009.65,904.713C3010.88,905.845 3011.76,907.497 3012.3,909.668C3013.22,907.308 3014.36,905.609 3015.7,904.571C3017.05,903.533 3018.79,903.013 3020.94,903.013C3023.84,903.013 3025.97,904.128 3027.31,906.359C3028.66,908.589 3029.33,912.158 3029.33,917.067L3029.33,942.165L3026,942.165Z"/>
+            <path d="M3050.39,942.873C3046.33,942.873 3043.21,941.144 3041.03,937.687C3038.85,934.229 3037.76,929.409 3037.76,923.226C3037.76,916.666 3038.73,911.657 3040.68,908.199C3042.62,904.742 3045.43,903.013 3049.08,903.013C3052.27,903.013 3054.78,904.53 3056.62,907.562C3058.46,910.595 3059.38,914.683 3059.38,919.828L3059.38,922.943L3041.19,922.943C3041.24,928.536 3042.03,932.725 3043.56,935.51C3045.09,938.294 3047.42,939.687 3050.53,939.687C3052.94,939.687 3055.48,938.896 3058.14,937.315L3058.14,940.572C3055.69,942.106 3053.11,942.873 3050.39,942.873ZM3048.87,906.058C3044.24,906.058 3041.71,910.671 3041.26,919.899L3056.02,919.899C3056.02,915.674 3055.38,912.312 3054.09,909.81C3052.81,907.308 3051.07,906.058 3048.87,906.058Z"/>
+            <path d="M3078.57,903.013C3079.77,903.013 3080.89,903.179 3081.93,903.509L3081.12,906.872C3080.27,906.518 3079.4,906.341 3078.5,906.341C3077.2,906.341 3075.99,907.008 3074.87,908.341C3073.75,909.674 3072.87,911.533 3072.23,913.916C3071.6,916.3 3071.28,918.931 3071.28,921.81L3071.28,942.165L3067.91,942.165L3067.91,903.757L3070.68,903.757L3071.03,910.483L3071.28,910.483C3073.07,905.503 3075.5,903.013 3078.57,903.013Z"/>
+            <path d="M3098.61,942.873C3094.55,942.873 3091.43,941.144 3089.24,937.687C3087.06,934.229 3085.97,929.409 3085.97,923.226C3085.97,916.666 3086.94,911.657 3088.89,908.199C3090.84,904.742 3093.64,903.013 3097.3,903.013C3100.48,903.013 3102.99,904.53 3104.84,907.562C3106.68,910.595 3107.6,914.683 3107.6,919.828L3107.6,922.943L3089.4,922.943C3089.45,928.536 3090.24,932.725 3091.77,935.51C3093.31,938.294 3095.63,939.687 3098.75,939.687C3101.16,939.687 3103.69,938.896 3106.36,937.315L3106.36,940.572C3103.9,942.106 3101.32,942.873 3098.61,942.873ZM3097.08,906.058C3092.46,906.058 3089.92,910.671 3089.47,919.899L3104.23,919.899C3104.23,915.674 3103.59,912.312 3102.31,909.81C3101.02,907.308 3099.28,906.058 3097.08,906.058Z"/>
+        </g>
+    </g>
+    <g id="eisen" transform="matrix(1,0,0,1,916.362,284.889)">
+        <g transform="matrix(0.580377,0,0,0.632062,313.809,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1034.62,1538.32 1015.14,1538.32L739.953,1538.32C720.483,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.483,1667.89 739.953,1667.89L1015.14,1667.89C1034.62,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:2.06px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-576.963,1205.5)">
+            <text x="2893.76px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">Fe</text>
+            <text x="3068.9px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(Eisen)</text>
+        </g>
+    </g>
+    <g id="kalzium" transform="matrix(1,0,0,1,916.362,470.154)">
+        <g transform="matrix(0.63992,0,0,0.632062,251.264,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1036.09,1538.32 1018.43,1538.32L736.671,1538.32C719.012,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 719.012,1667.89 736.671,1667.89L1018.43,1667.89C1036.09,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.97px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-590.963,1204.5)">
+            <text x="2868.61px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">C<tspan x="2941.67px " y="858.647px ">a</tspan></text>
+            <text x="3045.62px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(K<tspan x="3084.77px 3109.13px " y="858.647px 858.647px ">al</tspan>zium)</text>
+        </g>
+    </g>
+    <g id="aluminium" transform="matrix(1,0,0,1,916.362,655.419)">
+        <g transform="matrix(0.679186,0,0,0.632062,210.018,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1036.91,1538.32 1020.28,1538.32L734.821,1538.32C718.183,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 718.183,1667.89 734.821,1667.89L1020.28,1667.89C1036.91,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.91px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-596.963,1206.5)">
+            <text x="2857.46px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">Al</text>
+            <text x="3002.37px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(Aluminium)</text>
+        </g>
+    </g>
+    <g id="magnesium" transform="matrix(1,0,0,1,916.362,840.684)">
+        <g transform="matrix(0.805492,0,0,0.632062,77.3435,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1039.03,1538.32 1025,1538.32L730.094,1538.32C716.065,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 716.065,1667.89 730.094,1667.89L1025,1667.89C1039.03,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.73px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-576.963,1202.5)">
+            <text x="2705.37px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">g</text>
+            <text x="2940.29px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(<tspan x="2996px " y="858.647px ">a</tspan>gnesium)</text>
+        </g>
+    </g>
+    <g id="magnesium1" serif:id="magnesium" transform="matrix(1,0,0,1,1398.97,1025.95)">
+        <g transform="matrix(0.489165,0,0,0.632062,409.62,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1031.67,1538.32 1008.57,1538.32L746.531,1538.32C723.43,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 723.43,1667.89 746.531,1667.89L1008.57,1667.89C1031.67,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:2.21px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-576.963,1202.5)">
+            <text x="2958.91px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">Ti</text>
+            <text x="3080.24px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(Titan)</text>
+        </g>
+    </g>
+    <g id="magnesium2" serif:id="magnesium" transform="matrix(1,0,0,1,2601.8,-884.077)">
+        <g transform="matrix(0.927571,0,0,0.632062,-8.68238,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1040.53,1538.32 1028.35,1538.32L726.749,1538.32C714.566,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 714.566,1667.89 726.749,1667.89L1028.35,1667.89C1040.53,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:1.57px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-576.963,1202.5)">
+            <text x="2705.37px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">C<tspan x="2779.77px " y="858.647px ">O</tspan></text>
+            <text x="2870.1px" y="876.771px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">₂</text>
+            <text x="2943.28px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(K<tspan x="2981.88px 3006.2px " y="858.647px 858.647px ">oh</tspan>lenstof<tspan x="3163.92px 3177.51px " y="858.647px 858.647px ">fd</tspan>io<tspan x="3235.33px 3260.02px " y="858.647px 858.647px ">xi</tspan>d)</text>
+        </g>
+    </g>
+    <g id="sonstige" transform="matrix(1,0,0,1,916.362,1025.95)">
+        <g transform="matrix(0.580377,0,0,0.632062,313.809,571.086)">
+            <path d="M1050.42,1570.71C1050.42,1552.83 1034.62,1538.32 1015.14,1538.32L739.953,1538.32C720.483,1538.32 704.676,1552.83 704.676,1570.71L704.676,1635.5C704.676,1653.38 720.483,1667.89 739.953,1667.89L1015.14,1667.89C1034.62,1667.89 1050.42,1653.38 1050.42,1635.5L1050.42,1570.71Z" style="fill:white;stroke:black;stroke-width:2.06px;"/>
+        </g>
+        <g transform="matrix(0.459788,0,0,0.459788,-578.963,1196.5)">
+            <text x="2895.14px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:110.704px;">...</text>
+            <text x="3005.07px" y="858.647px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:36.249px;">(Sonstige)</text>
+        </g>
+    </g>
+    <g id="HEADLINE" transform="matrix(1.44643e-16,-2.3622,2.3622,1.44643e-16,-163.157,3831.48)">
+        <text x="1302.75px" y="131.188px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:17.639px;">OND<tspan x="1365.48px 1370.01px 1374.72px 1386.7px 1398.2px " y="131.188px 131.188px 131.188px 131.188px 131.188px ">, Res</tspan>sourcen Kreislauf</text>
+    </g>
+    <g id="connection" transform="matrix(1,0,0,1,274.682,-110)">
+        <g transform="matrix(0.776207,0,0,1,146.73,0)">
+            <path d="M655.65,2164.5L848.113,2164.5" style="fill:none;stroke:black;stroke-width:4.65px;stroke-dasharray:23.27,23.27,0,0;"/>
+        </g>
+        <g transform="matrix(1.20423,0,0,1,-274.457,0)">
+            <path d="M1132.98,2164.47L1343.88,2164.47" style="fill:none;stroke:black;stroke-width:0.75px;stroke-dasharray:11.29,11.29,0,0;"/>
+        </g>
+        <path d="M1185.3,2164.47L1185.3,1979.24L1364.47,1979.24" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+        <path d="M1185.3,1979.24L1185.3,1793.97L1354.49,1793.97" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+        <path d="M1185.3,1793.97L1185.3,1608.74L1325.44,1608.74" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+        <path d="M1185.3,2164.5L1185.3,2349.73L1330.3,2349.73" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+        <path d="M1185.3,2349.73L1185.3,2535L1286.63,2535" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+        <path d="M1185.3,2535L1185.3,2720.26L1364.47,2720.26" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M930.332,754.792L1839.77,754.792" style="fill:none;stroke:rgb(191,191,191);stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.87998,0,-468.447)">
+        <path d="M930.332,754.792L1996.53,754.792L1996.53,1033.75L2153.29,1033.75" style="fill:none;stroke:rgb(0,174,239);stroke-width:2.77px;stroke-dasharray:13.84,13.84,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,481.754)">
+        <path d="M930.332,754.792L2275.41,754.792L2275.41,285.792" style="fill:none;stroke:rgb(238,238,0);stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.77,1608.7L2153.29,1608.7" style="fill:none;stroke:rgb(236,0,140);stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M2403.18,1608.7L2716.69,1608.7" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-182.743)">
+        <path d="M2456.84,883.012L2604.74,883.012" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M2773.77,877.546L2773.77,958.225L2093.59,958.225L2093.59,1633.46L2153.29,1633.46" style="fill:none;stroke:rgb(236,0,140);stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.0279,0,-208.081)">
+        <path d="M2456.84,857.285L2530.79,857.285L2530.79,694.456L2597.21,694.456" style="fill:none;stroke:black;stroke-width:0.82px;stroke-dasharray:12.33,12.33,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M3028.89,1608.7L3183.05,1608.7" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,0.947098,0,-25.8084)">
+        <path d="M3028.89,1591.46L3105.97,1591.46L3105.97,1421.64L3183.05,1421.64" style="fill:none;stroke:black;stroke-width:0.86px;stroke-dasharray:12.83,12.83,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.10743,0,-212.094)">
+        <path d="M930.332,1030.31L2251.51,1030.31L2251.51,884.603" style="fill:none;stroke:rgb(0,174,239);stroke-width:3.95px;stroke-dasharray:19.75,19.75,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,0.50529,0,675.632)">
+        <path d="M2403.18,1588.07L2559.93,1588.07L2559.93,1236.92L2716.69,1236.92" style="fill:none;stroke:black;stroke-width:1.05px;stroke-dasharray:15.78,15.78,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M3028.89,1407.4L3183.05,1407.4" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M3246.76,1206.09L2305.27,1206.09L2305.27,877.546" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M3391.63,1273.37L3391.63,1346.91" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.77,1793.97L2153.29,1793.97" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(0.767712,0,0,1,554.14,-110)">
+        <path d="M2385.57,1854.46L2385.57,1886.67L1991.17,1890.76L1991.17,3022.77" style="fill:none;stroke:black;stroke-width:0.93px;stroke-dasharray:14.02,14.02,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.81,1773.5L2124.28,1773.5L2124.28,1716.91L2665.39,1716.91L2665.39,1793.97L2716.69,1793.97" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.77,1979.24L2153.29,1979.24" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M2153.29,1816.21L2050.06,1816.21L2050.06,1364.23L930.332,1364.23" style="fill:none;stroke:rgb(238,238,0);stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1825.4,1753.94L2093.59,1753.94L2093.59,1701.65L3312.53,1701.65L3312.53,1793.97L3347.36,1793.97" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.08588,104.879,-367.114)">
+        <path d="M1921.22,3202.06L1921.22,3131.88" style="fill:none;stroke:black;stroke-width:0.8px;stroke-dasharray:11.98,11.98,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.08588,220.373,-367.114)">
+        <path d="M1921.22,3202.06L1921.22,3131.88" style="fill:none;stroke:black;stroke-width:0.8px;stroke-dasharray:11.98,11.98,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.81,1814.44L1885.62,1814.44L1885.62,3280.43L1965.19,3280.43" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.81,1999.71L2127.7,1999.71L2127.7,2051.15L2748.23,2051.15L2748.23,1969.92L2831.21,1969.92" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.81,754.792L1971.33,754.792L1971.33,2070.41L2770.9,2070.41L2770.9,1990.83L2831.21,1990.83" style="fill:none;stroke:rgb(191,191,191);stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.81,2164.5L2153.29,2164.5" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M2363.93,2164.5L3347.36,2164.5" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M3566.61,1854.46L3566.61,1882.33L3261.09,1882.33L3261.09,2104.01L3374.66,2104.01" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M3134,1979.24L3231.87,1979.24L3231.87,2123.01L3349.52,2123.01" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M1839.81,2349.76L2393.71,2349.76L2393.71,2182.96L3347.41,2182.96" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M3682.98,2164.5L3823.62,2164.5" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M4131.65,2164.5L4272.3,2164.5" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.10069,0,-334.6)">
+        <path d="M4131.65,2185.26L4201.98,2185.26L4201.98,2351.26L4272.3,2351.26" style="fill:none;stroke:black;stroke-width:0.79px;stroke-dasharray:11.89,11.89,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M2204.44,3022.77L2425.59,3022.77L2425.59,2202.88L3347.98,2202.88" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-110)">
+        <path d="M2234.69,3049.92L2457.33,3049.92L2457.33,2351.26L3347.36,2351.26" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.08235,0,-285.756)">
+        <path d="M4131.65,2134.26L4201.98,2134.26L4201.98,1986.6L4272.3,1986.6" style="fill:none;stroke:black;stroke-width:0.8px;stroke-dasharray:12,12,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M2155.87,1615.28L2093.59,1615.75L2093.59,1646.19L3588.41,1646.19L3588.41,1568.7L3525.58,1568.7" style="fill:none;stroke:rgb(236,0,140);stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.25669,0,-247.09)">
+        <path d="M1737.34,599.069L1682.97,599.069L1682.97,689.909L930.332,689.909" style="fill:none;stroke:rgb(191,191,191);stroke-width:3.67px;stroke-dasharray:18.35,18.35,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,14,-70)">
+        <path d="M1931.36,636.24L1931.36,2184.99L3363.6,2184.99" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M4131.65,2157.97L4179.85,2157.97L4179.85,2556.6L4272.3,2556.6" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M3248.51,1753.97L3287.39,1753.97L3287.39,2034.01L4223.59,2034.01L4223.59,2092.62L4272.3,2092.62" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M2234.69,3041.25L4124.83,3041.25L4124.83,2189.42L4302.54,2189.42" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M4272.3,2353.67L4153.11,2353.67L4153.11,3069.36L2234.69,3069.36" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.01589,0,-110.626)">
+        <path d="M4634.94,2556.6L4687.17,2556.6L4687.17,599.069L4632.18,599.069" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.4,12.4,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.01586,0,-106.847)">
+        <path d="M4559.72,2323.42L4656.8,2323.42L4656.8,625.989L4631.26,625.989" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.4,12.4,0,0;"/>
+    </g>
+    <g transform="matrix(1.2223,0,0,1,-1022.34,-70)">
+        <path d="M4598.94,2128.93L4622.25,2128.93L4622.25,659.557L4598.94,659.557" style="fill:none;stroke:black;stroke-width:0.75px;stroke-dasharray:11.19,11.19,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M4429.18,1934.44L4594.19,1934.44L4594.19,659.557" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M930.332,2104.04L1008.2,2104.04L1008.2,2047.64L3204.35,2047.64L3204.35,2104.73L3347.36,2104.73" style="fill:none;stroke:black;stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M3600.04,1367.4L4562.01,1367.4L4562.01,659.557" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M543.801,1020.55L688.616,1020.55" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-70)">
+        <path d="M3642.3,2311.26L3753.3,2311.26L3753.3,2148.61L3823.62,2148.61" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <g transform="matrix(1.95509,0,0,1,-1116.61,0)">
+        <path d="M1049.46,2776.08L1169.11,2776.08" style="fill:none;stroke:black;stroke-width:2.68px;stroke-dasharray:13.42,13.42,0,0;"/>
+    </g>
+    <path d="M4598.94,2075.35L4847.34,2075.35L4847.34,3378.21L1510.65,3378.21L1510.65,2836.56" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M1739.48,2651.24L1739.48,2715.59" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <g transform="matrix(1,0,0,1.02849,0,-25.6126)">
+        <path d="M3028.53,1267.15L3068.53,1267.15L3068.53,898.914L3246.76,898.914" style="fill:none;stroke:black;stroke-width:0.82px;stroke-dasharray:12.32,12.32,0,0;"/>
+    </g>
+    <path d="M3503.7,894.786L3742.5,894.786" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M3503.7,925.03L3623.1,925.03L3623.1,1088.28L3742.5,1088.28" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M4091.49,1088.28L4247.26,1088.28L4247.26,1998.44L4305,1998.44" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M3028.89,1461.46L3086.69,1461.46L3086.69,700.269L3246.76,700.269" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M3028.53,1255.88L3048.5,1255.88L3048.5,678.057L3246.77,678.057" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M3567.46,700.269L3606.51,700.269L3606.51,803.536L2333.49,803.536L2333.49,767.546" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M3113.49,505.752L3246.76,505.752" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M2992.17,566.24L2992.17,1236.91" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M3530.07,505.752L3579.14,505.752L3579.14,598.369L2560.53,598.369L2560.53,1269.97L2716.33,1269.97" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M4124.41,2104.37L4166.35,2104.37L4166.35,2723.91L4272.3,2723.91" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M1839.81,2610.3L2153.29,2610.3" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M2323.76,2610.3L2494.54,2610.3L2494.54,2141.38L3392.93,2141.38L3392.93,2114.99" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M1839.77,1519.18L1922.23,1519.18L1922.23,2719.78L3347.36,2719.78" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M930.332,975.944L1903.78,975.944L1903.78,2739.22L3347.43,2739.22" style="fill:none;stroke:rgb(0,174,239);stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    <g transform="matrix(1,0,0,1,0,14)">
+        <path d="M3986.44,2689.54L4272.3,2689.54" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    </g>
+    <path d="M930.332,2973.51L1865.11,2973.51L1865.11,2869.3L3275.57,2869.3L3275.57,2332.95L3844.75,2332.95L3844.75,2113.59" style="fill:none;stroke:black;stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    <path d="M930.332,2576.83L1021.64,2576.83L1021.64,2369.23L330.956,2369.23L330.956,1011.04" style="fill:none;stroke:black;stroke-width:4.17px;stroke-dasharray:20.83,20.83,0,0;"/>
+    <path d="M543.801,973.795L615.312,973.795L615.312,1112.26L421.175,1112.26L421.175,1242.62L482.95,1242.62" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M2664.28,1869.24L2694.27,1869.24L2694.27,2842.41L2107.3,2842.41L2107.3,2912.77" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+    <path d="M2456.84,728.908L2503.3,728.908L2503.3,1276.5L1546.18,1276.5L1546.18,1475.22L1600.12,1475.22" style="fill:none;stroke:black;stroke-width:0.83px;stroke-dasharray:12.5,12.5,0,0;"/>
+</svg>

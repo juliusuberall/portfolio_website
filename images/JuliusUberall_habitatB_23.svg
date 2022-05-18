@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2481 3508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="HEADLINE" transform="matrix(1.44643e-16,-2.3622,2.3622,1.44643e-16,-163.157,3831.48)">
+        <text x="1450.5px" y="131.188px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:17.639px;">OND<tspan x="1513.22px 1517.75px " y="131.188px 131.188px ">, </tspan>Oribit</text>
+    </g>
+    <g id="moond_orbit" transform="matrix(0.684297,0,0,0.684297,-377.567,943.67)">
+        <g id="earth" transform="matrix(0.184645,0,0,0.184645,1926.04,962.618)">
+            <circle cx="2362.2" cy="1181.1" r="149.308" style="fill:white;"/>
+            <path d="M2362.2,998.818C2261.6,998.818 2179.92,1080.5 2179.92,1181.1C2179.92,1281.71 2261.6,1363.39 2362.2,1363.39C2462.81,1363.39 2544.49,1281.71 2544.49,1181.1C2544.49,1080.5 2462.81,998.818 2362.2,998.818ZM2362.2,1031.8C2444.61,1031.8 2511.51,1098.7 2511.51,1181.1C2511.51,1263.51 2444.61,1330.41 2362.2,1330.41C2279.8,1330.41 2212.9,1263.51 2212.9,1181.1C2212.9,1098.7 2279.8,1031.8 2362.2,1031.8Z"/>
+            <g id="land">
+                <path d="M2302.8,1044.1L2308.92,1047.87L2316.87,1053.2L2332.81,1055.11L2325.05,1062.89L2317.4,1064.53L2309.35,1067.29L2305.86,1071.23L2300.13,1076.21L2295.81,1078.18L2289.98,1079.73L2286.51,1085.45L2281.32,1095.01L2274.75,1098.6L2263.14,1100.89L2256.44,1105.4L2252.13,1111.65L2248.63,1116.74C2248.63,1116.74 2245.75,1117.26 2243.32,1123.15C2240.88,1129.05 2241.54,1134.26 2241.54,1134.26L2241.2,1141.56L2235.32,1144.03L2235.48,1137.87L2237.12,1129.23L2233.46,1125.25L2227.75,1129.85L2220.44,1138.56L2215.64,1156.32L2217.03,1163.19L2221.2,1168.69L2227.02,1166.84L2226.52,1173.13L2218.7,1175.58L2217.2,1182.32L2216.39,1191.01L2215.48,1197.15L2219.26,1200.93L2221.79,1206.1L2225.89,1211.01L2232.37,1209.18L2240.24,1208.68L2251.62,1205.91L2259.72,1206.81L2268.25,1212.1L2277.41,1222.16L2282.3,1233.29L2281.8,1240.13L2281.55,1250.95L2278.77,1259.03L2274.88,1268.38L2274.88,1274.1L2277.34,1279.83L2278.66,1287.56L2287.6,1295.57L2297.17,1303.26L2303.42,1310.53L2306.03,1318.71L2305.85,1319.39C2251.35,1297.14 2212.9,1243.57 2212.9,1181.1C2212.9,1119.8 2249.92,1067.08 2302.8,1044.1ZM2454.66,1063.89C2489.28,1091.24 2511.51,1133.6 2511.51,1181.1C2511.51,1215.84 2499.63,1247.82 2479.7,1273.19L2478.76,1268.57L2476.92,1255.01L2477.59,1247.71L2472.62,1230.95L2469.61,1219.55L2465.05,1211.41L2454.32,1207.38L2444.04,1207.62L2430.81,1209.35L2415.77,1205.05L2397.93,1195.99L2389.35,1186.4L2386.23,1169.62L2392.26,1152.31L2397.48,1142.71L2404.14,1134.33L2410.77,1131.53L2417.25,1129.41L2417.58,1123.68L2414.46,1119.25L2410.9,1113.95L2412.4,1107.54L2417.73,1105.98L2423.88,1105.82L2430.86,1105.33L2432.19,1100.07L2428.86,1088.64L2435.4,1086.92L2440.22,1082.97L2447.92,1084.05L2453.24,1079.95L2452.42,1072.91L2454.75,1068.48L2454.66,1063.89ZM2429.96,1072.62L2427.26,1076.52L2429.69,1079.56L2431.64,1077.31L2429.96,1072.62ZM2436.77,1065.36L2434.96,1073.51L2435.61,1078.94L2441.1,1074.37L2436.77,1065.36Z" style="fill:none;stroke:black;stroke-width:6.6px;"/>
+                <path d="M2418.6,1128.94L2420.24,1123.41L2426.43,1122L2432.34,1120.48L2437.55,1115.73L2439.94,1110.18L2448.37,1107.49L2454.2,1107.66L2458.3,1106.71L2464.43,1106.5L2467.33,1111.09L2469.31,1119.4L2471.82,1122.03L2473.87,1120.36L2472.62,1114.94L2470.31,1108.58L2472.2,1105.95L2479.18,1105.54L2483.47,1108.05L2483.74,1111.9L2486.43,1115.84L2488.58,1118.89L2494.31,1124.36L2497.32,1129.55L2496.86,1133.23L2490.24,1133.88L2482.5,1133.04L2472.53,1132.12L2463.57,1133.44L2462.25,1128.58L2456.63,1128.01L2444.84,1128.41L2430.82,1129.16L2418.6,1128.94Z" style="fill:none;stroke:black;stroke-width:6.6px;"/>
+                <path d="M2338.1,1054.02L2329.01,1063.82L2318.39,1068.99L2317.07,1079.29L2333.76,1080.45L2347.12,1073.01L2354.87,1059.5L2365.25,1046.38L2356.45,1039.88L2333.22,1039.64L2323.65,1040.14L2324.54,1045.23L2331.4,1049.89L2338.1,1054.02Z" style="fill:none;stroke:black;stroke-width:6.6px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1.42509,0,0,1.42509,-1004.15,-502.477)">
+            <ellipse cx="2362.2" cy="1182.04" rx="1149.29" ry="152.688" style="fill:none;stroke:black;stroke-width:0.85px;stroke-dasharray:12.82,12.82,0,0;"/>
+        </g>
+        <g id="moon" transform="matrix(0.821249,0,0,0.821249,2055.8,222.448)">
+            <path d="M2367.43,1150.15C2357.96,1150.15 2350.27,1157.84 2350.27,1167.31C2350.27,1176.79 2357.96,1184.48 2367.43,1184.48C2376.91,1184.48 2384.6,1176.79 2384.6,1167.31C2384.6,1157.84 2376.91,1150.15 2367.43,1150.15ZM2367.43,1157.56C2372.82,1157.56 2377.18,1161.93 2377.18,1167.31C2377.18,1172.69 2372.82,1177.06 2367.43,1177.06C2362.05,1177.06 2357.68,1172.69 2357.68,1167.31C2357.68,1161.93 2362.05,1157.56 2367.43,1157.56Z"/>
+        </g>
+        <g transform="matrix(1.46135,0,0,1.46135,1450.06,105.097)">
+            <text x="804.97px" y="728.835px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:37.5px;">~385&apos;000 km | 30ed** | ~1,3 Lichtsekunden | PSP* ~30min 30s</text>
+        </g>
+        <g transform="matrix(1.46135,0,0,1.46135,-338.789,502.809)">
+            <text x="727.509px" y="728.835px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:37.5px;">Orbit Form: kreisähnliche Ellipse</text>
+            <text x="727.509px" y="766.335px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:37.5px;">Rotation-Periode : 27d</text>
+            <text x="727.509px" y="803.835px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:37.5px;">Orbitale Periode: 27d</text>
+            <text x="727.509px" y="841.335px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:37.5px;">Tageslicht: 13d</text>
+            <text x="727.509px" y="878.835px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:37.5px;">Nachthimmel: 13d</text>
+        </g>
+        <g transform="matrix(0.977049,0,0,1,73.2353,0)">
+            <path d="M2389.77,1180.7L3992.04,1180.7" style="fill:none;stroke:black;stroke-width:1.23px;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,104.196,-883.733)">
+            <text x="2206.24px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:41.667px;">Erde</text>
+        </g>
+        <g transform="matrix(1,0,0,1,1736.92,-883.733)">
+            <text x="2196.84px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:41.667px;">ond</text>
+        </g>
+    </g>
+    <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,-577.432,4117.27)">
+        <text x="727.509px" y="722.504px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:29.167px;">*Parker Solar Probe (PSP)</text>
+        <text x="727.509px" y="751.671px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:29.167px;">max. ~690&apos;000 km/h = 0,064 % c</text>
+        <text x="727.509px" y="780.837px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:29.167px;">** ed &quot;earth&apos;s diamter&quot; | 1ed = 12&apos;742km</text>
+    </g>
+    <g id="Mond_aufbai">
+    </g>
+    <g id="mond_größe">
+    </g>
+    <g id="usa_größe">
+    </g>
+</svg>

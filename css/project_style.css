@@ -17,6 +17,10 @@
   font-family:Poppins Regular;
   src:url(../fonts/Poppins-Regular.ttf);
 }
+@font-face{/*Main Font import*/
+  font-family:Poppins Bold;
+  src:url(../fonts/Poppins-Bold.ttf);
+}
 /*------------------------ION-ICON--------------------------*/
 .home_button_white {
   color: #ffffff;
@@ -112,9 +116,16 @@
 #partner_link_bright{
   color: black;
 }
+#partner_link_bright_important{
+  font-family: Poppins Bold;
+  color: black;
+}
 /*------------------------STYLE_CLASSES--------------------------*/
 #yu_explain_video{
   pointer-events: none;
+}
+#yu_explain_static{
+  display: none;
 }
 .fixed{
   position: relative;
@@ -125,6 +136,11 @@
 .content{
   width: 100%;
   margin-bottom: -4px;
+}
+.content_white_background{
+  width: 100%;
+  margin-bottom: -4px;
+  background-color: #ffffff;
 }
 .empty_left_column{
   float: left;
@@ -145,6 +161,12 @@
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media all and (orientation:portrait){
+  #yu_explain_video{
+    display: none;
+  }
+  #yu_explain_static{
+    display: unset;
+  }
   .home_button_black, .home_button_white{
     font-size: 64px;
     padding: 44px 30px 0 0;

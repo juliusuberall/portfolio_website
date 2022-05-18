@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2481 3508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-2480.31,0)">
+        <g id="solar_system" transform="matrix(1,0,0,1,4.80161,0)">
+            <g transform="matrix(1.28387e-15,-20.9671,20.9671,1.28387e-15,-17494.3,20561.4)">
+                <g id="simpel_planets">
+                    <circle id="sun" cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:rgb(230,230,230);stroke-width:0.05px;"/>
+                </g>
+            </g>
+            <g id="connection_lines">
+            </g>
+            <g id="texts">
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,2341.93,224.143)">
+            <g id="Diagram" transform="matrix(5.62486e-17,-0.918609,0.918609,5.62486e-17,67.1314,3876.38)">
+                <g id="Objects" transform="matrix(1,0,0,1,-132.069,-52.7437)">
+                    <g transform="matrix(1,0,0,1,-1489.38,-908.177)">
+                        <text x="2449.09px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Neptun</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1492.34,-803.673)">
+                        <text x="2453.78px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Uranus</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1489.38,-708.345)">
+                        <text x="2461.73px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Saturn</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1494.34,-613.058)">
+                        <text x="2461.35px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Jupiter</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1490.78,-504.57)">
+                        <text x="2480.83px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Mars</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1490.78,-308.872)">
+                        <text x="2468.79px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Venus</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1494.34,-208.074)">
+                        <text x="2450.65px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Merkur</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1490.29,-108.762)">
+                        <text x="2464.5px" y="1999.58px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:40.823px;">Sonne</text>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1490.29,-407.757)">
+                        <text x="2478.1px" y="1999.58px" style="font-family:'OpenSansCondensed-Bold', 'Open Sans Condensed', sans-serif;font-weight:700;font-stretch:condensed;font-size:40.823px;">Erde</text>
+                    </g>
+                </g>
+                <g id="DAYs" transform="matrix(1,0,0,1,-72.069,128.358)">
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,6323.06,-1617.48)">
+                        <text x="2448.47px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">263d*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,5123.35,-1449.27)">
+                        <text x="2388.77px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">165d*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,4046.21,-1446.63)">
+                        <text x="2494.26px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">7<tspan x="2521.65px 2548.23px " y="1999.58px 1999.58px ">7d</tspan>*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,3586.82,-1315.7)">
+                        <text x="2460.68px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">38d*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,3165.98,-1221.19)">
+                        <text x="2480.25px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">5d*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,3140.53,-1009.06)">
+                        <text x="2467.96px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">3d*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,3177.73,-891.47)">
+                        <text x="2449.46px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">6d*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,3215.82,-805.826)">
+                        <text x="2463.6px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">9d*</text>
+                    </g>
+                    <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,3099.31,-1090.72)">
+                        <text x="2444.81px" y="1999.58px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:40.823px;">0d*</text>
+                    </g>
+                </g>
+                <g id="Lines" transform="matrix(1,0,0,1,-72.069,128.358)">
+                    <path d="M1056.01,900.437L4242.19,900.437" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <path d="M1056.01,1000.14L3054.95,1000.14" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <path d="M1056.01,1099.84L1988.85,1099.84" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <path d="M1056.01,1199.54L1516.37,1199.54" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <path d="M1056.01,1299.25L1116.59,1299.24" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <path d="M1056.01,1498.65L1092.36,1498.64" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <path d="M1056.01,1598.35L1128.7,1598.35" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <path d="M1056.01,1698.05L1165.04,1698.05" style="fill:none;stroke:black;stroke-width:4.54px;stroke-linecap:butt;"/>
+                    <g id="base_curve" transform="matrix(1,0,0,1.07983,0,-103.717)">
+                        <path d="M1056.01,900.437L1056.01,1698.05" style="fill:none;stroke:black;stroke-width:0.87px;stroke-linecap:butt;"/>
+                    </g>
+                </g>
+            </g>
+            <g id="Headline_basics">
+                <g id="HEADLINE" transform="matrix(1.44643e-16,-2.3622,2.3622,1.44643e-16,-24.7771,3967.25)">
+                    <text x="1446.49px" y="131.188px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:17.639px;">SONNENS<tspan x="1543.98px 1555.48px 1567.37px 1577.44px 1589.67px 1609.67px " y="131.188px 131.188px 131.188px 131.188px 131.188px 131.188px ">YSTE-</tspan>DIS<tspan x="1646.83px 1655.69px 1669.52px " y="131.188px 131.188px 131.188px ">TAN</tspan>ZEN</text>
+                </g>
+                <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,-443.854,3893.13)">
+                    <text x="727.509px" y="722.504px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:29.167px;">Parker Solar Probe</text>
+                    <text x="727.509px" y="751.671px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:29.167px;">max. ~690&apos;000 km/h = 0,064 % c</text>
+                </g>
+                <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,-443.854,3530.79)">
+                    <text x="727.509px" y="722.504px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:29.167px;">*Anzahl an Tagen, die die Parker Solar Probe, bei angegebener</text>
+                    <text x="727.509px" y="751.671px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:29.167px;">Geschwindigkeit, von der Erde benötigen würde.</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

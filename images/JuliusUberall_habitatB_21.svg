@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2481 3508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="solar_system" transform="matrix(1,0,0,1,4.80161,0)">
+        <g id="simpel_planets" transform="matrix(3.91972e-17,-0.640139,0.640139,3.91972e-17,475.687,5414.81)">
+            <g id="sun" transform="matrix(32.754,0,0,32.754,-23661.4,-28072)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:rgb(230,230,230);stroke-width:0.05px;"/>
+            </g>
+            <g transform="matrix(0.138497,0,0,0.138497,3964.83,761.609)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:11.28px;"/>
+            </g>
+            <g transform="matrix(0.345536,0,0,0.345536,4356.77,578.577)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:4.52px;"/>
+            </g>
+            <g transform="matrix(0.363933,0,0,0.363933,4904.95,562.313)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:4.29px;"/>
+            </g>
+            <g transform="matrix(3.98593,0,0,3.98593,3032.05,-2639.71)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:0.39px;"/>
+            </g>
+            <g transform="matrix(3.31896,0,0,3.31896,4147.84,-2050.07)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:0.47px;"/>
+            </g>
+            <g transform="matrix(1.44615,0,0,1.44615,6262.3,-394.419)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:1.08px;"/>
+            </g>
+            <g transform="matrix(1.40237,0,0,1.40237,6861.97,-355.714)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:1.11px;"/>
+            </g>
+            <g transform="matrix(0.190893,0,0,0.190893,5611.67,715.289)">
+                <circle cx="828.194" cy="884.047" r="162.569" style="fill:white;stroke:black;stroke-width:8.18px;"/>
+            </g>
+        </g>
+        <g id="connection_lines" transform="matrix(1.0716,0,0,1,-75.5704,0)">
+            <g transform="matrix(0.961989,0,0,1,27.2507,0)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:0.82px;stroke-dasharray:12.31,12.31,0,0;"/>
+            </g>
+            <g transform="matrix(0.961989,0,0,1,27.2507,360.662)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:0.82px;stroke-dasharray:12.31,12.31,0,0;"/>
+            </g>
+            <g transform="matrix(0.987719,0,0,1,-22.5671,721.323)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:0.81px;stroke-dasharray:12.14,12.14,0,0;"/>
+            </g>
+            <g transform="matrix(1.04383,0,0,1,-131.207,1114.57)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:0.79px;stroke-dasharray:11.78,11.78,0,0;"/>
+            </g>
+            <g transform="matrix(0.979021,0,0,1,-5.72587,-360.662)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:0.81px;stroke-dasharray:12.2,12.2,0,0;"/>
+            </g>
+            <g transform="matrix(0.498323,0,0,1,925.002,-721.323)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:1.04px;stroke-dasharray:15.59,15.59,0,0;"/>
+            </g>
+            <g transform="matrix(0.583647,0,0,1,759.797,-1081.98)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:1px;stroke-dasharray:14.99,14.99,0,0;"/>
+            </g>
+            <g transform="matrix(0.803515,0,0,1,334.089,-1442.65)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:0.89px;stroke-dasharray:13.4,13.4,0,0;"/>
+            </g>
+            <g transform="matrix(0.807618,0,0,1,326.143,-1803.31)">
+                <path d="M1936.2,2082.01L1136.88,2082.01" style="fill:none;stroke:black;stroke-width:0.89px;stroke-dasharray:13.37,13.37,0,0;"/>
+            </g>
+        </g>
+        <g id="texts" transform="matrix(5.54802e-17,-0.906061,0.764174,4.67922e-17,1042.32,6047.1)">
+            <g transform="matrix(1.8858e-16,3.09119,-2.60711,1.58922e-16,4956.32,58.3906)">
+                <text x="387.762px" y="624.595px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:15.875px;">Sonne</text>
+                <text x="387.762px" y="643.997px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">Monde: -</text>
+                <text x="387.762px" y="663.4px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">Durchmesser: 109,30ed*</text>
+                <text x="387.762px" y="682.803px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">Schwerkraft: 28,02g</text>
+                <text x="387.762px" y="702.206px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">Temperatur (Oberﬂäche):</text>
+                <text x="387.762px" y="718.081px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">5504,85°C</text>
+                <text x="387.762px" y="737.483px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">Rotationsperiode: ~25d</text>
+                <text x="387.762px" y="756.886px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">Tagdauer: -</text>
+                <text x="387.762px" y="776.289px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">Oberﬂäche: 12&apos;000 x Erde km</text>
+                <text x="538.365px" y="776.289px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:15.875px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,5354.37,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">erk<tspan x="428.106px 438.012px " y="623.259px 623.259px ">ur</tspan></text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: -</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 0,38ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 0,377g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: -173°C bis 427°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode: 88d</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 58d 15h 30m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 74,8 Millionen km</text>
+                <text x="525.897px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,5752.42,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">V<tspan x="397.993px 407.193px " y="623.259px 623.259px ">en</tspan>us</text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: -</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 0,95ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 0,904g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: 437°C bis 497°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode*: 225d</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 116d 18h 0m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 460,2 Millionen km</text>
+                <text x="531.54px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,6150.48,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">Erde</text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: •</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 1,0ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 1,0g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: -93°C bis 58°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode*: 365d</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 24h 0m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 510,1 Millionen km</text>
+                <text x="531.54px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,6548.53,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">ars</text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: /</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 0,53ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 0,379g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: -153°C bis 20°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode*: 687d</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 24h 37m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 144,8 Millionen km</text>
+                <text x="531.54px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,6946.59,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">Jupiter</text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: ••••</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 10,97ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 2,528g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: -108°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode*: 12a</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 9h 56m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 61,42 Billionen km</text>
+                <text x="528.177px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,7344.64,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">S<tspan x="397.485px 406.967px " y="623.259px 623.259px ">at</tspan>urn</text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: •••••</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 9,14ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 1,065g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: -139°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode*: 29a</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 10h 42m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 42,7 Billionen km</text>
+                <text x="522.534px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,7742.7,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">Uranus</text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: ••••</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 3,98ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 0,886g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: -197°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode*: 84a</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 17h 14m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 8,083 Billionen km</text>
+                <text x="528.177px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+            <g transform="matrix(1.89281e-16,3.09119,-2.60711,1.5964e-16,8140.75,58.3906)">
+                <text x="387.762px" y="623.259px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:14.111px;">Neptun</text>
+                <text x="387.762px" y="640.898px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Monde: •</text>
+                <text x="387.762px" y="658.537px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Durchmesser: 3,86ed*</text>
+                <text x="387.762px" y="676.176px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Schwerkraft: 1,137g</text>
+                <text x="387.762px" y="693.815px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Temperatur: -201°C</text>
+                <text x="387.762px" y="711.454px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Orbitale-Periode*: 165a</text>
+                <text x="387.762px" y="729.093px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Tagdauer: 16h 6m</text>
+                <text x="387.762px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">Oberﬂäche: 7,618 Billionen km</text>
+                <text x="528.177px" y="746.732px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:14.111px;">²</text>
+            </g>
+        </g>
+        <g id="HEADLINE" transform="matrix(1.44643e-16,-2.3622,2.3622,1.44643e-16,-167.959,3881.52)">
+            <text x="1446.49px" y="131.188px" style="font-family:'NasalizationRg-Regular', 'Nasalization', sans-serif;font-size:17.639px;">SOLAR S<tspan x="1527.35px 1538.85px 1550.74px 1560.81px " y="131.188px 131.188px 131.188px 131.188px ">YSTE</tspan></text>
+        </g>
+        <g transform="matrix(1.44643e-16,-2.3622,2.3622,1.44643e-16,-1328.92,4305.74)">
+            <text x="387.762px" y="621.958px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:12.347px;">* ed &quot;earth&apos;s diamter&quot; | 1ed = 12&apos;742km</text>
+            <text x="387.762px" y="634.305px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:12.347px;">**Monde &gt;1000km ø | &gt;3&apos;141&apos;593km</text>
+            <text x="538.262px" y="634.305px" style="font-family:'OpenSansCondensed-Light', 'Open Sans Condensed', sans-serif;font-weight:300;font-stretch:condensed;font-size:12.347px;">²</text>
+        </g>
+    </g>
+</svg>
