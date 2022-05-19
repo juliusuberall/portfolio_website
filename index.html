@@ -9,9 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body style="background-color:#000000;">
+    <!---Reference-JS-file--->
+    <script src="js/script.js"></script>
     <!---Headline--->
     <div class="head_desktop">
+        <!---TITLE--->
         <h1 class="head_line">JULIUS ÜBERALL</h1>
+        <!---SOCIAL_MEDIA--->
         <a href="https://www.linkedin.com/in/julius-überall-a841b719a/" target="_blank">    
             <ion-icon class="icon_scale" name="logo-linkedin"></ion-icon>
         </a>
@@ -24,19 +28,30 @@
         <a href="https://foundation.app/@j_n_b_u" target="_blank">    
             <ion-icon class="icons icon_scale" name="shapes-outline"></ion-icon>
         </a>
+        <!---categories--->
         <div>
-            <p id="categories_about_line">Coding - Architecture - Design - CAM - AR_VR - Art</p>
+            <!---CATEGORIES--->
+            <div class="categories">
+                <p class="category_1_button" onclick="Category1Switch()">Coding</p> 
+                <p class="category_2_button" onclick="Category2Switch()">Architecture</p>
+                <p class="category_3_button" onclick="Category3Switch()">Art</p>
+            </div>
+            <!---ABOUT--->
             <a href="about.html"><div id="about_me">ABOUT ME.</div></a>
         </div>
     </div>
     <div class="head_mobile">
         <!---NAME--->
         <div class="head_line">JULIUS ÜBERALL</div>
-        <!---CATEGORIES--->
-        <div id="categories">Coding - Architecture - Design - CAM - AR_VR - Art</div>
+        <!---categories--->
+        <div class="categories">
+            <div class="category_1_button" onclick="Category1Switch()">Coding</div>
+            <div class="category_2_button" onclick="Category2Switch()">Architecture</div>
+            <div class="category_3_button" onclick="Category3Switch()">Art</div>
+        </div>
+        <!---SOCIAL-MEDIA--->
         <div id="soc_about_line">
             <div id="rectangle"></div>
-            <!---SOCIAL-MEDIA--->
             <div id="social_icons">
             <a href="https://www.linkedin.com/in/julius-überall-a841b719a/" target="_blank">    
                 <ion-icon class="icon_scale" name="logo-linkedin"></ion-icon>
@@ -58,202 +73,181 @@
     <!---PROJECT-GRID--->
     <div>
          <!---PROJECT--->
-        <a href="habitatb.html"><div class="grid_cell">
+        <a href="habitatb.html"><div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_HabitatB.jpg">
             <div class="cell_hover">
                 <div class="cell_title">Habitat B</div>
-                <div class="cell_description">
-                    Extraterrestrial concept architecture on the moon.     
-                </div>
             </div>    
         </div></a>
-        <div class="grid_cell">
+        <div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_3Dscan_LIDAR.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Digital Twins</div>
-                <div class="cell_description">
-                    3D scanning spaces using LIDAR.      
-                </div>
             </div>    
         </div>
-        <a href="adventitia.html"><div class="grid_cell">
+        <a href="adventitia.html"><div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_Bartlett_Workshop.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Adventitia</div>
-                <div class="cell_description">
-                     B-Pro workshop one '21     
-                </div>
             </div>    
         </div></a>
-        <a href="curvedcrease.html"><div class="grid_cell">
+        <a href="curvedcrease.html"><div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_curvedcrease.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Curved Crease</div>
             </div>    
         </div></a>
-        <div class="grid_cell">
+        <div class="grid_cell category_1">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_curvegrowth.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Curve Growth</div>
             </div>    
         </div>
-        <a href="eartifacts.html"><div class="grid_cell">
+        <a href="eartifacts.html"><div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_extraterrestrialArtifact.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Extraterrestrial Artifacts</div>
             </div>    
         </div></a>
-        <a href="yu.html"><div class="grid_cell">
+        <a href="yu.html"><div class="grid_cell category_1">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_YU.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">YŪ</div>
-                <div class="cell_description">
-                    Start-Up for algorithm designed jewellery.     
-                </div>
             </div>    
         </div></a>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_HairSystem.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Fluffy Grass</div>
-                <div class="cell_description">
-                    Exploration of particle hair systems.     
-                </div>
             </div>    
         </div>
-        <a href="firefly.html"><div class="grid_cell">
+        <a href="firefly.html"><div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_intraMuros_2018.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Firefly</div>
-                <div class="cell_description">
-                    HSD intra muros '17     
-                </div>
             </div>    
         </div></a>
-        <div class="grid_cell">
+        <div class="grid_cell category_1">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_meshgrowth.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Mesh Growth</div>
-                <div class="cell_description">
-                    Simulating shell geometries utilizing differential mesh growth.     
-                </div>
             </div>    
         </div>
-        <a href="milkconcrete.html"><div class="grid_cell">
+        <a href="milkconcrete.html"><div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_milkconcrete.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Milk Concrete</div>
             </div>    
         </div></a>
-        <div class="grid_cell">
+        <div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_Monastery.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Monastery</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_1">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_morphogeneticprogramming.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Parametric Roof</div>
             </div>    
         </div>
-        <a href="slatdance.html"><div class="grid_cell">
+        <a href="slatdance.html"><div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_slatdance.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Slatdance</div>
             </div>    
         </div></a>
-        <a href="dwellingConfiguratorApp.html"><div class="grid_cell">
+        <a href="dwellingConfiguratorApp.html"><div class="grid_cell category_1">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_dwellingConfigurator.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Dwelling Configurator App</div>
             </div>    
         </div></a>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_linearWoods.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Linear Woods</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_1">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_ued.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">U.E.D.</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_paperThree.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Paper #3</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_boxedPerson.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Boxed Person</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_paperTwo.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Paper #2</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_woodBoxCity.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Wood Box City</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_religion.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Religion</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_ton.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Ton</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_bonnerstrasse211.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">B211</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_hexagon.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Hexagon</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_VirginiaTech_robotics.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">VT Robotics</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_2">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_evolo.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Evolo Competition</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_atomStool.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Atom</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_clayNewspaper.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Clay Newspaper</div>
             </div>    
         </div>
-        <div class="grid_cell">
+        <div class="grid_cell category_3">
             <img class="grid_image" src="images/Julius_Uberall_project_thumbnails_paperOne.jpg"/>
             <div class="cell_hover">
                 <div class="cell_title">Paper #1</div>
