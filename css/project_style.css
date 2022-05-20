@@ -121,10 +121,10 @@
   color: black;
 }
 /*------------------------STYLE_CLASSES--------------------------*/
-#yu_explain_video{
+.desktop_video{
   pointer-events: none;
 }
-#yu_explain_static{
+#mobile_video_static{
   display: none;
 }
 .fixed{
@@ -161,10 +161,10 @@
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media all and (orientation:portrait){
-  #yu_explain_video{
+  .desktop_video{
     display: none;
   }
-  #yu_explain_static{
+  #mobile_video_static{
     display: unset;
   }
   .home_button_black, .home_button_white{
