@@ -40,7 +40,7 @@ ion-icon{
 }
 #portrait{
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .contact_details{
   padding: 27px 0 0 0;
@@ -80,6 +80,13 @@ ion-icon{
   float: left;
   padding: 0 0 0 30px;
 }
+.credits{
+  font-family: 'Poppins Regular';
+  color: #ffffff;
+  font-size: 12.8px;
+  text-align: left;
+  padding-bottom: 20px;
+}
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*//*MOBILE*/
 @media all and (orientation:portrait){
@@ -116,5 +123,8 @@ ion-icon{
   .text_column{
     padding: 0 0 19px 0;
     width: 100%;
+  }
+  .credits{
+    font-size: 20px;
   }
 }                               
