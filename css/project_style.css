@@ -10,6 +10,10 @@
   src:url(../fonts/Poppins-Thin.ttf);
 }
 @font-face{/*Main Font import*/
+  font-family:Poppins ExtraLight;
+  src:url(../fonts/Poppins-ExtraLight.ttf);
+}
+@font-face{/*Main Font import*/
   font-family:Poppins Light;
   src:url(../fonts/Poppins-Light.ttf);
 }
@@ -66,7 +70,7 @@
 }
 .project_description{
   padding-top: 12px;
-  font-family: Poppins Thin;
+  font-family: Poppins ExtraLight;
   font-size: 16px;
   color: white;
 }
@@ -103,7 +107,7 @@
 }
 .project_description_bright{
   padding-top: 12px;
-  font-family: Poppins Thin;
+  font-family: Poppins ExtraLight;
   font-size: 16px;
   color: black;
 }
@@ -176,6 +180,7 @@
     font-size: 76.29px;
   }
   .project_description, .project_description_bright{
+    font-family: Poppins ExtraLight;
     font-size: 31.25px;
   }
   .project_details, .project_details_bright{

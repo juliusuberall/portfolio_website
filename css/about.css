@@ -9,12 +9,20 @@
   src:url(../fonts/Poppins-Thin.ttf);
 }
 @font-face{/*Main Font import*/
+  font-family:Poppins ExtraLight;
+  src:url(../fonts/Poppins-ExtraLight.ttf);
+}
+@font-face{/*Main Font import*/
   font-family:Poppins Light;
   src:url(../fonts/Poppins-Light.ttf);
 }
 @font-face{/*Main Font import*/
   font-family:Poppins Regular;
   src:url(../fonts/Poppins-Regular.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Bold;
+  src:url(../fonts/Poppins-Bold.ttf);
 }
 /*------------------------STYLE_CLASSES--------------------------*/
 ion-icon{
@@ -34,7 +42,7 @@ ion-icon{
   padding: 0 0 8px 0;
 }
 #aboutme_text{
-  font-family: Poppins Thin;
+  font-family: Poppins ExtraLight;
   font-size: 16px;
   color: white;
 }
@@ -43,7 +51,7 @@ ion-icon{
   padding-bottom: 15px;
 }
 .contact_details{
-  padding: 27px 0 0 0;
+  padding: 27px 0 25px 0;
   float: left;
 }
 .contact_line{
@@ -97,6 +105,7 @@ ion-icon{
     margin: 0;
   }
   #aboutme_text{
+    font-family: Poppins ExtraLight;
     font-size: 31.25px;
   }
   .contact_icon{
@@ -109,6 +118,9 @@ ion-icon{
   }
   .contact_line{
     padding: 40px 0 40px 0;
+  }
+  .contact_details{
+    padding: 27px 0 0 0;
   }
   .main_area{
     padding: 21px 30px 19px 30px;
