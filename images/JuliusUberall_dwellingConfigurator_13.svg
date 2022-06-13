@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3840 2160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g transform="matrix(2.25707,0,0,1.51757,0,0)">
+        <rect x="0" y="0" width="1701.32" height="1423.33" style="fill:white;"/>
+    </g>
+    <g>
+        <text x="240px" y="288px" style="font-family:'RobotoCondensed-Bold', 'Roboto Condensed';font-weight:700;font-size:50px;">APP</text>
+        <text x="240px" y="360px" style="font-family:'RobotoCondensed-Light', 'Roboto Condensed';font-weight:300;font-size:50px;">Game.cs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-1.7053e-13,180)">
+        <text x="240px" y="276px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">Unity 2020.3.26f1</text>
+        <text x="240px" y="324px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">ARFoundation 4.1.9</text>
+        <text x="240px" y="372px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">ARKit 4.1.9</text>
+        <text x="240px" y="420px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">Xcode 13.2.1</text>
+    </g>
+    <g transform="matrix(0,0.625,2,0,384,300)">
+        <path d="M-96,-96L96,-96" style="fill:none;fill-rule:nonzero;stroke:rgb(255,0,255);stroke-width:3.37px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,144,999.527)">
+        <text x="240px" y="272.473px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;fill:rgb(255,0,255);">ScreenMode.cs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,144,1239.53)">
+        <text x="240px" y="272.473px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;fill:rgb(255,0,255);">ArGrid.cs</text>
+    </g>
+    <g id="png" transform="matrix(0.375972,0,0,0.375972,-324.375,231.631)">
+        <g>
+            <g transform="matrix(1.00355,0,0,1.09422,1.67073,-176.231)">
+                <path d="M1564.94,2147.73L1564.94,2205.91C1564.94,2215.47 1573.4,2223.23 1583.83,2223.23L1775.52,2223.23C1785.94,2223.23 1794.4,2215.47 1794.4,2205.91L1794.4,2014.08L1704.44,1931.54L1583.83,1931.54C1573.4,1931.54 1564.94,1939.31 1564.94,1948.87L1564.94,2037.02" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.15px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <g transform="matrix(1.01826,0,0,1.01141,-31.0437,-24.7953)">
+                <path d="M1699.92,2066.41C1699.92,2059.61 1694.43,2054.09 1687.68,2054.09L1516.92,2054.09C1510.17,2054.09 1504.68,2059.61 1504.68,2066.41L1504.68,2161.54C1504.68,2168.34 1510.17,2173.86 1516.92,2173.86L1687.68,2173.86C1694.43,2173.86 1699.92,2168.34 1699.92,2161.54L1699.92,2066.41Z" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.5px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <path d="M1802.45,2027.62L1712.09,2026.67L1712.17,1937.31" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.65px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.886079,0,0,0.886079,1521.53,2139.21)">
+            <text x="22.677px" y="0px" style="font-family:'Poppins-Regular', 'Poppins';font-size:81.719px;fill:rgb(255,0,255);">C#</text>
+        </g>
+    </g>
+    <g id="png1" serif:id="png" transform="matrix(0.375972,0,0,0.375972,-324.375,-8.36932)">
+        <g>
+            <g transform="matrix(1.00355,0,0,1.09422,1.67073,-176.231)">
+                <path d="M1564.94,2147.73L1564.94,2205.91C1564.94,2215.47 1573.4,2223.23 1583.83,2223.23L1775.52,2223.23C1785.94,2223.23 1794.4,2215.47 1794.4,2205.91L1794.4,2014.08L1704.44,1931.54L1583.83,1931.54C1573.4,1931.54 1564.94,1939.31 1564.94,1948.87L1564.94,2037.02" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.15px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <g transform="matrix(1.01826,0,0,1.01141,-31.0437,-24.7953)">
+                <path d="M1699.92,2066.41C1699.92,2059.61 1694.43,2054.09 1687.68,2054.09L1516.92,2054.09C1510.17,2054.09 1504.68,2059.61 1504.68,2066.41L1504.68,2161.54C1504.68,2168.34 1510.17,2173.86 1516.92,2173.86L1687.68,2173.86C1694.43,2173.86 1699.92,2168.34 1699.92,2161.54L1699.92,2066.41Z" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.5px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <path d="M1802.45,2027.62L1712.09,2026.67L1712.17,1937.31" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.65px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.886079,0,0,0.886079,1521.53,2139.21)">
+            <text x="22.677px" y="0px" style="font-family:'Poppins-Regular', 'Poppins';font-size:81.719px;fill:rgb(255,0,255);">C#</text>
+        </g>
+    </g>
+    <g id="png2" serif:id="png" transform="matrix(0.375972,0,0,0.375972,-324.375,471.631)">
+        <g>
+            <g transform="matrix(1.00355,0,0,1.09422,1.67073,-176.231)">
+                <path d="M1564.94,2147.73L1564.94,2205.91C1564.94,2215.47 1573.4,2223.23 1583.83,2223.23L1775.52,2223.23C1785.94,2223.23 1794.4,2215.47 1794.4,2205.91L1794.4,2014.08L1704.44,1931.54L1583.83,1931.54C1573.4,1931.54 1564.94,1939.31 1564.94,1948.87L1564.94,2037.02" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.15px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <g transform="matrix(1.01826,0,0,1.01141,-31.0437,-24.7953)">
+                <path d="M1699.92,2066.41C1699.92,2059.61 1694.43,2054.09 1687.68,2054.09L1516.92,2054.09C1510.17,2054.09 1504.68,2059.61 1504.68,2066.41L1504.68,2161.54C1504.68,2168.34 1510.17,2173.86 1516.92,2173.86L1687.68,2173.86C1694.43,2173.86 1699.92,2168.34 1699.92,2161.54L1699.92,2066.41Z" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.5px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <path d="M1802.45,2027.62L1712.09,2026.67L1712.17,1937.31" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.65px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.886079,0,0,0.886079,1521.53,2139.21)">
+            <text x="22.677px" y="0px" style="font-family:'Poppins-Regular', 'Poppins';font-size:81.719px;fill:rgb(255,0,255);">C#</text>
+        </g>
+    </g>
+    <g id="png3" serif:id="png" transform="matrix(0.375972,0,0,0.375972,-324.375,711.631)">
+        <g>
+            <g transform="matrix(1.00355,0,0,1.09422,1.67073,-176.231)">
+                <path d="M1564.94,2147.73L1564.94,2205.91C1564.94,2215.47 1573.4,2223.23 1583.83,2223.23L1775.52,2223.23C1785.94,2223.23 1794.4,2215.47 1794.4,2205.91L1794.4,2014.08L1704.44,1931.54L1583.83,1931.54C1573.4,1931.54 1564.94,1939.31 1564.94,1948.87L1564.94,2037.02" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.15px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <g transform="matrix(1.01826,0,0,1.01141,-31.0437,-24.7953)">
+                <path d="M1699.92,2066.41C1699.92,2059.61 1694.43,2054.09 1687.68,2054.09L1516.92,2054.09C1510.17,2054.09 1504.68,2059.61 1504.68,2066.41L1504.68,2161.54C1504.68,2168.34 1510.17,2173.86 1516.92,2173.86L1687.68,2173.86C1694.43,2173.86 1699.92,2168.34 1699.92,2161.54L1699.92,2066.41Z" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.5px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <path d="M1802.45,2027.62L1712.09,2026.67L1712.17,1937.31" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.65px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.886079,0,0,0.886079,1521.53,2139.21)">
+            <text x="22.677px" y="0px" style="font-family:'Poppins-Regular', 'Poppins';font-size:81.719px;fill:rgb(255,0,255);">C#</text>
+        </g>
+    </g>
+    <g id="png4" serif:id="png" transform="matrix(0.375972,0,0,0.375972,-324.375,951.631)">
+        <g>
+            <g transform="matrix(1.00355,0,0,1.09422,1.67073,-176.231)">
+                <path d="M1564.94,2147.73L1564.94,2205.91C1564.94,2215.47 1573.4,2223.23 1583.83,2223.23L1775.52,2223.23C1785.94,2223.23 1794.4,2215.47 1794.4,2205.91L1794.4,2014.08L1704.44,1931.54L1583.83,1931.54C1573.4,1931.54 1564.94,1939.31 1564.94,1948.87L1564.94,2037.02" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.15px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <g transform="matrix(1.01826,0,0,1.01141,-31.0437,-24.7953)">
+                <path d="M1699.92,2066.41C1699.92,2059.61 1694.43,2054.09 1687.68,2054.09L1516.92,2054.09C1510.17,2054.09 1504.68,2059.61 1504.68,2066.41L1504.68,2161.54C1504.68,2168.34 1510.17,2173.86 1516.92,2173.86L1687.68,2173.86C1694.43,2173.86 1699.92,2168.34 1699.92,2161.54L1699.92,2066.41Z" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.5px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <path d="M1802.45,2027.62L1712.09,2026.67L1712.17,1937.31" style="fill:white;stroke:rgb(255,0,255);stroke-width:10.65px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.886079,0,0,0.886079,1521.53,2139.21)">
+            <text x="22.677px" y="0px" style="font-family:'Poppins-Regular', 'Poppins';font-size:81.719px;fill:rgb(255,0,255);">C#</text>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,144,1479.53)">
+        <text x="240px" y="272.473px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;fill:rgb(255,0,255);">LightEstimation.cs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,144,759.527)">
+        <text x="240px" y="272.473px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;fill:rgb(255,0,255);">UserSeed.cs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,144,519.527)">
+        <text x="240px" y="272.473px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;fill:rgb(255,0,255);">UserCursor.cs</text>
+    </g>
+    <g id="png5" serif:id="png" transform="matrix(0.150389,0,0,0.150389,278.25,20.6523)">
+        <g>
+            <g transform="matrix(1.00355,0,0,1.09422,1.67073,-176.231)">
+                <path d="M1564.94,2147.73L1564.94,2205.91C1564.94,2215.47 1573.4,2223.23 1583.83,2223.23L1775.52,2223.23C1785.94,2223.23 1794.4,2215.47 1794.4,2205.91L1794.4,2014.08L1704.44,1931.54L1583.83,1931.54C1573.4,1931.54 1564.94,1939.31 1564.94,1948.87L1564.94,2037.02" style="fill:white;stroke:black;stroke-width:10.15px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <g transform="matrix(1.01826,0,0,1.01141,-31.0437,-24.7953)">
+                <path d="M1699.92,2066.41C1699.92,2059.61 1694.43,2054.09 1687.68,2054.09L1516.92,2054.09C1510.17,2054.09 1504.68,2059.61 1504.68,2066.41L1504.68,2161.54C1504.68,2168.34 1510.17,2173.86 1516.92,2173.86L1687.68,2173.86C1694.43,2173.86 1699.92,2168.34 1699.92,2161.54L1699.92,2066.41Z" style="fill:white;stroke:black;stroke-width:10.5px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+            </g>
+            <path d="M1802.45,2027.62L1712.09,2026.67L1712.17,1937.31" style="fill:white;stroke:black;stroke-width:10.65px;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+        </g>
+        <g transform="matrix(0.886079,0,0,0.886079,1521.53,2139.21)">
+            <text x="22.677px" y="0px" style="font-family:'Poppins-Regular', 'Poppins';font-size:81.719px;">C#</text>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,27.414,-480)">
+        <text x="888px" y="744px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">public</text>
+        <text x="995.52px" y="744px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;">class</text>
+        <text x="1087.68px" y="744px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;fill:rgb(255,0,255);">Game</text>
+        <text x="1164.48px" y="744px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">: MonoBehaviour{</text>
+        <text x="903.36px" y="792px" style="font-family:'SourceCodePro-Black', 'Source Code Pro', monospace;font-weight:900;font-size:25.6px;">//APP OPENED --------------------------------------------------------------------------</text>
+        <text x="906px" y="840px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">void</text>
+        <text x="982.8px" y="840px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(255,0,255);">Start</text>
+        <text x="1059.6px" y="840px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(){</text>
+        <text x="960px" y="888px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Find</text>
+        <text x="1067.52px" y="888px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1251.84px" y="888px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">object in scene (Plane detection for game init)</text>
+        <text x="960px" y="936px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Find</text>
+        <text x="1067.52px" y="936px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">Camera_Background</text>
+        <text x="1344px" y="936px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">object in scene (3D scanning)</text>
+        <text x="964.8px" y="984px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Instantiate</text>
+        <text x="1179.84px" y="984px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">ScreenMode</text>
+        <text x="1348.8px" y="984px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">object and switch to isolated “main” mode</text>
+        <text x="964.8px" y="1032px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Activates modeling mode for user</text>
+        <text x="964.8px" y="1080px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Sets aggregation values to “standard”</text>
+        <text x="903.36px" y="1128px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="903.36px" y="1176px" style="font-family:'SourceCodePro-Black', 'Source Code Pro', monospace;font-weight:900;font-size:25.6px;">//WHILE PLAYING -----------------------------------------------------------------------</text>
+        <text x="906px" y="1224px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">void</text>
+        <text x="982.8px" y="1224px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(255,0,255);">Update</text>
+        <text x="1074.96px" y="1224px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(){</text>
+        <text x="924px" y="1272px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">if</text>
+        <text x="970.08px" y="1272px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="985.44px" y="1272px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Screen</text>
+        <text x="1123.68px" y="1272px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;">touched</text>
+        <text x="1231.2px" y="1272px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">){</text>
+        <text x="960px" y="1320px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">if</text>
+        <text x="1006.08px" y="1320px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1021.44px" y="1320px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Game session</text>
+        <text x="1251.84px" y="1320px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;">NOT</text>
+        <text x="1313.28px" y="1320px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">initialized</text>
+        <text x="1482.24px" y="1320px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">){</text>
+        <text x="996px" y="1368px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;"><tspan x="996px " y="1368px ">/</tspan>/Initialize game session</text>
+        <text x="1000.8px" y="1416px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Instantiate</text>
+        <text x="1215.84px" y="1416px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">AR_Grid</text>
+        <text x="1338.72px" y="1416px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">object for modeling</text>
+        <text x="995.52px" y="1464px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Instantiate</text>
+        <text x="1210.56px" y="1464px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Seed</text>
+        <text x="1364.16px" y="1464px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">object for modeling</text>
+        <text x="995.52px" y="1512px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Switch off</text>
+        <text x="1195.2px" y="1512px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">Camera_Background</text>
+        <text x="964.8px" y="1560px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="964.8px" y="1608px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">else</text>
+        <text x="1026.24px" y="1608px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">{</text>
+        <text x="996px" y="1656px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//BUILD MODE</text>
+        <text x="995.52px" y="1704px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">if</text>
+        <text x="1041.6px" y="1704px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1056.96px" y="1704px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Modeling mode active for</text>
+        <text x="1471.68px" y="1704px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1640.64px" y="1704px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">){</text>
+        <text x="1068px" y="1752px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">if</text>
+        <text x="1114.08px" y="1752px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1129.44px" y="1752px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//</text>
+        <text x="1160.16px" y="1752px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1344.48px" y="1752px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">model alive cell active</text>
+        <text x="1697.76px" y="1752px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">){</text>
+        <text x="1104px" y="1800px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Spawn alive cell at user</text>
+        <text x="1518.72px" y="1800px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1068px" y="1848px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="1072.32px" y="1896px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">else if</text>
+        <text x="1195.2px" y="1896px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1210.56px" y="1896px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//</text>
+        <text x="1241.28px" y="1896px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1425.6px" y="1896px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">model dead cell active</text>
+        <text x="1763.52px" y="1896px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">){</text>
+        <text x="1104px" y="1944px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Spawn dead cell at</text>
+        <text x="1426.56px" y="1944px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1068px" y="1992px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="996px" y="2040px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="996px" y="2088px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">//DELETE MODE</text>
+        <text x="995.52px" y="2136px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">else</text>
+        <text x="1072.32px" y="2136px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">if</text>
+        <text x="1118.4px" y="2136px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1133.76px" y="2136px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Modeled cell selected with</text>
+        <text x="1579.2px" y="2136px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1763.52px" y="2136px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">and delete mode active</text>
+        <text x="2101.44px" y="2136px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">){</text>
+        <text x="1068px" y="2184px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Delete selected cell</text>
+        <text x="995.52px" y="2232px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="964.8px" y="2280px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="934.08px" y="2328px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+    </g>
+    <g transform="matrix(1,0,0,1,1392,-480)">
+        <text x="934.08px" y="744px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">else if</text>
+        <text x="1056.96px" y="744px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1072.32px" y="744px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Game session initialized and screen</text>
+        <text x="1656px" y="744px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;">NOT</text>
+        <text x="1717.44px" y="744px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;">touched</text>
+        <text x="1824.96px" y="744px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">) {</text>
+        <text x="996px" y="792px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Format developer information - Bounding box array dimensions and</text>
+        <text x="2025.12px" y="792px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Seed</text>
+        <text x="2178.72px" y="792px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">plot</text>
+        <text x="996px" y="840px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;"><tspan x="996px " y="840px ">/</tspan>/Get</text>
+        <text x="1088.16px" y="840px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Seed</text>
+        <text x="1241.76px" y="840px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">array bounding box dimensions - Default 3x5x3</text>
+        <text x="996px" y="888px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Automatically update</text>
+        <text x="1349.28px" y="888px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">AR_Grid</text>
+        <text x="1472.16px" y="888px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">with bounding box if necessary</text>
+        <text x="995.52px" y="936px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">if</text>
+        <text x="1041.6px" y="936px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1056.96px" y="936px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//</text>
+        <text x="1087.68px" y="936px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1272px" y="936px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">modeling mode active</text>
+        <text x="1579.2px" y="936px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">) {</text>
+        <text x="1032px" y="984px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Preview possible next cell with</text>
+        <text x="1554.24px" y="984px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="995.52px" y="1032px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="995.52px" y="1080px" style="font-family:'SourceCodePro-Bold', 'Source Code Pro', monospace;font-weight:700;font-size:25.6px;fill:rgb(172,2,245);">else if</text>
+        <text x="1118.4px" y="1080px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">(</text>
+        <text x="1133.76px" y="1080px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">//Delete mode active and</text>
+        <text x="1517.76px" y="1080px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="1702.08px" y="1080px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">points at modeled cell</text>
+        <text x="2040px" y="1080px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">) {</text>
+        <text x="1032px" y="1128px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;"><tspan x="1032px " y="1128px ">/</tspan>/Highlight cell that could be deleted with current</text>
+        <text x="1830.72px" y="1128px" style="font-family:'SourceCodePro-BoldItalic', 'Source Code Pro', monospace;font-weight:700;font-style:italic;font-size:25.6px;fill:rgb(255,0,255);">User_Cursor</text>
+        <text x="2015.04px" y="1128px" style="font-family:'SourceCodePro-Italic', 'Source Code Pro', monospace;font-style:italic;font-size:25.6px;">position</text>
+        <text x="995.52px" y="1176px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+        <text x="960px" y="1224px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;"><tspan x="960px " y="1224px ">}</tspan></text>
+        <text x="924px" y="1272px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;"><tspan x="924px " y="1272px ">}</tspan></text>
+        <text x="888px" y="1320px" style="font-family:'SourceCodePro-Regular', 'Source Code Pro', monospace;font-size:25.6px;">}</text>
+    </g>
+    <g>
+        <path d="M579.386,336L720,336L720,786.703L614.733,786.703" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:10,10,0,0;"/>
+        <path d="M720,786.703L720,1025.6L576,1025.6" style="fill:none;stroke:black;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:10,10,0,0;"/>
+        <g transform="matrix(0.714286,0,0,1,205.714,238.893)">
+            <path d="M720,786.703L720,1025.6L552,1025.6" style="fill:none;stroke:black;stroke-width:1.15px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:11.51,11.51,0,0;"/>
+        </g>
+        <g transform="matrix(0.857143,0,0,1,102.857,477.786)">
+            <path d="M720,786.703L720,1025.6L524,1025.6" style="fill:none;stroke:black;stroke-width:1.07px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:10.74,10.74,0,0;"/>
+        </g>
+        <g transform="matrix(0.212242,0,0,1.0125,567.186,706.844)">
+            <path d="M720,786.703L720,1025.6L552,1025.6" style="fill:none;stroke:black;stroke-width:1.37px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:13.67,13.67,0,0;"/>
+        </g>
+    </g>
+</svg>
