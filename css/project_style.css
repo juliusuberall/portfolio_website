@@ -126,6 +126,7 @@
 }
 /*------------------------STYLE_CLASSES--------------------------*/
 .desktop_video{
+  margin-bottom: -3.6px;
   pointer-events: none;
 }
 #mobile_video_static{
