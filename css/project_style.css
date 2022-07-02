@@ -52,6 +52,11 @@
   width: 75%;
   border: 0.5px solid #444444;
 }
+.cell_content_third_width{
+  float: left;
+  width: 33.3333%;
+  border: 0.5px solid #444444;
+}
 .cell_content_half_width{
   float: left;
   width: 50%;
@@ -206,6 +211,9 @@
   .right_column_bright{
     width: 100%;
   }
+  .cell_content_third_width{
+    border: 1px solid #444444;
+  }
   .cell_content_half_width{
     border: 1px solid #444444;
   }
@@ -218,7 +226,7 @@
 }                               
 /*MOBILE*/
 @media(max-width:767px){
-  .cell_content_half_width, .cell_content_half_width_bright, .cell_content_third_width_bright{
+  .cell_content_half_width, .cell_content_half_width_bright, .cell_content_third_width_bright, .cell_content_third_width{
     width: 100%;
   }
 }   
