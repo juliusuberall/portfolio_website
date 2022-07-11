@@ -21,6 +21,10 @@
   src:url(../fonts/Poppins-Regular.ttf);
 }
 @font-face{/*Main Font import*/
+  font-family:Poppins SemiBold;
+  src:url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face{/*Main Font import*/
   font-family:Poppins Bold;
   src:url(../fonts/Poppins-Bold.ttf);
 }
@@ -94,6 +98,11 @@ ion-icon{
   font-size: 12.8px;
   text-align: left;
   padding-bottom: 20px;
+}
+.text_link{
+  font-family: 'Poppins SemiBold';
+  color: #ffffff;
+  text-decoration: none;
 }
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*//*MOBILE*/

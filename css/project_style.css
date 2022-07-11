@@ -139,7 +139,10 @@
   margin-bottom: -5px;
   pointer-events: none;
 }
-#mobile_video_static{
+#desktopShow{
+  display: unset;
+}
+#mobile_video_static, #mobileShow{
   display: none;
 }
 .fixed{
@@ -179,7 +182,10 @@
   .desktop_video{
     display: none;
   }
-  #mobile_video_static{
+  #desktopShow{
+    display: none;
+  }
+  #mobile_video_static, #mobileShow{
     display: unset;
   }
   .home_button_black, .home_button_white{
