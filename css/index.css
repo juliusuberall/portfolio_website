@@ -37,6 +37,23 @@ p{/*Main Text*/
   font-size: 12.8px;
   color: #ffffff;
 }
+/*------------------------PRE-LOADER--------------------------*/
+#preloader_black{
+  background: #000 url(../gifs/JuliusUberall_loading_white.gif) no-repeat center center;
+  background-size: 3%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+#preloader_white{
+  background: #fff url(../gifs/JuliusUberall_loading_black.gif) no-repeat center center;
+  background-size: 3%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 /*------------------------ION-ICON--------------------------*/
 ion-icon {
   color: #ffffff;
@@ -139,6 +156,13 @@ ion-icon {
 }                                            
 /*TABLET*/
 @media all and (orientation:portrait){
+  /*------------------------PRE-LOADER--------------------------*/
+  #preloader_black{
+    background-size: 10%;
+  }
+  #preloader_white{
+    background-size: 10%;
+  }
   /*-----------------HEAD------------------*/
   .head_desktop{
     display: none;
