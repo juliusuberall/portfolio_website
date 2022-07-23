@@ -28,6 +28,11 @@
   font-family:Poppins Bold;
   src:url(../fonts/Poppins-Bold.ttf);
 }
+/*UBERALL FONT IMPORT*/
+@font-face{
+  font-family:Uberall Regular;
+  src:url(../fonts/Uberall-Regular.otf);
+}
 /*------------------------STYLE_CLASSES--------------------------*/
 ion-icon{
   color: #ffffff;
@@ -39,10 +44,10 @@ ion-icon{
   padding: 29px 15% 19px 15%;
 }
 #hello{
-  font-family: Poppins Regular;
+  font-family: Uberall Regular;
   font-size: 48.83px;
   color: white;
-  margin: -19px 0 0 0;
+  margin: -15px 0 0 0;
   padding: 0 0 8px 0;
 }
 #aboutme_text{
@@ -100,7 +105,7 @@ ion-icon{
   padding-bottom: 20px;
 }
 .text_link{
-  font-family: 'Poppins SemiBold';
+  font-family: 'Uberall Regular';
   color: #ffffff;
   text-decoration: none;
 }

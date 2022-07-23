@@ -25,6 +25,11 @@
   font-family:Poppins Bold;
   src:url(../fonts/Poppins-Bold.ttf);
 }
+/*UBERALL FONT IMPORT*/
+@font-face{
+  font-family:Uberall Regular;
+  src:url(../fonts/Uberall-Regular.otf);
+}
 /*------------------------FONT-SIZING--------------------------*/
 h1{/*Headline*/
   font-family: 'Poppins Light';
@@ -172,7 +177,7 @@ ion-icon {
   }
   .head_line{
     width: 100%;
-    font-family: 'Poppins Light';
+    font-family: 'Uberall Regular';
     color: #ffffff;
     font-size: 48.83px;
     text-align: left;

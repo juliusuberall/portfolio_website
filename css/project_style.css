@@ -25,6 +25,11 @@
   font-family:Poppins Bold;
   src:url(../fonts/Poppins-Bold.ttf);
 }
+/*UBERALL FONT IMPORT*/
+@font-face{
+  font-family:Uberall Regular;
+  src:url(../fonts/Uberall-Regular.otf);
+}
 /*------------------------ION-ICON--------------------------*/
 .home_button_white {
   color: #ffffff;
@@ -68,7 +73,7 @@
   border: 0.5px solid #444444;
 }
 .project_headline{
-  font-family: Poppins Regular;
+  font-family: Uberall Regular;
   font-size: 20px;
   color: white;
   padding: 0 100px 0 0;
@@ -110,7 +115,7 @@
   border: 0.5px solid #444444;
 }
 .project_headline_bright{
-  font-family: Poppins Regular;
+  font-family: Uberall Regular;
   font-size: 20px;
   color: black;
   padding: 0 100px 0 0;
