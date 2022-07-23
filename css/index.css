@@ -74,7 +74,7 @@ ion-icon {
 .categories{
   display: inline-flex;
 }
-.category_1_button, .category_2_button, .category_3_button{
+.all_button, .category_1_button, .category_2_button, .category_3_button{
   display: inline-flex;
   font-family: 'Poppins Regular';
   font-size: 12.8px;
@@ -83,8 +83,10 @@ ion-icon {
   cursor: pointer;
   padding: 0 5px 0 5px;
 }
-.category_2_button, .category_3_button{
+.category_1_button, .category_2_button, .category_3_button{
   margin-left: 10px;
+  color: #ffffff;
+  background-color: #000000;
 }
 .category_1, .category_2, .category_3{
   display: unset;
@@ -186,7 +188,7 @@ ion-icon {
     text-align: left;
     padding: 0 0 15px 0;
   }
-  .category_1_button, .category_2_button, .category_3_button{
+  .category_1_button, .category_2_button, .category_3_button, .all_button{
     font-size: 39.06px;
   }
   .category_2_button, .category_3_button{
