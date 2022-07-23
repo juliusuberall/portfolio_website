@@ -32,7 +32,7 @@
 }
 /*------------------------FONT-SIZING--------------------------*/
 h1{/*Headline*/
-  font-family: 'Poppins Light';
+  font-family: 'Uberall Regular';
   color: #ffffff;
   font-size: 20px;
   text-align: left;
@@ -90,6 +90,9 @@ ion-icon {
   display: unset;
 }
 /*------------------------STYLE_CLASSES--------------------------*/
+.namesocialLine{
+  padding: 0 0 9px 0;
+}
 .head_line{
   display: inline-block;
 }
@@ -181,6 +184,7 @@ ion-icon {
     color: #ffffff;
     font-size: 48.83px;
     text-align: left;
+    padding: 0 0 15px 0;
   }
   .category_1_button, .category_2_button, .category_3_button{
     font-size: 39.06px;
