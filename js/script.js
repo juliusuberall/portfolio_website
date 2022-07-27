@@ -115,7 +115,7 @@ function Category2Switch() {
     }
 }
 //Category #3 switch ON/OFF
-//ART
+//DESIGN
 var c3status = 1;
 function Category3Switch() {
     var projectCells = document.getElementsByClassName("category_3");
