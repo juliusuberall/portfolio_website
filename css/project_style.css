@@ -236,7 +236,7 @@
   }
 }                               
 /*MOBILE*/
-@media(max-width:767px){
+@media(max-width:1300px){
   .cell_content_half_width, .cell_content_half_width_bright, .cell_content_third_width_bright, .cell_content_third_width{
     width: 100%;
   }
