@@ -78,8 +78,8 @@
   color: white;
   padding: 0 100px 0 0;
 }
-.project_description{
-  padding-top: 12px;
+.project_description, .project_description_bright{
+  padding: 12px 0 10px 0;
   font-family: Poppins ExtraLight;
   font-size: 16px;
   color: white;
@@ -121,9 +121,6 @@
   padding: 0 100px 0 0;
 }
 .project_description_bright{
-  padding-top: 12px;
-  font-family: Poppins ExtraLight;
-  font-size: 16px;
   color: black;
 }
 .project_details_bright{
@@ -204,12 +201,15 @@
   .project_description, .project_description_bright{
     font-family: Poppins ExtraLight;
     font-size: 31.25px;
+    padding-bottom: 25px;
   }
   .project_details, .project_details_bright{
     font-size: 31.25px;
+    padding-top: 30px;
   }
   .content_left_column{
     width: 100%;
+
     position: unset;
   }
   .empty_left_column{
