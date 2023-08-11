@@ -178,6 +178,12 @@
   left: 0;
   position: fixed;
 }
+/*------------------------3D-CONTENT--------------------------*/ 
+#meshGrowth3D{
+  width: 100%;
+  padding-bottom: 67.5%;
+}
+
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media all and (orientation:portrait){
@@ -189,6 +195,9 @@
   }
   #mobile_video_static, #mobileShow{
     display: unset;
+  }
+  #meshGrowth3D{
+    padding-bottom: 130%;
   }
   .home_button_black, .home_button_white{
     font-size: 64px;
