@@ -179,14 +179,32 @@
   position: fixed;
 }
 /*------------------------3D-CONTENT--------------------------*/ 
-#meshGrowth3D{
+.Base_3Dmodelviewer{
   width: 100%;
-  padding-bottom: 67.5%;
 }
+
+.meshGrowth3Dmodel{
+  padding-bottom: 56.25%;
+}
+
+.yuJewellery3Dmodel{
+  padding-bottom: 100%;
+}
+
 
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media all and (orientation:portrait){
+
+  /* === 3D CONTENT STYLES === */
+  .mobile3Dmodel{
+    padding-bottom: 110%;
+  }
+  .mobile_dont_show{
+    display: unset;
+  }
+
+  /* === ELSE === */
   .desktop_video{
     display: none;
   }
@@ -195,9 +213,6 @@
   }
   #mobile_video_static, #mobileShow{
     display: unset;
-  }
-  #meshGrowth3D{
-    padding-bottom: 130%;
   }
   .home_button_black, .home_button_white{
     font-size: 64px;
