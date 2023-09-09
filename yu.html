@@ -11,6 +11,9 @@
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
+    <!---Load-Three-JS-file-from-WEBserver--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
     <div class="page">
         <!---------HOME-BUTTON--------->
         <div class="fixed">
@@ -40,9 +43,17 @@
             <div class="cell_content_half_width_bright">
                 <img class="content" src="images/JuliusUberall_YU_shots_3.jpg">
             </div>
+            <!---------CONFIGURATOR--------->
+            <div id="yu_configurator_wrapper">
+                <div  id="yu_configurator">
+                    <script src="js/yuConfigurator.js"></script>
+                </div>
+            </div>
+
             <div class="cell_content_full_width_bright">
                 <img class="content" src="images/JuliusUberall_YU_2.jpg">
             </div>
+            <!---------MODEL-VIEWER--------->
             <div class="cell_content_half_width_bright">
                 <model-viewer class="Base_3Dmodelviewer yuJewellery3Dmodel mobile3Dmodel" src="3Dassets/JuliusUberall_YU_Ring_Uberall_Geometry_3D.glb" camera-controls auto-rotatet > </model-viewer>
             </div>
