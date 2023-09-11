@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>JU - YŪ</title>
+    <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
@@ -11,8 +12,6 @@
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
-    <!---Load-Three-JS-file-from-WEBserver--->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <div class="page">
         <!---------HOME-BUTTON--------->
@@ -46,7 +45,7 @@
             <!---------CONFIGURATOR--------->
             <div id="yu_configurator_wrapper">
                 <div  id="yu_configurator">
-                    <script src="js/yuConfigurator.js"></script>
+                    <script type="module" src="js/yuConfigurator.js"></script>
                 </div>
             </div>
 

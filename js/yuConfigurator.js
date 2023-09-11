@@ -1,4 +1,5 @@
-//import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 //Connect to div that stores the configurator
 const container = document.getElementById('yu_configurator');
@@ -22,20 +23,19 @@ const light = new THREE.DirectionalLight(0xFFFFFF, 1);
 light.position.set(-3, 5, 2);
 scene.add(light);
 
-// Traverse the scene to find all active meshes
-var activeMeshes = getActiveMeshesFromScene(scene);
-var center = calculateCenter(activeMeshes);
+// Active mesh variable
+var activeMeshes;
 
 // Create OrbitControls to enable camera rotation
 camera.position.z = 10;
-// const controls = new OrbitControls(camera, renderer.domElement);
-// controls.target = new THREE.Vector3(0,0,0);
-// controls.enableDamping = true;
-
-const cubeGeometry = new THREE.BoxGeometry();
-const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-scene.add(cube);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target = new THREE.Vector3(0,0,0);
+controls.enableDamping = true;
+//Disable right mouse button movement of camera
+controls.mouseButtons = {
+    LEFT: THREE.MOUSE.ROTATE,
+    MIDDLE: THREE.MOUSE.DOLLY
+};
 
 //Add keyboard interactions
 document.addEventListener('keydown', function(event) {
@@ -55,15 +55,15 @@ document.addEventListener('keydown', function(event) {
         scene.add(tube);
     }
 
-    //activeMeshes = getActiveMeshesFromScene(scene);
-    //controls.target = calculateCenter(activeMeshes);//update orbit center
+    activeMeshes = getActiveMeshesFromScene(scene);
+    controls.target = calculateCenter(activeMeshes);//update orbit center
 });
 
 
 //Basic animation + render loop for updating
 function animate(){
     requestAnimationFrame(animate);
-    //controls.update();
+    controls.update();
     renderer.render(scene, camera);
 }
 animate();
