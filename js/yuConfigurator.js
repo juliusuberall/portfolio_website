@@ -1,25 +1,41 @@
+//import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
 //Connect to div that stores the configurator
 const container = document.getElementById('yu_configurator');
 
 // Create a scene
 const scene = new THREE.Scene();
 
-// Create a camera
+// Create a camera and update
 const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 1000);
-camera.position.z = 3;
 
-// Create a renderer and set the viewer in HTML
+//Setup renderer and set viewer in HTML
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(container.clientWidth, container.clientHeight);
 renderer.setClearColor(0xffffff);
 container.appendChild(renderer.domElement);
 
-//LIGHT SETUP
+//Light setup
 const ambient = new THREE.AmbientLight(0xffffff,0.5);
 scene.add(ambient);
 const light = new THREE.DirectionalLight(0xFFFFFF, 1);
 light.position.set(-3, 5, 2);
 scene.add(light);
+
+// Traverse the scene to find all active meshes
+var activeMeshes = getActiveMeshesFromScene(scene);
+var center = calculateCenter(activeMeshes);
+
+// Create OrbitControls to enable camera rotation
+camera.position.z = 10;
+// const controls = new OrbitControls(camera, renderer.domElement);
+// controls.target = new THREE.Vector3(0,0,0);
+// controls.enableDamping = true;
+
+const cubeGeometry = new THREE.BoxGeometry();
+const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+scene.add(cube);
 
 //Add keyboard interactions
 document.addEventListener('keydown', function(event) {
@@ -30,7 +46,6 @@ document.addEventListener('keydown', function(event) {
         points.push( new THREE.Vector3( RandomInRange(-5,5), RandomInRange(-5,5), RandomInRange(-10,0)) );
         points.push( new THREE.Vector3( RandomInRange(-5,5), RandomInRange(-5,5), RandomInRange(-10,0)) );
         points.push( new THREE.Vector3( RandomInRange(-5,5), RandomInRange(-5,5), RandomInRange(-10,0)) );
-
         const curve = new QuadraticBezierCurve(points[0],points[1], points[2]);
 
         // Create a tube (extrude) from the line's geometry
@@ -39,20 +54,26 @@ document.addEventListener('keydown', function(event) {
         const tube = new THREE.Mesh(tubeGeometry, tubeMaterial);
         scene.add(tube);
     }
+
+    //activeMeshes = getActiveMeshesFromScene(scene);
+    //controls.target = calculateCenter(activeMeshes);//update orbit center
 });
 
 
-//Animate and render
-const animate = () => {
+//Basic animation + render loop for updating
+function animate(){
     requestAnimationFrame(animate);
-
+    //controls.update();
     renderer.render(scene, camera);
-};
-
-// Start the animation loop
+}
 animate();
 
 
+
+
+// Standalone implementations//////////////////////////////////////////////////////////////////
+
+//Curve implementation
 class QuadraticBezierCurve extends THREE.Curve {
     constructor(v0, v1, v2) {
         super();
@@ -71,6 +92,42 @@ class QuadraticBezierCurve extends THREE.Curve {
     }
 }
 
+//Create random number in range
 function RandomInRange(start, end){
     return (end - start) * Math.random() + start;
+}
+
+// Function to calculate the center point of active meshes
+function calculateCenter(inputMeshes) {
+    if(inputMeshes.length > 0){
+        const center = new THREE.Vector3();
+
+        for (const mesh of inputMeshes) {
+            mesh.geometry.computeBoundingSphere();
+            center.add(mesh.geometry.boundingSphere.center.clone().applyMatrix4(mesh.matrixWorld));
+        }
+    
+        center.divideScalar(inputMeshes.length);
+        return center;
+    }
+    else{
+        return new THREE.Vector3(0,0,0);
+    }
+}
+
+// Filter input scene for active mesh and return array
+function getActiveMeshesFromScene(inputscene){
+    const filteredNewMeshes = [];
+    inputscene.traverse((object) => {
+        if (object instanceof THREE.Mesh) {
+            // Check if the object is a mesh (which typically contains a geometry)
+            const geometry = object.geometry;
+            // Ensure the geometry is not null or undefined
+            if (geometry) {
+                // Add the mesh to the array of active meshes
+                filteredNewMeshes.push(object);
+            }
+        }
+    });
+    return filteredNewMeshes;
 }
