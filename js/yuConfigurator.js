@@ -24,7 +24,8 @@ light.position.set(-3, 5, 2);
 scene.add(light);
 
 // Active mesh variable
-var activeMeshes;
+var originalAddedGeos = [];
+var originalUsedLetters = [];
 
 // Create OrbitControls to enable camera rotation
 camera.position.z = 10;
@@ -37,28 +38,63 @@ controls.mouseButtons = {
     MIDDLE: THREE.MOUSE.DOLLY
 };
 
-//Add keyboard interactions
+// Create an text to geometry translation set
+var alphabetDictionary = {};
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+var topBottom = new THREE.Vector3(0,0,4); //start line at top
+var previousLetter; //to draw a line
+for (var i = 0; i < alphabet.length; i++) {
+    var key = alphabet[i];
+    var value = new THREE.Vector3(i*0.5, 0, 0);
+    alphabetDictionary[key] = value;
+}
+
+//TESTING
+const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+const cubeMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+scene.add(cube);
+
+
+//Write pattern from letters
 document.addEventListener('keydown', function(event) {
-    // Check if the pressed key is 'K' (or 'k')
-    if (event.key === 'K' || event.key === 'k') {
-        //Create curve
-        const points = [];
-        points.push( new THREE.Vector3( RandomInRange(-5,5), RandomInRange(-5,5), RandomInRange(-10,0)) );
-        points.push( new THREE.Vector3( RandomInRange(-5,5), RandomInRange(-5,5), RandomInRange(-10,0)) );
-        points.push( new THREE.Vector3( RandomInRange(-5,5), RandomInRange(-5,5), RandomInRange(-10,0)) );
-        const curve = new QuadraticBezierCurve(points[0],points[1], points[2]);
-
-        // Create a tube (extrude) from the line's geometry
-        const tubeGeometry = new THREE.TubeGeometry(curve, 100, 0.03, 8, false);
-        const tubeMaterial = new THREE.MeshPhongMaterial({ color: 0xff00ff });
-        const tube = new THREE.Mesh(tubeGeometry, tubeMaterial);
-        scene.add(tube);
+    if (event.key === 'Backspace' || event.key === 'Delete') {
+        if(originalAddedGeos != null && originalAddedGeos.length > 0){
+            scene.remove(originalAddedGeos[originalAddedGeos.length-1]);
+            originalAddedGeos.splice(originalAddedGeos.length-1,1);
+            originalUsedLetters.splice(originalUsedLetters.length-1,1);
+            previousLetter = originalUsedLetters[originalUsedLetters.length-1];
+            topBottom.negate();
+            return;
+        }
     }
-
-    activeMeshes = getActiveMeshesFromScene(scene);
-    controls.target = calculateCenter(activeMeshes);//update orbit center
+    for (var i = 0; i < alphabet.length; i++) {
+        if (event.key === alphabet[i].toUpperCase() || event.key === alphabet[i].toLowerCase()) {
+            if(previousLetter != null){
+                var linePoints = [];
+                linePoints.push(alphabetDictionary[previousLetter].clone().add(topBottom.clone().negate()));
+                linePoints.push(alphabetDictionary[event.key.toLowerCase()].clone().add(topBottom));
+                const curve = new QuadraticBezierCurve(linePoints[0],linePoints[1],linePoints[1]);
+                const tubeGeometry = new THREE.TubeGeometry(curve, 100, 0.03, 8, false);
+                const tubeMaterial = new THREE.MeshPhongMaterial({ color: 0xff00ff });
+                const tube = new THREE.Mesh(tubeGeometry, tubeMaterial);
+                scene.add(tube);
+                originalAddedGeos.push(tube);
+                originalUsedLetters.push(alphabet[i]);
+    
+                previousLetter = event.key.toLowerCase();
+                topBottom.negate();
+    
+                controls.target = calculateCenter(getActiveMeshesFromScene(scene));//update orbit center
+                return;
+            }
+            else {
+                previousLetter = event.key.toLowerCase();
+                return;
+            }
+        }
+    }
 });
-
 
 //Basic animation + render loop for updating
 function animate(){
