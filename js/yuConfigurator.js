@@ -9,6 +9,7 @@ const scene = new THREE.Scene();
 
 // Create a camera and update
 const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 1000);
+camera.position.set(0,10,0);
 
 //Setup renderer and set viewer in HTML
 const renderer = new THREE.WebGLRenderer();
@@ -17,7 +18,7 @@ renderer.setClearColor(0xffffff);
 container.appendChild(renderer.domElement);
 
 //Light setup
-const ambient = new THREE.AmbientLight(0xffffff,0.5);
+const ambient = new THREE.AmbientLight(0xffffff,3);
 scene.add(ambient);
 const light = new THREE.DirectionalLight(0xFFFFFF, 1);
 light.position.set(-3, 5, 2);
@@ -28,9 +29,8 @@ var originalAddedGeos = [];
 var originalUsedLetters = [];
 
 // Create OrbitControls to enable camera rotation
-camera.position.z = 10;
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.target = new THREE.Vector3(0,0,0);
+controls.target = new THREE.Vector3(13,0,0);
 controls.enableDamping = true;
 //Disable right mouse button movement of camera
 controls.mouseButtons = {
@@ -50,10 +50,10 @@ for (var i = 0; i < alphabet.length; i++) {
 }
 
 //TESTING
-const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-const cubeMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-scene.add(cube);
+// const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+// const cubeMaterial = new THREE.MeshPhongMaterial({ color: 0x00ff00 });
+// const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+// scene.add(cube);
 
 
 //Write pattern from letters
@@ -71,21 +71,25 @@ document.addEventListener('keydown', function(event) {
     for (var i = 0; i < alphabet.length; i++) {
         if (event.key === alphabet[i].toUpperCase() || event.key === alphabet[i].toLowerCase()) {
             if(previousLetter != null){
-                var linePoints = [];
-                linePoints.push(alphabetDictionary[previousLetter].clone().add(topBottom.clone().negate()));
-                linePoints.push(alphabetDictionary[event.key.toLowerCase()].clone().add(topBottom));
-                const curve = new QuadraticBezierCurve(linePoints[0],linePoints[1],linePoints[1]);
-                const tubeGeometry = new THREE.TubeGeometry(curve, 100, 0.03, 8, false);
+                //Create new segment
                 const tubeMaterial = new THREE.MeshPhongMaterial({ color: 0xff00ff });
-                const tube = new THREE.Mesh(tubeGeometry, tubeMaterial);
-                scene.add(tube);
-                originalAddedGeos.push(tube);
+                const silverMaterial = new THREE.MeshStandardMaterial({
+                    color: 0xffffff,      // Base color (silver is typically gray)
+                    metalness: 0.3,       // Metalness value (higher value makes it more metallic)
+                    roughness: 0,       // Roughness value (lower value for smoother appearance)
+                    emissive: 0x000000,   // Emissive color (no emissive color for silver)
+                    envMapIntensity: 1.0, // Environment map intensity
+                  });
+                const ellipseMesh = CreateEllipseMesh(previousLetter,event.key.toLowerCase(),topBottom,3,50,silverMaterial);
+                scene.add(ellipseMesh);
+
+                //Cache + Housekeeping for logic
+                originalAddedGeos.push(ellipseMesh);
                 originalUsedLetters.push(alphabet[i]);
-    
                 previousLetter = event.key.toLowerCase();
                 topBottom.negate();
     
-                controls.target = calculateCenter(getActiveMeshesFromScene(scene));//update orbit center
+                controls.target = CalculateCenter(GetActiveMeshesFromScene(scene));//update orbit center
                 return;
             }
             else {
@@ -134,7 +138,7 @@ function RandomInRange(start, end){
 }
 
 // Function to calculate the center point of active meshes
-function calculateCenter(inputMeshes) {
+function CalculateCenter(inputMeshes) {
     if(inputMeshes.length > 0){
         const center = new THREE.Vector3();
 
@@ -152,7 +156,7 @@ function calculateCenter(inputMeshes) {
 }
 
 // Filter input scene for active mesh and return array
-function getActiveMeshesFromScene(inputscene){
+function GetActiveMeshesFromScene(inputscene){
     const filteredNewMeshes = [];
     inputscene.traverse((object) => {
         if (object instanceof THREE.Mesh) {
@@ -166,4 +170,38 @@ function getActiveMeshesFromScene(inputscene){
         }
     });
     return filteredNewMeshes;
+}
+
+//Create ellipse curve and new ring segment
+function CreateEllipseMesh(previous, next, topBottom, yRadius, segmentCount, material){
+    //Create ellipse curve
+    const heightVector = alphabetDictionary[previous].clone().sub(alphabetDictionary[next].clone());
+    const xRadius = 0.5*Math.pow((Math.pow((2*yRadius),2)+Math.pow(heightVector.length(),2)),0.5);
+    const center = alphabetDictionary[next].clone().add(heightVector.divideScalar(2));//3D center of ellipse
+    const curve = new THREE.EllipseCurve(0,0,xRadius,yRadius);
+    const ellipsePoints = curve.getPoints(segmentCount);
+    var ellipsePoints3D = [];
+    for(var i = 0; i < ellipsePoints.length; i++){
+        ellipsePoints3D.push(new THREE.Vector3(ellipsePoints[i].x,ellipsePoints[i].y,0));
+    }
+    const curve3D = new THREE.CatmullRomCurve3(ellipsePoints3D);
+
+    //Create Mesh
+    const tubeGeometry = new THREE.TubeGeometry(curve3D, segmentCount, 0.1, 8, true);
+    const ellipseMesh = new THREE.Mesh(tubeGeometry, material);
+
+    //Rotate and translate mesh in target position
+    const xaxis = new THREE.Vector3(1,0,0);
+    const rotationAxis = new THREE.Vector3(0,1,0);
+    //Create translation plane axis and measure the angle for rotation
+    const targetPlaneYaxis = alphabetDictionary[next].clone().add(topBottom.clone().negate()).clone().sub(center.clone());
+    const angleInRadians = xaxis.angleTo(targetPlaneYaxis);
+    ellipseMesh.rotateY(xaxis.angleTo(targetPlaneYaxis));
+    const translationMatrix = new THREE.Matrix4().makeTranslation(
+        center.x,
+        center.y,
+        center.z
+    );
+    ellipseMesh.applyMatrix4(translationMatrix);
+    return ellipseMesh;
 }
