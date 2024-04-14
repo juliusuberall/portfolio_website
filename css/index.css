@@ -92,6 +92,9 @@ ion-icon {
   display: unset;
 }
 /*------------------------STYLE_CLASSES--------------------------*/
+body{
+  background-color: var(--black-1);
+}
 .namesocialLine{
   padding: 0 0 9px 0;
 }
@@ -105,44 +108,9 @@ ion-icon {
   float: right;
 }
 .head_desktop{
-  border: 0.5px solid #444444;
   padding: 19px 30px 19px 30px;
 }
-.grid_cell{ /*basic grid cell*/
-  border: 0.5px solid #444444;
-  position: relative;
-}
-.grid_image{ /*grid images for each project*/
-  display: block;
-  width: 100%;
-}
-.cell_hover{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.1s;
-  text-align: center;
-}
-.cell_hover:hover{
-  opacity: 1;
-}
-.cell_title{
-  font-family: 'Poppins Regular';
-  font-size: 16px;
-  padding: 0px 30px 12px 30px;
-  color: #ffffff;
-}
 .footer{
-  border: 0.5px solid #444444;
   padding: 19px 30px 19px 30px;
   width: 100%;
   display: flex;
@@ -153,15 +121,73 @@ ion-icon {
   font-size: 12.8px;
   text-align: left;
 }
+
+/*------------------------PROJECT_GRID--------------------------*/
+.grid-container{ /*grid cell container*/
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  column-gap: var(--landing-outer-border-padding);
+  row-gap: var(--landing-outer-border-padding);
+  padding: var(--landing-outer-border-padding);
+}
+.grid-container > a{
+  outline: solid 1px #444444;
+  border-radius: var(--border-radius-medium);
+  transition: box-shadow 0.2s ease-in-out;
+  position: relative;
+  opacity: 0; /* Start with opacity set to 0 */
+  animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;/* Start opacity */
+  }
+  to {
+    opacity: 1;/* End opacity */
+  }
+}
+
+.grid-container > a:hover{
+  box-shadow: 0 0 20px #2b2b2b;
+  outline: solid 1px var(--grey-hovered);;
+}
+.grid_cell > img{ /*grid images for each project*/
+  width: 100%;
+  border-radius: calc(var(--border-radius-medium)*1.05);
+  display: block;
+}
+.cell_hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.1s;
+  text-align: center;
+  border-radius: calc(var(--border-radius-medium)*1.05);
+}
+.cell_hover:hover{
+  opacity: 1;
+}
+.cell_title{
+  font-family: 'Poppins Regular';
+  font-size: 16px;
+  padding: 0px 30px 12px 30px;
+  color: #ffffff;
+}
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
  /*DESKTOP*/                                                                     
 @media all and (orientation:landscape){
   .head_mobile{
     display: none;
-  }
-  .grid_cell{
-    float: left;
-    width: 20%;
   }
 }                                            
 /*TABLET*/
@@ -236,16 +262,11 @@ ion-icon {
   .cell_hover{
     display: none;
   }
+  .grid-container{
+    grid-template-columns: repeat(2,1fr);
+  }
   .cell_title{
     font-size: 31.25px;
-  }
-  .cell_description{
-    display: none;
-  }
-  .grid_cell{
-    border: 1px solid #444444;
-    float: left;
-    width: 50%;
   }
   .footer{
     height: 102px;
@@ -265,12 +286,6 @@ ion-icon {
   }
 }                               
 /*MOBILE*/
-@media(max-width:767px){
-  .grid_cell{
-    float: left;
-    width: 100%;
-  }
-}
 @media(max-width:590px){
   #soc_about_line{
     height: 114px;
@@ -294,3 +309,18 @@ ion-icon {
     border: 1px solid #444444;
   }
 }                                     
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+
+  --black-0-hard: #000000;
+  --black-1: #060505;
+  --black-2: #0d0c0b;
+  --black-3: #131618;
+  --black-4: #191f22;
+  --grey-hovered: #626262;
+  
+  --border-radius-medium: 20px;
+  --landing-outer-border-padding: 30px;
+}
