@@ -137,6 +137,7 @@ body{
   position: relative;
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
+  box-shadow: 0 0 10px 1px var(--shadow-on-black);
 }
 
 @keyframes fadeInAnimation {
@@ -149,8 +150,11 @@ body{
 }
 
 .grid-container > a:hover{
-  box-shadow: 0 0 20px #2b2b2b;
+  box-shadow: 0 0 20px 2px var(--shadow-on-black);
   outline: solid 1px var(--grey-hovered);;
+}
+.grid-container > a:active{
+  box-shadow: 0 0 20px 2px var(--shadow-on-black-active);
 }
 .grid_cell > img{ /*grid images for each project*/
   width: 100%;
@@ -169,9 +173,9 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  transition: opacity 0.1s;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
   border-radius: calc(var(--border-radius-medium)*1.05);
 }
 .cell_hover:hover{
@@ -311,15 +315,15 @@ body{
 }                                     
 
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-
   --black-0-hard: #000000;
   --black-1: #060505;
   --black-2: #0d0c0b;
   --black-3: #131618;
   --black-4: #191f22;
   --grey-hovered: #626262;
+
+  --shadow-on-black: #2b2b2b;
+  --shadow-on-black-active: #e7e7e7;
   
   --border-radius-medium: 20px;
   --landing-outer-border-padding: 30px;
