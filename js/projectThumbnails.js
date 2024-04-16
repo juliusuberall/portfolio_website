@@ -1,7 +1,7 @@
 // Dictionary of all projects with properties for thumbnails
 const projects = {
     masterthesis: {
-      title: 'Functionally graded 3D printing toolpaths',
+      title: 'Functionally graded toolpaths',
       projectPage: 'masterthesis.html',
       categories: ['category_1'],
       thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
@@ -10,7 +10,7 @@ const projects = {
         title: 'Uberall Typography',
         projectPage: 'uberallFont.html',
         categories: ['category_3'],
-        thumbnail: 'images/Julius_Uberall_project_thumbnails_uberallfont.svg',
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_uberallfont.jpg',
     },
     meshgrowth: {
         title: 'Mesh Growth',
