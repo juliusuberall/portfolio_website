@@ -160,11 +160,13 @@ body{
   border-radius: calc(var(--border-radius-medium)*1.05);
   display: block;
 }
-
 .cell_title{
   font-family: 'Poppins Regular';
   font-size: var(--small-paragraph-font-size);
   padding: 0px 20px 15px 20px;
+  color: var(--light-grey);
+}
+.grid-container > a:hover .cell_title{
   color: #ffffff;
 }
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
@@ -301,6 +303,7 @@ body{
   --black-3: #131618;
   --black-4: #191f22;
   --grey-hovered: #626262;
+  --light-grey: #a8a8a8;
 
   --shadow-on-black: #373737;
   --shadow-on-black-active: #e7e7e7;
