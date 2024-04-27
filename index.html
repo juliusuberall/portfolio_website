@@ -13,7 +13,7 @@
     <!---PRE-LOADER--->
     <div id="preloader_black"></div>
     <!---Reference-JS-file--->
-    <script src="js/script.js"></script>
+    <script src="js/projectFilter.js"></script>
     <!---Headline--->
     <div class="head_desktop">
         <!---Name + Social media line--->
@@ -31,29 +31,10 @@
                 <ion-icon class="icons icon_scale" name="logo-github"></ion-icon>
             </a>
         </div>
-        <!---categories + about me--->
-        <div>
-            <!---CATEGORIES--->
-            <div class="categories">
-                <p class="all_button" onclick="SwitchAllOn()">All</p> 
-                <p class="category_1_button" onclick="Category1Switch()">Coding</p> 
-                <p class="category_2_button" onclick="Category2Switch()">Architecture</p>
-                <p class="category_3_button" onclick="Category3Switch()">Design</p>
-            </div>
-            <!---ABOUT--->
-            <a href="about.html"><div id="about_me">ABOUT ME.</div></a>
-        </div>
     </div>
     <div class="head_mobile">
         <!---NAME--->
         <div class="head_line">JULIUS ÜBERALL</div>
-        <!---categories--->
-        <div class="categories">
-            <div class="all_button" onclick="SwitchAllOn()">All</div> 
-            <div class="category_1_button" onclick="Category1Switch()">Coding</div>
-            <div class="category_2_button" onclick="Category2Switch()">Architecture</div>
-            <div class="category_3_button" onclick="Category3Switch()">Design</div>
-        </div>
         <!---SOCIAL-MEDIA--->
         <div id="soc_about_line">
             <div id="rectangle"></div>
@@ -68,65 +49,72 @@
                     <ion-icon class="icons icon_scale" name="logo-github"></ion-icon>
                 </a>
             </div>
-            <!---ABOUT--->
-            <a href="about.html"><div id="about_me">ABOUT ME.</div></a>
         </div>
     </div>
     <!---PROJECT-GRID--->
-    <div class="grid-container">
+    <div class="project-overview-wrapper">
+        <!---category-filter-wrapper--->
+        <div class="category-filter-wrapper">
+            <p class="filter-button" onclick="FilterProjects('', this)">All</p> 
+            <p class="filter-button" onclick="FilterProjects('category_1', this)">Coding</p> 
+            <p class="filter-button" onclick="FilterProjects('category_2', this)">Architecture</p>
+            <p class="filter-button" onclick="FilterProjects('category_3', this)">Design</p>
+        </div>
         <!---PROJECTS--->
-        <a project-thumbnail="masterthesis"></a>
-        <a project-thumbnail="uberallFont"></a>
-        <a project-thumbnail="meshgrowth"></a>
-        <a project-thumbnail="curvegrowth"></a>
-        <!-- <a project-thumbnail="digitaltwins"></a> -->
-        <!-- <a project-thumbnail="parametricroof"></a> -->
-        <a project-thumbnail="dwellingConfiguratorApp"></a>
-        <a project-thumbnail="nft"></a>
-        <a project-thumbnail="adventitia"></a>
-        <!-- <a project-thumbnail="spacefashion"></a> -->
-        <!-- <a project-thumbnail="fluffygrass"></a> -->
-        <a project-thumbnail="artifacts"></a>
-        <a project-thumbnail="b211"></a>
-        <a project-thumbnail="b211thesis"></a>
-        <a project-thumbnail="habitatb"></a>
-        <a project-thumbnail="reuse"></a>
-        <a project-thumbnail="curvedcrease"></a>
-        <a project-thumbnail="miescheid"></a>
-        <a project-thumbnail="heimatsiedlung"></a>
-        <a project-thumbnail="fredericksburg"></a>
-        <a project-thumbnail="vtrobotics"></a>
-        <a project-thumbnail="yu"></a>
-        <a project-thumbnail="evolo"></a>
-        <!-- <a project-thumbnail="lichtplanung"></a> -->
-        <a project-thumbnail="atom"></a>
-        <a project-thumbnail="linearwoods"></a>
-        <a project-thumbnail="woodboxes"></a>
-        <a project-thumbnail="hexagon"></a>
-        <a project-thumbnail="eiffeltower"></a>
-        <a project-thumbnail="monchengladbach"></a>
-        <a project-thumbnail="facades"></a>
-        <a project-thumbnail="milkconcrete"></a>
-        <a project-thumbnail="hollowbodies"></a>
-        <a project-thumbnail="boxes"></a>
-        <a project-thumbnail="constructionstair"></a>
-        <a project-thumbnail="tonhsd"></a>
-        <a project-thumbnail="hubsweden"></a>
-        <a project-thumbnail="papertwo"></a>
-        <a project-thumbnail="paperone"></a>
-        <a project-thumbnail="neandertal"></a>
-        <a project-thumbnail="amazonezupferde"></a>
-        <a project-thumbnail="claynewspaper"></a>
-        <a project-thumbnail="basement3d"></a>
-        <a project-thumbnail="architecturesketches"></a>
-        <a project-thumbnail="wirecomputer"></a>
-        <a project-thumbnail="brickgarden"></a>
-        <a project-thumbnail="monastery"></a>
-        <a project-thumbnail="boxedperson"></a>
-        <a project-thumbnail="firefly"></a>
-        <a project-thumbnail="substract"></a>
-        <a project-thumbnail="slatdance"></a>
-        <a project-thumbnail="villapile"></a>
+        <div class="grid-container">
+            <a project-name="masterthesis"></a>
+            <a project-name="uberallFont"></a>
+            <a project-name="meshgrowth"></a>
+            <a project-name="curvegrowth"></a>
+            <!-- <a project-name="digitaltwins"></a> -->
+            <!-- <a project-name="parametricroof"></a> -->
+            <a project-name="dwellingConfiguratorApp"></a>
+            <a project-name="nft"></a>
+            <a project-name="adventitia"></a>
+            <!-- <a project-name="spacefashion"></a> -->
+            <!-- <a project-name="fluffygrass"></a> -->
+            <a project-name="artifacts"></a>
+            <a project-name="b211"></a>
+            <a project-name="b211thesis"></a>
+            <a project-name="habitatb"></a>
+            <a project-name="reuse"></a>
+            <a project-name="curvedcrease"></a>
+            <a project-name="miescheid"></a>
+            <a project-name="heimatsiedlung"></a>
+            <a project-name="fredericksburg"></a>
+            <a project-name="vtrobotics"></a>
+            <a project-name="yu"></a>
+            <a project-name="evolo"></a>
+            <!-- <a project-name="lichtplanung"></a> -->
+            <a project-name="atom"></a>
+            <a project-name="linearwoods"></a>
+            <a project-name="woodboxes"></a>
+            <a project-name="hexagon"></a>
+            <a project-name="eiffeltower"></a>
+            <a project-name="monchengladbach"></a>
+            <a project-name="facades"></a>
+            <a project-name="milkconcrete"></a>
+            <a project-name="hollowbodies"></a>
+            <a project-name="boxes"></a>
+            <a project-name="constructionstair"></a>
+            <a project-name="tonhsd"></a>
+            <a project-name="hubsweden"></a>
+            <a project-name="papertwo"></a>
+            <a project-name="paperone"></a>
+            <a project-name="neandertal"></a>
+            <a project-name="amazonezupferde"></a>
+            <a project-name="claynewspaper"></a>
+            <a project-name="basement3d"></a>
+            <a project-name="architecturesketches"></a>
+            <a project-name="wirecomputer"></a>
+            <a project-name="brickgarden"></a>
+            <a project-name="monastery"></a>
+            <a project-name="boxedperson"></a>
+            <a project-name="firefly"></a>
+            <a project-name="substract"></a>
+            <a project-name="slatdance"></a>
+            <a project-name="villapile"></a>
+        </div>
     </div>
     <!---FOOTER--->
     <div class="footer">

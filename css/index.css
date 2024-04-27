@@ -70,27 +70,6 @@ ion-icon {
 .icons{
   padding-right: 13px;
 }
-/*------------------------CATEGORIES--------------------------*/
-.categories{
-  display: inline-flex;
-}
-.all_button, .category_1_button, .category_2_button, .category_3_button{
-  display: inline-flex;
-  font-family: 'Poppins Regular';
-  font-size: var(--small-paragraph-font-size);
-  color: #000000;
-  background-color: #ffffff;
-  cursor: pointer;
-  padding: 0 5px 0 5px;
-}
-.category_1_button, .category_2_button, .category_3_button{
-  margin-left: 10px;
-  color: #ffffff;
-  background-color: #000000;
-}
-.category_1, .category_2, .category_3{
-  display: unset;
-}
 /*------------------------STYLE_CLASSES--------------------------*/
 body{
   background-color: var(--black-2);
@@ -111,7 +90,7 @@ body{
   padding: 19px 30px 19px 30px;
 }
 .footer{
-  padding: 0 var(--landing-outer-border-padding) var(--landing-outer-border-padding) var(--landing-outer-border-padding);
+  padding: 0 var(--landing-large-padding) var(--landing-large-padding) var(--landing-large-padding);
   width: 100%;
 }
 .copyright{
@@ -119,14 +98,40 @@ body{
   color: #ffffff;
   font-size: var(--small-paragraph-font-size);
 }
+/*------------------------PROJECT-category-filter-wrapper--------------------------*/
+.category-filter-wrapper{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  column-gap: var(--landing-large-padding);
+  row-gap: var(--landing-large-padding);
+  padding-bottom: var(--landing-large-padding);
+}
+.filter-button{
+  display: inline-flex;
+  font-family: 'Poppins Regular';
+  font-size: var(--small-paragraph-font-size);
+  color: var(--light-grey);
+  background-color: var(--black-0-hard);
+  cursor: pointer;
+  border-radius: var(--border-radius-medium);
+  justify-content: center;
+  padding: var(--landing-tiny-padding);
+  outline: solid 1px #444444;
+}
+.filter-button:hover{
+  color: var(--bright-white);
+  background-color: var(--black-3);
+}
 
 /*------------------------PROJECT_GRID--------------------------*/
+.project-overview-wrapper{
+  padding: var(--landing-large-padding);
+}
 .grid-container{ /*grid cell container*/
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  column-gap: var(--landing-outer-border-padding);
-  row-gap: var(--landing-outer-border-padding);
-  padding: var(--landing-outer-border-padding);
+  column-gap: var(--landing-large-padding);
+  row-gap: var(--landing-large-padding);
 }
 .grid-container > a{
   outline: solid 1px #444444;
@@ -135,10 +140,9 @@ body{
   position: relative;
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
-  background-color: black;
+  background-color: var(--black-0-hard);
   text-decoration: none;
 }
-
 @keyframes fadeInAnimation {
   from {
     opacity: 0;/* Start opacity */
@@ -147,10 +151,9 @@ body{
     opacity: 1;/* End opacity */
   }
 }
-
 .grid-container > a:hover{
   box-shadow: 0 0 20px 2px var(--shadow-on-black);
-  outline: solid 1px var(--grey-hovered);;
+  outline: solid 1px var(--grey-hovered);
 }
 .grid-container > a:active{
   box-shadow: 0 0 20px 2px var(--shadow-on-black-active);
@@ -200,15 +203,13 @@ body{
     text-align: left;
     padding: 0 0 15px 0;
   }
-  .category_1_button, .category_2_button, .category_3_button, .all_button{
+  .category-filter-wrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .filter-button{
     font-size: 39.06px;
-  }
-  .category_2_button, .category_3_button{
-    margin-left: 15px;
-  }
-  .categories{
-    display: block;
-    padding: 0 0 30px 0;
+    border-radius: var(--border-radius-large-mobile);
+    padding: var(--landing-medium-padding) var(--landing-large-padding);
   }
   #soc_about_line{
     width: 100%;
@@ -304,12 +305,19 @@ body{
   --black-4: #191f22;
   --grey-hovered: #626262;
   --light-grey: #a8a8a8;
+  --light-light-grey: #c8c8c8;
 
   --shadow-on-black: #373737;
   --shadow-on-black-active: #e7e7e7;
+  --bright-white: #ffffff;
   
+  --border-radius-large-mobile: 80px;
+  --border-radius-medium-mobile: 50px;
   --border-radius-medium: 20px;
-  --landing-outer-border-padding: 30px;
+  --landing-large-padding: 30px;
+  --landing-medium-padding: 15px;
+  --landing-small-padding: 7px;
+  --landing-tiny-padding: 4px;
 
   --medium-paragraph-font-size: 16px;
   --small-paragraph-font-size: 13px;
