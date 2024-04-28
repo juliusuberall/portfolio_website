@@ -1,10 +1,4 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 /*------------------------FONTS--------------------------*/
-/*---8.19px---10.24px---13px---16px---20px---25px---31.25px---39.06px---48.83---61.04px---76.29px---*/
 @font-face{/*Main Font import*/
   font-family:Poppins Thin;
   src:url(../fonts/Poppins-Thin.ttf);
@@ -59,17 +53,6 @@ p{/*Main Text*/
   position: fixed;
   z-index: 100;
 }
-/*------------------------ION-ICON--------------------------*/
-ion-icon {
-  color: #ffffff;
-  float: right;
-}
-.icon_scale{
-  font-size: 25px;
-}
-.icons{
-  padding-right: 13px;
-}
 /*------------------------STYLE_CLASSES--------------------------*/
 body{
   background-color: var(--black-2);
@@ -98,6 +81,90 @@ body{
   color: #ffffff;
   font-size: var(--small-paragraph-font-size);
 }
+/*------------------------ABOUT-section--------------------------*/
+#about-wrapper{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  column-gap: var(--landing-large-padding);
+  padding: var(--landing-large-padding);
+}
+#about-text-wrapper{
+  grid-column: span 2;
+}
+#about-title{
+  font-family: Uberall Regular;
+  font-size: var(--font-size-large);
+  color: white;
+  margin: -6px 0 0 0;
+  padding-bottom: var(--landing-large-padding);
+}
+#about-text{
+  font-family: 'Poppins Light';
+  font-size: 16px;
+  color: white;
+}
+#about-portrait{
+  width: 100%;
+  border-radius: var(--border-radius-medium);
+  opacity: 0; /* Start with opacity set to 0 */
+  animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
+  cursor: default;
+}
+.image-credits{
+  padding-top: 15px;
+  font-family: 'Poppins Regular';
+  color: #ffffff;
+  font-size: var(--font-size-extra-smaller);
+  text-align: left;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+.text-link{
+  font-family: 'Uberall Regular';
+  color: #ffffff;
+  text-decoration: none;
+}
+.text-link:hover{
+  text-decoration: underline;
+}
+#about-quicklinks{
+  padding-top: var(--landing-large-padding);
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  column-gap: var(--landing-medium-padding);
+  row-gap: var(--landing-small-padding);
+}
+#about-quicklinks > a{
+  display: flex;
+  border-radius: var(--border-radius-medium);
+  justify-content: center;
+  padding: 5px;
+}
+.about-quicklink-icon{
+  justify-content: center;
+  align-items: center;
+}
+.impotant-text{
+  padding: 0 var(--font-size-tiny);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--light-light-grey);
+  color: var(--black-0-hard);
+}
+/*------------------------General buttons--------------------------*/
+.button-1{
+  outline: var(--default-outline);
+  background-color: var(--black-0-hard);
+  color: var(--light-grey);
+  cursor: pointer;
+}
+.button-1:hover{
+  color: var(--bright-white);
+  background-color: var(--black-3);
+}
+.button-1:active{
+  color: var(--black-3);
+  background-color: var(--bright-white);
+}
 /*------------------------PROJECT-category-filter-wrapper--------------------------*/
 .category-filter-wrapper{
   display: grid;
@@ -110,19 +177,15 @@ body{
   display: inline-flex;
   font-family: 'Poppins Regular';
   font-size: var(--small-paragraph-font-size);
-  color: var(--light-grey);
-  background-color: var(--black-0-hard);
-  cursor: pointer;
   border-radius: var(--border-radius-medium);
   justify-content: center;
   padding: var(--landing-tiny-padding);
-  outline: solid 1px #444444;
 }
-.filter-button:hover{
-  color: var(--bright-white);
-  background-color: var(--black-3);
+.filter-button-initial-active{
+  background-color: var(--light-light-grey);
+  color: var(--black-0-hard);
+  outline: none;
 }
-
 /*------------------------PROJECT_GRID--------------------------*/
 .project-overview-wrapper{
   padding: var(--landing-large-padding);
@@ -134,7 +197,7 @@ body{
   row-gap: var(--landing-large-padding);
 }
 .grid-container > a{
-  outline: solid 1px #444444;
+  outline: var(--default-outline);
   border-radius: var(--border-radius-medium);
   transition: box-shadow 0.2s ease-in-out;
   position: relative;
@@ -195,6 +258,13 @@ body{
   .head_mobile{
     padding: 19px 70px 0px 70px;
   }
+  .image-credits{
+    font-size: 20px;
+  }
+  #about-wrapper{
+    grid-template-columns: none;
+    padding: var(--landing-large-padding)
+  }
   .head_line{
     width: 100%;
     font-family: 'Uberall Regular';
@@ -226,9 +296,6 @@ body{
     position: absolute;
     top: 22px;
     left: 0;
-  }
-  ion-icon{
-    float: unset;
   }
   .icon_scale{
     font-size: 34px;
@@ -298,6 +365,8 @@ body{
 }                                     
 
 :root {
+  --accent-colour: #ffef99;
+
   --black-0-hard: #000000;
   --black-1: #060505;
   --black-2: #0d0c0b;
@@ -321,4 +390,18 @@ body{
 
   --medium-paragraph-font-size: 16px;
   --small-paragraph-font-size: 13px;
+
+  --default-outline: solid 1px #444444;
+
+  --font-size-tiny: 8px;
+  --font-size-extra-smaller: 10px;
+  --font-size-smaller: 13px;
+  --font-size-normal: 16px;
+  --font-size-bigger: 20px;
+  --font-size-extra-big: 25px;
+  --font-size-large: 31px;
+  --font-size-extra-large: 39px;
+  --font-size-huge: 49px;
+  --font-size-extra-huge: 61px;
+  --font-size-gigantic: 76px;
 }

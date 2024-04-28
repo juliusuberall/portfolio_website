@@ -177,6 +177,7 @@
   top: 0;
   left: 0;
   position: fixed;
+  overflow: auto;
 }
 /*------------------------3D-CONTENT--------------------------*/ 
 .Base_3Dmodelviewer{

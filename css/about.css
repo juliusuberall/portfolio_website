@@ -104,11 +104,11 @@ ion-icon{
   text-align: left;
   padding-bottom: 20px;
 }
-.text_link{
+/* .text_link{
   font-family: 'Uberall Regular';
   color: #ffffff;
   text-decoration: none;
-}
+} */
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*//*MOBILE*/
 @media all and (orientation:portrait){
