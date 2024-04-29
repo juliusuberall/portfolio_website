@@ -14,43 +14,6 @@
     <div id="preloader_black"></div>
     <!---Reference-JS-file--->
     <script src="js/projectFilter.js"></script>
-    <!---Headline--->
-    <div class="head_desktop">
-        <!---Name + Social media line--->
-        <div class="namesocialLine">
-            <!---TITLE--->
-            <h1 class="head_line">JULIUS ÜBERALL</h1>
-            <!---SOCIAL_MEDIA--->
-            <a href="https://www.linkedin.com/in/julius-überall-a841b719a/" target="_blank">    
-                <ion-icon class="icon_scale" name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://twitter.com/j_uberall" target="_blank">    
-                <ion-icon class="icons icon_scale" name="logo-twitter"></ion-icon>
-            </a>
-            <a href="https://github.com/juliusuberall" target="_blank">    
-                <ion-icon class="icons icon_scale" name="logo-github"></ion-icon>
-            </a>
-        </div>
-    </div>
-    <div class="head_mobile">
-        <!---NAME--->
-        <div class="head_line">JULIUS ÜBERALL</div>
-        <!---SOCIAL-MEDIA--->
-        <div id="soc_about_line">
-            <div id="rectangle"></div>
-            <div id="social_icons">
-                <a href="https://www.linkedin.com/in/julius-überall-a841b719a/" target="_blank">    
-                    <ion-icon class="icon_scale" name="logo-linkedin"></ion-icon>
-                </a>
-                <a href="https://www.instagram.com/j_n_b_u/" target="_blank">    
-                    <ion-icon class="icons icon_scale" name="logo-instagram"></ion-icon>
-                </a>
-                <a href="https://github.com/juliusuberall" target="_blank">    
-                    <ion-icon class="icons icon_scale" name="logo-github"></ion-icon>
-                </a>
-            </div>
-        </div>
-    </div>
     <!---ABOUT--->
     <div id="about-wrapper">
         <div></div>
@@ -92,10 +55,10 @@
     <div class="project-overview-wrapper">
         <!---category-filter-wrapper--->
         <div class="category-filter-wrapper">
-            <p class="filter-button button-1" onclick="FilterProjects('', this)" style="  background-color: var(--light-light-grey); color: var(--black-0-hard); outline: none;">All</p> 
-            <p class="filter-button button-1" onclick="FilterProjects('category_1', this)">Coding</p> 
-            <p class="filter-button button-1" onclick="FilterProjects('category_2', this)">Architecture</p>
-            <p class="filter-button button-1" onclick="FilterProjects('category_3', this)">Design</p>
+            <div class="filter-button button-1" onclick="FilterProjects('', this)" style="  background-color: var(--light-light-grey); color: var(--black-0-hard); outline: none;">All</div> 
+            <div class="filter-button button-1" onclick="FilterProjects('category_1', this)">Coding</div> 
+            <div class="filter-button button-1" onclick="FilterProjects('category_2', this)">Architecture</div>
+            <div class="filter-button button-1" onclick="FilterProjects('category_3', this)">Design</div>
         </div>
         <!---PROJECTS--->
         <div class="grid-container">
