@@ -156,14 +156,26 @@ body{
   background-color: var(--black-0-hard);
   color: var(--light-grey);
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
 .button-1:hover{
-  color: var(--bright-white);
-  background-color: var(--black-3);
+  color: var(--black-0-hard);
 }
-.button-1:active{
-  color: var(--black-3);
-  background-color: var(--bright-white);
+.button-1:hover::before{
+  left: 0;
+}
+.button-1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-light-grey);
+  transition: left 0.2s ease;
+  z-index: -1;
 }
 /*------------------------PROJECT-category-filter-wrapper--------------------------*/
 .category-filter-wrapper{
@@ -172,6 +184,13 @@ body{
   column-gap: var(--landing-large-padding);
   row-gap: var(--landing-large-padding);
   padding-bottom: var(--landing-large-padding);
+  border-bottom: 1px solid var(--default-outline-colour);
+  margin-bottom: var(--landing-large-padding);
+}
+.filter-button-hint{
+  color: var(--default-outline-colour);
+  font-style: italic;
+  justify-content: right !important;
 }
 .filter-button{
   display: inline-flex;
@@ -185,6 +204,13 @@ body{
   background-color: var(--light-light-grey);
   color: var(--black-0-hard);
   outline: none;
+}
+.grid-title{
+  color: var(--bright-white);
+  align-items: center;
+  display: inline-flex;
+  font-family: 'Poppins Regular';
+  font-size: 18px;
 }
 /*------------------------PROJECT_GRID--------------------------*/
 .project-overview-wrapper{
@@ -200,7 +226,7 @@ body{
 .grid-container > a{
   outline: var(--default-outline);
   border-radius: var(--border-radius-medium);
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
   position: relative;
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
@@ -396,7 +422,8 @@ body{
   --medium-paragraph-font-size: 16px;
   --small-paragraph-font-size: 13px;
 
-  --default-outline: solid 1px #444444;
+  --default-outline: solid 1px var(--default-outline-colour);
+  --default-outline-colour: #444444;
 
   --font-size-tiny: 8px;
   --font-size-extra-smaller: 10px;

@@ -331,3 +331,15 @@ aTags.forEach(selectedA => {
     </div> `;
   selectedA.appendChild(newDiv);
 });
+
+//Move all filter buttons to end of grid row
+function RepositionFilterButtons() {
+    const filterButtons = document.querySelectorAll('.project-overview-wrapper .category-filter-wrapper .filter-button');
+    for (let i = 0; i < filterButtons.length; i++) {
+        const reversedPos = (filterButtons.length+1)-i;
+        filterButtons[i].style.gridColumn = -reversedPos.toString();
+        filterButtons[i].style.gridRow = '1';
+    }
+}
+
+RepositionFilterButtons();

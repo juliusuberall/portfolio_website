@@ -14,6 +14,7 @@ function FilterProjects(categoryToFilter, filterButton) {
     siblingFilter.forEach( filter => {
         filter.style = "";
     });
+    RepositionFilterButtons();
     //Change correct filter button style to active
     filterButton.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--light-light-grey');
     filterButton.style.color = getComputedStyle(document.documentElement).getPropertyValue('--black-0-hard');
