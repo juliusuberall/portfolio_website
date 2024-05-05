@@ -1,0 +1,80 @@
+/*------------------------FONTS--------------------------*/
+@font-face{/*Main Font import*/
+    font-family:Poppins Thin;
+    src:url(../fonts/Poppins-Thin.ttf);
+  }
+  @font-face{/*Main Font import*/
+    font-family:Poppins ExtraLight;
+    src:url(../fonts/Poppins-ExtraLight.ttf);
+  }
+  @font-face{/*Main Font import*/
+    font-family:Poppins Light;
+    src:url(../fonts/Poppins-Light.ttf);
+  }
+  @font-face{/*Main Font import*/
+    font-family:Poppins Regular;
+    src:url(../fonts/Poppins-Regular.ttf);
+  }
+  @font-face{/*Main Font import*/
+    font-family:Poppins Bold;
+    src:url(../fonts/Poppins-Bold.ttf);
+  }
+  /*UBERALL FONT IMPORT*/
+  @font-face{
+    font-family:Uberall Regular;
+    src:url(../fonts/Uberall-Regular.otf);
+  }
+
+:root {
+    --accent-colour: #ffef99;
+  
+    --black-0-hard: #000000;
+    --black-1: #060505;
+    --black-2: #0d0c0b;
+    --black-3: #131618;
+    --black-4: #191f22;
+    --grey-hovered: #626262;
+    --light-grey: #a8a8a8;
+    --light-light-grey: #c8c8c8;
+  
+    --shadow-on-black: #373737;
+    --shadow-on-black-active: #e7e7e7;
+    --bright-white: #ffffff;
+    
+    --border-radius-large-mobile: 80px;
+    --border-radius-medium-mobile: 50px;
+    --border-radius-medium: 20px;
+  
+    --landing-extra-huge-padding: 103px;
+    --landing-huge-padding: 65px;
+    --landing-extra-large-padding: 45px;
+    --landing-large-padding: 30px;
+    --landing-medium-padding: 15px;
+    --landing-small-padding: 7px;
+    --landing-tiny-padding: 4px;
+  
+    --medium-paragraph-font-size: 16px;
+    --small-paragraph-font-size: 13px;
+  
+    --default-outline: solid 1px var(--default-outline-colour);
+    --default-outline-colour: #444444;
+  
+    --font-size-tiny: 8px;
+    --font-size-extra-smaller: 10px;
+    --font-size-smaller: 13px;
+    --font-size-normal: 16px;
+    --font-size-bigger: 20px;
+    --font-size-extra-big: 25px;
+    --font-size-large: 31px;
+    --font-size-extra-large: 39px;
+    --font-size-huge: 49px;
+    --font-size-extra-huge: 61px;
+    --font-size-gigantic: 76px;
+  
+    --font-uberall: Uberall Regular;
+    --font-poppins-thin: Poppins Thin;
+    --font-poppins-extralight: Poppins ExtraLight;
+    --font-poppins-light: Poppins Light;
+    --font-poppins-regular: Poppins Regular;
+    --font-poppins-bold: Poppins Bold;
+  }

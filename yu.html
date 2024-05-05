@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 <body style="background-color:#ffffff;">
@@ -13,46 +13,46 @@
     <div id="preloader_white"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_black" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
-            <div class="project_headline_bright">YŪ<br/>Words become jewellery.</div>
-            <div class="project_description_bright">YŪ by you was the initiative to make you design your personal piece of jewellery with the letters you enter into the algorithm. <br><br>Any given combination of letters produced a unique geometry for a ring, pendant or amulet in our web app which then could be changed in materiality and size. We designed and fabricated over 100 distinctive pieces out of metal using additive manufacturing</div>
-            <div class="project_details_bright">
+            <div class="project_headline">YŪ<br/>Words become jewellery.</div>
+            <div class="project_description">YŪ by you was the initiative to make you design your personal piece of jewellery with the letters you enter into the algorithm. <br><br>Any given combination of letters produced a unique geometry for a ring, pendant or amulet in our web app which then could be changed in materiality and size. We designed and fabricated over 100 distinctive pieces out of metal using additive manufacturing</div>
+            <div class="project_details">
                 2018-2021
                 <br/><a id="partner_link_bright_important" href="http://www.yubyyou.com" target="_blank">www.yubyyou.com</a>
-                <br/>Together with <a id="partner_link_bright" href="https://yubyyou.com/about/" target="_blank">Max Riemenschneider</a> and <a id="partner_link_bright" href="https://yubyyou.com/about/" target="_blank">Paul Naumann</a></div>
+                <br/>Together with <a id="partner_link" href="https://yubyyou.com/about/" target="_blank">Max Riemenschneider</a> and <a id="partner_link" href="https://yubyyou.com/about/" target="_blank">Paul Naumann</a></div>
         </div>
         <!---------RIGHT-COLUMN--------->
         <div class="right_column">
-            <div class="cell_content_full_width_bright">
+            <div class="cell_content_full_width">
                 <video class="desktop_video" width=100% height="100%" autoplay loop muted>
                   <source src="videos/JuliusUberall_YU_explain.mp4" type="video/mp4">
                 </video>
                 <img class="content" id="mobile_video_static" src="images/JuliusUberall_YU_explain_static.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_YU_shots_5.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_YU_shots_3.jpg">
             </div>
-            <div class="cell_content_full_width_bright">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_YU_2.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <model-viewer class="Base_3Dmodelviewer yuJewellery3Dmodel mobile3Dmodel" src="3Dassets/JuliusUberall_YU_Ring_Uberall_Geometry_3D.glb" camera-controls auto-rotatet > </model-viewer>
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <model-viewer class="Base_3Dmodelviewer yuJewellery3Dmodel mobile_dont_show" src="3Dassets/JuliusUberall_YU_Charm_FuckYou_Geometry_3D.glb" camera-controls auto-rotatet > </model-viewer>
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_YU_shots_8.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_YU_shots_6.jpg">
             </div>
         </div>
@@ -64,6 +64,8 @@
     <script>
     var loader = document.getElementById("preloader_white");
     window.addEventListener("load",function(){loader.style.display = "none";})
-</script>
+    </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>

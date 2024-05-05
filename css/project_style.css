@@ -3,36 +3,11 @@
   margin: 0;
   padding: 0;
 }
-/*------------------------FONTS--------------------------*/
-/*---8.19px---10.24px---12.8px---16px---20px---25px---31.25px---39.06px---48.83---61.04px---76.29px---*/
-@font-face{/*Main Font import*/
-  font-family:Poppins Thin;
-  src:url(../fonts/Poppins-Thin.ttf);
+/*------------------------HOME-BUTTON--------------------------*/
+.home-button-wrapper{
+  /**/
 }
-@font-face{/*Main Font import*/
-  font-family:Poppins ExtraLight;
-  src:url(../fonts/Poppins-ExtraLight.ttf);
-}
-@font-face{/*Main Font import*/
-  font-family:Poppins Light;
-  src:url(../fonts/Poppins-Light.ttf);
-}
-@font-face{/*Main Font import*/
-  font-family:Poppins Regular;
-  src:url(../fonts/Poppins-Regular.ttf);
-}
-@font-face{/*Main Font import*/
-  font-family:Poppins Bold;
-  src:url(../fonts/Poppins-Bold.ttf);
-}
-/*UBERALL FONT IMPORT*/
-@font-face{
-  font-family:Uberall Regular;
-  src:url(../fonts/Uberall-Regular.otf);
-}
-/*------------------------ION-ICON--------------------------*/
-.home_button_white {
-  color: #ffffff;
+.home_button {
   font-size: 25px;
   padding: 25px 30px 0 0;
   position: absolute;
@@ -41,100 +16,44 @@
   position: fixed;
   --ionicon-stroke-width: 20px;
 }
-.home_button_black {
-  color: #000000;
-  font-size: 25px;
-  padding: 25px 30px 0 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  position: fixed;
-  --ionicon-stroke-width: 20px;
-}
-/*------------------------DARK-MODE_CLASSES--------------------------*/
+/*------------------------DARK-BRIGHT-CLASSES--------------------------*/
 .right_column{
   float: left;
   width: 75%;
-  border: 0.5px solid #444444;
+  border: 0.5px solid var(--default-outline-colour);
 }
 .cell_content_third_width{
   float: left;
   width: 33.3333%;
-  border: 0.5px solid #444444;
+  border: 0.5px solid var(--default-outline-colour);
 }
 .cell_content_half_width{
   float: left;
   width: 50%;
-  border: 0.5px solid #444444;
+  border: 0.5px solid var(--default-outline-colour);
 }
 .cell_content_full_width{
   float: left;
   width: 100%;
-  border: 0.5px solid #444444;
+  border: 0.5px solid var(--default-outline-colour);
 }
 .project_headline{
   font-family: Uberall Regular;
   font-size: 20px;
-  color: white;
   padding: 0 100px 0 0;
 }
-.project_description, .project_description_bright{
+.project_description{
   padding: 12px 0 10px 0;
   font-family: Poppins ExtraLight;
   font-size: 16px;
-  color: white;
 }
 .project_details{
   padding-top: 19px;
   font-family: Poppins Regular;
   font-size: 12.8px;
-  color: white;
-}
-#partner_link{
-  color: white;
-}
-/*------------------------BRIGHT-MODE_CLASSES--------------------------*/
-.right_column_bright{
-  float: left;
-  width: 75%;
-  border: 0.5px solid #444444;
-}
-.cell_content_third_width_bright{
-  float: left;
-  width: 33.3333%;
-  border: 0.5px solid #444444;
-}
-.cell_content_half_width_bright{
-  float: left;
-  width: 50%;
-  border: 0.5px solid #444444;
-}
-.cell_content_full_width_bright{
-  float: left;
-  width: 100%;
-  border: 0.5px solid #444444;
-}
-.project_headline_bright{
-  font-family: Uberall Regular;
-  font-size: 20px;
-  color: black;
-  padding: 0 100px 0 0;
-}
-.project_description_bright{
-  color: black;
-}
-.project_details_bright{
-  padding-top: 19px;
-  font-family: Poppins Regular;
-  font-size: 12.8px;
-  color: black;
-}
-#partner_link_bright{
-  color: black;
 }
 #partner_link_bright_important{
   font-family: Poppins Bold;
-  color: black;
 }
 /*------------------------STYLE_CLASSES--------------------------*/
 .desktop_video{
@@ -146,9 +65,6 @@
 }
 #mobile_video_static, #mobileShow{
   display: none;
-}
-.fixed{
-  position: relative;
 }
 .page{
   position: relative;
@@ -183,16 +99,12 @@
 .Base_3Dmodelviewer{
   width: 100%;
 }
-
 .meshGrowth3Dmodel{
   padding-bottom: 56.25%;
 }
-
 .yuJewellery3Dmodel{
   padding-bottom: 100%;
 }
-
-
 /*------------------------RESPONSIVE-DESIGN--------------------------*/                                                                                                   
 /*TABLET*/
 @media all and (orientation:portrait){
@@ -215,26 +127,25 @@
   #mobile_video_static, #mobileShow{
     display: unset;
   }
-  .home_button_black, .home_button_white{
+  .home_button{
     font-size: 64px;
     padding: 44px 30px 0 0;
   }
-  .project_headline, .project_headline_bright{
+  .project_headline{
     padding-top: 100px;
     font-size: 76.29px;
   }
-  .project_description, .project_description_bright{
+  .project_description{
     font-family: Poppins ExtraLight;
     font-size: 31.25px;
     padding-bottom: 25px;
   }
-  .project_details, .project_details_bright{
+  .project_details{
     font-size: 31.25px;
     padding-top: 30px;
   }
   .content_left_column{
     width: 100%;
-
     position: unset;
   }
   .empty_left_column{
@@ -242,27 +153,18 @@
   }
   .right_column{
     width: 100%;
-    border: 1px solid #444444;
-  }
-  .right_column_bright{
-    width: 100%;
+    border: var(--default-outline);
   }
   .cell_content_third_width{
-    border: 1px solid #444444;
+    border: var(--default-outline);
   }
   .cell_content_half_width{
-    border: 1px solid #444444;
-  }
-  .cell_content_half_width_bright{
-    border: 0.5px solid #444444;
-  }
-  .cell_content_third_width_bright{
-    border: 0.5px solid #444444;
+    border: var(--default-outline);
   }
 }                               
 /*MOBILE*/
 @media(max-width:1300px){
-  .cell_content_half_width, .cell_content_half_width_bright, .cell_content_third_width_bright, .cell_content_third_width{
+  .cell_content_half_width, .cell_content_third_width{
     width: 100%;
   }
 }   

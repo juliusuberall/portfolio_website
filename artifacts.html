@@ -5,68 +5,68 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_black" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
-            <div class="project_headline_bright">ARTIFACTS</div>
-            <div class="project_description_bright">An ongoing art series that features hand-drawn illustrations based on pre-modelled subdivision surfaces.</div>
-            <div class="project_details_bright">2020 - present<br/>Inspired by Subdivision Surfaces</div>
+            <div class="project_headline">ARTIFACTS</div>
+            <div class="project_description">An ongoing art series that features hand-drawn illustrations based on pre-modelled subdivision surfaces.</div>
+            <div class="project_details">2020 - present<br/>Inspired by Subdivision Surfaces</div>
         </div>
         <!---------RIGHT-COLUMN--------->
-        <div class="right_column_bright">
-            <div class="cell_content_half_width_bright">
+        <div class="right_column">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_10.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_13.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_12.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_11.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_5.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_6.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_3.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_14.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_9.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_4.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_2.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_1.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_7.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_8.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_Artifact_15.jpg">
             </div>
         </div>
@@ -78,6 +78,8 @@
     <script>
     var loader = document.getElementById("preloader_white");
     window.addEventListener("load",function(){loader.style.display = "none";})
-</script>
+    </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>

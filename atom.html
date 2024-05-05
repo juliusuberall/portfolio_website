@@ -5,53 +5,53 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_black" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
-            <div class="project_headline_bright">ATOM STOOL</div>
-            <div class="project_description_bright">Unlike most furniture designed and built, the ATOM stool is the result of an examination of the thought "What if the stool is not used?".</br></br>
+            <div class="project_headline">ATOM STOOL</div>
+            <div class="project_description">Unlike most furniture designed and built, the ATOM stool is the result of an examination of the thought "What if the stool is not used?".</br></br>
                 Seating furniture can be divided into three categories: armchair, chair, stool. Characteristic of each category is the time and comfort. Whereby the time results from the comfort. The stool positions itself in this classification in the last place, because it experiences only a not long-lasting, temporary use - it is a kind of 'add on'. Accordingly, it is increasingly the case that the stool is left to its own, often standing neglected in the room.</br></br>
                 The crucial idea was to help the piece of furniture to become independent of use - to function self-sufficiently without massively impairing the spatial effect. So it was important to exaggerate the association of the stool to the point where it falls exactly in the middle between a furniture and an object.
             </div>
-            <div class="project_details_bright">2018<br/>University of Applied Sciences Düsseldorf (DE)<br/>Supervised by <a id="partner_link_bright" href="https://pbsa.hs-duesseldorf.de/personen/klein_wiele_m" target="_blank">Professor Klein-Wiele</a> and <a id="partner_link_bright" href="https://pbsa.hs-duesseldorf.de/personen/behrend" target="_blank">Philip Behrend</a> and <a id="partner_link_bright" href="https://www.bauhandkunstwerk.de/hauke-schmidt/" target="_blank">Hauke Schmidt</a></div>
+            <div class="project_details">2018<br/>University of Applied Sciences Düsseldorf (DE)<br/>Supervised by <a id="partner_link" href="https://pbsa.hs-duesseldorf.de/personen/klein_wiele_m" target="_blank">Professor Klein-Wiele</a> and <a id="partner_link" href="https://pbsa.hs-duesseldorf.de/personen/behrend" target="_blank">Philip Behrend</a> and <a id="partner_link" href="https://www.bauhandkunstwerk.de/hauke-schmidt/" target="_blank">Hauke Schmidt</a></div>
         </div>
         <!---------RIGHT-COLUMN--------->
-        <div class="right_column_bright">
-            <div class="cell_content_full_width_bright">
+        <div class="right_column">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_atom_5.jpg">
             </div>
-            <div class="cell_content_full_width_bright">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_atom_6.svg">
             </div>
-            <div class="cell_content_full_width_bright">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_atom_7.jpg">
             </div>
-            <div class="cell_content_full_width_bright">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_atom_8.jpg">
             </div>
-            <div class="cell_content_full_width_bright">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_atom_9.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_atom_1.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_atom_2.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_atom_3.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_atom_4.jpg">
             </div>
         </div>
@@ -63,6 +63,8 @@
     <script>
     var loader = document.getElementById("preloader_white");
     window.addEventListener("load",function(){loader.style.display = "none";})
-</script>
+    </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>

@@ -5,43 +5,43 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_black" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
-            <div class="project_headline_bright">NFTs</div>
-            <div class="project_description_bright">An ongoing digital art series that showcases a collection of captivating images and brief animated sequences. <br>Selected pieces are listed on Foundation, a platform to provide artists and creators with a decentralized, non-fungible way to create valuable artwork and monetize it.</div>
-            <div class="project_details_bright">2021 - present<br/>Listed on <a id="partner_link_bright" href="https://foundation.app/@j_n_b_u" target="_blank">FOUNDATION</a></div>
+            <div class="project_headline">NFTs</div>
+            <div class="project_description">An ongoing digital art series that showcases a collection of captivating images and brief animated sequences. <br>Selected pieces are listed on Foundation, a platform to provide artists and creators with a decentralized, non-fungible way to create valuable artwork and monetize it.</div>
+            <div class="project_details">2021 - present<br/>Listed on <a id="partner_link" href="https://foundation.app/@j_n_b_u" target="_blank">FOUNDATION</a></div>
         </div>
         <!---------RIGHT-COLUMN--------->
-        <div class="right_column_bright">
-            <div class="cell_content_half_width_bright">
+        <div class="right_column">
+            <div class="cell_content_half_width">
                 <video class="desktop_video" width=100% height="100%" autoplay loop muted>
                   <source src="videos/JuliusUberall_nft_birthdaycake.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_nft_birthdaycake.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_nft_sugarsnow.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_nft_creamsicle.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_nft_4.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_nft_5.jpg">
             </div>
         </div>
@@ -53,6 +53,8 @@
     <script>
     var loader = document.getElementById("preloader_white");
     window.addEventListener("load",function(){loader.style.display = "none";})
-</script>
+    </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>

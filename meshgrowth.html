@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 <body style="background-color:#000000;">
@@ -13,8 +13,8 @@
     <div id="preloader_black"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_white" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
@@ -66,5 +66,7 @@
         var loader = document.getElementById("preloader_black");
         window.addEventListener("load",function(){loader.style.display = "none";})
     </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>
