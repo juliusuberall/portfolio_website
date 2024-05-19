@@ -41,18 +41,8 @@ body{
   font-size: var(--small-paragraph-font-size);
 }
 /*------------------------NAV--------------------------*/
-.head_desktop{
-  padding: 19px 30px 19px 30px;
-  transition: top 0.3s; /* Add smooth transition */
-}
-.head_desktop.active {
-  top: 0; /* Show the menu when active */
-}
 .namesocialLine{
   padding: 0 0 9px 0;
-}
-.head_line{
-  display: inline-block;
 }
 /*------------------------ABOUT-section--------------------------*/
 #about-wrapper{
@@ -194,8 +184,7 @@ body{
 .grid-container{ /*grid cell container*/
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  column-gap: var(--landing-large-padding);
-  row-gap: var(--landing-large-padding);
+  gap: var(--landing-large-padding);
 }
 .grid-container > a{
   outline: var(--default-outline);
@@ -236,14 +225,7 @@ body{
 .grid-container > a:hover .cell_title{
   color: #ffffff;
 }
-/*------------------------RESPONSIVE-DESIGN--------------------------*/
- /*DESKTOP*/                                                                     
-@media all and (orientation:landscape){
-  .head_mobile{
-    display: none;
-  }
-}                                            
-/*TABLET*/
+/*------------------------RESPONSIVE-DESIGN--------------------------*/                                          
 @media all and (orientation:portrait){
   /*------------------------PRE-LOADER--------------------------*/
   #preloader_black{
@@ -253,65 +235,49 @@ body{
     background-size: 10%;
   }
   /*-----------------HEAD------------------*/
-  .head_desktop{
+  #extended-about-text{
     display: none;
   }
-  .head_mobile{
-    padding: 19px 70px 0px 70px;
-  }
-  .image-credits{
-    font-size: 20px;
+  #about-title{
+    font-size: var(--font-size-mobile-extra-large);
   }
   #about-wrapper{
     grid-template-columns: none;
     padding: var(--landing-large-padding)
   }
-  .head_line{
-    width: 100%;
-    font-family: 'Uberall Regular';
-    color: #ffffff;
-    font-size: 48.83px;
-    text-align: left;
-    padding: 0 0 15px 0;
+  #about-text-wrapper{
+    grid-column: unset;
+  }
+  #about-quicklinks{
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: var(--landing-large-padding);
+  }
+  #about-portrait{
+    clip-path: ellipse(50% 34% at 50% 37%);
+    margin-bottom: -40%;
   }
   .category-filter-wrapper{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat();
+    grid-template-columns: repeat(2, 1fr); /* Two equally spaced columns */
+    gap: var(--landing-large-padding);
   }
   .filter-button{
-    font-size: 39.06px;
-    border-radius: var(--border-radius-large-mobile);
-    padding: var(--landing-medium-padding) var(--landing-large-padding);
+    font-size: var(--font-size-mobile-normal);
+    grid-area: unset !important;
   }
-  #soc_about_line{
-    width: 100%;
-    position: relative;
-    height: 79px;
+  #about-quicklinks > a {
+    font-size: 55px;
   }
-  #rectangle{
-    margin: 0px -70px 0px -70px;
-    width: 100% + 140px ;
-    height: 100%;
-    border: var(--default-outline);
+  .button-1{
+    border-radius: var(--border-radius-large-mobile) !important;
+    padding: var(--landing-medium-padding) var(--landing-large-padding) !important;
+    font-size: var(--font-size-mobile-normal)
   }
-  #social_icons{
-    position: absolute;
-    top: 22px;
-    left: 0;
-  }
-  .icon_scale{
-    font-size: 34px;
+  .grid-title{
+    font-size: var(--font-size-mobile-normal);
   }
   .icons{
     padding: 0 0 0 22px;
-  }
-  #about_me{
-    position: absolute;
-    top: 9px;
-    right: 0;
-    font-size: 39.06px;
-  }
-  .footer{
-    border: var(--default-outline);
   }
   /*-----------------GRID------------------*/
   .cell_hover{
@@ -342,25 +308,4 @@ body{
 }                               
 /*MOBILE*/
 @media(max-width:590px){
-  #soc_about_line{
-    height: 114px;
-  }
-  #social_icons{
-    position: unset;
-    width: 100%;
-    float: left;
-    padding: 15px 0 0 0;
-  }
-  #about_me{
-    position: unset;
-    float: left;
-  }
-  #rectangle{
-    margin: 0px -70px 0px -70px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100% + 140px);
-    border: var(--default-outline);
-  }
 }                                     

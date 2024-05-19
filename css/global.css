@@ -70,6 +70,9 @@
     --font-size-huge: 49px;
     --font-size-extra-huge: 61px;
     --font-size-gigantic: 76px;
+
+    --font-size-mobile-normal: 39px;
+    --font-size-mobile-extra-large: 78px;
   
     --font-uberall: Uberall Regular;
     --font-poppins-thin: Poppins Thin;

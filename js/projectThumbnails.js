@@ -332,7 +332,7 @@ aTags.forEach(selectedA => {
   selectedA.appendChild(newDiv);
 });
 
-//Move all filter buttons to end of grid row
+//Move all filter buttons to end of grid row desktop
 function RepositionFilterButtons() {
     const filterButtons = document.querySelectorAll('.project-overview-wrapper .category-filter-wrapper .filter-button');
     for (let i = 0; i < filterButtons.length; i++) {
