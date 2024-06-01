@@ -257,6 +257,12 @@ body{
   }
   #about-text{
     text-align: center;
+    font-size: var(--font-size-mobile-normal)
+  }
+  .impotant-text{
+    padding: 0 var(--font-size-normal);
+    border-radius: var(--border-radius-large-mobile);
+    font-size: var(--font-size-mobile-normal);
   }
   #show-hide-extended-about-text{
     padding: var(--landing-medium-padding) var(--landing-large-padding) !important;
@@ -305,7 +311,7 @@ body{
   .button-1{
     border-radius: var(--border-radius-large-mobile) !important;
     padding: var(--landing-medium-padding) var(--landing-large-padding) !important;
-    font-size: var(--font-size-mobile-normal)
+    font-size: var(--font-size-mobile-normal) !important
   }
   .grid-title{
     font-size: var(--font-size-mobile-normal);
