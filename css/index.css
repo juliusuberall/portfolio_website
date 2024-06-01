@@ -227,7 +227,20 @@ body{
 .grid-container > a:hover .cell_title{
   color: #ffffff;
 }
-/*------------------------RESPONSIVE-DESIGN--------------------------*/                                          
+/*------------------------RESPONSIVE-DESIGN--------------------------*/
+@media all and (min-height: 65vw) {
+  #extended-about-text{
+    display: none;
+  }
+  #show-hide-extended-about-text{
+    display:flex;
+    justify-content: center;
+    border-radius: var(--border-radius-large-mobile);
+    padding: var(--landing-medium-padding) auto;
+    font-size: var(--font-size-normal);
+    margin-top: var(--landing-small-padding);
+  }
+}                                          
 @media all and (orientation:portrait){
   /*------------------------PRE-LOADER--------------------------*/
   #preloader_black{
@@ -245,16 +258,10 @@ body{
   #about-text{
     text-align: center;
   }
-  #extended-about-text{
-    display: none;
-  }
   #show-hide-extended-about-text{
-    display:flex;
-    justify-content: center;
-    border-radius: var(--border-radius-large-mobile);
-    padding: var(--landing-medium-padding) var(--landing-large-padding);
-    font-size: var(--font-size-mobile-normal);
-    margin-top: var(--landing-large-padding);
+    padding: var(--landing-medium-padding) var(--landing-large-padding) !important;
+    font-size: var(--font-size-mobile-normal) !important;
+    margin-top: var(--landing-large-padding) !important;
   }
   #about-wrapper{
     grid-template-columns: none;
