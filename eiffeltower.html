@@ -5,35 +5,35 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_black" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
-            <div class="project_headline_bright">EIFFEL TOWER</div>
-            <div class="project_description_bright">The Eiffel Tower is a 324-meter tall iron lattice tower located in Paris, France. Designed by Gustave Eiffel and built in 1889 for the Exposition Universelle, it is considered a masterpiece of engineering and an iconic example of 19th-century French architecture.<br/><br/>As part of my first year undergraduate studies in architecture and interior design in Germany, I remodelled the Eiffel Tower in CAD following historic architectural drawings. </div>
-            <div class="project_details_bright">2018<br/>University of Applied Sciences Düsseldorf (DE)<br/>Supervised by <a id="partner_link_bright" href="https://pbsa.hs-duesseldorf.de/personen/fleischmann" target="_blank">Professor Fleischmann</a></div>
+            <div class="project_headline">EIFFEL TOWER</div>
+            <div class="project_description">The Eiffel Tower is a 324-meter tall iron lattice tower located in Paris, France. Designed by Gustave Eiffel and built in 1889 for the Exposition Universelle, it is considered a masterpiece of engineering and an iconic example of 19th-century French architecture.<br/><br/>As part of my first year undergraduate studies in architecture and interior design in Germany, I remodelled the Eiffel Tower in CAD following historic architectural drawings. </div>
+            <div class="project_details">2018<br/>University of Applied Sciences Düsseldorf (DE)<br/>Supervised by <a id="partner_link" href="https://pbsa.hs-duesseldorf.de/personen/fleischmann" target="_blank">Professor Fleischmann</a></div>
         </div>
         <!---------RIGHT-COLUMN--------->
-        <div class="right_column_bright">
-            <div class="cell_content_full_width_bright">
+        <div class="right_column">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_eiffeltower_4.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_eiffeltower_1.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_eiffeltower_2.jpg">
             </div>
-            <div class="cell_content_full_width_bright">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_eiffeltower_3.jpg">
             </div>
         </div>
@@ -46,5 +46,7 @@
     var loader = document.getElementById("preloader_white");
     window.addEventListener("load",function(){loader.style.display = "none";})
     </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>

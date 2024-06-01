@@ -5,30 +5,30 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_black" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
-            <div class="project_headline_bright">HEIMATSIEDLUNG</div>
-            <div class="project_description_bright">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-            <div class="project_details_bright">
+            <div class="project_headline">HEIMATSIEDLUNG</div>
+            <div class="project_description">This is the poster of the architectural analysis for the historic urban block “Heimatsiedlung” by Ernst May in south-east Frankfurt.</div>
+            <div class="project_details">
                 2020
                 <br/>University of Applied Sciences Düsseldorf (DE)
-                <br/>Supervised by <a id="partner_link_bright" href="https://pbsa.hs-duesseldorf.de/personen/reitz" target="_blank">Prof. Reitz</a> and <a id="partner_link_bright" href="https://www.molestina.de/?/Buero/Team/PabloMolestina/" target="_blank">Prof. Molestina</a>
+                <br/>Supervised by <a id="partner_link" href="https://pbsa.hs-duesseldorf.de/personen/reitz" target="_blank">Prof. Reitz</a> and <a id="partner_link" href="https://www.molestina.de/?/Buero/Team/PabloMolestina/" target="_blank">Prof. Molestina</a>
             </div>
         </div>
         <!---------RIGHT-COLUMN--------->
-        <div class="right_column_bright">
-            <div class="cell_content_full_width_bright">
+        <div class="right_column">
+            <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_heimatsiedlung.jpg">
             </div>
         </div>
@@ -41,5 +41,7 @@
         var loader = document.getElementById("preloader_white");
         window.addEventListener("load",function(){loader.style.display = "none";})
     </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>

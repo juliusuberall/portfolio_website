@@ -5,41 +5,41 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#ffffff;">
     <!---PRE-LOADER--->
     <div id="preloader_white"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_black" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
-            <div class="project_headline_bright">UBERALL TYPOGRAPHY</div>
-            <div class="project_description_bright">Uberall Regular is the inaugural typeface created by Julius Überall, drawing inspiration from NASA's iconic "worm" logo used between 1975 and 1992, as well as his study of geometry.</div>
-            <div class="project_details_bright">2022<br/><a id="partner_link_bright" href="fonts/Uberall-Regular.otf" target="_blank">DOWNLOAD FONT</a></div>
+            <div class="project_headline">UBERALL TYPOGRAPHY</div>
+            <div class="project_description">Uberall Regular is the inaugural typeface created by Julius Überall, drawing inspiration from NASA's iconic "worm" logo used between 1975 and 1992, as well as his study of geometry.</div>
+            <div class="project_details">2022<br/><a id="partner_link" href="fonts/Uberall-Regular.otf" target="_blank">DOWNLOAD FONT</a></div>
         </div>
         <!---------RIGHT-COLUMN--------->
-        <div class="right_column_bright">
-            <div class="cell_content_half_width_bright">
+        <div class="right_column">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_uberallFont_3.png">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_uberallFont_1.svg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_uberallFont_2.jpg">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="images/JuliusUberall_uberallFont_4.png">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="gifs/JuliusUberall_uberallFont_caps.gif">
             </div>
-            <div class="cell_content_half_width_bright">
+            <div class="cell_content_half_width">
                 <img class="content" src="gifs/JuliusUberall_uberallFont_lower.gif">
             </div>
         </div>
@@ -51,6 +51,8 @@
     <script>
     var loader = document.getElementById("preloader_white");
     window.addEventListener("load",function(){loader.style.display = "none";})
-</script>
+    </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>

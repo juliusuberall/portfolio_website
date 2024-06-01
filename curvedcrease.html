@@ -5,21 +5,21 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#000000;">
     <!---PRE-LOADER--->
     <div id="preloader_black"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_white" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
         <div class="content_left_column">
             <div class="project_headline">CURVED CREASE</div>
-            <div class="project_description">Curved crease folding is a technique used in origami that involves folding along smooth, curved lines instead of straight lines. This technique allows for the creation of more intricate and organic shapes. <br><br>The presented sculpture, is a quick crafted paper model based on a single A4 sheet. Curved creases were achieved by manually cutting the paper.</div>
+            <div class="project_description">Curved crease folding is a technique used in origami that involves folding along smooth, curved lines instead of straight lines. This technique allows for the creation of more intricate and organic shapes. <br><br>The presented paper sculpture was created with a single A4 sheet. Curved creases were achieved by manually cutting and folding the paper. This represents an explorative study of physical form.</div>
             <div class="project_details">2020<br/>Inspired by <a id="partner_link" href="http://www.zha-code-education.org/" target="_blank">ZHA CODE</a></div>
         </div>
         <!---------RIGHT-COLUMN--------->
@@ -61,5 +61,7 @@
         var loader = document.getElementById("preloader_black");
         window.addEventListener("load",function(){loader.style.display = "none";})
     </script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>
