@@ -20,3 +20,17 @@ function FilterProjects(categoryToFilter, filterButton) {
     filterButton.style.color = getComputedStyle(document.documentElement).getPropertyValue('--black-0-hard');
     filterButton.style.outline = "none";
 }
+
+//Extend collapse extended bio text on mobile
+function CollapseExtendBio(thisButton) {
+    //Filter projects
+    const extendedBio = document.getElementById('extended-about-text');
+    if(extendedBio.style.display == "block") {
+        extendedBio.style.display = "none";
+        thisButton.textContent = 'read more';
+    }
+    else {
+        extendedBio.style.display = "block";
+        thisButton.textContent = 'show less';
+    }
+}
