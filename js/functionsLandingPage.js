@@ -23,7 +23,6 @@ function FilterProjects(categoryToFilter, filterButton) {
 
 //Extend collapse extended bio text on mobile
 function CollapseExtendBio(thisButton) {
-    //Filter projects
     const extendedBio = document.getElementById('extended-about-text');
     if(extendedBio.style.display == "block") {
         extendedBio.style.display = "none";

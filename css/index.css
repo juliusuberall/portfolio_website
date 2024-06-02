@@ -227,10 +227,16 @@ body{
 .grid-container > a:hover .cell_title{
   color: #ffffff;
 }
+.cell_hover{
+  display: flex;
+  justify-content: center;
+}
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
 @media all and (min-height: 65vw) {
   #extended-about-text{
     display: none;
+    opacity: 0; /* Start with opacity set to 0 */
+    animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
   }
   #show-hide-extended-about-text{
     display:flex;
@@ -289,12 +295,14 @@ body{
   }
   #about-image{
     grid-row: 1;
+    padding: 0 15%;
   }
   #about-portrait{
-    margin-bottom: -20%;
+    margin-bottom: -35%;
     z-index: -1;
     position: relative;
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    clip-path: circle(39% at 50% 37%);
   }
   .image-credits{
     display: none;
@@ -343,14 +351,12 @@ body{
     padding: 0 0 0 22px;
   }
   /*-----------------GRID------------------*/
-  .cell_hover{
-    display: none;
-  }
   .grid-container{
     grid-template-columns: repeat(2,1fr);
   }
   .cell_title{
     font-size: 31.25px;
+    padding-bottom: var(--font-size-mobile-normal);
   }
   .footer{
     height: 102px;

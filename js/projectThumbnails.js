@@ -1,7 +1,7 @@
 // Dictionary of all projects with properties for thumbnails
 const projects = {
     masterthesis: {
-      title: 'Functionally graded toolpaths',
+      title: 'Graded toolpaths',
       projectPage: 'masterthesis.html',
       projectcategory: ['category_1'],
       thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
@@ -37,7 +37,7 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_morphogeneticprogramming.jpg',
     },
     dwellingConfiguratorApp: {
-        title: 'Dwelling Configurator App',
+        title: 'Dwelling App',
         projectPage: 'dwellingConfiguratorApp.html',
         projectcategory: ['category_1'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_dwellingConfigurator.jpg',
@@ -157,7 +157,7 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_linearWoods.jpg',
     },
     woodboxes: {
-        title: 'Wood Box City',
+        title: 'Wood Boxes',
         projectPage: 'woodboxes.html',
         projectcategory: ['category_3'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_woodBoxCity.jpg',
@@ -169,7 +169,7 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_hexagon.jpg',
     },
     eiffeltower: {
-        title: 'Eiffel tower 3D model',
+        title: 'Eiffel 3D',
         projectPage: 'eiffeltower.html',
         projectcategory: ['category_2'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_eiffeltower.jpg',
