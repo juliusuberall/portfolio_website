@@ -8,14 +8,14 @@ const classesToSwap = [
 "#partner_link_bright_important"]  
 
 function ApplyAppearance(){
-    let colour = "#000000";
+    let color = "#000000";
     if (document.body.style.backgroundColor === "rgb(0, 0, 0)"){
-        colour = "#ffffff";
+        color = "#ffffff";
     }
     classesToSwap.forEach(selector => {
         const elementsByClass = document.querySelectorAll(selector);
         Array.from(elementsByClass).forEach(element => {
-            element.style.color = colour; 
+            element.style.color = color; 
         });
     });
 }

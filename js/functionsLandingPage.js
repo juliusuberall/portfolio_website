@@ -33,3 +33,16 @@ function CollapseExtendBio(thisButton) {
         thisButton.textContent = 'show less';
     }
 }
+
+//Move all filter buttons to end of grid row desktop
+function RepositionFilterButtons() {
+    const filterButtons = document.querySelectorAll('.project-overview-wrapper .category-filter-wrapper .filter-button');
+    for (let i = 0; i < filterButtons.length; i++) {
+        const reversedPos = (filterButtons.length+1)-i;
+        filterButtons[i].style.gridColumn = -reversedPos.toString();
+        filterButtons[i].style.gridRow = '1';
+    }
+}
+
+//Functions to run on index
+RepositionFilterButtons();

@@ -1,32 +1,61 @@
 /*------------------------FONTS--------------------------*/
 @font-face{/*Main Font import*/
-    font-family:Poppins Thin;
-    src:url(../fonts/Poppins-Thin.ttf);
-  }
-  @font-face{/*Main Font import*/
-    font-family:Poppins ExtraLight;
-    src:url(../fonts/Poppins-ExtraLight.ttf);
-  }
-  @font-face{/*Main Font import*/
-    font-family:Poppins Light;
-    src:url(../fonts/Poppins-Light.ttf);
-  }
-  @font-face{/*Main Font import*/
-    font-family:Poppins Regular;
-    src:url(../fonts/Poppins-Regular.ttf);
-  }
-  @font-face{/*Main Font import*/
-    font-family:Poppins Bold;
-    src:url(../fonts/Poppins-Bold.ttf);
-  }
-  /*UBERALL FONT IMPORT*/
-  @font-face{
-    font-family:Uberall Regular;
-    src:url(../fonts/Uberall-Regular.otf);
-  }
+  font-family:Poppins Thin;
+  src:url(../fonts/Poppins-Thin.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins ExtraLight;
+  src:url(../fonts/Poppins-ExtraLight.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Light;
+  src:url(../fonts/Poppins-Light.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Regular;
+  src:url(../fonts/Poppins-Regular.ttf);
+}
+@font-face{/*Main Font import*/
+  font-family:Poppins Bold;
+  src:url(../fonts/Poppins-Bold.ttf);
+}
+/*UBERALL FONT IMPORT*/
+@font-face{
+  font-family:Uberall Regular;
+  src:url(../fonts/Uberall-Regular.otf);
+}
 
+/*------------------------LOADING-ICON--------------------------*/
+#loading-icon-wrapper{
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  background-color: var(--black-4);
+  border-radius: 50%;
+}
+.loading-icon {
+  box-sizing: unset;
+  width: 50%;
+  height: 50%;
+  border: 3px solid var(--bright-white);
+  border-top: 3px solid var(--accent-colour);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: relative;
+  top: 16%;
+  left: 18%;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*------------------------GLOBAL-VARIABLES--------------------------*/
 :root {
-    --accent-colour: #ffef99;
+    --accent-colour: #ff0bac;
   
     --black-0-hard: #000000;
     --black-1: #060505;

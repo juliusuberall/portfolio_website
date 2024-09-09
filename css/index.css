@@ -10,23 +10,6 @@ p{/*Main Text*/
   font-size: var(--small-paragraph-font-size);
   color: #ffffff;
 }
-/*------------------------PRE-LOADER--------------------------*/
-#preloader_black{
-  background: #000 url(../gifs/JuliusUberall_loading_white.gif) no-repeat center center;
-  background-size: 3%;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-#preloader_white{
-  background: #fff url(../gifs/JuliusUberall_loading_black.gif) no-repeat center center;
-  background-size: 3%;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
 /*------------------------STYLE_CLASSES--------------------------*/
 body{
   background-color: var(--black-2);
@@ -246,13 +229,6 @@ body{
   }
 }                                          
 @media all and (orientation:portrait){
-  /*------------------------PRE-LOADER--------------------------*/
-  #preloader_black{
-    background-size: 10%;
-  }
-  #preloader_white{
-    background-size: 10%;
-  }
   /*-----------------HEAD------------------*/
   #about-title{
     font-size: var(--font-size-mobile-extra-large);

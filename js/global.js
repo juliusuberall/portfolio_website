@@ -384,14 +384,15 @@ aTags.forEach(selectedA => {
   selectedA.appendChild(newDiv);
 });
 
-//Move all filter buttons to end of grid row desktop
-function RepositionFilterButtons() {
-    const filterButtons = document.querySelectorAll('.project-overview-wrapper .category-filter-wrapper .filter-button');
-    for (let i = 0; i < filterButtons.length; i++) {
-        const reversedPos = (filterButtons.length+1)-i;
-        filterButtons[i].style.gridColumn = -reversedPos.toString();
-        filterButtons[i].style.gridRow = '1';
-    }
+//Insert loading icon
+function insertLoadingIcon() {
+    const loadingIconWrapper = document.createElement('div');
+    loadingIconWrapper.id = 'loading-icon-wrapper';
+    const loadingIcon = document.createElement('div');
+    loadingIcon.className = 'loading-icon';
+    loadingIconWrapper.appendChild(loadingIcon);
+    document.body.insertBefore(loadingIconWrapper, document.body.firstChild);
 }
 
-RepositionFilterButtons();
+//To execute
+insertLoadingIcon();

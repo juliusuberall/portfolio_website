@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body style="background-color:#000000;">
-    <!---PRE-LOADER--->
-    <div id="preloader_black"></div>
+
     <div class="page">
         <!---------HOME-BUTTON--------->
         <div class="home-button-wrapper">
@@ -77,12 +76,13 @@
     <!--https://ionic.io/ionicons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/global.js"></script>
+    <script src="js/projectPageLogic.js"></script>    
     <!---CHECK-IF-EVERYTHING-LOADED_PRE-LOADING-SCREEN-ON/OFF--->
     <script>
-        var loader = document.getElementById("preloader_black");
-        window.addEventListener("load",function(){loader.style.display = "none";})
+    var loader = document.getElementById("loading-icon-wrapper");
+    window.addEventListener("load",function(){loader.style.display = "none";})
     </script>
-    <!-- DYNAMIC JS SCRIPTS -->
-    <script src="js/projectPageLogic.js"></script>
 </body>
 </html>
