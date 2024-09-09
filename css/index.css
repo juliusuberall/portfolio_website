@@ -109,7 +109,7 @@ body{
   justify-content: center;
   align-items: center;
 }
-.impotant-text{
+.important-text{
   padding: 0 var(--font-size-tiny);
   border-radius: var(--border-radius-medium);
   background-color: var(--light-light-grey);
@@ -265,7 +265,7 @@ body{
     text-align: center;
     font-size: var(--font-size-mobile-normal)
   }
-  .impotant-text{
+  .important-text{
     padding: 0 var(--font-size-normal);
     border-radius: var(--border-radius-large-mobile);
     font-size: var(--font-size-mobile-normal);
