@@ -213,23 +213,21 @@ body{
 .grid-container > a:active{
   box-shadow: 0 0 20px 2px var(--shadow-on-black-active);
 }
-.grid_cell > img{ /*grid images for each project*/
+.project-cell > img{ /*grid images for each project*/
   width: 100%;
   border-radius: calc(var(--border-radius-medium)*1.05);
   display: block;
 }
-.cell_title{
-  font-family: 'Poppins Regular';
-  font-size: var(--small-paragraph-font-size);
-  padding: 0px 20px 15px 20px;
-  color: var(--light-grey);
-}
-.grid-container > a:hover .cell_title{
+.grid-container > a:hover .project-metadata{
   color: #ffffff;
 }
-.cell_hover{
-  display: flex;
-  justify-content: center;
+.project-metadata{
+  display: grid;
+  grid-template-rows: auto auto;
+  font-family: 'Poppins Regular';
+  font-size: var(--small-paragraph-font-size);
+  color: var(--light-grey);
+  padding: 0px 20px 15px 20px;
 }
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
 @media all and (min-height: 65vw) {
@@ -354,7 +352,7 @@ body{
   .grid-container{
     grid-template-columns: repeat(2,1fr);
   }
-  .cell_title{
+  .project-metadata{
     font-size: 31.25px;
     padding-bottom: var(--font-size-mobile-normal);
   }
