@@ -196,7 +196,7 @@ body{
 .grid-container > a:active{
   box-shadow: 0 0 20px 2px var(--shadow-on-black-active);
 }
-.project-cell > img{ /*grid images for each project*/
+.project-cell > img, .project-cell > video{ /*thumbnail images/videos for projects*/
   width: 100%;
   border-radius: calc(var(--border-radius-medium)*1.05);
   display: block;

@@ -44,5 +44,21 @@ function RepositionFilterButtons() {
     }
 }
 
+// Switches between thumbnail video and thumbnail image on mouse hover and mouse out when screen horizontal
+if (!window.matchMedia("(orientation: portrait)").matches){
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.project-cell').forEach(function(cell) {
+            cell.addEventListener('mouseover', function() {
+                cell.querySelector('video').style.display = 'block';
+                cell.querySelector('img').style.display = 'none';
+            });
+            cell.addEventListener('mouseout', function() {
+                cell.querySelector('video').style.display = 'none';
+                cell.querySelector('img').style.display = 'block';
+            });
+        });
+    });
+}
+
 //Functions to run on index
 RepositionFilterButtons();

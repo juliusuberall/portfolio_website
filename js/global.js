@@ -1,11 +1,18 @@
 // Dictionary of all projects with properties for thumbnails
 const projects = {
     masterthesis: {
-      title: 'Graded toolpaths',
-      projectPage: 'masterthesis.html',
+        title: 'Graded toolpaths',
+        projectPage: 'masterthesis.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
+        year: '2022',
+      },
+    facemorphing: {
+      title: 'Face Morphing',
+      projectPage: 'facemorphing.html',
       projectcategory: ['category_1'],
-      thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
-      year: '2022',
+      thumbnail: 'images/Julius_Uberall_project_thumbnails_facemorphing.jpg',
+      year: '2024',
     },
     uberallFont: {
         title: 'Uberall Typography',
@@ -19,6 +26,7 @@ const projects = {
         projectPage: 'meshgrowth.html',
         projectcategory: ['category_1'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_meshgrowth.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_meshgrowth.mp4',
         year: '2022',
     },
     curvegrowth: {
@@ -381,6 +389,13 @@ aTags.forEach(selectedA => {
         <div>${projects[projectData]['year']}</div>
         <div>${projects[projectData]['title']}</div>
     </div> `;
+  if ('thumbnailvideo' in projects[projectData]){
+    newDiv.innerHTML = 
+        `<video width=100% height="100%" autoplay loop muted style="display: none;">
+            <source src="${projects[projectData]['thumbnailvideo']}" type="video/mp4">
+        </video>` 
+        + newDiv.innerHTML;
+  }
   selectedA.appendChild(newDiv);
 });
 
