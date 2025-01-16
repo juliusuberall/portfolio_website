@@ -24,12 +24,12 @@ function FilterProjects(categoryToFilter, filterButton) {
 //Extend collapse extended bio text on mobile
 function CollapseExtendBio(thisButton) {
     const extendedBio = document.getElementById('extended-about-text');
-    if(extendedBio.style.display == "block") {
+    if(extendedBio.style.display == "inline") {
         extendedBio.style.display = "none";
         thisButton.textContent = 'read more';
     }
     else {
-        extendedBio.style.display = "block";
+        extendedBio.style.display = "inline";
         thisButton.textContent = 'show less';
     }
 }
