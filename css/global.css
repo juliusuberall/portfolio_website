@@ -53,9 +53,29 @@
   100% { transform: rotate(360deg); }
 }
 
+/*------------------------HOME-BUTTON--------------------------*/
+.home-button-wrapper{
+  /**/
+}
+.home_button {
+  font-size: 25px;
+  padding: 25px 30px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  position: fixed;
+  --ionicon-stroke-width: 20px;
+}                                                                                                 
+@media all and (orientation:portrait){
+  .home_button{
+    font-size: 64px;
+    padding: 44px 30px 0 0;
+  }
+}
+
 /*------------------------GLOBAL-VARIABLES--------------------------*/
 :root {
-    --accent-colour: #ff0bac;
+    --accent-colour: #0000ff;
   
     --black-0-hard: #000000;
     --black-1: #060505;
@@ -65,9 +85,11 @@
     --grey-hovered: #626262;
     --light-grey: #a8a8a8;
     --light-light-grey: #c8c8c8;
+    --invisible-grey: #f8f8f8;
   
     --shadow-on-black: #373737;
     --shadow-on-black-active: #e7e7e7;
+    --shadow-on-invisible-grey: #f5f5f5;
     --bright-white: #ffffff;
     
     --border-radius-large-mobile: 80px;

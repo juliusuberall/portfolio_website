@@ -1,0 +1,98 @@
+/*------------------------BASELINE--------------------------*/
+*{
+    font-family: var(--font-poppins-regular);
+}
+body{
+    background-color: var(--invisible-grey);
+}
+#main{
+    padding: 0 24% 0 24%;
+}
+#main> div{
+    padding-bottom: var(--landing-extra-large-padding);
+}
+.section_headline{
+    font-family: var(--font-poppins-bold);
+    font-size: var(--font-size-extra-big);
+    padding-bottom: var(--landing-medium-padding);
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+/*------------------------HEADLINE--------------------------*/
+#project_headline_wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-poppins-regular);
+    padding-top: var(--landing-huge-padding);
+}
+#project_headline_wrapper > div{
+    padding-bottom: var(--landing-medium-padding);
+}
+#type_date{
+    font-family: var(--font-poppins-bold);
+}
+#title{
+    font-family: var(--font-poppins-bold);
+    font-size: var(--font-size-large);
+    padding: 0 15% 0 15%;
+}
+#team{
+    line-height: var(--font-size-large);
+    padding-bottom: 0 !important;
+}
+
+/*------------------------ABSTRACT--------------------------*/
+#abstract_wrapper > div{
+    display: grid;
+    grid-template-columns: repeat(2,33% 66%);
+    gap: var(--landing-medium-padding);
+}
+#quicklinks{
+    color: var(--accent-colour);
+    grid-template-rows: repeat(1, 1fr);
+    gap: var(--landing-medium-padding);
+}
+
+/*------------------------SECTION--------------------------*/
+.section_wrapper > div{
+    display: grid;
+    grid-template-columns: repeat(2,33% 66%);
+    gap: var(--landing-medium-padding);
+}
+
+/*------------------------MEDIA--------------------------*/
+.columns_2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--landing-medium-padding);
+}
+.columns_4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--landing-medium-padding);
+}
+.media_wrapper > img {
+    border-radius: var(--border-radius-medium);
+    width: 100%;
+    box-shadow: 5px 5px 10px 2px var(--shadow-on-invisible-grey)
+}
+
+/*------------------------RESPONSIVE-DESIGN--------------------------*/
+@media all and (orientation:portrait){
+    #main{
+        padding: 0 var(--landing-mobile-headline-padding);
+    }
+    #title{
+        padding: unset;
+    }
+    .media_wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #abstract_wrapper > div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
