@@ -1,7 +1,7 @@
 //Project category filter
 function FilterProjects(categoryToFilter, filterButton) {
     //Filter projects
-    const projects = document.querySelectorAll('.grid-container a[project-category]');
+    const projects = document.querySelectorAll('.project_grid_wrapper a[project-category]');
     projects.forEach(project => {
         project.style.display = "unset";
         if(categoryToFilter == '') return
@@ -42,22 +42,6 @@ function RepositionFilterButtons() {
         filterButtons[i].style.gridColumn = -reversedPos.toString();
         filterButtons[i].style.gridRow = '1';
     }
-}
-
-// Switches between thumbnail video and thumbnail image on mouse hover and mouse out when screen horizontal
-if (!window.matchMedia("(orientation: portrait)").matches){
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('.project-cell').forEach(function(cell) {
-            cell.addEventListener('mouseover', function() {
-                cell.querySelector('video').style.display = 'block';
-                cell.querySelector('img').style.display = 'none';
-            });
-            cell.addEventListener('mouseout', function() {
-                cell.querySelector('video').style.display = 'none';
-                cell.querySelector('img').style.display = 'block';
-            });
-        });
-    });
 }
 
 //Functions to run on index

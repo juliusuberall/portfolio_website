@@ -387,7 +387,7 @@ aTags.forEach(selectedA => {
     `<img src="${projects[projectData]['thumbnail']}">
     <div class="project-metadata">
         <div>${projects[projectData]['year']}</div>
-        <div>${projects[projectData]['title']}</div>
+        <div class="project_title" >${projects[projectData]['title']}</div>
     </div> `;
   if ('thumbnailvideo' in projects[projectData]){
     newDiv.innerHTML = 
@@ -407,6 +407,22 @@ function insertLoadingIcon() {
     loadingIcon.className = 'loading-icon';
     loadingIconWrapper.appendChild(loadingIcon);
     document.body.insertBefore(loadingIconWrapper, document.body.firstChild);
+}
+
+// Switches between thumbnail video and thumbnail image on mouse hover and mouse out when screen horizontal
+if (!window.matchMedia("(orientation: portrait)").matches){
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.project-cell').forEach(function(cell) {
+            cell.addEventListener('mouseover', function() {
+                cell.querySelector('video').style.display = 'block';
+                cell.querySelector('img').style.display = 'none';
+            });
+            cell.addEventListener('mouseout', function() {
+                cell.querySelector('video').style.display = 'none';
+                cell.querySelector('img').style.display = 'block';
+            });
+        });
+    });
 }
 
 //To execute

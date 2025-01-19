@@ -73,6 +73,58 @@
   }
 }
 
+/*------------------------PROJECT_THUMBNAILS--------------------------*/
+.project_grid_wrapper{
+  display: grid;
+}
+.project_grid_wrapper > a{
+  outline: var(--default-outline);
+  border-radius: var(--border-radius-medium);
+  transition: box-shadow 0.1s ease-in-out;
+  position: relative;
+  opacity: 0; /* Start with opacity set to 0 */
+  animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
+  background-color: var(--black-0-hard);
+  text-decoration: none;
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;/* Start opacity */
+  }
+  to {
+    opacity: 1;/* End opacity */
+  }
+}
+.project_grid_wrapper > a:hover{
+  box-shadow: 0 0 20px 2px var(--shadow-on-black);
+  outline: solid 1px var(--grey-hovered);
+}
+.project_grid_wrapper > a:active{
+  box-shadow: 0 0 20px 2px var(--shadow-on-black-active);
+}
+.project-cell > img, .project-cell > video{ /*thumbnail images/videos for projects*/
+  width: 100%;
+  border-radius: calc(var(--border-radius-medium)*1.05);
+  display: block;
+}
+.project_grid_wrapper > a:hover .project-metadata{
+  color: #ffffff;
+}
+.project-metadata{
+  display: grid;
+  grid-template-rows: auto auto;
+  font-family: 'Poppins Regular';
+  font-size: var(--small-paragraph-font-size);
+  color: var(--light-grey);
+  padding: 0px 20px 15px 20px;
+}
+@media all and (min-height: 65vw) {
+  .project-metadata{
+    font-size: 31.25px;
+    padding-bottom: var(--font-size-mobile-normal);
+  }
+}
+
 /*------------------------GLOBAL-VARIABLES--------------------------*/
 :root {
     --accent-colour: #0000ff;
@@ -111,6 +163,7 @@
     --small-paragraph-font-size: 13px;
   
     --default-outline: solid 1px var(--default-outline-colour);
+    --thick-outline: solid 3px var(--black-0-hard);
     --default-outline-colour: #444444;
   
     --font-size-tiny: 8px;

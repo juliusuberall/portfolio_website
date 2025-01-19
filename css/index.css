@@ -171,56 +171,14 @@ body{
   font-family: 'Poppins Regular';
   font-size: 18px;
 }
-/*------------------------PROJECT_GRID--------------------------*/
+/*------------------------PROJECT_THUMBNAILS--------------------------*/
 .project-overview-wrapper{
   padding: var(--landing-large-padding);
   padding-top: 0;
 }
-.grid-container{ /*grid cell container*/
-  display: grid;
+.project_grid_wrapper{ /*grid cell container*/
   grid-template-columns: repeat(5,1fr);
   gap: var(--landing-large-padding);
-}
-.grid-container > a{
-  outline: var(--default-outline);
-  border-radius: var(--border-radius-medium);
-  transition: box-shadow 0.1s ease-in-out;
-  position: relative;
-  opacity: 0; /* Start with opacity set to 0 */
-  animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
-  background-color: var(--black-0-hard);
-  text-decoration: none;
-}
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;/* Start opacity */
-  }
-  to {
-    opacity: 1;/* End opacity */
-  }
-}
-.grid-container > a:hover{
-  box-shadow: 0 0 20px 2px var(--shadow-on-black);
-  outline: solid 1px var(--grey-hovered);
-}
-.grid-container > a:active{
-  box-shadow: 0 0 20px 2px var(--shadow-on-black-active);
-}
-.project-cell > img, .project-cell > video{ /*thumbnail images/videos for projects*/
-  width: 100%;
-  border-radius: calc(var(--border-radius-medium)*1.05);
-  display: block;
-}
-.grid-container > a:hover .project-metadata{
-  color: #ffffff;
-}
-.project-metadata{
-  display: grid;
-  grid-template-rows: auto auto;
-  font-family: 'Poppins Regular';
-  font-size: var(--small-paragraph-font-size);
-  color: var(--light-grey);
-  padding: 0px 20px 15px 20px;
 }
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
 @media all and (min-height: 65vw) {
@@ -328,19 +286,15 @@ body{
     transition: none;
     z-index: initial;
   }
-  .grid-title{
-    font-size: var(--font-size-mobile-normal);
-  }
   .icons{
     padding: 0 0 0 22px;
   }
   /*-----------------GRID------------------*/
-  .grid-container{
-    grid-template-columns: repeat(2,1fr);
+  .grid-title{
+    font-size: var(--font-size-mobile-normal);
   }
-  .project-metadata{
-    font-size: 31.25px;
-    padding-bottom: var(--font-size-mobile-normal);
+  .project_grid_wrapper{
+    grid-template-columns: repeat(2,1fr);
   }
   .footer{
     height: 102px;
