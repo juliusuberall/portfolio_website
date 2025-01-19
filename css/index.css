@@ -109,6 +109,61 @@ body{
   color: var(--black-0-hard);
   font-size: var(--font-size-smaller);
 }
+/*------------------------NEWS--------------------------*/
+#news_wrapper{
+  margin-top: var(--landing-large-padding);
+  background-color: var(--black-0-hard);
+  border-radius: var(--border-radius-medium);
+  outline: var(--default-outline);
+  font-family: var(--font-poppins-regular);
+  color: var(--bright-white);
+  font-size: var(--small-paragraph-font-size);
+  height: 20%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  display: grid;
+  grid-template-rows: repeat(1,1fr);
+  row-gap: var(--landing-medium-padding);
+  padding: var(--landing-large-padding);
+  position: relative;
+}
+#news_wrapper::after {
+  content: 'news';
+  position: absolute;
+  top: calc(var(--landing-large-padding)/2);
+  right: var(--landing-large-padding);
+}
+#news_wrapper::before {
+  content: '';
+  position: absolute;
+  top: calc(var(--landing-large-padding) + calc(var(--font-size-large)/2));
+  bottom: calc(var(--font-size-large)/-2);
+  left: calc(var(--landing-large-padding) + calc(var(--font-size-large)/2));
+  border-left: 1px dashed var(--bright-white);
+}
+.news{
+  display: grid;
+  grid-template-columns: 6% 94%;
+  column-gap: var(--landing-medium-padding);
+}
+.news .n_date{
+  align-self: center;
+}
+.news .n_icon{
+  font-size: var(--font-size-bigger);
+  background-color: var(--bright-white);
+  width: var(--font-size-large);
+  height: var(--font-size-large);
+  border-radius: 100%;
+  text-align: center;
+  line-height: var(--font-size-large);
+  z-index: 1;
+}
+.n_text{
+  grid-column: 2;
+}
+
 /*------------------------General buttons--------------------------*/
 .button-1{
   outline: var(--default-outline);
@@ -153,7 +208,7 @@ body{
 }
 .filter-button{
   display: inline-flex;
-  font-family: 'Poppins Regular';
+  font-family: var(--font-poppins-regular);
   font-size: var(--small-paragraph-font-size);
   border-radius: var(--border-radius-medium);
   justify-content: center;
@@ -168,7 +223,7 @@ body{
   color: var(--bright-white);
   align-items: center;
   display: inline-flex;
-  font-family: 'Poppins Regular';
+  font-family: var(--font-poppins-regular);
   font-size: 18px;
 }
 /*------------------------PROJECT_THUMBNAILS--------------------------*/

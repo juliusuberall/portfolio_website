@@ -378,6 +378,25 @@ const projects = {
       },
 };
 
+// Dictionary of all news
+const news = {
+    n2409_03: {
+        date: "Sep '24", 
+        icon: '🎓',
+        text: 'Starting the MSc in Computer Graphics, Vision and Imaging at UCL.',
+    },
+    n2409_02: {
+        date: "Sep '24",
+        icon: '⛰️',
+        text: 'Went for an awesome hiking trip to Trolltunga in Norway.',
+    },
+    n2409_01: {
+        date: "Sep '24",
+        icon: '💼',
+        text: 'Left the Applied R+D team at Foster + Partners after 2 exciting years.',
+    },
+}
+
 //Create thumbnails
 const aTags = document.querySelectorAll('a[project-name]');
 aTags.forEach(selectedA => {
@@ -402,6 +421,19 @@ aTags.forEach(selectedA => {
         + newDiv.innerHTML;
   }
   selectedA.appendChild(newDiv);
+});
+
+//Create news feed
+const newsWrapper = document.getElementById('news_wrapper');
+Object.entries(news).forEach(([key, value]) => {
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML = 
+        `<div class="news">
+            <div class="n_icon">${value.icon}</div>
+            <div class="n_date">${value.date}</div>
+            <div class="n_text">${value.text}</div>
+        </div>`
+    newsWrapper.appendChild(newDiv);
 });
 
 //Insert loading icon
