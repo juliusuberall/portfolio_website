@@ -9,6 +9,9 @@ a{
     color: unset;
     text-decoration: none;
 }
+pre{
+    margin: 0;
+}
 #main{
     padding: 0 24% 0 24%;
 }
@@ -60,6 +63,9 @@ a{
     padding-bottom: var(--landing-medium-padding);
     padding-top: var(--landing-extra-large-padding);
 }
+.section_wrapper {
+    padding-bottom: 0 !important;
+}
 .section_wrapper .section_text{
     column-count: 2;
     column-gap: var(--landing-large-padding);
@@ -74,6 +80,9 @@ a{
     height: 1px;
     background-color: black;
     margin-left: 10px;
+}
+.section_text{
+    padding-bottom: var(--landing-large-padding);
 }
 
 /*------------------------MEDIA--------------------------*/
@@ -101,8 +110,23 @@ figcaption {
     width: 100%;
     box-shadow: 5px 5px 10px 2px var(--shadow-on-invisible-grey);
 }
-.media_wrapper + .media_wrapper{
+
+/*------------------------BibTex--------------------------*/
+.bibtex_wrapper{
+    background-color: var(--bright-white);
+    border-radius: var(--border-radius-medium);
     padding-bottom: 0 !important;
+}
+#bibtex{
+    font-size: var(--font-size-extra-smaller);
+    overflow: scroll;
+    padding: 20px;
+    scrollbar-width: none;
+}
+
+/*------------------------BibTex--------------------------*/
+mjx-container{
+    margin: var(--landing-large-padding) 0 !important;
 }
 
 /*------------------------RELATED-PROJECTS--------------------------*/
@@ -117,6 +141,7 @@ figcaption {
 }
 .related_wrapper .project_grid_wrapper > a{
     box-shadow: 5px 5px 10px 2px var(--grey-hovered);
+    outline: none;
 }
 .related_wrapper .project_grid_wrapper > a:hover{
     box-shadow: none;
