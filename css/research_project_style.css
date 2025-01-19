@@ -54,6 +54,32 @@ pre{
     color: var(--accent-colour);
     grid-template-rows: repeat(1, 1fr);
     gap: var(--landing-medium-padding);
+    overflow: hidden;
+    z-index: 0;
+}
+#quicklinks a{
+    display: inline;
+    position: relative;
+}
+#quicklinks a:hover{
+    color: var(--bright-white);
+}
+#quicklinks a:hover::before{
+    left: 0;
+}
+#quicklinks a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-colour);
+    transition: left 0.2s ease;
+    z-index: -1;
+}
+#quicklinks ion-icon{
+    vertical-align: sub;
 }
 
 /*------------------------SECTION--------------------------*/

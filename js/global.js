@@ -13,6 +13,11 @@ const projects = {
       projectcategory: ['category_1'],
       thumbnail: 'images/Julius_Uberall_project_thumbnails_facemorphing.jpg',
       year: '2024',
+      quicklinks: {
+        paper: 'masterthesis.html',
+        code: 'masterthesis.html',
+        dataset: 'masterthesis.html',
+        },
     },
     uberallFont: {
         title: 'Uberall Typography',
@@ -424,6 +429,19 @@ if (!window.matchMedia("(orientation: portrait)").matches){
         });
     });
 }
+
+//Create quicklinks on research page
+const q = document.getElementById('quicklinks');
+const projectName = q.getAttribute('project-name');
+Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML = 
+        `<a href="${value}">
+            ${key} 
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>`
+    q.appendChild(newDiv);
+});
 
 //To execute
 insertLoadingIcon();
