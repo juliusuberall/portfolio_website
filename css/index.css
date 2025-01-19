@@ -48,13 +48,12 @@ body{
   color: white;
 }
 #show-hide-extended-about-text{
-  margin-left: 7px;
-  position: absolute;
-  display: inline-block;
-  justify-content: center;
+  display: inline-flex;
+  gap: 10px;
   border-radius: var(--border-radius-large-mobile);
   padding: 0 10px;
   font-size: var(--font-size-normal);
+  line-height: 18px;
 }
 #extended-about-text{
   display: none;

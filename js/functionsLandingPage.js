@@ -26,11 +26,11 @@ function CollapseExtendBio(thisButton) {
     const extendedBio = document.getElementById('extended-about-text');
     if(extendedBio.style.display == "inline") {
         extendedBio.style.display = "none";
-        thisButton.textContent = 'read more';
+        thisButton.textContent = '. . .';
     }
     else {
         extendedBio.style.display = "inline";
-        thisButton.textContent = 'show less';
+        thisButton.textContent = '. . .';
     }
 }
 
