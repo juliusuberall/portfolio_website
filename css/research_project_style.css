@@ -148,14 +148,15 @@ figcaption {
     overflow: scroll;
     padding: 20px;
     scrollbar-width: none;
+    color: var(--light-grey);
 }
 
-/*------------------------BibTex--------------------------*/
+/*------------------------MathJax--------------------------*/
 mjx-container{
     margin: var(--landing-large-padding) 0 !important;
 }
 
-/*------------------------RELATED-PROJECTS--------------------------*/
+/*------------------------RELATED-PROJECTS-----------------*/
 .related_wrapper .section_headline{
     border-bottom: var(--thick-outline);
 }
@@ -179,15 +180,107 @@ mjx-container{
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
 @media all and (orientation:portrait){
     #main{
-        padding: 0 var(--landing-mobile-headline-padding);
+        padding: 0 var(--mobile-side-padding);
+    }
+    #main > div{
+        padding-bottom: var(--landing-mobile-headline-padding);
+    }
+
+    /*------------------------HEADLINE--------------------------*/
+    #project_headline_wrapper{
+        font-family: var(--font-poppins-regular);
+        padding-top: var(--landing-huge-padding);
+    }
+    #project_headline_wrapper > div{
+        padding-bottom: var(--font-size-mobile-normal);
     }
     #title{
-        padding: unset;
+        font-size: var(--font-size-mobile-large);
+        padding: 0 5%;
     }
-    .media_wrapper{
-        grid-template-columns: repeat(1,1fr);
+    #type_date{
+        font-size: var(--font-size-mobile-normal);
     }
+    #team{
+        line-height: var(--font-size-mobile-large);
+        font-size: var(--font-size-mobile-normal);
+    }
+
     #abstract_wrapper > div{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*------------------------SECTION--------------------------*/
+    .section_headline{
+        font-size: var(--font-size-mobile-large);
+    }
+    .section_wrapper {
+        font-size: var(--font-size-mobile-normal);
+    }
+    .section_wrapper .section_text{
+        column-count: 1;
+    }
+
+    /*------------------------MEDIA--------------------------*/
+    figcaption {
+        font-size: var(--font-size-mobile-small);
+        padding: 0 5%;
+    }
+    .columns_2{
+        grid-template-columns: repeat(1,1fr);
+        gap: var(--mobile-side-padding);
+    }
+    .columns_4{
+        grid-template-columns: repeat(1,1fr);
+        gap: var(--mobile-side-padding);
+    }
+    .media_wrapper img {
+        border-radius: var(--border-radius-medium);
+        width: 100%;
+        box-shadow: 10px 10px 20px 4px var(--shadow-on-invisible-grey);
+    }
+
+    /*------------------------BibTex--------------------------*/
+    #bibtex{
+        font-size: var(--font-size-mobile-normal);
+        padding: var(--mobile-side-padding);
+    }
+
+    /*------------------------ABSTRACT--------------------------*/
+    #abstract_wrapper{
+        font-size: var(--font-size-mobile-normal);
+    }
+    #abstract_wrapper > div{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        gap: var(--font-size-mobile-normal);
+    }
+    #quicklinks{
+        grid-row: 2;
+    }
+    #quicklinks div{
+        padding-top: var(--font-size-mobile-normal);
+    }
+    #quicklinks a:active{
+        color: var(--bright-white);
+    }
+    #quicklinks a:active::before{
+        left: 0;
+    }
+
+    /*------------------------RELATED-PROJECTS-----------------*/
+    .related_wrapper .project-metadata{
+        font-size: var(--font-size-mobile-normal);
+        padding: var(--landing-mobile-headline-padding);
+        padding-top: var(--font-size-mobile-small);
+    }
+    .related_wrapper .project_grid_wrapper {
+        padding-top: var(--mobile-side-padding);
+    }
+    .related_wrapper .project_grid_wrapper > a{
+        box-shadow: 10px 10px 20px 4px var(--grey-hovered);
+    }
+    .related_wrapper .project_grid_wrapper > a:active{
+        box-shadow: none;
     }
 }
