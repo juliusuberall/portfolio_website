@@ -122,19 +122,25 @@ figcaption {
     padding: 0 10%;
 }
 .columns_2{
-    display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: var(--landing-medium-padding);
 }
 .columns_4{
-    display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: var(--landing-medium-padding);
 }
-.media_wrapper img {
+.media_wrapper figure{
     border-radius: var(--border-radius-medium);
-    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: var(--landing-medium-padding);
     box-shadow: 5px 5px 10px 2px var(--shadow-on-invisible-grey);
+}
+.media_wrapper{
+    display: grid;
+    gap: var(--landing-large-padding);
+}
+.media_wrapper img {
+    width: 100%;
 }
 
 /*------------------------BibTex--------------------------*/
@@ -234,9 +240,7 @@ mjx-container{
         grid-template-columns: repeat(1,1fr);
         gap: var(--mobile-side-padding);
     }
-    .media_wrapper img {
-        border-radius: var(--border-radius-medium);
-        width: 100%;
+    .media_wrapper figure{
         box-shadow: 10px 10px 20px 4px var(--shadow-on-invisible-grey);
     }
 

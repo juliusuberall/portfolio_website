@@ -7,16 +7,14 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
         year: '2022',
       },
-    facemorphing: {
-      title: 'Face Morphing',
-      projectPage: 'facemorphing.html',
+    poissonImageEditing: {
+      title: 'Poisson Image Editing',
+      projectPage: 'poissonImageEditing.html',
       projectcategory: ['category_1'],
-      thumbnail: 'images/Julius_Uberall_project_thumbnails_facemorphing.jpg',
+      thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
       year: '2024',
       quicklinks: {
-        paper: 'masterthesis.html',
-        code: 'masterthesis.html',
-        dataset: 'masterthesis.html',
+        'original paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
         },
     },
     uberallFont: {
