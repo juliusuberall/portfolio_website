@@ -15,7 +15,7 @@
         <div id="project_headline_wrapper">
             <div id="type_date">Coursework | November 2024</div>
             <div id="title">Poisson Image Editing</div>
-            <div id="team">Image Processing by Prof Lourdes Agapito<br>University College London (UCL)</div>
+            <div id="team">Image Processing by Prof <a href="https://g.co/kgs/nm67FN7" target="_blank">Lourdes Agapito</a><br>University College London (UCL)</div>
         </div>
         <div class="media_wrapper">
             <figure>
@@ -26,12 +26,12 @@
         <div id="abstract_wrapper">
             <div>
                 <div></div>
-                <div class="section_headline">Abstract</div>
+                <div class="section_headline"></div>
             </div>
             <div>            
                 <div project-name="poissonImageEditing" id="quicklinks">
                 </div>
-                <div id="abstract">Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or structure information remains an open problem. In this paper, we present LoRAdapter, an approach that unifies both style and structure conditioning under the same formulation using a novel conditional LoRA block that enables zero-shot control. LoRAdapter is an efficient, powerful, and architecture- agnostic approach to condition text-to-image diffusion models, which enables fine-grained control conditioning during generation and outperforms recent state- of-the-art approaches.</div>
+                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Image Processing in which one of my student projects focused on Poisson Image Editing. It is a seamless cloning method to transfer and interpolate a frequency pattern from an arbitrary image into another solving a poisson equation for each pixel to clone. The method was first introduced by Perez et al. in 2003.</div>
             </div>
         </div>
         <div class="section_wrapper">
@@ -39,18 +39,32 @@
                 <div class="section_headline">Method</div>
             </div>
             <div>            
-                <div class="section_text">Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or structure information remains an open problem. In this paper, we present LoRAdapter, an approach that unifies both style and structure conditioning under the same formulation using a novel conditional LoRA block that enables zero-shot control.</div>
+                <div class="section_text">We will mainly focus on guided image interpolation, which in simple terms adjusts the image intensities over region \(\Omega\) such that their gradient matches a reference gradient. This optimization is in a way separated from the color itself and alters the image on a more abstract level by remodelling the ‘curvature’ of its intensities.<br><br>All we need is a destination image with region \(\Omega\) in which we want to clone the region \(\Omega\) from a source image described by its vector field \(v\), capturing the gradience. In theory one could come up with any \(v\) without requiring a source image, however we will stick to it for clarity.</div>
             </div>
         </div>
         <div class="media_wrapper">
             <figure>
-                <img src="images/JuliusUberall_poissonImageEditing_2.jpg">
-                <figcaption>Figure X: Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or </figcaption>
+                <img src="images/JuliusUberall_poissonImageEditing_8.jpg">
+                <figcaption>Figure 2: The destination image can be described with the function \(f*\). Within \(f*\) we have the interpolation region \(\Omega\) which is represented with function \(f\) and solved for under the guidance of vector field \(v\) and given the dirichlet boundary condition \(\delta\Omega\). In this example vector field \(v\) is the image gradient for source image \(g\) within the corresponding region \(\Omega\).</figcaption>
             </figure>
         </div>
-        <div class="section_wrapper">          
-            $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
-            <div class="section_text">Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or structure information remains an open problem. In this paper, we present LoRAdapter, an approach that unifies both style and structure conditioning under the same formulation using a novel conditional LoRA block that enables zero-shot control.</div>
+        <div class="section_wrapper">
+            <div class="section_text">Minimizing the difference between \(\nabla f\) and \(v\) for all pixels \(p\) in region  \(\Omega\) can be rewritten with the following poisson equation while using a dirichlet boundary condition to ensure seamless cloning. The laplacian \(\Delta\) allows us to measure the local difference of a point and in our case the difference between the intensity of a pixel \(p\) to its neighbours.</div>
+            $$\Delta f = \Delta g \text{ over } \Omega$$
+            <div class="section_text">This gives us a linear system to solve for all \(p \in \Omega\). One can think of the below equation as some extended form of the laplacian operator to solve the minimization problem for region \(\Omega\).</div>
+            $$
+            |N_p|f_p - \sum_{q \in N_p \cap \Omega} f_q = \sum_{q \in N_p \cap \delta\Omega} f^*_q + \sum_{q \in N_p} v_{pq}
+            $$
+            <div class="section_text">
+                \(N_p\) = Number of neighbours
+                <br> \(p\) = Pixel
+                <br> \(f_q\) = Neighbouring pixel
+                <br> \(\Omega\) = Region to interpolate
+                <br> \(\delta\Omega\) = Boundary of region to interpolate which is static and belongs to \(f^*\)
+                <br> \(f\) = Region of function to interpolate
+                <br> \(f^*\) = Destinatination image function outside of region
+                <br> \(v\) = Vector field
+            </div>
         </div>
         <div class="media_wrapper">
             <figure>
@@ -59,11 +73,64 @@
             </figure>
         </div>
         <div class="section_wrapper">
+            <div>            
+                <div class="section_text">Following the method described above there are two ways to apply it for seamless cloning in images: (i) importing the gradient solely from the source image and willing to remove any details from the destination image (ii) mixing the gradients of source and destination over \(\Omega\) by maintaining the highest frequencies from both images and preserving ultimately detail. In figure 3 this becomes particularly visible when comparing the specular reflections on the apple in the image but especially comparing the gradients. When importing the gradient this reflection gets blurred, when mixing it is preserved. On the other hand we showcase for reference how \(\Omega\) would look like if it would be just pasted in the destination and not interpolated, creating high frequencies at \(\delta \Omega\).</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_2.jpg">
+                <figcaption>Figure 4: Seamless cloning of a region on a walnut to an apple in greyscale to simplify the problem to a single image channel. The light red dashed line highlights the region \(\Omega\) in the source and destination image which was transferred.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">So far the example was only a grayscale image. For multi-channel images one has to solve the above minimization problem for each individual channel independently.</div>
+            </div>
+        </div>
+        <div class="media_wrapper columns_4">
+            <figure>
+                <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_1_r.mp4"></video>
+                <figcaption>Figure X: Red channel interpolation.</figcaption>
+            </figure>
+            <figure>
+                <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_1_g.mp4"></video>
+                <figcaption>Figure X: Green channel interpolation.</figcaption>
+            </figure>
+            <figure>
+                <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_1_b.mp4"></video>
+                <figcaption>Figure X: Blue channel interpolation.</figcaption>
+            </figure>
+            <figure>
+                <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_2.mp4"></video>
+                <figcaption>Figure X: Stacked interpolated channels.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The method of seamless cloning can be extended to synthesise seamless texture tiles. It is a widely known issue of using arbitrary images as textures for 3D models that by populating the geometry with the texture one creates visible tiling seams which are not desired. With the above technique it is possible to take some arbitrary image and create a ‘tiling’ boundary condition \(\delta \Omega\) by mirroring the edge conditions, such that when solved for one removes the tiling seam.</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_9.jpg">
+                <figcaption>Figure 3: Seamless cloning of a region on a walnut to an apple in greyscale to simplify the problem to a single image channel. The light red dashed line highlights the region \(\Omega\) in the source and destination image which was transferred.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The effect of seamless tiling becomes particularly visible when applying it to a texture with big differences in illumination, given that textures mostly follow the same pattern when it comes to color. In such a case the method evenly distributes the illumination across the tile and the seam becomes nearly invisible even though the texture pattern does not match exactly.</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_5.jpg">
+                <figcaption>Figure X: Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or </figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
             <div>
                 <div class="section_headline">Results</div>
-            </div>
-            <div>            
-                <div class="section_text">Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or structure information remains an open problem. In this paper, we present LoRAdapter, an approach that unifies both style and structure conditioning under the same formulation using a novel conditional LoRA block that enables zero-shot control.</div>
             </div>
         </div>
         <div class="media_wrapper">
@@ -72,12 +139,8 @@
                 <figcaption>Fig. 1. Poisson image editing allows to seamlessly clone a region from image A within </figcaption>
             </figure>
             <figure>
-                <img src="images/JuliusUberall_poissonImageEditing_6.jpg">
+                <img src="images/JuliusUberall_poissonImageEditing_7.jpg">
                 <figcaption>Fig. 1. Poisson image editing allows to seamlessly clone a region from image A within </figcaption>
-            </figure>
-            <figure>
-                <img src="images/JuliusUberall_poissonImageEditing_5.jpg">
-                <figcaption>Figure X: Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or </figcaption>
             </figure>
         </div>
         <div class="related_wrapper">

@@ -139,8 +139,11 @@ figcaption {
     display: grid;
     gap: var(--landing-large-padding);
 }
-.media_wrapper img {
+.media_wrapper img, .media_wrapper video {
     width: 100%;
+}
+.media_wrapper video {
+    border-radius: var(--border-radius-small) var(--border-radius-small) 0 0 ;
 }
 
 /*------------------------BibTex--------------------------*/

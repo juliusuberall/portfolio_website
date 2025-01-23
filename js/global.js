@@ -472,7 +472,7 @@ const projectName = q.getAttribute('project-name');
 Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
     const newDiv = document.createElement('div');
     newDiv.innerHTML = 
-        `<a href="${value}">
+        `<a href="${value}" target="_blank">
             ${key} 
             <ion-icon name="chevron-forward-outline"></ion-icon>
         </a>`
