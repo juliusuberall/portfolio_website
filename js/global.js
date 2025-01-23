@@ -12,6 +12,7 @@ const projects = {
       projectPage: 'poissonImageEditing.html',
       projectcategory: ['category_1'],
       thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
+      thumbnailvideo: 'videos/JuliusUberall_thumbnail_poissonImageEditing.mp4',
       year: '2024',
       quicklinks: {
         'original paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
@@ -446,6 +447,9 @@ function insertLoadingIcon() {
     document.body.insertBefore(loadingIconWrapper, document.body.firstChild);
 }
 
+//To execute
+insertLoadingIcon();
+
 // Switches between thumbnail video and thumbnail image on mouse hover and mouse out when screen horizontal
 if (!window.matchMedia("(orientation: portrait)").matches){
     document.addEventListener('DOMContentLoaded', function() {
@@ -474,6 +478,3 @@ Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
         </a>`
     q.appendChild(newDiv);
 });
-
-//To execute
-insertLoadingIcon();
