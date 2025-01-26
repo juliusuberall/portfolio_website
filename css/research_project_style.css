@@ -111,6 +111,31 @@ pre{
     padding-bottom: var(--landing-large-padding);
 }
 
+/*------------------------REFERENCES--------------------------*/
+.section_wrapper .references{
+    font-size: var(--font-size-extra-smaller);
+}
+.references ol {
+    counter-reset: list-counter;
+    padding: 0;
+}
+.references li {
+    list-style: none;
+    counter-increment: list-counter;
+    text-align: left;
+    position: relative;
+    padding-left: 6%; 
+}
+.references li::before {
+    content: "[" counter(list-counter) "] ";
+    padding-right: 1%;
+    
+    position: absolute; 
+    left: 0; 
+    width: 4%; 
+    text-align: right; 
+}
+
 /*------------------------MEDIA--------------------------*/
 figure{
     margin: 0;
@@ -252,6 +277,11 @@ mjx-container[jax="CHTML"] {
     }
     .media_wrapper figure{
         box-shadow: 10px 10px 20px 4px var(--shadow-on-invisible-grey);
+    }
+
+    /*------------------------REFERENCES--------------------------*/
+    .section_wrapper .references{
+        font-size: var(--font-size-mobile-small);
     }
 
     /*------------------------BibTex--------------------------*/
