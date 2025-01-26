@@ -39,7 +39,7 @@
                 <div class="section_headline">Method</div>
             </div>
             <div>            
-                <div class="section_text">We will mainly focus on guided image interpolation, which in simple terms adjusts the image intensities over region \(\Omega\) such that their gradient matches a reference gradient. This optimization is in a way separated from the color itself and alters the image on a more abstract level by remodelling the ‘curvature’ of its intensities.<br><br>All we need is a destination image \(D\) with region \(\Omega\) in which we want to clone the region \(\Omega\) from a source image \(S\) described by its vector field \(v\), capturing the gradience. In theory one could come up with any \(v\) without requiring \(S\), however we will stick to it for clarity.</div>
+                <div class="section_text">We will mainly focus on guided image interpolation, which in simple terms adjusts the image intensities over region \(\Omega\) such that their gradient matches a reference gradient. This optimization is in a way separated from the color itself and alters the image on a more abstract level by remodelling the "curvature" of its intensities.<br><br> All we need is a destination image \(D\) with region \(\Omega\) in which we want to clone the region \(\Omega\) from a source image \(S\) described by its vector field \(v\), capturing the gradience. In theory one could come up with any \(v\) without requiring \(S\), however we will stick to it for clarity.</div>
             </div>
         </div>
         <div class="media_wrapper">
@@ -56,20 +56,22 @@
             |N_p|f_p - \sum_{q \in N_p \cap \Omega} f_q = \sum_{q \in N_p \cap \delta\Omega} f^*_q + \sum_{q \in N_p} v_{pq}
             $$
             <div class="section_text">
-                \(N_p\) = Number of neighbours
-                <br> \(p\) = Pixel
-                <br> \(f_q\) = Neighbouring pixel
-                <br> \(\Omega\) = Region to interpolate
-                <br> \(\delta\Omega\) = Boundary of region to interpolate which is static and belongs to \(f^*\)
-                <br> \(f\) = Region of function to interpolate
-                <br> \(f^*\) = Destinatination image function outside of region
-                <br> \(v\) = Vector field
+                <figcaption>                
+                    \(N_p\) = Number of neighbours
+                    <br> \(p\) = Pixel
+                    <br> \(f_q\) = Neighbouring pixel
+                    <br> \(\Omega\) = Region to interpolate
+                    <br> \(\delta\Omega\) = Boundary of region to interpolate which is static and belongs to \(f^*\)
+                    <br> \(f\) = Region of function to interpolate
+                    <br> \(f^*\) = Destinatination image function outside of region
+                    <br> \(v\) = Vector field
+                </figcaption>
             </div>
         </div>
         <div class="media_wrapper">
             <figure>
-                <img src="images/JuliusUberall_poissonImageEditing_4.jpg">
-                <figcaption>Figure 3: On a higher level the interpolation remodels the region \(\Omega\) in such a way that it is as close a possible to  \(S\) but transitions smoothly into the curvature of  \(f^*\).</figcaption>
+                <img src="images/JuliusUberall_poissonImageEditing_10.jpg">
+                <figcaption>Figure 3: On a higher level the interpolation remodels the region \(\Omega\) of \(D\) in such a way that it is as close a possible to \(\Omega\) of \(S\) but blends smoothly into the curvature of  \(f^*\).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -119,13 +121,18 @@
         </div>
         <div class="section_wrapper">
             <div>            
-                <div class="section_text">The effect of seamless tiling becomes particularly visible when applying it to a texture with big differences in illumination, given that textures mostly follow the same pattern when it comes to color and gradience. In such a case the method evenly distributes the illumination across the tile and the seam becomes nearly invisible even though the texture pattern does not match exactly.</div>
+                <div class="section_text">The effect of seamless tiling becomes particularly visible when applying it to a texture with big differences in illumination, given that textures mostly follow the same pattern when it comes to color and gradience. In such a case the method evenly distributes the illumination across the tile and the seam becomes nearly invisible even though the texture pattern does not match exactly. In figure 11 this illumination redistribution is made visible and indicates basically a complementary intensity to the original tile. 
+                </div>
             </div>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_5.jpg">
-                <figcaption>Figure X: Text-to-image generative models have become a prominent and powerful tool that excels at generating high-resolution realistic images. However, guiding the generative process of these models to consider detailed forms of conditioning reflecting style and/or </figcaption>
+                <figcaption>Figure 10: The rectangular tiling seam becomes obvious when looking at the image gradience of the tiled texture. This seam nearly vanishes after the interpolation. The corner seems to still be an issue, which might be fixed by adjusting \(\delta \Omega\).</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_11.jpg">
+                <figcaption>Figure 11: During interpolation the original tile is adjusted in intensity to ensure smooth blending from one tile into another. The adjustment equals almost an inverted, flat illumination of the original tile.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">

@@ -119,6 +119,8 @@ figure{
 figcaption {
     font-size: var(--font-size-extra-smaller);
     margin-top: var(--landing-small-padding);
+}
+figure figcaption {
     padding: 0 10%;
 }
 .columns_2{
@@ -162,7 +164,10 @@ figcaption {
 
 /*------------------------MathJax--------------------------*/
 mjx-container{
-    margin: var(--landing-large-padding) 0 !important;
+    margin: 0 0 var(--landing-large-padding) 0 !important;
+}
+mjx-container[jax="CHTML"] {
+    line-height: var(--medium-paragraph-font-size);
 }
 
 /*------------------------RELATED-PROJECTS-----------------*/
@@ -233,6 +238,8 @@ mjx-container{
     /*------------------------MEDIA--------------------------*/
     figcaption {
         font-size: var(--font-size-mobile-small);
+    }
+    figure figcaption {
         padding: 0 5%;
     }
     .columns_2{
