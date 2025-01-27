@@ -110,6 +110,12 @@ pre{
 .section_text{
     padding-bottom: var(--landing-large-padding);
 }
+.section_equation{
+    background-color: var(--bright-white);
+    padding: var(--landing-large-padding);
+    margin-bottom: var(--landing-large-padding);
+    border-radius: var(--border-radius-medium);
+}
 
 /*------------------------REFERENCES--------------------------*/
 .section_wrapper .references{
@@ -129,11 +135,10 @@ pre{
 .references li::before {
     content: "[" counter(list-counter) "] ";
     padding-right: 1%;
-    
     position: absolute; 
     left: 0; 
     width: 4%; 
-    text-align: right; 
+    text-align: right;
 }
 
 /*------------------------MEDIA--------------------------*/
@@ -189,7 +194,7 @@ figure figcaption {
 
 /*------------------------MathJax--------------------------*/
 mjx-container{
-    margin: 0 0 var(--landing-large-padding) 0 !important;
+    margin: 0 !important;
 }
 mjx-container[jax="CHTML"] {
     line-height: var(--medium-paragraph-font-size);
@@ -241,7 +246,7 @@ mjx-container[jax="CHTML"] {
         font-size: var(--font-size-mobile-normal);
     }
     #team{
-        line-height: var(--font-size-mobile-large);
+        line-height: var(--font-size-mobile-extra-large);
         font-size: var(--font-size-mobile-normal);
     }
 
@@ -258,6 +263,17 @@ mjx-container[jax="CHTML"] {
     }
     .section_wrapper .section_text{
         column-count: 1;
+    }
+    .related_wrapper .section_headline{
+        border-bottom: var(--thick-outline-mobile);
+    }
+
+    /*------------------------MathJax--------------------------*/
+    .section_wrapper mjx-container{
+        font-size: var(--font-size-mobile-big) !important;
+    }
+    figcaption mjx-container{
+        font-size: var(--font-size-mobile-normal) !important;
     }
 
     /*------------------------MEDIA--------------------------*/
@@ -282,6 +298,13 @@ mjx-container[jax="CHTML"] {
     /*------------------------REFERENCES--------------------------*/
     .section_wrapper .references{
         font-size: var(--font-size-mobile-small);
+    }
+    .section_wrapper li{
+        padding-bottom: 3%;
+    }
+    .references li::before {
+        font-size: var(--font-size-mobile-low);
+        top: 3%;
     }
 
     /*------------------------BibTex--------------------------*/

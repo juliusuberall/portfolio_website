@@ -50,12 +50,9 @@
         </div>
         <div class="section_wrapper">
             <div class="section_text">Minimizing the difference between \(\nabla f\) and \(v\) for all pixels \(p\) in region  \(\Omega\) can be rewritten with the following poisson equation while using a dirichlet boundary condition to ensure seamless cloning. The laplacian \(\Delta\) allows us to measure the local difference of a point and in our case the difference between the intensity of a pixel \(p\) to its neighbours.</div>
-            $$\Delta f = \Delta g \text{ over } \Omega$$
+            <div class="section_equation">$$ \Delta f = \Delta g \text{ over } \Omega $$ </div>
             <div class="section_text">This gives us a linear system to solve for all \(p \in \Omega\). One can think of the below equation as some extended form of the laplacian operator to solve the minimization problem for region \(\Omega\).</div>
-            $$
-            |N_p|f_p - \sum_{q \in N_p \cap \Omega} f_q = \sum_{q \in N_p \cap \delta\Omega} f^*_q + \sum_{q \in N_p} v_{pq}
-            $$
-            <div class="section_text">
+            <div class="section_equation">$$ |N_p|f_p - \sum_{q \in N_p \cap \Omega} f_q = \sum_{q \in N_p \cap \delta\Omega} f^*_q + \sum_{q \in N_p} v_{pq} $$
                 <figcaption>                
                     \(N_p\) = Number of neighbours
                     <br> \(p\) = Pixel

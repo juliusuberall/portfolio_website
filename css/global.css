@@ -166,6 +166,7 @@
   
     --default-outline: solid 1px var(--default-outline-colour);
     --thick-outline: solid 3px var(--black-0-hard);
+    --thick-outline-mobile: solid 6px var(--black-0-hard);
     --default-outline-colour: #444444;
   
     --font-size-tiny: 8px;
@@ -181,7 +182,9 @@
     --font-size-gigantic: 76px;
 
     --font-size-mobile-small: 14px;
+    --font-size-mobile-low: 24px;
     --font-size-mobile-normal: 31.25px;
+    --font-size-mobile-big: 43px;
     --font-size-mobile-large: 52px;
     --font-size-mobile-extra-large: 63px;
     --font-size-mobile-huge: 77px;
