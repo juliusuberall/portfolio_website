@@ -1,11 +1,22 @@
 // Dictionary of all projects with properties for thumbnails
 const projects = {
     masterthesis: {
-      title: 'Graded toolpaths',
-      projectPage: 'masterthesis.html',
+        title: 'Graded toolpaths',
+        projectPage: 'masterthesis.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
+        year: '2022',
+      },
+    poissonImageEditing: {
+      title: 'Poisson Image Editing',
+      projectPage: 'poissonImageEditing.html',
       projectcategory: ['category_1'],
-      thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
-      year: '2022',
+      thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
+      thumbnailvideo: 'videos/JuliusUberall_thumbnail_poissonImageEditing.mp4',
+      year: '2024',
+      quicklinks: {
+        'original paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
+        },
     },
     uberallFont: {
         title: 'Uberall Typography',
@@ -19,6 +30,7 @@ const projects = {
         projectPage: 'meshgrowth.html',
         projectcategory: ['category_1'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_meshgrowth.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_meshgrowth.mp4',
         year: '2022',
     },
     curvegrowth: {
@@ -365,6 +377,25 @@ const projects = {
       },
 };
 
+// Dictionary of all news
+const news = {
+    n2409_03: {
+        date: "Sep '24", 
+        icon: '🎓',
+        text: 'Starting another master. Doing a MSc in Computer Graphics, Vision and Imaging at UCL.',
+    },
+    n2409_02: {
+        date: "Sep '24",
+        icon: '⛰️',
+        text: 'Went for an awesome hiking trip to Trolltunga in Norway.',
+    },
+    n2409_01: {
+        date: "Sep '24",
+        icon: '💼',
+        text: 'Left the Applied R+D team at Foster + Partners after 2 exciting years.',
+    },
+};
+
 //Create thumbnails
 const aTags = document.querySelectorAll('a[project-name]');
 aTags.forEach(selectedA => {
@@ -379,10 +410,32 @@ aTags.forEach(selectedA => {
     `<img src="${projects[projectData]['thumbnail']}">
     <div class="project-metadata">
         <div>${projects[projectData]['year']}</div>
-        <div>${projects[projectData]['title']}</div>
+        <div class="project_title" >${projects[projectData]['title']}</div>
     </div> `;
+  if ('thumbnailvideo' in projects[projectData]){
+    newDiv.innerHTML = 
+        `<video width=100% height="100%" autoplay loop muted style="display: none;">
+            <source src="${projects[projectData]['thumbnailvideo']}" type="video/mp4">
+        </video>` 
+        + newDiv.innerHTML;
+  }
   selectedA.appendChild(newDiv);
 });
+
+//Create news feed
+const newsWrapper = document.getElementById('news_wrapper');
+if(newsWrapper != null){
+    Object.entries(news).forEach(([key, value]) => {
+        const newDiv = document.createElement('div');
+        newDiv.innerHTML = 
+            `<div class="news">
+                <div class="n_icon">${value.icon}</div>
+                <div class="n_date">${value.date}</div>
+                <div class="n_text">${value.text}</div>
+            </div>`
+        newsWrapper.appendChild(newDiv);
+    });
+}
 
 //Insert loading icon
 function insertLoadingIcon() {
@@ -396,3 +449,32 @@ function insertLoadingIcon() {
 
 //To execute
 insertLoadingIcon();
+
+// Switches between thumbnail video and thumbnail image on mouse hover and mouse out when screen horizontal
+if (!window.matchMedia("(orientation: portrait)").matches){
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.project-cell').forEach(function(cell) {
+            cell.addEventListener('mouseover', function() {
+                cell.querySelector('video').style.display = 'block';
+                cell.querySelector('img').style.display = 'none';
+            });
+            cell.addEventListener('mouseout', function() {
+                cell.querySelector('video').style.display = 'none';
+                cell.querySelector('img').style.display = 'block';
+            });
+        });
+    });
+}
+
+//Create quicklinks on research page
+const q = document.getElementById('quicklinks');
+const projectName = q.getAttribute('project-name');
+Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML = 
+        `<a href="${value}" target="_blank">
+            ${key} 
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>`
+    q.appendChild(newDiv);
+});

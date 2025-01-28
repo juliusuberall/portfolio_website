@@ -1,7 +1,7 @@
 //Project category filter
 function FilterProjects(categoryToFilter, filterButton) {
     //Filter projects
-    const projects = document.querySelectorAll('.grid-container a[project-category]');
+    const projects = document.querySelectorAll('.project_grid_wrapper a[project-category]');
     projects.forEach(project => {
         project.style.display = "unset";
         if(categoryToFilter == '') return
@@ -24,13 +24,13 @@ function FilterProjects(categoryToFilter, filterButton) {
 //Extend collapse extended bio text on mobile
 function CollapseExtendBio(thisButton) {
     const extendedBio = document.getElementById('extended-about-text');
-    if(extendedBio.style.display == "block") {
+    if(extendedBio.style.display == "inline") {
         extendedBio.style.display = "none";
-        thisButton.textContent = 'read more';
+        thisButton.textContent = '. . .';
     }
     else {
-        extendedBio.style.display = "block";
-        thisButton.textContent = 'show less';
+        extendedBio.style.display = "inline";
+        thisButton.textContent = '. . .';
     }
 }
 

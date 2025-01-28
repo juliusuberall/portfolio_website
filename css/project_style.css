@@ -3,19 +3,6 @@
   margin: 0;
   padding: 0;
 }
-/*------------------------HOME-BUTTON--------------------------*/
-.home-button-wrapper{
-  /**/
-}
-.home_button {
-  font-size: 25px;
-  padding: 25px 30px 0 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  position: fixed;
-  --ionicon-stroke-width: 20px;
-}
 /*------------------------DARK-BRIGHT-CLASSES--------------------------*/
 .right_column{
   float: left;
@@ -126,10 +113,6 @@
   }
   #mobile_video_static, #mobileShow{
     display: unset;
-  }
-  .home_button{
-    font-size: 64px;
-    padding: 44px 30px 0 0;
   }
   .project_headline{
     padding-top: 100px;
