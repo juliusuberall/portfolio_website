@@ -318,28 +318,12 @@ body{
     padding: var(--landing-medium-padding) var(--landing-large-padding) !important;
     font-size: var(--font-size-mobile-normal) !important
   }
-  /* Remove button animation */
-  .button-1:hover {
-    color: var(--light-grey); 
+  /* Swap hover animation for active clicked animation */
+  .button-1:active{
+    color: var(--black-0-hard);
   }
-  .button-1:active {
-    background-color: rgb(200, 200, 200);
-    color: rgb(0, 0, 0);
-    outline: none;
-  }
-  .button-1:hover::before {
-    left: initial;
-  }
-  .button-1::before {
-    content: none;
-    position: initial;
-    top: initial;
-    left: initial;
-    width: initial;
-    height: initial;
-    background-color: initial;
-    transition: none;
-    z-index: initial;
+  .button-1:active::before{
+    left: 0;
   }
   .icons{
     padding: 0 0 0 22px;
@@ -349,6 +333,7 @@ body{
     font-size: var(--font-size-mobile-normal);
     row-gap: var(--landing-mobile-headline-padding);
     padding: var(--landing-mobile-headline-padding);
+    height: 20em;
   }
   #news_wrapper::after {
     font-size: var(--font-size-mobile-normal);
@@ -366,7 +351,7 @@ body{
     column-gap: var(--landing-large-padding);
   }
   .news .n_icon{
-    font-size: var(--font-size-mobile-large);
+    font-size: var(--font-size-mobile-normal);
     width: var(--font-size-mobile-huge);
     height: var(--font-size-mobile-huge);
     align-content: center;
