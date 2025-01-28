@@ -20,7 +20,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_6.jpg">
-                <figcaption>Fig. 1. Poisson image editing allows to seamlessly clone a region from image A in image B. Image of art taken from <a href="https://www.nga.gov/collection/art-object-page.22.html">National Gallery of Art</a></figcaption>
+                <figcaption>Fig. 1. Poisson image editing allows to seamlessly clone a region from image A in image B. In this example we transfer a face into the <div class="inline_ref" ref="r1">"Portrait of a Youth"</div></figcaption>
             </figure>
         </div>
         <div id="abstract_wrapper">
@@ -31,7 +31,7 @@
             <div>            
                 <div project-name="poissonImageEditing" id="quicklinks">
                 </div>
-                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Image Processing in which one of my student projects focused on Poisson Image Editing. It is a seamless cloning method to transfer and interpolate a frequency pattern from an arbitrary image into another solving a poisson equation for each pixel to clone. The method was first introduced by Perez et al. in 2003.</div>
+                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Image Processing in which one of my student projects focused on Poisson Image Editing. It is a seamless cloning method to transfer and interpolate a frequency pattern from an arbitrary image into another solving a poisson equation for each pixel to clone. The method was first introduced by <div class="inline_ref" ref="r2">Perez et al. in 2003.</div></div>
             </div>
         </div>
         <div class="section_wrapper">
@@ -50,7 +50,7 @@
         </div>
         <div class="section_wrapper">
             <div class="section_text">Minimizing the difference between \(\nabla f\) and \(v\) for all pixels \(p\) in region  \(\Omega\) can be rewritten with the following poisson equation while using a dirichlet boundary condition to ensure seamless cloning. The laplacian \(\Delta\) allows us to measure the local difference of a point and in our case the difference between the intensity of a pixel \(p\) to its neighbours.</div>
-            <div class="section_equation">$$ \Delta f = \Delta g \text{ over } \Omega $$ </div>
+            <div class="section_equation">$$ \Delta f = \Delta g \text{ over } \Omega \text{, with }f|_{\delta\Omega}=f^*|_{\delta\Omega} $$</div>
             <div class="section_text">This gives us a linear system to solve for all \(p \in \Omega\). One can think of the below equation as some extended form of the laplacian operator to solve the minimization problem for region \(\Omega\).</div>
             <div class="section_equation">$$ |N_p|f_p - \sum_{q \in N_p \cap \Omega} f_q = \sum_{q \in N_p \cap \delta\Omega} f^*_q + \sum_{q \in N_p} v_{pq} $$
                 <figcaption>                
@@ -158,8 +158,8 @@
             <div>            
                 <div class="references">
                     <ol>
-                        <li><a tag="r1" href="https://www.nga.gov/collection/art-object-page.22.html">https://www.nga.gov/collection/art-object-page.22.html</a></li>
-                        <li><a tag="r2" href="https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf">Pérez, Patrick, Michel Gangnet, and Andrew Blake. "Poisson image editing." In Seminal Graphics Papers: Pushing the Boundaries, Volume 2, pp. 577-582. 2023.</a></li>
+                        <li id="r1"><a href="https://www.nga.gov/collection/art-object-page.22.html">https://www.nga.gov/collection/art-object-page.22.html</a></li>
+                        <li id="r2"><a href="https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf">Pérez, Patrick, Michel Gangnet, and Andrew Blake. "Poisson image editing." In Seminal Graphics Papers: Pushing the Boundaries, Volume 2, pp. 577-582. 2023.</a></li>
                     </ol>
                 </div>
             </div>
@@ -183,6 +183,7 @@
 
     <!-- DYNAMIC JS SCRIPTS -->
     <script src="js/global.js"></script>
+    <script src="js/researchProjectPage.js"></script>
 
     <!---CHECK-IF-EVERYTHING-LOADED_PRE-LOADING-SCREEN-ON/OFF--->
     <script>

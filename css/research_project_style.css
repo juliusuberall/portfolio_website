@@ -140,6 +140,18 @@ pre{
     width: 4%; 
     text-align: right;
 }
+.content_ref {
+    font-size: var(--font-size-tiny);
+    vertical-align: super;
+    line-height: 1;
+    text-decoration: none;
+}
+.content_ref:hover {
+    color: var(--accent-colour); /* Wikipedia's blue color on hover */
+}
+.inline_ref{
+    display: inline;
+}
 
 /*------------------------MEDIA--------------------------*/
 figure{
