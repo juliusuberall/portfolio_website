@@ -354,7 +354,7 @@ body{
     font-size: var(--font-size-mobile-big);
     width: var(--font-size-mobile-huge);
     height: var(--font-size-mobile-huge);
-    align-content: center;
+    line-height: normal;
   }
   /*-----------------GRID------------------*/
   .grid-title{
