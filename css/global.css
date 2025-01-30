@@ -29,7 +29,7 @@
 #loading-icon-wrapper{
   position: fixed;
   top: 2%;
-  left: 50%;
+  left: calc(50% - 20px);
   z-index: 5;
   width: 40px;
   height: 40px;
@@ -54,6 +54,7 @@
 }
 @media all and (orientation:portrait){
   #loading-icon-wrapper{
+    left: calc(50% - 5vw);
     width: 10vw;
     height: 10vw;
   }
