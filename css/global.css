@@ -116,6 +116,7 @@
 .project-cell > img, .project-cell > video{ /*thumbnail images/videos for projects*/
   width: 100%;
   border-radius: calc(var(--border-radius-medium)*1.05);
+  clip-path: inset(0px 0px var(--font-size-extra-smaller) 0px);
   display: block;
 }
 .project_grid_wrapper > a:hover .project-metadata{
@@ -127,7 +128,7 @@
   font-family: 'Poppins Regular';
   font-size: var(--small-paragraph-font-size);
   color: var(--light-grey);
-  padding: 0px 20px 15px 20px;
+  padding: 0px var(--font-size-bigger) var(--font-size-normal) var(--font-size-bigger);
 }
 @media all and (min-height: 65vw) {
   .project-metadata{

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JU - Neural Texture Synthesis</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
+    <link rel="stylesheet" type="text/css" href="css/research_project_style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="home-button-wrapper">
+        <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
+    </div>
+    <div id="main">
+        <div id="project_headline_wrapper">
+            <div id="type_date">Coursework | November 2024</div>
+            <div id="title">Neural Texture Synthesis</div>
+            <div id="team">Machine Learning for Visual Computing<br>Prof <a href="https://g.co/kgs/HucB42X" target="_blank">Niloy Mitra</a> & Prof <a href="https://g.co/kgs/5Q5WsmL" target="_blank">Tobias Ritschel</a><br>University College London (UCL)</div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_neuralTextureSynthesis_1.jpg">
+                <figcaption>Fig. 1. Based on a ‘style’ that we extract numerically from an input image using the VGG19, pre-trained, convolutional neural network, we iteratively optimize noise to match this style.</figcaption>
+            </figure>
+        </div>
+        <div id="abstract_wrapper">
+            <div>
+                <div></div>
+                <div class="section_headline"></div>
+            </div>
+            <div>            
+                <div project-name="neuralTextureSynthesis" id="quicklinks">
+                </div>
+                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Machine Learning in Visual Computing in which one of the coursework tasks was centered around neural texture synthesis. Coming from an architecture and design background this method fascinated me a lot, capturing style numerically with a CNN and being able to generate such by simply formulating a pixel based optimisation problem. The method was developed by Gatys et al. in 2015.</div>
+            </div>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Method</div>
+            </div>
+            <div>            
+                <div class="section_text">We will mainly focus on guided image interpolation, which in simple terms adjusts the image intensities over region \(\Omega\) such that their gradient matches a reference gradient. This optimization is in a way separated from the color itself and alters the image on a more abstract level by remodelling the "curvature" of its intensities.<br><br> All we need is a destination image \(D\) with region \(\Omega\) in which we want to clone the region \(\Omega\) from a source image \(S\) described by its vector field \(v\), capturing the gradience. In theory one could come up with any \(v\) without requiring \(S\), however we will stick to it for clarity.</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_8.jpg">
+                <figcaption>Figure 2: The destination image can be described with the function \(f*\). Within \(f*\) we have the interpolation region \(\Omega\) which is represented with function \(f\) and solved for under the guidance of vector field \(v\) and given the dirichlet boundary condition \(\delta\Omega\). In this example vector field \(v\) is the image gradient for \(S\) within the corresponding region \(\Omega\).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">Following the method described above there are two ways to apply it for seamless cloning in images: (i) importing the gradient solely from the source image and willing to remove any details in region \(\Omega\) from the destination image (ii) mixing the gradients of source and destination over \(\Omega\) by maintaining the highest frequencies from both images and preserving ultimately detail.<br><br>In figure 3 this becomes particularly visible when comparing the specular reflections on the apple in the images but especially comparing the gradients. When importing the gradient this reflection gets blurred, when mixing it is preserved. On the other hand we showcase for reference how \(\Omega\) would look like if it would be just pasted in the destination and not interpolated, creating high, unnatural looking frequencies at \(\delta \Omega\).</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_2.jpg">
+                <figcaption>Figure 4: Seamless cloning of a region on a walnut to an apple in greyscale to simplify the problem to a single image channel. The light red dashed line highlights the region \(\Omega\) in the source and destination image which was transferred.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Results</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_1.jpg">
+                <figcaption>Fig. 12. Seamless transfer of face onto a foreign head.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_7.jpg">
+                <figcaption>Fig. 13. Seamless texture transfer from a walnut to an apple.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_12.jpg">
+                <figcaption>Fig. 14. Seamless transfer of an eye onto a hand.</figcaption>
+            </figure>
+        </div>
+        <div class="related_wrapper">
+            <div>
+                <div class="section_headline">Related projects</div>
+            </div>
+            <div class="project_grid_wrapper columns_4">
+                <a project-name="poissonImageEditing"></a>
+                <a project-name="masterthesis"></a>
+                <a project-name="uberallFont"></a>
+                <a project-name="meshgrowth"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--https://ionic.io/ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/global.js"></script>
+    <script src="js/researchProjectPage.js"></script>
+
+    <!---CHECK-IF-EVERYTHING-LOADED_PRE-LOADING-SCREEN-ON/OFF--->
+    <script>
+        var loader = document.getElementById("loading-icon-wrapper");
+        window.addEventListener("load",function(){loader.style.display = "none";})
+    </script>
+</body>
+</html>

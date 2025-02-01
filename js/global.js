@@ -7,6 +7,17 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
         year: '2022',
       },
+    neuralTextureSynthesis: {
+    title: 'Neural Texture Synthesis',
+    projectPage: 'neuralTextureSynthesis.html',
+    projectcategory: ['category_1'],
+    thumbnail: 'images/Julius_Uberall_project_thumbnails_neuralTextureSynthesis.jpg',
+    thumbnailvideo: 'videos/JuliusUberall_thumbnail_neuralTextureSynthesis.mp4',
+    year: '2024',
+    quicklinks: {
+        'original paper': 'https://www.cs.toronto.edu/~bonner/courses/2022s/csc2547/papers/discriminative/image-transformation/texture-synthesis,-gatys,-nips-2015.pdf',
+        },
+    },
     poissonImageEditing: {
       title: 'Poisson Image Editing',
       projectPage: 'poissonImageEditing.html',
@@ -454,14 +465,16 @@ insertLoadingIcon();
 if (!window.matchMedia("(orientation: portrait)").matches){
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.project-cell').forEach(function(cell) {
-            cell.addEventListener('mouseover', function() {
-                cell.querySelector('video').style.display = 'block';
-                cell.querySelector('img').style.display = 'none';
-            });
-            cell.addEventListener('mouseout', function() {
-                cell.querySelector('video').style.display = 'none';
-                cell.querySelector('img').style.display = 'block';
-            });
+            if('thumbnailvideo' in projects[cell.parentElement.getAttribute('project-name')]){
+                cell.addEventListener('mouseover', function() {
+                    cell.querySelector('video').style.display = 'block';
+                    cell.querySelector('img').style.display = 'none';
+                });
+                cell.addEventListener('mouseout', function() {
+                    cell.querySelector('video').style.display = 'none';
+                    cell.querySelector('img').style.display = 'block';
+                });
+            }
         });
     });
 }
