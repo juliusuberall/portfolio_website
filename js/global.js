@@ -379,10 +379,15 @@ const projects = {
 
 // Dictionary of all news
 const news = {
+    n2504_04: {
+        date: "Apr '25", 
+        icon: '👟',
+        text: 'Ran the Milan marathon!',
+    },
     n2409_03: {
         date: "Sep '24", 
         icon: '🎓',
-        text: 'Starting another master. Doing a MSc in Computer Graphics, Vision and Imaging at UCL.',
+        text: 'Starting a MSc in Computer Graphics, Vision and Imaging at UCL.',
     },
     n2409_02: {
         date: "Sep '24",

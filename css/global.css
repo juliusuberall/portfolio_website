@@ -129,7 +129,7 @@
   color: var(--light-grey);
   padding: 0px 20px 15px 20px;
 }
-@media all and (min-height: 65vw) {
+@media all and (orientation:portrait) {
   .project-metadata{
     font-size: 31.25px;
     padding-bottom: var(--font-size-mobile-normal);
