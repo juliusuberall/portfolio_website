@@ -387,7 +387,7 @@ const news = {
     n2409_03: {
         date: "Sep '24", 
         icon: '🎓',
-        text: 'Starting a MSc in Computer Graphics, Vision and Imaging at UCL.',
+        text: 'Started a MSc in Computer Graphics, Vision and Imaging at UCL.',
     },
     n2409_02: {
         date: "Sep '24",
