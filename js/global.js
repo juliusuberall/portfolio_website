@@ -379,25 +379,30 @@ const projects = {
 
 // Dictionary of all news
 const news = {
-    n2504_04: {
+    n2504_02: {
+        date: "Apr '25", 
+        icon: '🇬🇧',
+        text: 'Going to attend Eurographics 2025 in London.',
+    },
+    n2504_01: {
         date: "Apr '25", 
         icon: '👟',
         text: 'Ran the Milan marathon!',
     },
-    n2409_03: {
+    n2409_02: {
         date: "Sep '24", 
         icon: '🎓',
         text: 'Started a MSc in Computer Graphics, Vision and Imaging at UCL.',
     },
-    n2409_02: {
-        date: "Sep '24",
-        icon: '⛰️',
-        text: 'Went for an awesome hiking trip to Trolltunga in Norway.',
-    },
     n2409_01: {
         date: "Sep '24",
-        icon: '💼',
+        icon: '👔',
         text: 'Left the Applied R+D team at Foster + Partners after 2 exciting years.',
+    },
+    n2404_01: {
+        date: "Apr '24",
+        icon: '🇨🇾',
+        text: 'Going to attend Eurographics 2024 in Limassol.',
     },
 };
 

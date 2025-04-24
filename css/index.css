@@ -137,7 +137,7 @@ body{
   content: '';
   position: absolute;
   top: calc(var(--landing-large-padding) + calc(var(--font-size-large)/2));
-  bottom: calc(-4 * 1rem);
+  bottom: calc(-6 * 1rem);
   left: calc(var(--landing-large-padding) + calc(var(--font-size-large)/2));
   border-left: 1px dashed var(--bright-white);
 }
