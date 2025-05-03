@@ -31,7 +31,7 @@ body{
   display: grid;
   grid-template-columns: repeat(5,1fr);
   column-gap: var(--landing-large-padding);
-  padding: var(--landing-extra-huge-padding) var(--landing-large-padding);
+  padding: var(--landing-extra-huge-padding) var(--landing-large-padding) 0 var(--landing-large-padding);
 }
 #about-text-wrapper{
   grid-column: span 2;
