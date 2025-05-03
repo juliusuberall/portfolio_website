@@ -118,6 +118,13 @@
   border-radius: calc(var(--border-radius-medium)*1.05);
   display: block;
 }
+.project-cell > img {
+  filter: grayscale(100%);
+  transition: filter 0.1s ease;
+}
+.project-cell:hover > img {
+  filter: grayscale(0%);
+}
 .project_grid_wrapper > a:hover .project-metadata{
   color: #ffffff;
 }
