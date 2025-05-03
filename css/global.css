@@ -141,6 +141,13 @@
     font-size: 31.25px;
     padding-bottom: var(--font-size-mobile-normal);
   }
+  .project-cell > img {
+    filter: none;
+    transition: none;
+  }
+  .project-cell:hover > img {
+    filter: none;
+  }
 }
 
 /*------------------------GLOBAL-VARIABLES--------------------------*/
