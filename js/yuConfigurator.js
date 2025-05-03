@@ -1,5 +1,5 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import*as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 
 //Connect to div that stores the configurator
 const container = document.getElementById('yu_configurator');
