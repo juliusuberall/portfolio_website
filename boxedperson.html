@@ -5,15 +5,14 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
     <!---reference stylesheet in different directory--->
     <link rel="stylesheet" type="text/css" href="css/project_style.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 </head>
 <body style="background-color:#000000;">
-    <!---PRE-LOADER--->
-    <div id="preloader_black"></div>
     <div class="page">
         <!---------HOME-BUTTON--------->
-        <div class="fixed">
-            <a href="index.html"><ion-icon class="home_button_white" name="grid-outline"></ion-icon></a>
+        <div class="home-button-wrapper">
+            <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
         </div>
         <!---------LEFT-COLUMN--------->
         <div class="empty_left_column"></div>
@@ -26,6 +25,9 @@
         <div class="right_column">
             <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_boxedPerson_1.jpg">
+            </div>
+            <div class="cell_content_full_width">
+                <model-viewer class="Base_3Dmodelviewer meshGrowth3Dmodel mobile3Dmodel" src="3Dassets/JuliusUberall_BoxedPerson.glb" camera-controls auto-rotatet > </model-viewer>
             </div>
             <div class="cell_content_full_width">
                 <img class="content" src="images/JuliusUberall_boxedPerson_2.jpg">
@@ -41,10 +43,13 @@
     <!--https://ionic.io/ionicons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/global.js"></script>
+    <script src="js/projectPageLogic.js"></script>    
     <!---CHECK-IF-EVERYTHING-LOADED_PRE-LOADING-SCREEN-ON/OFF--->
     <script>
-        var loader = document.getElementById("preloader_black");
-        window.addEventListener("load",function(){loader.style.display = "none";})
+    var loader = document.getElementById("loading-icon-wrapper");
+    window.addEventListener("load",function(){loader.style.display = "none";})
     </script>
 
 </body>
