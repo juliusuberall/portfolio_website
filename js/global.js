@@ -464,27 +464,31 @@ insertLoadingIcon();
 if (!window.matchMedia("(orientation: portrait)").matches){
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.project-cell').forEach(function(cell) {
-            cell.addEventListener('mouseover', function() {
-                cell.querySelector('video').style.display = 'block';
-                cell.querySelector('img').style.display = 'none';
-            });
-            cell.addEventListener('mouseout', function() {
-                cell.querySelector('video').style.display = 'none';
-                cell.querySelector('img').style.display = 'block';
-            });
+            if(cell.querySelector('video')){
+                cell.addEventListener('mouseover', function() {
+                    cell.querySelector('video').style.display = 'block';
+                    cell.querySelector('img').style.display = 'none';
+                });
+                cell.addEventListener('mouseout', function() {
+                    cell.querySelector('video').style.display = 'none';
+                    cell.querySelector('img').style.display = 'block';
+                });
+            };
         });
     });
 }
 
 //Create quicklinks on research page
-const q = document.getElementById('quicklinks');
-const projectName = q.getAttribute('project-name');
-Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
-    const newDiv = document.createElement('div');
-    newDiv.innerHTML = 
-        `<a href="${value}" target="_blank">
-            ${key} 
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-        </a>`
-    q.appendChild(newDiv);
-});
+if(document.getElementById('quicklinks')){
+    const q = document.getElementById('quicklinks');
+    const projectName = q.getAttribute('project-name');
+    Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
+        const newDiv = document.createElement('div');
+        newDiv.innerHTML = 
+            `<a href="${value}" target="_blank">
+                ${key} 
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>`
+        q.appendChild(newDiv);
+    });
+};
