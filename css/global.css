@@ -33,7 +33,7 @@
   z-index: 5;
   width: 40px;
   height: 40px;
-  background-color: var(--black-4);
+  background-color: var(--accent-colour);
   border-radius: 50%;
 }
 .loading-icon {
@@ -41,7 +41,7 @@
   width: 50%;
   height: 50%;
   border: 3px solid var(--bright-white);
-  border-top: 3px solid var(--accent-colour);
+  border-top: 3px solid var(--black-0-hard);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   position: relative;
@@ -60,7 +60,7 @@
   }
   .loading-icon {
     border: 0.7vw solid var(--bright-white);
-    border-top: 0.7vw solid var(--accent-colour);
+    border-top: 0.7vw solid var(--black-0-hard);
   }
 }
 
