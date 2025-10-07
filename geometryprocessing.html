@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JU - UCL Geometry Processing</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
+    <link rel="stylesheet" type="text/css" href="css/research_project_style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="home-button-wrapper">
+        <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
+    </div>
+    <div id="main">
+        <div id="project_headline_wrapper">
+            <div id="type_date">Coursework | 2025</div>
+            <div id="title">Geometry Processing</div>
+            <div id="team">Acquisition and Processing of 3D Geometry taught by Prof <a href="https://geometry.cs.ucl.ac.uk/index.php" target="_blank">Niloy J. Mitra</a><br>at University College London (UCL)</div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_poissonImageEditing_6.jpg">
+                <figcaption>Fig. 1. Poisson image editing allows to seamlessly clone a region from image A in image B. In this example we transfer a face into the <div class="inline_ref" ref="r1">"Portrait of a Youth"</div></figcaption>
+            </figure>
+        </div>
+        <div id="abstract_wrapper">
+            <div>
+                <div></div>
+                <div class="section_headline"></div>
+            </div>
+            <div>            
+                <div project-name="geometryProcessing" id="quicklinks">
+                </div>
+                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Acquisition and Processing of 3D Geometry. We looked into a wide range of topics but particularly focused on meshes, iterative closest point (ICP), differential geometry, laplacians, spectral shape analysis and parameterization. The following demonstrates snippets of the tasks I accomplished.</div>
+            </div>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Halfedge Meshes</div>
+            </div>
+            <div>            
+                <div class="section_text">A halfedge mesh is a data structure that allows for precise navigation on a mesh, such that vertices along edge loops or other patterns can be extracted. We initialise a halfedge quad mesh for a cube. Essential is to ensure that all face boundary directions are legit and against each other, resulting in all edges having an opposite edge which is reversed - the halfedge. This is crucial for navigating the topology of the halfedge mesh correctly and computing the dual.
+                    <br><br>A dual polyhedron can be computed of any arbitrary manifold mesh. The topology of the dual mesh is already captured in the original mesh (fig 2). Starting with a mesh one has to collapse faces into vertices and vice-versa, computing the centroid for each face but essentially swapping face indices for vertex indices among the respective pointers within the halfedge mesh e.g. the face index for each halfedge. Crucial is to ensure the halfedge.next pointers are updated correctly, ensuring face boundary loops can be navigated correctly. If this is not the case the double dual procedure might fail due to this. 
+                    <br><br>Following the bespoke method allows this transformation to run efficiently and without any list searches, which would otherwise scale exponentially with an increasing mesh size.
+                    <br><br>All studies were done using the python library <div class="inline_ref" ref="r1">halfedge_mesh</div> from Carlos Rojas .</div>
+            </div>
+        </div>
+        <div class="media_wrapper columns_2">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_1.svg">
+                <figcaption>Figure 1: The data structure of a halfedge quadmesh cube. The edge directions are indicated with the rotation of the face.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_2.svg">
+                <figcaption>Figure 2:  The dual polyhedron of a cube is an octahedron and the dual of an octahedron is a cube again (top row). Meaning, the dual of a dual is the original shape but in decreased scale. The dual correspondence of vertices, edges and faces is highlighted in the bottom row. Such dual transformations can be repeated infinitely going back and forth between a dual-pair. The only limit is the numerical precision of the machine, until all vertices collapse into a single point.</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_3.svg">
+                <figcaption>Figure 3: Double dual transformation results for 4 meshes with different sizes and topologies, including: a - cube (v: 8; f: 6), b - sphere (v: 42; f: 80), c - face (v: 11’706; f: 23’408), d - flower (v: 655’362; f: 1’310’720). The images are true to scale.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div class="section_text">We can compute the volume of a triangular mesh \(M\) by determining the volumes for all individual tetrahedrons formed by the same point and a face \(F_n\). This essentially discretizes the complex shape into simpler geometries, tetrahedrons, which volume we can compute using the triple product of the face vertices. This can be thought of as computing the determinant of the 3 by 3 matrix of 3 edge-vectors \(i,j,k\) of the tetrahedron, determining the spanned volume by those in space.<br><br>However, the volume is always 6 times larger than the actual tetrahedron. Additionaly the sum of signed tetrahedra volumes is independent of the 4th <div class="inline_ref" ref="r2">vertex</div>, which allows to set such to \((0,0,0)\) and ultimately simplify the equation for the volume of any triangular and manifold mesh \(M\) with \(n\) faces to the following:</div>
+            <div class="section_equation">$$M_{volume} = \frac{1}{6}\sum_{n}i_n\cdot(j_n \times k_n)$$</div>
+            <div class="section_text">The double dual volume is iteratively computed 10 times for the flower example mesh (fig 3d). Given that it has ~655K vertices and ~1,3M faces which are topologically very densely arranged the volume does not change much as we consecutively compute its dual. The volume remains almost unchanged and decreases linearly on a very small scale. On the other hand our initially created cube mesh has faces and vertices that are sparsely arranged, which cause a stronger shrinking effect when collapsed into a single vertex.<br><br>The volume shrinking effect really depends on the geometry, and can either decrease very slowly or fast.</div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_4.jpg">
+                <figcaption>Figure 4: The volume for the iterative dual of a flower mesh (left) and low poly sphere (right).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Iterative Closest Point</div>
+            </div>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Discrete Laplacians</div>
+            </div>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">References</div>
+            </div>
+            <div>            
+                <div class="references">
+                    <ol>
+                        <li id="r1"><a href="https://github.com/carlosrojas/halfedge_mesh">https://github.com/carlosrojas/halfedge_mesh</a></li>
+                        <li id="r2"><a href="https://www.youtube.com/watch?v=sokeN5VxBB8">https://www.youtube.com/watch?v=sokeN5VxBB8</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="related_wrapper">
+            <div>
+                <div class="section_headline">More</div>
+            </div>
+            <div class="project_grid_wrapper columns_4">
+                <a project-name="poissonImageEditing"></a>
+                <a project-name="masterthesis"></a>
+                <a project-name="uberallFont"></a>
+                <a project-name="meshgrowth"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--https://ionic.io/ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/global.js"></script>
+    <script src="js/researchProjectPage.js"></script>
+
+    <!---CHECK-IF-EVERYTHING-LOADED_PRE-LOADING-SCREEN-ON/OFF--->
+    <script>
+        var loader = document.getElementById("loading-icon-wrapper");
+        window.addEventListener("load",function(){loader.style.display = "none";})
+    </script>
+</body>
+</html>

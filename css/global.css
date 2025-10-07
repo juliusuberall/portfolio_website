@@ -16,6 +16,10 @@
   src:url(../fonts/Poppins-Regular.ttf);
 }
 @font-face{/*Main Font import*/
+  font-family:Poppins SemiBold;
+  src:url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face{/*Main Font import*/
   font-family:Poppins Bold;
   src:url(../fonts/Poppins-Bold.ttf);
 }
@@ -166,7 +170,7 @@
   
     --shadow-on-black: #373737;
     --shadow-on-black-active: #e7e7e7;
-    --shadow-on-invisible-grey: #f5f5f5;
+    --shadow-on-invisible-grey: #e1e1e1;
     --bright-white: #ffffff;
     
     --border-radius-large-mobile: 80px;
@@ -219,5 +223,6 @@
     --font-poppins-extralight: Poppins ExtraLight;
     --font-poppins-light: Poppins Light;
     --font-poppins-regular: Poppins Regular;
+    --font-poppins-semibold: Poppins Semibold;
     --font-poppins-bold: Poppins Bold;
   }

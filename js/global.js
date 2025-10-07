@@ -7,6 +7,17 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
         year: '2022',
       },
+    geometryProcessing: {
+      title: 'Geometry Processing',
+      projectPage: 'geometryprocessing.html',
+      projectcategory: ['category_1'],
+      thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
+      thumbnailvideo: 'videos/JuliusUberall_thumbnail_poissonImageEditing.mp4',
+      year: '2025',
+      quicklinks: {
+        'paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
+        },
+    },
     poissonImageEditing: {
       title: 'Poisson Image Editing',
       projectPage: 'poissonImageEditing.html',

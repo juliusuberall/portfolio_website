@@ -14,6 +14,11 @@ pre{
 }
 #main{
     padding: 0 24% 0 24%;
+    text-align: justify;
+    hyphens: auto;
+}
+#main .media_wrapper{
+    text-align-last: center;
 }
 #main > div{
     padding-bottom: var(--landing-large-padding);
@@ -32,16 +37,19 @@ pre{
     padding-bottom: var(--landing-medium-padding);
 }
 #type_date{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-regular);
 }
 #title{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-semibold);
     font-size: var(--font-size-large);
     padding: 0 15% 0 15%;
 }
 #team{
     line-height: var(--font-size-large);
     padding-bottom: 0 !important;
+}
+#team a {
+    font-family: var(--font-poppins-semibold);
 }
 
 /*------------------------ABSTRACT--------------------------*/
@@ -84,7 +92,7 @@ pre{
 
 /*------------------------SECTION--------------------------*/
 .section_headline{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-semibold);
     font-size: var(--font-size-extra-big);
     padding-bottom: var(--landing-medium-padding);
     padding-top: var(--landing-extra-large-padding);
@@ -111,7 +119,7 @@ pre{
     padding-bottom: var(--landing-large-padding);
 }
 .section_equation{
-    background-color: var(--bright-white);
+    outline: 1px solid var(--light-light-grey);
     padding: var(--landing-large-padding);
     margin-bottom: var(--landing-large-padding);
     border-radius: var(--border-radius-medium);
@@ -156,7 +164,6 @@ pre{
 /*------------------------MEDIA--------------------------*/
 figure{
     margin: 0;
-    text-align: center;
 }
 figcaption {
     font-size: var(--font-size-extra-smaller);
@@ -173,10 +180,13 @@ figure figcaption {
     grid-template-columns: repeat(4,1fr);
     gap: var(--landing-medium-padding);
 }
+.columns_4 figure{
+    padding: var(--landing-medium-padding) !important;
+}
 .media_wrapper figure{
     border-radius: var(--border-radius-medium);
     background-color: rgb(255, 255, 255);
-    padding: var(--landing-medium-padding);
+    padding: var(--landing-large-padding);
     box-shadow: 5px 5px 10px 2px var(--shadow-on-invisible-grey);
 }
 .media_wrapper{
@@ -230,7 +240,7 @@ mjx-container[jax="CHTML"] {
     box-shadow: none;
 }
 .related_wrapper .project_title{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-semibold);
 }
 
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
