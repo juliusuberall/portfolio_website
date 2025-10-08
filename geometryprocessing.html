@@ -15,11 +15,11 @@
         <div id="project_headline_wrapper">
             <div id="type_date">Coursework | 2025</div>
             <div id="title">Geometry Processing</div>
-            <div id="team">Acquisition and Processing of 3D Geometry taught by Prof <a href="https://geometry.cs.ucl.ac.uk/index.php" target="_blank">Niloy J. Mitra</a><br>at University College London (UCL)</div>
+            <div id="team">Acquisition and Processing of 3D Geometry taught by Prof <a href="https://scholar.google.com/citations?user=dPrZJWMAAAAJ&hl=en" target="_blank">Niloy J. Mitra</a><br>at University College London (UCL)</div>
         </div>
         <div class="media_wrapper">
             <figure>
-                <img src="images/JuliusUberall_geometryProcessing_5.jpg">
+                <img src="images/JuliusUberall_geometryProcessing_5.svg">
                 <figcaption>Fig. 1. Spectral decomposition of an armadillo mesh into its different frequency components by computing the eigenvectors and eigenvalues of the mesh's Laplacian. Reconstruction with smallest 5, 15 and 50 basis, eigenvectors</figcaption>
             </figure>
         </div>
@@ -31,7 +31,7 @@
             <div>            
                 <div project-name="geometryProcessing" id="quicklinks">
                 </div>
-                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Acquisition and Processing of 3D Geometry. We looked into a wide range of topics but particularly focused on meshes, iterative closest point (ICP), differential geometry, laplacians, spectral shape analysis and parameterization. The following demonstrates snippets of the tasks I accomplished.</div>
+                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Acquisition and Processing of 3D Geometry. We looked into a wide range of topics but particularly focused on meshes, iterative closest point (ICP), differential geometry, laplacians, spectral shape analysis and parameterization. The following demonstrates some snippets of the tasks I accomplished.</div>
             </div>
         </div>
         <div class="section_wrapper">
@@ -76,6 +76,72 @@
             <div>
                 <div class="section_headline">Iterative Closest Point</div>
             </div>
+            <div>            
+                <div class="section_text">The Iterative Closest Point (ICP) algorithm aligns two meshes \(A\) and \(B\). Point correspondence \(i\) are established doing closest point search with an acceleration structure such as a bounding volume hierarchy. In closed form we compute the optimal rotation \(r\) and translation \(t\) through the aid of a singular value decomposition (SVD), such that the squared distance between the correspondences is minimized. This procedure is repeated until a aligmnet threshold is met. However, the vanilla ICP algorithm is very prone to noise and inital aligment of the meshes. Yet establishing correspondences correct is essential, such that we looked into normal rejction, color rejection and even edge filters.</div>
+                <div class="section_equation">$$ \min _{r,t} \sum_i||rA^i+t -B^i||^2 $$</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_12.svg">
+                <figcaption>Figure 5: The registration results for \(A \xrightarrow{} B\) with ICP.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The ICP algorithm can be extended in a variety of ways. One of those is point-to-plane ICP, which does not try to match and align points exactly, but have them aligned based on the plane spanned by the vertex and its normal. This gives the algorithm some more flexibility between iterations. There does exist a closed form solution for point-to-plane as well, yet we took the chance and approach it using gradient descent.
+                    <br><br>The optimization objective of point-to-plane ICP is to minimize the squared distance between \(A^i\) and the plane defined by \(B^i\) and normal \(n^i_B\). Refining the previous minimization problem of the ICP, the new objective states :
+                </div>
+                <div class="section_equation">$$ \min _{r,t} \sum_i((rA^i+t -B^i)\cdot n^i_B)^2 $$</div>
+                <div class="section_text">given that</div>
+                <div class="section_equation">$$ rA^i+t = T\cdot \tilde{A}^i $$</div>
+                <div class="section_text">in which \(\tilde{A}^i\) represents the homogeneous coordinates of \(A^i\), transformation matrix \(T\) can be defined as</div>
+                <div class="section_equation">$$ T = \begin{bmatrix} r_{11} & r_{12} & r_{13} & t_1 \\ r_{21} & r_{22} & r_{23} & t_2 \\ r_{31} & r_{32} & r_{33} & t_3 \\ 0 & 0 & 0 & 1 \end{bmatrix} $$</div>
+                <div class="section_text">where \(r\) can be decomposed into \(\theta_x \theta_y \theta_z\), determining the rotation around x-axis, y-axis and z-axis in radians such that</div>
+                <div class="section_equation">$$ 
+                    r = r_x \cdot r_y \cdot r_z
+                    $$
+                    <br><br>
+                    $$
+                    r_x = \begin{bmatrix}
+                        1 & 0 & 0 \\
+                        0 & \cos{\theta_x} & -\sin{\theta_x} \\
+                        0 & \sin{\theta_x} & \cos{\theta_x}
+                    \end{bmatrix}\qquad
+                    r_y = \begin{bmatrix}
+                        \cos{\theta_y} & 0 & \sin{\theta_y} \\
+                        0 & 1 & 0 \\
+                        -\sin{\theta_y} & 0 & \cos{\theta_y}
+                    \end{bmatrix}\qquad
+                    r_z = \begin{bmatrix}
+                        \cos{\theta_z} & -\sin{\theta_z} & 0 \\
+                        \sin{\theta_z} & \cos{\theta_z} & 0 \\
+                        0 & 0 & 1
+                    \end{bmatrix} $$
+                </div>
+                <div class="section_text">This breaks down the optimization objective as follows</div>
+                <div class="section_equation">$$ \min _T \sum_i((T\cdot A^i -B^i)\cdot n^i_B)^2 $$</div>
+                <div class="section_text">with 6 optimization parameter \(p\) to solve for </div>
+                <div class="section_equation">$$ p =[\theta_x, \theta_y, \theta_z, t_1, t_2, t_3] $$</div>
+                <div class="section_text">As mentioned we solve this using Gradient Descent (GD) to find the best transformation \(T\) with parameters \(p\). The implementation for this task was done in JAX, using its automatic differentiation to compute gradients. Beginning with an identity transformation matrix, GD iteratively optimizes \(T\) the initial pose of \(A^i\) to match its correspondences \(B^i\) with \(n^i_B\). Once converged, \(T\) is applied to \(A\), reset to an identity matrix and the correspondences to \(B\) are recomputed. Such step is continued until the optimization objective is met and the point to plane distance is minimal.</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_13.svg">
+                <figcaption>Figure 5: The state of the mesh registration \(A \xrightarrow{}B\) , \(Grey \xrightarrow{}Blue\) after each optimization period with the respective correspondence and mesh pose setup.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The method was evaluated with \(A\xrightarrow{} B\). The registration happens in 4 steps, of which each represents an optimization period solving for \(T\) given a fixed set of correspondences \(A^i\) and \(B^i\) with normals \(n^i_B\). Each period can be thought of as a connection in (fig X) between states. These optimization periods become visible looking at the registration convergence graph (fig X) plotting the loss. Once a new optimization period is initiated the algorithm resets \(T\) while all correspondences and points for \(A\) are updated. This breaks the graph since the optimization condition changes, which can be observed as a step in the loss. However, given that with each finished period the correspondences get more reliable, the overall graph continues towards convergence.</div>         
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_14.jpg">
+                <figcaption>Figure 5: Point-To-Plane ICP convergence using gradient descent to find the best transformation matrix \(T\) to minimize the plane distance among correspondences between \(A, B\) in 4 periods. The corners indicate the end of an optimization period which is equivalent to a single vanilla SVD iteration in a vanilla ICP.</figcaption>
+            </figure>
         </div>
         <div class="section_wrapper">
             <div>
@@ -163,7 +229,7 @@
                 <div class="references">
                     <ol>
                         <li id="r1"><a href="https://github.com/carlosrojas/halfedge_mesh">https://github.com/carlosrojas/halfedge_mesh</a></li>
-                        <li id="r2"><a href="https://www.youtube.com/watch?v=sokeN5VxBB8">https://www.youtube.com/watch?v=sokeN5VxBB8</a></li>
+                        <li id="r2"><a href="https://www.youtube.com/watch?v=sokeN5VxBB8">Keenan Crane. Lecture 17: Discrete curvature ii (discrete differential geometry)</a></li>
                     </ol>
                 </div>
             </div>

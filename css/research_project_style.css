@@ -1,7 +1,4 @@
 /*------------------------BASELINE--------------------------*/
-*{
-    font-family: var(--font-poppins-regular);
-}
 body{
     background-color: var(--invisible-grey);
 }
@@ -55,6 +52,7 @@ pre{
 /*------------------------ABSTRACT--------------------------*/
 #abstract_wrapper{
     font-size: var(--medium-paragraph-font-size);
+    font-family: var(--font-poppins-regular);
 }
 #abstract_wrapper > div{
     display: grid;
@@ -102,6 +100,7 @@ pre{
 }
 .section_wrapper {
     padding-bottom: 0 !important;
+    font-family: var(--font-poppins-regular);
 }
 .section_wrapper .section_headline{
     display: flex;
@@ -123,6 +122,7 @@ pre{
     padding: var(--landing-large-padding);
     margin-bottom: var(--landing-large-padding);
     border-radius: var(--border-radius-medium);
+    font-family: MJXZERO !important;
 }
 
 /*------------------------REFERENCES--------------------------*/
@@ -166,6 +166,7 @@ figure{
     margin: 0;
 }
 figcaption {
+    font-family: var(--font-poppins-regular);
     font-size: var(--font-size-extra-smaller);
     margin-top: var(--landing-small-padding);
 }
