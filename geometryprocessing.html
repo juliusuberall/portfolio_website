@@ -98,21 +98,24 @@
                 <div class="section_text">in which \(\tilde{A}^i\) represents the homogeneous coordinates of \(A^i\), transformation matrix \(T\) can be defined as</div>
                 <div class="section_equation">$$ T = \begin{bmatrix} r_{11} & r_{12} & r_{13} & t_1 \\ r_{21} & r_{22} & r_{23} & t_2 \\ r_{31} & r_{32} & r_{33} & t_3 \\ 0 & 0 & 0 & 1 \end{bmatrix} $$</div>
                 <div class="section_text">where \(r\) can be decomposed into \(\theta_x \theta_y \theta_z\), determining the rotation around x-axis, y-axis and z-axis in radians such that</div>
-                <div class="section_equation">$$ 
+                <div class="section_equation stacked_equation">$$ 
                     r = r_x \cdot r_y \cdot r_z
                     $$
-                    <br><br>
                     $$
                     r_x = \begin{bmatrix}
                         1 & 0 & 0 \\
                         0 & \cos{\theta_x} & -\sin{\theta_x} \\
                         0 & \sin{\theta_x} & \cos{\theta_x}
-                    \end{bmatrix}\qquad
+                    \end{bmatrix}
+                    $$
+                    $$
                     r_y = \begin{bmatrix}
                         \cos{\theta_y} & 0 & \sin{\theta_y} \\
                         0 & 1 & 0 \\
                         -\sin{\theta_y} & 0 & \cos{\theta_y}
-                    \end{bmatrix}\qquad
+                    \end{bmatrix}
+                    $$
+                    $$
                     r_z = \begin{bmatrix}
                         \cos{\theta_z} & -\sin{\theta_z} & 0 \\
                         \sin{\theta_z} & \cos{\theta_z} & 0 \\
@@ -239,7 +242,7 @@
             <div>
                 <div class="section_headline">More</div>
             </div>
-            <div class="project_grid_wrapper columns_4">
+            <div class="project_grid_wrapper columns_4 related_grid">
                 <a project-name="poissonImageEditing"></a>
                 <a project-name="masterthesis"></a>
                 <a project-name="uberallFont"></a>

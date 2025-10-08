@@ -124,6 +124,9 @@ pre{
     border-radius: var(--border-radius-medium);
     font-family: MJXZERO !important;
 }
+.stacked_equation mjx-container + mjx-container{
+    padding-top: var(--landing-large-padding);
+}
 
 /*------------------------REFERENCES--------------------------*/
 .section_wrapper .references{
@@ -280,7 +283,7 @@ mjx-container[jax="CHTML"] {
     .section_headline{
         font-size: var(--font-size-mobile-large);
     }
-    .section_wrapper {
+    .section_text {
         font-size: var(--font-size-mobile-normal);
     }
     .related_wrapper .section_headline{
@@ -363,10 +366,9 @@ mjx-container[jax="CHTML"] {
     .related_wrapper .project_grid_wrapper {
         padding-top: var(--mobile-side-padding);
     }
-    .related_wrapper .project_grid_wrapper > a{
-        box-shadow: 10px 10px 20px 4px var(--grey-hovered);
-    }
-    .related_wrapper .project_grid_wrapper > a:active{
-        box-shadow: none;
+    .related_grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: var(--mobile-side-padding);
+        text-align: left !important;
     }
 }
