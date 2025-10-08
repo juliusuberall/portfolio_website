@@ -236,12 +236,8 @@ mjx-container[jax="CHTML"] {
 .related_wrapper .project-metadata{
     font-size: var(--font-size-extra-smaller);
 }
-.related_wrapper .project_grid_wrapper > a{
-    box-shadow: 5px 5px 10px 2px var(--grey-hovered);
-    outline: none;
-}
 .related_wrapper .project_grid_wrapper > a:hover{
-    box-shadow: none;
+    box-shadow: 5px 5px 10px 2px var(--grey-hovered);
 }
 .related_wrapper .project_title{
     font-family: var(--font-poppins-semibold);
