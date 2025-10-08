@@ -16,6 +16,10 @@
   src:url(../fonts/Poppins-Regular.ttf);
 }
 @font-face{/*Main Font import*/
+  font-family:Poppins SemiBold;
+  src:url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face{/*Main Font import*/
   font-family:Poppins Bold;
   src:url(../fonts/Poppins-Bold.ttf);
 }
@@ -132,7 +136,7 @@
   display: grid;
   grid-template-rows: auto auto;
   font-family: 'Poppins Regular';
-  font-size: var(--small-paragraph-font-size);
+  font-size: var(--font-size-smaller);
   color: var(--light-grey);
   padding: 0px 20px 15px 20px;
 }
@@ -166,7 +170,7 @@
   
     --shadow-on-black: #373737;
     --shadow-on-black-active: #e7e7e7;
-    --shadow-on-invisible-grey: #f5f5f5;
+    --shadow-on-invisible-grey: #e1e1e1;
     --bright-white: #ffffff;
     
     --border-radius-large-mobile: 80px;
@@ -186,8 +190,7 @@
     --landing-mobile-headline-padding: 60px;
     --landing-mobile-section-padding: 150px;
   
-    --medium-paragraph-font-size: 16px;
-    --small-paragraph-font-size: 13px;
+    --medium-paragraph-font-size: 14px;
   
     --default-outline: solid 1px var(--default-outline-colour);
     --thick-outline: solid 3px var(--black-0-hard);
@@ -219,5 +222,6 @@
     --font-poppins-extralight: Poppins ExtraLight;
     --font-poppins-light: Poppins Light;
     --font-poppins-regular: Poppins Regular;
+    --font-poppins-semibold: Poppins Semibold;
     --font-poppins-bold: Poppins Bold;
   }

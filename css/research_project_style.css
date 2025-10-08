@@ -1,7 +1,4 @@
 /*------------------------BASELINE--------------------------*/
-*{
-    font-family: var(--font-poppins-regular);
-}
 body{
     background-color: var(--invisible-grey);
 }
@@ -14,6 +11,11 @@ pre{
 }
 #main{
     padding: 0 24% 0 24%;
+    text-align: justify;
+    hyphens: auto;
+}
+#main .media_wrapper{
+    text-align-last: center;
 }
 #main > div{
     padding-bottom: var(--landing-large-padding);
@@ -32,10 +34,10 @@ pre{
     padding-bottom: var(--landing-medium-padding);
 }
 #type_date{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-regular);
 }
 #title{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-semibold);
     font-size: var(--font-size-large);
     padding: 0 15% 0 15%;
 }
@@ -43,8 +45,15 @@ pre{
     line-height: var(--font-size-large);
     padding-bottom: 0 !important;
 }
+#team a {
+    font-family: var(--font-poppins-semibold);
+}
 
 /*------------------------ABSTRACT--------------------------*/
+#abstract_wrapper{
+    font-size: var(--medium-paragraph-font-size);
+    font-family: var(--font-poppins-regular);
+}
 #abstract_wrapper > div{
     display: grid;
     grid-template-columns: repeat(2,33% 66%);
@@ -84,17 +93,14 @@ pre{
 
 /*------------------------SECTION--------------------------*/
 .section_headline{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-semibold);
     font-size: var(--font-size-extra-big);
     padding-bottom: var(--landing-medium-padding);
     padding-top: var(--landing-extra-large-padding);
 }
 .section_wrapper {
     padding-bottom: 0 !important;
-}
-.section_wrapper .section_text{
-    column-count: 2;
-    column-gap: var(--landing-large-padding);
+    font-family: var(--font-poppins-regular);
 }
 .section_wrapper .section_headline{
     display: flex;
@@ -109,17 +115,19 @@ pre{
 }
 .section_text{
     padding-bottom: var(--landing-large-padding);
+    font-size: var(--medium-paragraph-font-size);
 }
 .section_equation{
-    background-color: var(--bright-white);
+    outline: 1px solid var(--light-light-grey);
     padding: var(--landing-large-padding);
     margin-bottom: var(--landing-large-padding);
     border-radius: var(--border-radius-medium);
+    font-family: MJXZERO !important;
 }
 
 /*------------------------REFERENCES--------------------------*/
 .section_wrapper .references{
-    font-size: var(--font-size-extra-smaller);
+    font-size: var(--font-size-smaller);
 }
 .references ol {
     counter-reset: list-counter;
@@ -156,9 +164,9 @@ pre{
 /*------------------------MEDIA--------------------------*/
 figure{
     margin: 0;
-    text-align: center;
 }
 figcaption {
+    font-family: var(--font-poppins-regular);
     font-size: var(--font-size-extra-smaller);
     margin-top: var(--landing-small-padding);
 }
@@ -173,10 +181,13 @@ figure figcaption {
     grid-template-columns: repeat(4,1fr);
     gap: var(--landing-medium-padding);
 }
+.columns_4 figure{
+    padding: var(--landing-medium-padding) !important;
+}
 .media_wrapper figure{
     border-radius: var(--border-radius-medium);
     background-color: rgb(255, 255, 255);
-    padding: var(--landing-medium-padding);
+    padding: var(--landing-large-padding);
     box-shadow: 5px 5px 10px 2px var(--shadow-on-invisible-grey);
 }
 .media_wrapper{
@@ -188,6 +199,9 @@ figure figcaption {
 }
 .media_wrapper video {
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0 ;
+}
+.full_fig figure{
+    padding: var(--landing-huge-padding);
 }
 
 /*------------------------BibTex--------------------------*/
@@ -222,15 +236,11 @@ mjx-container[jax="CHTML"] {
 .related_wrapper .project-metadata{
     font-size: var(--font-size-extra-smaller);
 }
-.related_wrapper .project_grid_wrapper > a{
-    box-shadow: 5px 5px 10px 2px var(--grey-hovered);
-    outline: none;
-}
 .related_wrapper .project_grid_wrapper > a:hover{
-    box-shadow: none;
+    box-shadow: 5px 5px 10px 2px var(--grey-hovered);
 }
 .related_wrapper .project_title{
-    font-family: var(--font-poppins-bold);
+    font-family: var(--font-poppins-semibold);
 }
 
 /*------------------------RESPONSIVE-DESIGN--------------------------*/
@@ -272,9 +282,6 @@ mjx-container[jax="CHTML"] {
     }
     .section_wrapper {
         font-size: var(--font-size-mobile-normal);
-    }
-    .section_wrapper .section_text{
-        column-count: 1;
     }
     .related_wrapper .section_headline{
         border-bottom: var(--thick-outline-mobile);

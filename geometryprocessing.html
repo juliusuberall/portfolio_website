@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JU - UCL Geometry Processing</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
+    <link rel="stylesheet" type="text/css" href="css/research_project_style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="home-button-wrapper">
+        <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
+    </div>
+    <div id="main">
+        <div id="project_headline_wrapper">
+            <div id="type_date">Coursework | 2025</div>
+            <div id="title">Geometry Processing</div>
+            <div id="team">Acquisition and Processing of 3D Geometry taught by Prof <a href="https://scholar.google.com/citations?user=dPrZJWMAAAAJ&hl=en" target="_blank">Niloy J. Mitra</a><br>at University College London (UCL)</div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_5.svg">
+                <figcaption>Fig. 1. Spectral decomposition of an armadillo mesh into its different frequency components by computing the eigenvectors and eigenvalues of the mesh's Laplacian. Reconstruction with smallest 5, 15 and 50 basis, eigenvectors</figcaption>
+            </figure>
+        </div>
+        <div id="abstract_wrapper">
+            <div>
+                <div></div>
+                <div class="section_headline"></div>
+            </div>
+            <div>            
+                <div project-name="geometryProcessing" id="quicklinks">
+                </div>
+                <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Acquisition and Processing of 3D Geometry. We looked into a wide range of topics but particularly focused on meshes, iterative closest point (ICP), differential geometry, surface parameterization and the laplace beltrami operator including spectral shape analysis and smoothing. The following demonstrates some snippets of the tasks I accomplished.</div>
+            </div>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Halfedge Meshes</div>
+            </div>
+            <div>            
+                <div class="section_text">A halfedge mesh is a data structure that allows for precise navigation of the data structure, such that vertices along edge loops or other patterns can be extracted for further processing. We initialise a halfedge quad mesh for a cube. Essential is to ensure that all face boundary directions are legit and against each other, resulting in all edges having an opposite edge which is reversed - the halfedge. This is crucial for navigating the topology of the halfedge mesh correctly and computing the dual.
+                    <br><br>A dual polyhedron can be computed of any arbitrary manifold mesh. The topology of the dual mesh is already captured in the original mesh (fig 2). Starting with a mesh one has to collapse faces into vertices and vice-versa, computing the centroid for each face but essentially swapping face indices for vertex indices among the respective pointers within the halfedge mesh e.g. the face index for each halfedge. Crucial is to ensure the halfedge.next pointers are updated correctly, ensuring face boundary loops can be navigated correctly. If this is not the case the double dual procedure might fail due to this. 
+                    <br><br>Following the bespoke method allows this transformation to run efficiently and without any list searches, which would otherwise scale exponentially with an increasing mesh size.
+                    <br><br>All studies were done using the python library <div class="inline_ref" ref="r1">halfedge_mesh</div> from Carlos Rojas .</div>
+            </div>
+        </div>
+        <div class="media_wrapper columns_2">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_1.svg">
+                <figcaption>Figure 1: The data structure of a halfedge quadmesh cube. The edge directions are indicated with the rotation of the face.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_2.svg">
+                <figcaption>Figure 2:  The dual polyhedron of a cube is an octahedron and the dual of an octahedron is a cube again (top row). Meaning, the dual of a dual is the original shape but in decreased scale. The dual correspondence of vertices, edges and faces is highlighted in the bottom row. Such dual transformations can be repeated infinitely going back and forth between a dual-pair. The only limit is the numerical precision of the machine, until all vertices collapse into a single point.</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_3.svg">
+                <figcaption>Figure 3: Double dual transformation results for 4 meshes with different sizes and topologies, including: a - cube (v: 8; f: 6), b - sphere (v: 42; f: 80), c - face (v: 11’706; f: 23’408), d - flower (v: 655’362; f: 1’310’720). The images are true to scale.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div class="section_text">We can compute the volume of a triangular mesh \(M\) by determining the volumes for all individual tetrahedrons formed by the same point and a face \(F_n\). This essentially discretizes the complex shape into simpler geometries, tetrahedrons, which volume we can compute using the triple product of the face vertices. This can be thought of as computing the determinant of the 3 by 3 matrix of 3 edge-vectors \(i,j,k\) of the tetrahedron, determining the spanned volume by those in space.<br><br>However, the volume is always 6 times larger than the actual tetrahedron. Additionaly the sum of signed tetrahedra volumes is independent of the 4th <div class="inline_ref" ref="r2">vertex</div>, which allows to set such to \((0,0,0)\) and ultimately simplify the equation for the volume of any triangular and manifold mesh \(M\) with \(n\) faces to the following</div>
+            <div class="section_equation">$$M_{volume} = \frac{1}{6}\sum_{n}i_n\cdot(j_n \times k_n)$$</div>
+            <div class="section_text">The double dual volume is iteratively computed 10 times for the flower example mesh (fig 3d). Given that it has ~655K vertices and ~1,3M faces which are topologically very densely arranged the volume does not change much as we consecutively compute its dual. The volume remains almost unchanged and decreases linearly on a very small scale. On the other hand our initially created cube mesh has faces and vertices that are sparsely arranged, which cause a stronger shrinking effect when collapsed into a single vertex.<br><br>The volume shrinking effect really depends on the geometry, and can either decrease very slowly or fast.</div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_4.jpg">
+                <figcaption>Figure 4: The volume for the iterative dual of a flower mesh (left) and low poly sphere (right).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Iterative Closest Point</div>
+            </div>
+            <div>            
+                <div class="section_text">The Iterative Closest Point (ICP) registration algorithm aligns two meshes \(A\) and \(B\) <div class="inline_ref" ref="r3"></div> . Point correspondence \(i\) are established doing closest point search with an acceleration structure such as a bounding volume hierarchy. In closed form we compute the optimal rotation \(r\) and translation \(t\) through the aid of a singular value decomposition (SVD), such that the squared distance between the correspondences is minimized. This procedure is repeated until an aligmnet threshold is met. However, the vanilla ICP algorithm is very prone to noise and inital aligment of the meshes. But also establishing correspondences correct is essential, such that we looked into normal rejction, color rejection and even edge filters.</div>
+                <div class="section_equation">$$ \min _{r,t} \sum_i||rA^i+t -B^i||^2 $$</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_12.svg">
+                <figcaption>Figure 5: The registration results for \(A \xrightarrow{} B\) with ICP.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The ICP algorithm can be extended in a variety of ways. One of those is point-to-plane ICP, which does not try to match and align points exactly, but have them aligned based on the plane spanned by the vertex and its normal. This gives the algorithm some more flexibility between iterations. There does exist a closed form solution for point-to-plane, yet we took the chance and approached it using gradient descent.
+                    <br><br>The optimization objective of point-to-plane ICP is to minimize the squared distance between \(A^i\) and the plane defined by \(B^i\) and normal \(n^i_B\). Refining the previous minimization problem of the ICP, the new objective states :
+                </div>
+                <div class="section_equation">$$ \min _{r,t} \sum_i((rA^i+t -B^i)\cdot n^i_B)^2 $$</div>
+                <div class="section_text">given that</div>
+                <div class="section_equation">$$ rA^i+t = T\cdot \tilde{A}^i $$</div>
+                <div class="section_text">in which \(\tilde{A}^i\) represents the homogeneous coordinates of \(A^i\), transformation matrix \(T\) can be defined as</div>
+                <div class="section_equation">$$ T = \begin{bmatrix} r_{11} & r_{12} & r_{13} & t_1 \\ r_{21} & r_{22} & r_{23} & t_2 \\ r_{31} & r_{32} & r_{33} & t_3 \\ 0 & 0 & 0 & 1 \end{bmatrix} $$</div>
+                <div class="section_text">where \(r\) can be decomposed into \(\theta_x \theta_y \theta_z\), determining the rotation around x-axis, y-axis and z-axis in radians such that</div>
+                <div class="section_equation">$$ 
+                    r = r_x \cdot r_y \cdot r_z
+                    $$
+                    <br><br>
+                    $$
+                    r_x = \begin{bmatrix}
+                        1 & 0 & 0 \\
+                        0 & \cos{\theta_x} & -\sin{\theta_x} \\
+                        0 & \sin{\theta_x} & \cos{\theta_x}
+                    \end{bmatrix}\qquad
+                    r_y = \begin{bmatrix}
+                        \cos{\theta_y} & 0 & \sin{\theta_y} \\
+                        0 & 1 & 0 \\
+                        -\sin{\theta_y} & 0 & \cos{\theta_y}
+                    \end{bmatrix}\qquad
+                    r_z = \begin{bmatrix}
+                        \cos{\theta_z} & -\sin{\theta_z} & 0 \\
+                        \sin{\theta_z} & \cos{\theta_z} & 0 \\
+                        0 & 0 & 1
+                    \end{bmatrix} $$
+                </div>
+                <div class="section_text">This breaks down the optimization objective as follows</div>
+                <div class="section_equation">$$ \min _T \sum_i((T\cdot A^i -B^i)\cdot n^i_B)^2 $$</div>
+                <div class="section_text">with 6 optimization parameter \(p\) to solve for </div>
+                <div class="section_equation">$$ p =[\theta_x, \theta_y, \theta_z, t_1, t_2, t_3] $$</div>
+                <div class="section_text">As mentioned we solve this using Gradient Descent (GD) to find the best transformation \(T\) with parameters \(p\). The implementation for this task was done in JAX, using its automatic differentiation to compute gradients. Beginning with an identity transformation matrix, GD iteratively optimizes \(T\) such that the initial pose of all \(A^i\) matches their corresponding \(B^i\) with \(n^i_B\). Once converged, \(T\) is applied to \(A\), reset to an identity matrix and the correspondences to \(B\) are recomputed. Such step is continued until the optimization objective is met and the point to plane distance is minimal.</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_13.svg">
+                <figcaption>Figure 6: The state of the mesh registration \(A \xrightarrow{}B\) , \(Grey \xrightarrow{}Blue\) after each optimization period with the respective correspondence and mesh pose.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The method was evaluated with \(A\xrightarrow{} B\). The registration happens in 4 steps, of which each represents an optimization period solving for \(T\) given a fixed set of correspondences \(A^i\) and \(B^i\) with normals \(n^i_B\). Each period can be thought of as a connection in (fig 9) between states. These optimization periods become visible looking at the registration convergence graph (fig 7) plotting the loss. Once a new optimization period is initiated the algorithm resets \(T\) while all correspondences and points for \(A\) are updated. This breaks the graph since the optimization condition changes, which can be observed as a step in the loss. However, given that with each finished period the correspondences get more reliable, the overall graph continues towards convergence.</div>         
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_14.jpg">
+                <figcaption>Figure 7: Point-To-Plane ICP convergence using gradient descent to find the best transformation matrix \(T\) to minimize the plane distance among correspondences between \(A, B\) in 4 periods. The steps indicate the end of an optimization period which is equivalent to a single SVD iteration in a vanilla ICP.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Laplace Beltrami Operator</div>
+            </div>
+            <div>            
+                <div class="section_text">The laplace beltrami operator is a discrete second-order differential operator describing curvature which can be thought of as the difference of a point to its local neighbourhood. For a mesh with \(x\) vertices the laplace beltrami operator is a square matrix of \(x^2\) elements, describing the topology of the mesh by capturing the connectivity of vertices.<br><br>Mean curvature \(H\) of a mesh can be defined by the vertex normals \(n\), vertices \(x\) and the uniform laplace operator \(\Delta\) as</div>
+                <div class="section_equation">$$ \Delta x= -2Hn $$</div>
+                <div class="section_text">and can be estimated as</div>
+                <div class="section_equation">$$ H= \frac{<<\Delta x>n^{-1}>}{-2} $$</div>
+                <div class="section_text">Gaussian curvature \(K\) is approximated by using the angle deficit of the angle \(\theta\) of each connected \(j\)th face at each \(i\)th vertex of the mesh.</div>
+                <div class="section_equation">$$ K_i = 2\pi-\sum_j\theta_j $$</div>
+                <div class="section_text">Curvature \(K_i\) is normalized using the area of the barycentric cells of all connected faces. This is defined as 1/3 of the total area of all connected faces. The distribution of \(H\) and \(K\) seem reasonable when compared with the curvature computed on an equivalent, continuous surface using the computer aided modeling application Rhinoceros3D (fig 8). Yet the actual curvature values differ, which might be due to unnormalized values.</div>         
+            </div>
+        </div>
+        <div class="media_wrapper full_fig">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_6.jpg">
+                <figcaption>Figure 8: Mean curvature (top) Gaussian curvature (bottom) Our implementation (left) Ground truth from Rhino3D for curvature analysis on continuous surface (right).</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_7.jpg">
+                <figcaption>Figure 9: Mean curvature for three scales of remeshing, going from coarse (left) to fine (right).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The laplace beltrami operator can be discretized in different ways. A uniform discretization weighs each neighbor in the one-ring of a vertex equally. A non-uniform, cotangent discretization weights each vertex \(v_j\) based on the edge opposing cotangents \(\alpha_{ij}\), \(\beta_{ij}\) and is normalized using the total barycentric cell area \(A_i\) as follows</div>
+                <div class="section_equation">$$ \Delta_Sf(v_i) = \frac{1}{2A_i} c(v_i) $$</div>
+                <div class="section_text">with the summed cotangents \(c\) at vertex \(v_i\)</div>
+                <div class="section_equation">$$ c(v_i)= \sum_{v_j \in N(v_i)}(cot\alpha_{ij}+cot\beta_{ij})(f(v_j)-f(v_i)) $$</div>
+                <div class="section_text">For open meshes with a naked boundary, it is assumed that the mesh is manifold such that there can only be 2 naked edges or none for a vertex in a mesh. Additionally the cotangent weight computation is respecting naked boundary conditions, such that these edge's weight consist only of a single cotangent instead of the sum of the two opposing cotangents.
+                    <br><br>The mean curvature approximation is similar between both uniform and cotangent discretizations and estimates the continuous, ground truth reasonably well (fig 10). Yet the curvature domain becomes larger, meaning min and max mean curvature are getting lower and higher using the cotangent discretizations. It indicates high and low curvature regions therefore with higher contrast in the overall distribution.
+                </div>            
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_8.jpg">
+                <figcaption>Figure 10: Mean curvature comparison for uniform (left), cotangent (middle) and Rhino3D (right).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">Performance became a critical factor when computing the spectral decomposition of a high resolution mesh like the armadillo with ~50K vertices. We overworked our implementation for the cotangent discretized Laplace-Beltrami procedure to allow for vectorized processing. We switched to a sparse solver for the eigenanalysis. Prior to optimizing our implementation, the operator computed more than 10 min, whereas afterwards only ~4 min. Initially the eigenanalysis was computed with a dense solver, however after ~30 min the machine ran out of memory. Switching to a sparse solver enabled the computation of the smallest 50 eigenvectors in 2 ½ h.</div>
+                <div class="section_text">We spectrally decompose the mesh with an eigen analysis on the laplace beltrami operator, computing all eigenvectors \(e_i\). With those we can reconstruct the signal, in our case a 3D mesh, up to the \(i\)th basis with :</div>
+                <div class="section_equation">$$ \hat{x}^c = \sum_i a_i^ce_i $$</div>
+                <div class="section_text">In our case, the signal \(\hat{x}\) has three components for each vertex of the mesh. We determine the coefficients \(a_i\) for each basis \(e_i\) by projecting each component \(\hat{x}^c\) of the signal on each basis such that :</div>
+                <div class="section_equation">$$ a_i^c = < \hat{x}^c, e_i > $$</div>
+                <div class="section_text">We decomposed two meshes with ~10K vertices and reconstructed them with the smallest 10 and 100 basis functions (fig 11). The results show that depending on the used amount of smallest basis functions the reconstruction is closer to the initial mesh. The low basis functions reconstruct low frequencies and high ones high frequencies. This causes reconstructions to gradually transition from an abstract geometry back into the almost identical mesh using more basis functions.</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_9.jpg">
+                <figcaption>Figure 11: Spectral decomposition of two 10K vertices meshes. Reconstruction with smallest 10 and 100 basis, eigenvectors.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">We can also use the laplace beltrami operator to smooth geometries precisly. One way of doing so is through explicit laplcian mesh smoothing, which is defined with mesh vertices \(\boldsymbol{x}\) at smoothing iteration \(t\), step size \(\lambda\) and the laplace beltrami operator \(\Delta\) as :</div>
+                <div class="section_equation">$$ \boldsymbol{x}_{t+1} = \boldsymbol{x}_t + \lambda \Delta \boldsymbol{x}_t $$</div>
+                <div class="section_text">This essentially averages the vertices weighted. Besides the discretization of the laplacian, the step size influences the convergence behavior, resulting either in smoothing or fracturing the geometry. The step size should be selected based on the euclidean scale of the geometry. A too large step size will cause large vertex updates and oscillating vertices. A too small step size will just result in near zero smoothing of the original shape. We tested explict laplacian mesh smoothing on three examples using the cotangent discretization (fig 12)</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_11.jpg">
+                <figcaption>Figure 12: Explicit Laplacian mesh smoothing using the cotangent discretization for a set of example geometries. All geometries have different scales and ultimately use a different smoothing step-size.</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_10.jpg">
+                <figcaption>Figure 13: Reconstruction of geometry with synthetic added noise using explicit, uniform laplacian smoothing. 5 Smoothing iterations and a step size of 1.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">References</div>
+            </div>
+            <div>            
+                <div class="references">
+                    <ol>
+                        <li id="r1"><a href="https://github.com/carlosrojas/halfedge_mesh">https://github.com/carlosrojas/halfedge_mesh</a></li>
+                        <li id="r2"><a href="https://www.youtube.com/watch?v=sokeN5VxBB8">Keenan Crane. Lecture 17: Discrete curvature ii (discrete differential geometry)</a></li>
+                        <li id="r3"><a href="https://graphics.stanford.edu/courses/cs164-09-spring/Handouts/paper_icp.pdf">Besl, P. J., & McKay, N. D. (1992, April). Method for registration of 3-D shapes. In Sensor fusion IV: control paradigms and data structures (Vol. 1611, pp. 586-606). Spie.</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="related_wrapper">
+            <div>
+                <div class="section_headline">More</div>
+            </div>
+            <div class="project_grid_wrapper columns_4">
+                <a project-name="poissonImageEditing"></a>
+                <a project-name="masterthesis"></a>
+                <a project-name="uberallFont"></a>
+                <a project-name="meshgrowth"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--https://ionic.io/ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/global.js"></script>
+    <script src="js/researchProjectPage.js"></script>
+
+    <!---CHECK-IF-EVERYTHING-LOADED_PRE-LOADING-SCREEN-ON/OFF--->
+    <script>
+        var loader = document.getElementById("loading-icon-wrapper");
+        window.addEventListener("load",function(){loader.style.display = "none";})
+    </script>
+</body>
+</html>

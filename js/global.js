@@ -7,6 +7,14 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
         year: '2022',
       },
+    geometryProcessing: {
+      title: 'Geometry Processing',
+      projectPage: 'geometryprocessing.html',
+      projectcategory: ['category_1'],
+      thumbnail: 'images/Julius_Uberall_project_thumbnails_geometryProcessing.jpg',
+      thumbnailvideo: 'videos/JuliusUberall_thumbnail_geometryProcessing.mp4',
+      year: '2025',
+    },
     poissonImageEditing: {
       title: 'Poisson Image Editing',
       projectPage: 'poissonImageEditing.html',
