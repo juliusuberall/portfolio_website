@@ -136,7 +136,7 @@
   display: grid;
   grid-template-rows: auto auto;
   font-family: 'Poppins Regular';
-  font-size: var(--small-paragraph-font-size);
+  font-size: var(--font-size-smaller);
   color: var(--light-grey);
   padding: 0px 20px 15px 20px;
 }
@@ -190,8 +190,7 @@
     --landing-mobile-headline-padding: 60px;
     --landing-mobile-section-padding: 150px;
   
-    --medium-paragraph-font-size: 16px;
-    --small-paragraph-font-size: 13px;
+    --medium-paragraph-font-size: 14px;
   
     --default-outline: solid 1px var(--default-outline-colour);
     --thick-outline: solid 3px var(--black-0-hard);

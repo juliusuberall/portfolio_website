@@ -19,8 +19,8 @@
         </div>
         <div class="media_wrapper">
             <figure>
-                <img src="images/JuliusUberall_poissonImageEditing_6.jpg">
-                <figcaption>Fig. 1. Poisson image editing allows to seamlessly clone a region from image A in image B. In this example we transfer a face into the <div class="inline_ref" ref="r1">"Portrait of a Youth"</div></figcaption>
+                <img src="images/JuliusUberall_geometryProcessing_5.jpg">
+                <figcaption>Fig. 1. Spectral decomposition of an armadillo mesh into its different frequency components by computing the eigenvectors and eigenvalues of the mesh's Laplacian. Reconstruction with smallest 5, 15 and 50 basis, eigenvectors</figcaption>
             </figure>
         </div>
         <div id="abstract_wrapper">
@@ -79,8 +79,81 @@
         </div>
         <div class="section_wrapper">
             <div>
-                <div class="section_headline">Discrete Laplacians</div>
+                <div class="section_headline">Laplace Beltrami Operator</div>
             </div>
+            <div>            
+                <div class="section_text">The laplace beltrami operator is a discrete second-order differential operator describing curvature which can be thought of as the difference of a point to its local neighbourhood. For a mesh with \(x\) vertices the laplace operator is a square matrix of \(x^2\) elements, describing the topology of the mesh by capturing the connectivity of vertices.<br><br>Mean curvature \(H\) of a mesh can be defined by the vertex normals \(n\), vertices \(x\) and the uniform laplace operator \(\Delta\) as</div>
+                <div class="section_equation">$$ \Delta x= -2Hn $$</div>
+                <div class="section_text">and can be estimated as</div>
+                <div class="section_equation">$$ H= \frac{<<\Delta x>n^{-1}>}{-2} $$</div>
+                <div class="section_text">Gaussian curvature \(K\) is approximated by using the angle deficit of the angle \(\theta\) of each connected \(j\)th face at each \(i\)th vertex of the mesh.</div>
+                <div class="section_equation">$$ K_i = 2\pi-\sum_j\theta_j $$</div>
+                <div class="section_text">Curvature \(K_i\) is normalized using the area of the barycentric cells of all connected faces. This is defined as a 1/3 of the total area of all connected faces. The distribution of \(H\) and \(K\) seem reasonable when compared with the curvature computed on an equivalent, continuous surface using the computer aided modeling application Rhinoceros3D (fig 5). Yet the actual curvature values differ, which might be due to unnormalized values.</div>         
+            </div>
+        </div>
+        <div class="media_wrapper full_fig">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_6.jpg">
+                <figcaption>Figure 5: Mean curvature (top) Gaussian curvature (bottom) Our implementation (left) Ground truth from Rhino3D for curvature analysis on continuous surface (right).</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_7.jpg">
+                <figcaption>Figure 6: Mean curvature for three scales of remeshing, going from coarse (left) to fine (right).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">The laplace beltrami operator can be discretized in different ways. A uniform discretization weighs each neighbor in the one-ring of a vertex equally. A non-uniform, cotangent discretization weights each vertex \(v_j\) based on the edge opposing cotangents \(\alpha_{ij}\), \(\beta_{ij}\) and is normalized using the total barycentric cell area \(A_i\) as follows:</div>
+                <div class="section_equation">$$ \Delta_Sf(v_i) = \frac{1}{2A_i} c(v_i) $$</div>
+                <div class="section_text">with the summed cotangents \(c\) at vertex \(v_i\) :</div>
+                <div class="section_equation">$$ c(v_i)= \sum_{v_j \in N(v_i)}(cot\alpha_{ij}+cot\beta_{ij})(f(v_j)-f(v_i)) $$</div>
+                <div class="section_text">Since we use open meshes with a naked boundary, it is assumed that the mesh is manifold such that there can only be 2 naked edges or none for a vertex in a mesh. Additionally the cotangent weight computation is respecting naked boundary conditions, such that these edge's weight consist only of a single cotangent instead of the sum of the two opposing cotangents.
+                    <br><br>The mean curvature approximation is similar between both discretizations and estimates the continuous, ground truth reasonably well (fig 7). Yet the curvature domain becomes larger, meaning min and max mean curvature are getting lower and higher using the cotangent discretizations. It indicates high and low curvature regions therefore with higher contrast in the overall distribution.
+                </div>            
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_8.jpg">
+                <figcaption>Figure 7: Mean curvature comparison for uniform (left), cotangent (middle) and Rhino3D (right).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">Performance became a critical factor when computing the spectral decomposition of a high resolution mesh like the armadillo with ~50K vertices. We overworked our implementation for the cotangent discretized Laplace-Beltrami procedure to allow for vectorized processing. We switched to a sparse solver for the eigenanalysis. Prior to optimizing our implementation, the operator computed more than 10 min, whereas afterwards only ~4 min. Initially the eigenanalysis was computed with a dense solver, however after ~30 min the machine ran out of memory. Switching to a sparse solver enabled the computation of the smallest 50 eigenvectors in 2 ½ h.</div>
+                <div class="section_text">We spectrally decompose the mesh with an eigen analysis on the laplace beltrami operator, computing all eigenvectors \(e_i\). With those we can reconstruct the signal, in our case a 3D mesh, up to the \(i\)th basis with :</div>
+                <div class="section_equation">$$ \hat{x}^c = \sum_i a_i^ce_i $$</div>
+                <div class="section_text">In our case, the signal \(\hat{x}\) has three components for each vertex of the mesh. We determine the coefficients \(a_i\) for each basis \(e_i\) by projecting each component \(\hat{x}^c\) of the signal on each basis such that :</div>
+                <div class="section_equation">$$ a_i^c = < \hat{x}^c, e_i > $$</div>
+                <div class="section_text">We decomposed two meshes with ~10K vertices and reconstructed them with the smallest 10 and 100 basis functions (fig 8). The results show that depending on the used amount of smallest basis functions the reconstruction is closer to the initial mesh. The low basis functions reconstruct low frequencies and high ones high frequencies. This causes reconstructions to gradually transition from an abstract geometry back into the almost identical mesh using more basis functions.</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_9.jpg">
+                <figcaption>Figure 8: Spectral decomposition of two 10K vertices meshes. Reconstruction with smallest 10 and 100 basis, eigenvectors.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>            
+                <div class="section_text">We can also use the laplace beltrami operator to smooth geometries precisly. One way of doing so is through explicit laplcian mesh smoothing, which is defined with mesh vertices \(\boldsymbol{p}\) at smoothing iteration \(t\), step size \(\lambda\) and the Laplace-Beltrami operator \(\Delta\) as :</div>
+                <div class="section_equation">$$ \boldsymbol{p}_{t+1} = \boldsymbol{p}_t + \lambda \Delta \boldsymbol{p}_t $$</div>
+                <div class="section_text">This essentially averages the vertices weighted. Besides the discretization of the laplacian, the step size influences the convergence behavior, resulting either in smoothing or fracturing the geometry. The step size should be selected based on the euclidean scale of the geometry. A too large step size will cause large vertex updates and oscillating vertices. A too small step size will just result in near zero smoothing of the original shape. We tested explict laplacian mesh smoothing on three examples using the cotangent discretization (fig 9)</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_11.jpg">
+                <figcaption>Figure 9: Explicit Laplacian mesh smoothing using the cotangent discretization for a set of example geometries. All geometries have different scales and ultimately use a different smoothing step-size.</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_geometryProcessing_10.jpg">
+                <figcaption>Figure 10: Reconstruction of geometry with synthetic added noise using explicit, uniform laplacian smoothing. 5 Smoothing iterations and a step size of 1.</figcaption>
+            </figure>
         </div>
         <div class="section_wrapper">
             <div>

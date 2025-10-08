@@ -32,12 +32,12 @@
 .project_description{
   padding: 12px 0 10px 0;
   font-family: Poppins ExtraLight;
-  font-size: 16px;
+  font-size: var(--medium-paragraph-font-size);
 }
 .project_details{
   padding-top: 19px;
   font-family: Poppins Regular;
-  font-size: 12.8px;
+  font-size: var(--font-size-smaller);
 }
 #partner_link_bright_important{
   font-family: Poppins Bold;

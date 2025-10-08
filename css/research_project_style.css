@@ -53,6 +53,9 @@ pre{
 }
 
 /*------------------------ABSTRACT--------------------------*/
+#abstract_wrapper{
+    font-size: var(--medium-paragraph-font-size);
+}
 #abstract_wrapper > div{
     display: grid;
     grid-template-columns: repeat(2,33% 66%);
@@ -100,10 +103,6 @@ pre{
 .section_wrapper {
     padding-bottom: 0 !important;
 }
-.section_wrapper .section_text{
-    column-count: 2;
-    column-gap: var(--landing-large-padding);
-}
 .section_wrapper .section_headline{
     display: flex;
     align-items: center;
@@ -117,6 +116,7 @@ pre{
 }
 .section_text{
     padding-bottom: var(--landing-large-padding);
+    font-size: var(--medium-paragraph-font-size);
 }
 .section_equation{
     outline: 1px solid var(--light-light-grey);
@@ -127,7 +127,7 @@ pre{
 
 /*------------------------REFERENCES--------------------------*/
 .section_wrapper .references{
-    font-size: var(--font-size-extra-smaller);
+    font-size: var(--font-size-smaller);
 }
 .references ol {
     counter-reset: list-counter;
@@ -198,6 +198,9 @@ figure figcaption {
 }
 .media_wrapper video {
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0 ;
+}
+.full_fig figure{
+    padding: var(--landing-huge-padding);
 }
 
 /*------------------------BibTex--------------------------*/
@@ -282,9 +285,6 @@ mjx-container[jax="CHTML"] {
     }
     .section_wrapper {
         font-size: var(--font-size-mobile-normal);
-    }
-    .section_wrapper .section_text{
-        column-count: 1;
     }
     .related_wrapper .section_headline{
         border-bottom: var(--thick-outline-mobile);
