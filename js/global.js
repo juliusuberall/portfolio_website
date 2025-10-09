@@ -387,10 +387,15 @@ const projects = {
 
 // Dictionary of all news
 const news = {
+    n2509_01: {
+        date: "Sep '25", 
+        icon: '✍️',
+        text: 'Finished my MSc Thesis "Bounding Expert Hierarchies"',
+    },
     n2504_02: {
         date: "Apr '25", 
         icon: '🇬🇧',
-        text: 'Going to attend Eurographics 2025 in London.',
+        text: 'Going to attend and volunteer at Eurographics 2025 in London.',
     },
     n2504_01: {
         date: "Apr '25", 

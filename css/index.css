@@ -99,7 +99,7 @@ body{
 /*------------------------NEWS--------------------------*/
 #news_wrapper{
   margin-top: var(--landing-large-padding);
-  background-color: var(--black-0-hard);
+  background: linear-gradient(to top, var(--black-3),var(--black-0-hard));
   border-radius: var(--border-radius-medium);
   outline: var(--default-outline);
   font-family: var(--font-poppins-regular);
@@ -120,14 +120,6 @@ body{
   position: absolute;
   top: calc(var(--landing-large-padding)/2);
   right: var(--landing-large-padding);
-}
-#news_wrapper::before {
-  content: '';
-  position: absolute;
-  top: calc(var(--landing-large-padding) + calc(var(--font-size-large)/2));
-  bottom: calc(-6 * 1rem);
-  left: calc(var(--landing-large-padding) + calc(var(--font-size-large)/2));
-  border-left: 1px dashed var(--bright-white);
 }
 .news{
   display: grid;
@@ -327,12 +319,6 @@ body{
     font-size: var(--font-size-mobile-normal);
     top: calc(var(--landing-mobile-headline-padding)/2);
     right: var(--landing-mobile-headline-padding);
-  }
-  #news_wrapper::before {
-    top: calc(var(--landing-mobile-headline-padding) + calc(var(--font-size-mobile-huge)/2));
-    bottom: calc(-4 * 1rem);
-    left: calc(var(--landing-mobile-headline-padding) + calc(var(--font-size-mobile-huge)/2));
-    border-left: 3px dashed var(--bright-white);
   }
   .news{
     grid-template-columns: 10% 90%;
