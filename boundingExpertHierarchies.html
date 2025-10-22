@@ -31,8 +31,8 @@
         </div>
         <div class="media_wrapper">
             <figure>
-                <img src="images/JuliusUberall_geometryProcessing_5.svg">
-                <figcaption>Fig. 1. Spectral decomposition of an armadillo mesh into its different frequency components by computing the eigenvectors and eigenvalues of the mesh's Laplacian. Reconstruction with smallest 5, 15 and 50 basis, eigenvectors</figcaption>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_1.svg">
+                <figcaption>Given an indicator function, here in 2D, that is 1 for occupied space and 0 otherwise (a), previous work has shown to approximate the indicator with a neural network such that it is strictly conservative (b). That method has no false negatives, i.e. it will never return 0 if the indicator was 1, but it will do so at the expense of a couple of false positives e.g. some holes in the leaves are missing. Essentially, speed is traded against some false positives. This combination of properties is visualized as bars below each figure. One can improve the quality, such that the holes between leaves are resolved, but at the expense of slower speed (c). Our method achieves both better quality and better speed (d), by using multiple independent <i>bounding expert networks</i> and a learned gating  to control which one needs to run where.</figcaption>
             </figure>
         </div>
         <div id="abstract_wrapper">
@@ -47,34 +47,43 @@
         </div>
         <div class="section_wrapper">
             <div>
-                <div class="section_headline">Halfedge Meshes</div>
-            </div>
-            <div>            
-                <div class="section_text">A halfedge mesh is a data structure that allows for precise navigation of the data structure, such that vertices along edge loops or other patterns can be extracted for further processing. We initialise a halfedge quad mesh for a cube. Essential is to ensure that all face boundary directions are legit and against each other, resulting in all edges having an opposite edge which is reversed - the halfedge. This is crucial for navigating the topology of the halfedge mesh correctly and computing the dual.
-                    <br><br>A dual polyhedron can be computed of any arbitrary manifold mesh. The topology of the dual mesh is already captured in the original mesh (fig 2). Starting with a mesh one has to collapse faces into vertices and vice-versa, computing the centroid for each face but essentially swapping face indices for vertex indices among the respective pointers within the halfedge mesh e.g. the face index for each halfedge. Crucial is to ensure the halfedge.next pointers are updated correctly, ensuring face boundary loops can be navigated correctly. If this is not the case the double dual procedure might fail due to this. 
-                    <br><br>Following the bespoke method allows this transformation to run efficiently and without any list searches, which would otherwise scale exponentially with an increasing mesh size.
-                    <br><br>All studies were done using the python library <div class="inline_ref" ref="r1">halfedge_mesh</div> from Carlos Rojas .</div>
+                <div class="section_headline">Method</div>
             </div>
         </div>
         <div class="media_wrapper">
             <figure>
-                <img src="images/JuliusUberall_geometryProcessing_3.svg">
-                <figcaption>Figure 3: Double dual transformation results for 4 meshes with different sizes and topologies, including: a - cube (v: 8; f: 6), b - sphere (v: 42; f: 80), c - face (v: 11’706; f: 23’408), d - flower (v: 655’362; f: 1’310’720). The images are true to scale.</figcaption>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_4.svg">
+                <figcaption>There are three training objectives for a MoE after initialization (a): the experts should not overlap and rely on each other such that the top-1 expert must be sufficient enough for a query (b); the expert distribution across the space to bound must be uniform (c); the model must be conservative such that it has strictly zero false negatives (d).</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_2.svg">
+                <figcaption>Comparison of flow in MLPs, dense MoEs and sparse MoEs, from left to right. The MoE allows for sparse queries, by forward passing a query only through the single, top-1 expert (c). This uses only a fraction of the MoE's total parameters, such that a sparse inferred MoE will use fewer parameters during a forward pass by design when comparing to a monolithic MLP (a). Yet, during training the MoE is inferred dense, which evaluates every query with every expert to explore all routes and have best optimization control over the model (b).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
             <div>
-                <div class="section_headline">Citation</div>
+                <div class="section_headline">Results</div>
             </div>
-            <div>            
-                <div class="references">
-                    <ol>
-                        <li id="r1"><a href="https://github.com/carlosrojas/halfedge_mesh">https://github.com/carlosrojas/halfedge_mesh</a></li>
-                        <li id="r2"><a href="https://www.youtube.com/watch?v=sokeN5VxBB8">Keenan Crane. Lecture 17: Discrete curvature ii (discrete differential geometry)</a></li>
-                        <li id="r3"><a href="https://graphics.stanford.edu/courses/cs164-09-spring/Handouts/paper_icp.pdf">Besl, P. J., & McKay, N. D. (1992, April). Method for registration of 3-D shapes. In Sensor fusion IV: control paradigms and data structures (Vol. 1611, pp. 586-606). Spie.</a></li>
-                    </ol>
-                </div>
-            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_3.svg">
+                <figcaption>Scaling the number of experts utilized by the MoE partitions space further and further (left to right). But still, the MoE only requires a single expert to process a query. Meaning, the MoE can increase modeling complexity with minimal increased query time. The MLP can only scale monolithic such that query time increases at best linearly. We indicate the number of experts for each MoE as well as the equivalently sized MLP for a MoE with \numberOfExperts experts in the name above each figure. Increasing the expert pool lowers the bounding effort for each expert, as its region to bound becomes smaller and eventually less complex. Yet, the space partition to solve by the gate becomes more difficult.</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_6.png">
+                <figcaption>Comparing bounding predictions for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (a,d) and MoE (b,e) in 2D and 3D. We highlight the space partitioning in the MoE by color coding each expert (c,f). All predictions are strictly conservative.</figcaption>
+            </figure>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_5.svg">
+                <figcaption>Neural bounding of a six-dimensional robot control system in 3D space. The bounding expert hierarchy maps a nine-dimensional input to a binary bounding response. The top row visualizes four different 6D-configurations (knob controls) of the robot arm moving from some pose to a pose where the end-effector is close to a target. The bottom row visualizes the learned bounding of MLP and MoE while highlighting overlapping parts in dark.</figcaption>
+            </figure>
         </div>
         <div class="related_wrapper">
             <div>
