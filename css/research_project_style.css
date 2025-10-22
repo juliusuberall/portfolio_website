@@ -48,6 +48,10 @@ pre{
 #team a {
     font-family: var(--font-poppins-semibold);
 }
+sup {
+    padding-left: 3px;
+    padding-right: 3px
+}
 
 /*------------------------ABSTRACT--------------------------*/
 #abstract_wrapper{
@@ -60,35 +64,19 @@ pre{
     gap: var(--landing-medium-padding);
 }
 #quicklinks{
-    color: var(--accent-colour);
-    grid-template-rows: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: var(--landing-medium-padding);
-    overflow: hidden;
-    z-index: 0;
+    max-width: 70%;
 }
-#quicklinks a{
-    display: inline;
-    position: relative;
-}
-#quicklinks a:hover{
-    color: var(--bright-white);
-}
-#quicklinks a:hover::before{
-    left: 0;
-}
-#quicklinks a::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent-colour);
-    transition: left 0.2s ease;
-    z-index: -1;
-}
-#quicklinks ion-icon{
-    vertical-align: sub;
+
+.research-quicklink-button{
+    text-align: center;
+    font-family: var(--font-poppins-regular);
+    font-size: var(--font-size-smaller);
+    border-radius: var(--border-radius-medium);
+    justify-content: center;
+    padding: var(--landing-tiny-padding);
 }
 
 /*------------------------SECTION--------------------------*/
@@ -274,10 +262,18 @@ mjx-container[jax="CHTML"] {
         line-height: var(--font-size-mobile-extra-large);
         font-size: var(--font-size-mobile-normal);
     }
-
     #abstract_wrapper > div{
         grid-template-columns: repeat(1, 1fr);
     }
+    .research-quicklink-button{
+        font-size: var(--font-size-mobile-normal);
+        grid-area: unset !important;
+    }
+    #quicklinks{
+        gap: var(--mobile-side-padding);
+        max-width: unset;
+    }
+
 
     /*------------------------SECTION--------------------------*/
     .section_headline{

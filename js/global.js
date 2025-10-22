@@ -1,5 +1,37 @@
 // Dictionary of all projects with properties for thumbnails
 const projects = {
+    boundingExpertHierarchies: {
+        title: 'Bounding Expert Hierarchies',
+        projectPage: 'boundingExpertHierarchies.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_boundingExpertHierarchies.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_boundingExpertHierarchies.mp4',
+        year: '2025',
+        quicklinks: {
+            '📄 PDF': '',
+            '🗃️ arXiv': '',
+            '🛠️ Code': '',
+        },
+    },
+    geometryProcessing: {
+        title: 'Geometry Processing',
+        projectPage: 'geometryprocessing.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_geometryProcessing.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_geometryProcessing.mp4',
+        year: '2025',
+    },
+    poissonImageEditing: {
+        title: 'Poisson Image Editing',
+        projectPage: 'poissonImageEditing.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_poissonImageEditing.mp4',
+        year: '2024',
+        quicklinks: {
+            'original paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
+        },
+    },
     masterthesis: {
         title: 'Graded toolpaths',
         projectPage: 'masterthesis.html',
@@ -7,25 +39,6 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
         year: '2022',
       },
-    geometryProcessing: {
-      title: 'Geometry Processing',
-      projectPage: 'geometryprocessing.html',
-      projectcategory: ['category_1'],
-      thumbnail: 'images/Julius_Uberall_project_thumbnails_geometryProcessing.jpg',
-      thumbnailvideo: 'videos/JuliusUberall_thumbnail_geometryProcessing.mp4',
-      year: '2025',
-    },
-    poissonImageEditing: {
-      title: 'Poisson Image Editing',
-      projectPage: 'poissonImageEditing.html',
-      projectcategory: ['category_1'],
-      thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
-      thumbnailvideo: 'videos/JuliusUberall_thumbnail_poissonImageEditing.mp4',
-      year: '2024',
-      quicklinks: {
-        'original paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
-        },
-    },
     uberallFont: {
         title: 'Uberall Typography',
         projectPage: 'uberallFont.html',
@@ -496,12 +509,15 @@ if(document.getElementById('quicklinks')){
     const q = document.getElementById('quicklinks');
     const projectName = q.getAttribute('project-name');
     Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
-        const newDiv = document.createElement('div');
-        newDiv.innerHTML = 
-            `<a href="${value}" target="_blank">
-                ${key} 
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </a>`
-        q.appendChild(newDiv);
+        const a = document.createElement('a');
+        a.href = value;
+        a.target = '_blank';
+
+        const div = document.createElement('div');
+        div.className = 'research-quicklink-button button-2';
+        div.textContent = key;
+
+        a.appendChild(div);
+        q.appendChild(a);
     });
 };
