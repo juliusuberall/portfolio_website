@@ -1,6 +1,7 @@
 /*------------------------BASELINE--------------------------*/
 body{
     background-color: var(--invisible-grey);
+    counter-reset: figure; /* start counter at 0 */
 }
 a{
     color: unset;
@@ -10,7 +11,9 @@ pre{
     margin: 0;
 }
 #main{
-    padding: 0 24% 0 24%;
+    max-width: 1000px;
+    padding: 0 20%;
+    margin: 0 auto;
     text-align: justify;
     hyphens: auto;
 }
@@ -69,7 +72,6 @@ sup {
     gap: var(--landing-medium-padding);
     max-width: 70%;
 }
-
 .research-quicklink-button{
     text-align: center;
     font-family: var(--font-poppins-regular);
@@ -155,14 +157,20 @@ sup {
 /*------------------------MEDIA--------------------------*/
 figure{
     margin: 0;
+    counter-increment: figure; /* increase count for each figure */
 }
 figcaption {
     font-family: var(--font-poppins-regular);
     font-size: var(--font-size-extra-smaller);
     margin-top: var(--landing-small-padding);
+    font-style: italic;
+}
+figcaption::before {
+  content: "Figure " counter(figure) ": ";
+  font-weight: bold;
 }
 figure figcaption {
-    padding: 0 10%;
+    padding: 0 5%;
 }
 .columns_2{
     grid-template-columns: repeat(2,1fr);

@@ -20,7 +20,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_5.svg">
-                <figcaption>Fig. 1. Spectral decomposition of an armadillo mesh into its different frequency components by computing the eigenvectors and eigenvalues of the mesh's Laplacian. Reconstruction with smallest 5, 15 and 50 basis, eigenvectors</figcaption>
+                <figcaption>Spectral decomposition of an armadillo mesh into its different frequency components by computing the eigenvectors and eigenvalues of the mesh's Laplacian. Reconstruction with smallest 5, 15 and 50 basis, eigenvectors</figcaption>
             </figure>
         </div>
         <div id="abstract_wrapper">
@@ -40,7 +40,7 @@
             </div>
             <div>            
                 <div class="section_text">A halfedge mesh is a data structure that allows for precise navigation of the data structure, such that vertices along edge loops or other patterns can be extracted for further processing. We initialise a halfedge quad mesh for a cube. Essential is to ensure that all face boundary directions are legit and against each other, resulting in all edges having an opposite edge which is reversed - the halfedge. This is crucial for navigating the topology of the halfedge mesh correctly and computing the dual.
-                    <br><br>A dual polyhedron can be computed of any arbitrary manifold mesh. The topology of the dual mesh is already captured in the original mesh (fig 2). Starting with a mesh one has to collapse faces into vertices and vice-versa, computing the centroid for each face but essentially swapping face indices for vertex indices among the respective pointers within the halfedge mesh e.g. the face index for each halfedge. Crucial is to ensure the halfedge.next pointers are updated correctly, ensuring face boundary loops can be navigated correctly. If this is not the case the double dual procedure might fail due to this. 
+                    <br><br>A dual polyhedron can be computed of any arbitrary manifold mesh. The topology of the dual mesh is already captured in the original mesh (fig 3). Starting with a mesh one has to collapse faces into vertices and vice-versa, computing the centroid for each face but essentially swapping face indices for vertex indices among the respective pointers within the halfedge mesh e.g. the face index for each halfedge. Crucial is to ensure the halfedge.next pointers are updated correctly, ensuring face boundary loops can be navigated correctly. If this is not the case the double dual procedure might fail due to this. 
                     <br><br>Following the bespoke method allows this transformation to run efficiently and without any list searches, which would otherwise scale exponentially with an increasing mesh size.
                     <br><br>All studies were done using the python library <div class="inline_ref" ref="r1">halfedge_mesh</div> from Carlos Rojas .</div>
             </div>
@@ -48,28 +48,28 @@
         <div class="media_wrapper columns_2">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_1.svg">
-                <figcaption>Figure 1: The data structure of a halfedge quadmesh cube. The edge directions are indicated with the rotation of the face.</figcaption>
+                <figcaption>The data structure of a halfedge quadmesh cube. The edge directions are indicated with the rotation of the face.</figcaption>
             </figure>
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_2.svg">
-                <figcaption>Figure 2:  The dual polyhedron of a cube is an octahedron and the dual of an octahedron is a cube again (top row). Meaning, the dual of a dual is the original shape but in decreased scale. The dual correspondence of vertices, edges and faces is highlighted in the bottom row. Such dual transformations can be repeated infinitely going back and forth between a dual-pair. The only limit is the numerical precision of the machine, until all vertices collapse into a single point.</figcaption>
+                <figcaption>The dual polyhedron of a cube is an octahedron and the dual of an octahedron is a cube again (top row). Meaning, the dual of a dual is the original shape but in decreased scale. The dual correspondence of vertices, edges and faces is highlighted in the bottom row. Such dual transformations can be repeated infinitely going back and forth between a dual-pair. The only limit is the numerical precision of the machine, until all vertices collapse into a single point.</figcaption>
             </figure>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_3.svg">
-                <figcaption>Figure 3: Double dual transformation results for 4 meshes with different sizes and topologies, including: a - cube (v: 8; f: 6), b - sphere (v: 42; f: 80), c - face (v: 11’706; f: 23’408), d - flower (v: 655’362; f: 1’310’720). The images are true to scale.</figcaption>
+                <figcaption>Double dual transformation results for 4 meshes with different sizes and topologies, including: a - cube (v: 8; f: 6), b - sphere (v: 42; f: 80), c - face (v: 11’706; f: 23’408), d - flower (v: 655’362; f: 1’310’720). The images are true to scale.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
             <div class="section_text">We can compute the volume of a triangular mesh \(M\) by determining the volumes for all individual tetrahedrons formed by the same point and a face \(F_n\). This essentially discretizes the complex shape into simpler geometries, tetrahedrons, which volume we can compute using the triple product of the face vertices. This can be thought of as computing the determinant of the 3 by 3 matrix of 3 edge-vectors \(i,j,k\) of the tetrahedron, determining the spanned volume by those in space.<br><br>However, the volume is always 6 times larger than the actual tetrahedron. Additionaly the sum of signed tetrahedra volumes is independent of the 4th <div class="inline_ref" ref="r2">vertex</div>, which allows to set such to \((0,0,0)\) and ultimately simplify the equation for the volume of any triangular and manifold mesh \(M\) with \(n\) faces to the following</div>
             <div class="section_equation">$$M_{volume} = \frac{1}{6}\sum_{n}i_n\cdot(j_n \times k_n)$$</div>
-            <div class="section_text">The double dual volume is iteratively computed 10 times for the flower example mesh (fig 3d). Given that it has ~655K vertices and ~1,3M faces which are topologically very densely arranged the volume does not change much as we consecutively compute its dual. The volume remains almost unchanged and decreases linearly on a very small scale. On the other hand our initially created cube mesh has faces and vertices that are sparsely arranged, which cause a stronger shrinking effect when collapsed into a single vertex.<br><br>The volume shrinking effect really depends on the geometry, and can either decrease very slowly or fast.</div>
+            <div class="section_text">The double dual volume is iteratively computed 10 times for the flower example mesh (fig 4d). Given that it has ~655K vertices and ~1,3M faces which are topologically very densely arranged the volume does not change much as we consecutively compute its dual. The volume remains almost unchanged and decreases linearly on a very small scale. On the other hand our initially created cube mesh has faces and vertices that are sparsely arranged, which cause a stronger shrinking effect when collapsed into a single vertex.<br><br>The volume shrinking effect really depends on the geometry, and can either decrease very slowly or fast.</div>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_4.jpg">
-                <figcaption>Figure 4: The volume for the iterative dual of a flower mesh (left) and low poly sphere (right).</figcaption>
+                <figcaption>The volume for the iterative dual of a flower mesh (left) and low poly sphere (right).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -84,7 +84,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_12.svg">
-                <figcaption>Figure 5: The registration results for \(A \xrightarrow{} B\) with ICP.</figcaption>
+                <figcaption>The registration results for \(A \xrightarrow{} B\) with ICP.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -132,18 +132,18 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_13.svg">
-                <figcaption>Figure 6: The state of the mesh registration \(A \xrightarrow{}B\) , \(Grey \xrightarrow{}Blue\) after each optimization period with the respective correspondence and mesh pose.</figcaption>
+                <figcaption>The state of the mesh registration \(A \xrightarrow{}B\) , \(Grey \xrightarrow{}Blue\) after each optimization period with the respective correspondence and mesh pose.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
             <div>            
-                <div class="section_text">The method was evaluated with \(A\xrightarrow{} B\). The registration happens in 4 steps, of which each represents an optimization period solving for \(T\) given a fixed set of correspondences \(A^i\) and \(B^i\) with normals \(n^i_B\). Each period can be thought of as a connection in (fig 9) between states. These optimization periods become visible looking at the registration convergence graph (fig 7) plotting the loss. Once a new optimization period is initiated the algorithm resets \(T\) while all correspondences and points for \(A\) are updated. This breaks the graph since the optimization condition changes, which can be observed as a step in the loss. However, given that with each finished period the correspondences get more reliable, the overall graph continues towards convergence.</div>         
+                <div class="section_text">The method was evaluated with \(A\xrightarrow{} B\). The registration happens in 4 steps, of which each represents an optimization period solving for \(T\) given a fixed set of correspondences \(A^i\) and \(B^i\) with normals \(n^i_B\). Each period can be thought of as a connection in (fig 10) between states. These optimization periods become visible looking at the registration convergence graph (fig 8) plotting the loss. Once a new optimization period is initiated the algorithm resets \(T\) while all correspondences and points for \(A\) are updated. This breaks the graph since the optimization condition changes, which can be observed as a step in the loss. However, given that with each finished period the correspondences get more reliable, the overall graph continues towards convergence.</div>         
             </div>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_14.jpg">
-                <figcaption>Figure 7: Point-To-Plane ICP convergence using gradient descent to find the best transformation matrix \(T\) to minimize the plane distance among correspondences between \(A, B\) in 4 periods. The steps indicate the end of an optimization period which is equivalent to a single SVD iteration in a vanilla ICP.</figcaption>
+                <figcaption>Point-To-Plane ICP convergence using gradient descent to find the best transformation matrix \(T\) to minimize the plane distance among correspondences between \(A, B\) in 4 periods. The steps indicate the end of an optimization period which is equivalent to a single SVD iteration in a vanilla ICP.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -163,13 +163,13 @@
         <div class="media_wrapper full_fig">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_6.jpg">
-                <figcaption>Figure 8: Mean curvature (top) Gaussian curvature (bottom) Our implementation (left) Ground truth from Rhino3D for curvature analysis on continuous surface (right).</figcaption>
+                <figcaption>Mean curvature (top) Gaussian curvature (bottom) Our implementation (left) Ground truth from Rhino3D for curvature analysis on continuous surface (right).</figcaption>
             </figure>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_7.jpg">
-                <figcaption>Figure 9: Mean curvature for three scales of remeshing, going from coarse (left) to fine (right).</figcaption>
+                <figcaption>Mean curvature for three scales of remeshing, going from coarse (left) to fine (right).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -179,14 +179,14 @@
                 <div class="section_text">with the summed cotangents \(c\) at vertex \(v_i\)</div>
                 <div class="section_equation">$$ c(v_i)= \sum_{v_j \in N(v_i)}(cot\alpha_{ij}+cot\beta_{ij})(f(v_j)-f(v_i)) $$</div>
                 <div class="section_text">For open meshes with a naked boundary, it is assumed that the mesh is manifold such that there can only be 2 naked edges or none for a vertex in a mesh. Additionally the cotangent weight computation is respecting naked boundary conditions, such that these edge's weight consist only of a single cotangent instead of the sum of the two opposing cotangents.
-                    <br><br>The mean curvature approximation is similar between both uniform and cotangent discretizations and estimates the continuous, ground truth reasonably well (fig 10). Yet the curvature domain becomes larger, meaning min and max mean curvature are getting lower and higher using the cotangent discretizations. It indicates high and low curvature regions therefore with higher contrast in the overall distribution.
+                    <br><br>The mean curvature approximation is similar between both uniform and cotangent discretizations and estimates the continuous, ground truth reasonably well (fig 11). Yet the curvature domain becomes larger, meaning min and max mean curvature are getting lower and higher using the cotangent discretizations. It indicates high and low curvature regions therefore with higher contrast in the overall distribution.
                 </div>            
             </div>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_8.jpg">
-                <figcaption>Figure 10: Mean curvature comparison for uniform (left), cotangent (middle) and Rhino3D (right).</figcaption>
+                <figcaption>Mean curvature comparison for uniform (left), cotangent (middle) and Rhino3D (right).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -202,26 +202,26 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_9.jpg">
-                <figcaption>Figure 11: Spectral decomposition of two 10K vertices meshes. Reconstruction with smallest 10 and 100 basis, eigenvectors.</figcaption>
+                <figcaption>Spectral decomposition of two 10K vertices meshes. Reconstruction with smallest 10 and 100 basis, eigenvectors.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
             <div>            
                 <div class="section_text">We can also use the laplace beltrami operator to smooth geometries precisly. One way of doing so is through explicit laplcian mesh smoothing, which is defined with mesh vertices \(\boldsymbol{x}\) at smoothing iteration \(t\), step size \(\lambda\) and the laplace beltrami operator \(\Delta\) as :</div>
                 <div class="section_equation">$$ \boldsymbol{x}_{t+1} = \boldsymbol{x}_t + \lambda \Delta \boldsymbol{x}_t $$</div>
-                <div class="section_text">This essentially averages the vertices weighted. Besides the discretization of the laplacian, the step size influences the convergence behavior, resulting either in smoothing or fracturing the geometry. The step size should be selected based on the euclidean scale of the geometry. A too large step size will cause large vertex updates and oscillating vertices. A too small step size will just result in near zero smoothing of the original shape. We tested explict laplacian mesh smoothing on three examples using the cotangent discretization (fig 12)</div>
+                <div class="section_text">This essentially averages the vertices weighted. Besides the discretization of the laplacian, the step size influences the convergence behavior, resulting either in smoothing or fracturing the geometry. The step size should be selected based on the euclidean scale of the geometry. A too large step size will cause large vertex updates and oscillating vertices. A too small step size will just result in near zero smoothing of the original shape. We tested explict laplacian mesh smoothing on three examples using the cotangent discretization (fig 13)</div>
             </div>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_11.jpg">
-                <figcaption>Figure 12: Explicit Laplacian mesh smoothing using the cotangent discretization for a set of example geometries. All geometries have different scales and ultimately use a different smoothing step-size.</figcaption>
+                <figcaption>Explicit Laplacian mesh smoothing using the cotangent discretization for a set of example geometries. All geometries have different scales and ultimately use a different smoothing step-size.</figcaption>
             </figure>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_geometryProcessing_10.jpg">
-                <figcaption>Figure 13: Reconstruction of geometry with synthetic added noise using explicit, uniform laplacian smoothing. 5 Smoothing iterations and a step size of 1.</figcaption>
+                <figcaption>Reconstruction of geometry with synthetic added noise using explicit, uniform laplacian smoothing. 5 Smoothing iterations and a step size of 1.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
