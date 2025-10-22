@@ -11,7 +11,18 @@ const projects = {
             '📄 PDF': '',
             '🗃️ arXiv': '',
             '🛠️ Code': '',
+            '💬 Bibtex': '',
         },
+        bibtex: `@article{uberallBEH2025,
+            title={Bounding Expert Hierarchies},
+            author={Überall, Julius and Ritschel, Tobias},
+            journal={ xxx },
+            year={2025},
+            volume={ xxx },
+            number={ xxx },
+            pages={ xxx },
+            doi={ xxx },
+            }`
     },
     geometryProcessing: {
         title: 'Geometry Processing',
@@ -510,8 +521,17 @@ if(document.getElementById('quicklinks')){
     const projectName = q.getAttribute('project-name');
     Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
         const a = document.createElement('a');
-        a.href = value;
-        a.target = '_blank';
+
+        if (key.toLowerCase().includes("bibtex")) {
+            a.onclick = function() {
+                showBibtex(projectName);
+                return false; // prevent default link behavior
+            };
+            a.href = "#";
+        } else {
+            a.href = value;
+            a.target = "_blank";
+        }
 
         const div = document.createElement('div');
         div.className = 'research-quicklink-button button-2';
@@ -521,3 +541,17 @@ if(document.getElementById('quicklinks')){
         q.appendChild(a);
     });
 };
+
+//Create correct BibTex button
+function showBibtex(project_key) {
+    const bibtex = projects[project_key]['bibtex'];
+    const w = window.open('', '_blank');
+    w.document.write(`
+        <html>
+        <head><title>Project — BibTeX</title></head>
+        <body>
+            <pre><code>${bibtex}</code></pre>
+        </body>
+        </html>
+    `);
+}
