@@ -55,8 +55,6 @@
                 <img src="images/JuliusUberall_boundingExpertHierarchies_4.svg">
                 <figcaption>There are three training objectives for a MoE after initialization (a): the experts should not overlap and rely on each other such that the top-1 expert must be sufficient enough for a query (b); the expert distribution across the space to bound must be uniform (c); the model must be conservative such that it has strictly zero false negatives (d).</figcaption>
             </figure>
-        </div>
-        <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_2.svg">
                 <figcaption>Comparison of flow in MLPs, dense MoEs and sparse MoEs, from left to right. The MoE allows for sparse queries, by forward passing a query only through the single, top-1 expert (c). This uses only a fraction of the MoE's total parameters, such that a sparse inferred MoE will use fewer parameters during a forward pass by design when comparing to a monolithic MLP (a). Yet, during training the MoE is inferred dense, which evaluates every query with every expert to explore all routes and have best optimization control over the model (b).</figcaption>
@@ -72,14 +70,10 @@
                 <img src="images/JuliusUberall_boundingExpertHierarchies_3.svg">
                 <figcaption>Scaling the number of experts utilized by the MoE partitions space further and further (left to right). But still, the MoE only requires a single expert to process a query. Meaning, the MoE can increase modeling complexity with minimal increased query time. The MLP can only scale monolithic such that query time increases at best linearly. We indicate the number of experts for each MoE as well as the equivalently sized MLP for a MoE with \numberOfExperts experts in the name above each figure. Increasing the expert pool lowers the bounding effort for each expert, as its region to bound becomes smaller and eventually less complex. Yet, the space partition to solve by the gate becomes more difficult.</figcaption>
             </figure>
-        </div>
-        <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_6.png">
                 <figcaption>Comparing bounding predictions for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (a,d) and MoE (b,e) in 2D and 3D. We highlight the space partitioning in the MoE by color coding each expert (c,f). All predictions are strictly conservative.</figcaption>
             </figure>
-        </div>
-        <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_5.svg">
                 <figcaption>Neural bounding of a six-dimensional robot control system in 3D space. The bounding expert hierarchy maps a nine-dimensional input to a binary bounding response. The top row visualizes four different 6D-configurations (knob controls) of the robot arm moving from some pose to a pose where the end-effector is close to a target. The bottom row visualizes the learned bounding of MLP and MoE while highlighting overlapping parts in dark.</figcaption>

@@ -22,7 +22,8 @@ const projects = {
             number={ xxx },
             pages={ xxx },
             doi={ xxx },
-            }`
+            }`,
+        presentation_iframe: ''
     },
     geometryProcessing: {
         title: 'Geometry Processing',
@@ -515,6 +516,7 @@ if (!window.matchMedia("(orientation: portrait)").matches){
     });
 }
 
+// Research page specifics
 //Create quicklinks on research page
 if(document.getElementById('quicklinks')){
     const q = document.getElementById('quicklinks');
@@ -540,6 +542,25 @@ if(document.getElementById('quicklinks')){
         a.appendChild(div);
         q.appendChild(a);
     });
+
+    // Create iFrame on research project page if presentation frame src provided
+    const abs_div = document.getElementById('abstract_wrapper');
+    if (abs_div && projects[projectName]['presentation_iframe']) {
+        const mediaWrapper = document.createElement('div');
+        mediaWrapper.className = 'media_wrapper presentation_video_wrapper';
+        const innerDiv = document.createElement('div');
+
+        // Create iframe
+        const iframe = document.createElement('iframe');
+        iframe.src = projects[projectName]['presentation_iframe'];
+        iframe.frameBorder = "0";
+        iframe.allowFullscreen = true;
+
+        // Build hierarchy and Insert after abstractWrapper
+        innerDiv.appendChild(iframe);
+        mediaWrapper.appendChild(innerDiv);
+        abs_div.insertAdjacentElement('afterend', mediaWrapper);
+    }
 };
 
 //Create correct BibTex button

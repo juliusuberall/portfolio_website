@@ -172,6 +172,9 @@ figcaption::before {
 figure figcaption {
     padding: 0 5%;
 }
+.full_fig figure{
+    padding: var(--landing-huge-padding);
+}
 .columns_2{
     grid-template-columns: repeat(2,1fr);
     gap: var(--landing-medium-padding);
@@ -199,8 +202,19 @@ figure figcaption {
 .media_wrapper video {
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0 ;
 }
-.full_fig figure{
-    padding: var(--landing-huge-padding);
+.presentation_video_wrapper > div {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0
+}
+.presentation_video_wrapper > div > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-medium);
+    outline: var(--default-outline);
 }
 
 /*------------------------BibTex--------------------------*/
