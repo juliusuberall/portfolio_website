@@ -535,11 +535,16 @@ if(document.getElementById('quicklinks')){
             a.target = "_blank";
         }
 
-        const div = document.createElement('div');
-        div.className = 'research-quicklink-button button-2';
-        div.textContent = key;
+        const button = document.createElement('button');
+        button.className = 'research-quicklink-button button-2';
+        // If no action added or not released yet
+        if (value == ''){
+            button.disabled = true;
+            button.title = "coming soon..."
+        }
+        button.textContent = key;
 
-        a.appendChild(div);
+        a.appendChild(button);
         q.appendChild(a);
     });
 
