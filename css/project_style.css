@@ -82,6 +82,12 @@
   position: fixed;
   overflow: auto;
 }
+.project_details > .button-1 {
+    display: flex;
+    border-radius: var(--border-radius-medium);
+    justify-content: center;
+    padding: 5px;
+}
 /*------------------------3D-CONTENT--------------------------*/ 
 .Base_3Dmodelviewer{
   width: 100%;
