@@ -20,7 +20,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_6.jpg">
-                <figcaption>Fig. 1. Poisson image editing allows to seamlessly clone a region from image A in image B. In this example we transfer a face into the <div class="inline_ref" ref="r1">"Portrait of a Youth"</div></figcaption>
+                <figcaption>Poisson image editing allows to seamlessly clone a region from image A in image B. In this example we transfer a face into the <div class="inline_ref" ref="r1">"Portrait of a Youth"</div></figcaption>
             </figure>
         </div>
         <div id="abstract_wrapper">
@@ -29,8 +29,7 @@
                 <div class="section_headline"></div>
             </div>
             <div>            
-                <div project-name="poissonImageEditing" id="quicklinks">
-                </div>
+                <div project-name="poissonImageEditing" id="quicklinks"></div>
                 <div id="abstract">During my MSc in Computer Graphics, Vision and Imaging I was lecturing a module about Image Processing in which one of my student projects focused on Poisson Image Editing. It is a seamless cloning method to transfer and interpolate a frequency pattern from an arbitrary image into another solving a poisson equation for each pixel to clone. The method was first introduced by <div class="inline_ref" ref="r2">Perez et al. in 2003.</div></div>
             </div>
         </div>
@@ -45,7 +44,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_8.jpg">
-                <figcaption>Figure 2: The destination image can be described with the function \(f*\). Within \(f*\) we have the interpolation region \(\Omega\) which is represented with function \(f\) and solved for under the guidance of vector field \(v\) and given the dirichlet boundary condition \(\delta\Omega\). In this example vector field \(v\) is the image gradient for \(S\) within the corresponding region \(\Omega\).</figcaption>
+                <figcaption>The destination image can be described with the function \(f*\). Within \(f*\) we have the interpolation region \(\Omega\) which is represented with function \(f\) and solved for under the guidance of vector field \(v\) and given the dirichlet boundary condition \(\delta\Omega\). In this example vector field \(v\) is the image gradient for \(S\) within the corresponding region \(\Omega\).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -68,7 +67,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_10.jpg">
-                <figcaption>Figure 3: On a higher level the interpolation remodels the region \(\Omega\) of \(D\) in such a way that it is as close a possible to \(\Omega\) of \(S\) but blends smoothly into the curvature of  \(f^*\).</figcaption>
+                <figcaption>On a higher level the interpolation remodels the region \(\Omega\) of \(D\) in such a way that it is as close a possible to \(\Omega\) of \(S\) but blends smoothly into the curvature of  \(f^*\).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -79,7 +78,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_2.jpg">
-                <figcaption>Figure 4: Seamless cloning of a region on a walnut to an apple in greyscale to simplify the problem to a single image channel. The light red dashed line highlights the region \(\Omega\) in the source and destination image which was transferred.</figcaption>
+                <figcaption>Seamless cloning of a region on a walnut to an apple in greyscale to simplify the problem to a single image channel. The light red dashed line highlights the region \(\Omega\) in the source and destination image which was transferred.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -90,19 +89,19 @@
         <div class="media_wrapper columns_4">
             <figure>
                 <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_1_r.mp4"></video>
-                <figcaption>Figure 5: Red channel interpolation.</figcaption>
+                <figcaption>Red channel interpolation.</figcaption>
             </figure>
             <figure>
                 <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_1_g.mp4"></video>
-                <figcaption>Figure 6: Green channel interpolation.</figcaption>
+                <figcaption>Green channel interpolation.</figcaption>
             </figure>
             <figure>
                 <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_1_b.mp4"></video>
-                <figcaption>Figure 7: Blue channel interpolation.</figcaption>
+                <figcaption>Blue channel interpolation.</figcaption>
             </figure>
             <figure>
                 <video class="desktop_video" autoplay loop muted src="videos/JuliusUberall_poissonImageEditing_2.mp4"></video>
-                <figcaption>Figure 8: Stacked interpolated channels.</figcaption>
+                <figcaption>Stacked interpolated channels.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -113,7 +112,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_9.jpg">
-                <figcaption>Figure 9: Seamless tiling takes any given image and creates a source and destination image for the poisson solver. The source image is padded by offsetting its boundary, the destination image mirrors this padding SN and WE. Importing the gradience from the source image will cause the tile boundary to be interpolated into the tiling grid and ultimately blend the seam.</figcaption>
+                <figcaption>Seamless tiling takes any given image and creates a source and destination image for the poisson solver. The source image is padded by offsetting its boundary, the destination image mirrors this padding SN and WE. Importing the gradience from the source image will cause the tile boundary to be interpolated into the tiling grid and ultimately blend the seam.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -125,11 +124,11 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_5.jpg">
-                <figcaption>Figure 10: The rectangular tiling seam becomes obvious when looking at the image gradience of the tiled texture. This seam nearly vanishes after the interpolation. The corner seems to still be an issue, which might be fixed by adjusting \(\delta \Omega\).</figcaption>
+                <figcaption>The rectangular tiling seam becomes obvious when looking at the image gradience of the tiled texture. This seam nearly vanishes after the interpolation. The corner seems to still be an issue, which might be fixed by adjusting \(\delta \Omega\).</figcaption>
             </figure>
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_11.jpg">
-                <figcaption>Figure 11: During interpolation the original tile is adjusted in intensity to ensure smooth blending from one tile into another. The adjustment equals almost an inverted, flat illumination of the original tile.</figcaption>
+                <figcaption>During interpolation the original tile is adjusted in intensity to ensure smooth blending from one tile into another. The adjustment equals almost an inverted, flat illumination of the original tile.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -140,15 +139,15 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_1.jpg">
-                <figcaption>Fig. 12. Seamless transfer of face onto a foreign head.</figcaption>
+                <figcaption>Seamless transfer of face onto a foreign head.</figcaption>
             </figure>
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_7.jpg">
-                <figcaption>Fig. 13. Seamless texture transfer from a walnut to an apple.</figcaption>
+                <figcaption>Seamless texture transfer from a walnut to an apple.</figcaption>
             </figure>
             <figure>
                 <img src="images/JuliusUberall_poissonImageEditing_12.jpg">
-                <figcaption>Fig. 14. Seamless transfer of an eye onto a hand.</figcaption>
+                <figcaption>Seamless transfer of an eye onto a hand.</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">

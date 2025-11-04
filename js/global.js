@@ -1,5 +1,49 @@
 // Dictionary of all projects with properties for thumbnails
 const projects = {
+    boundingExpertHierarchies: {
+        title: 'Bounding Expert Hierarchies',
+        projectPage: 'boundingExpertHierarchies.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_boundingExpertHierarchies.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_boundingExpertHierarchies.mp4',
+        year: '2025',
+        quicklinks: {
+            '📄 PDF': '',
+            '🗃️ arXiv': '',
+            '🛠️ Code': '',
+            '💬 Bibtex': '',
+        },
+        bibtex: `@article{uberallBEH2025,
+            title={Bounding Expert Hierarchies},
+            author={Überall, Julius and Ritschel, Tobias},
+            journal={ xxx },
+            year={ xxx },
+            volume={ xxx },
+            number={ xxx },
+            pages={ xxx },
+            doi={ xxx },
+            }`,
+        presentation_iframe: ''
+    },
+    geometryProcessing: {
+        title: 'Geometry Processing',
+        projectPage: 'geometryprocessing.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_geometryProcessing.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_geometryProcessing.mp4',
+        year: '2025',
+    },
+    poissonImageEditing: {
+        title: 'Poisson Image Editing',
+        projectPage: 'poissonImageEditing.html',
+        projectcategory: ['category_1'],
+        thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_poissonImageEditing.mp4',
+        year: '2024',
+        quicklinks: {
+            'original paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
+        },
+    },
     masterthesis: {
         title: 'Graded toolpaths',
         projectPage: 'masterthesis.html',
@@ -7,25 +51,6 @@ const projects = {
         thumbnail: 'images/Julius_Uberall_project_thumbnails_masterthesis_discretized_functionally_graded_differential_grown_toolpaths.jpg',
         year: '2022',
       },
-    geometryProcessing: {
-      title: 'Geometry Processing',
-      projectPage: 'geometryprocessing.html',
-      projectcategory: ['category_1'],
-      thumbnail: 'images/Julius_Uberall_project_thumbnails_geometryProcessing.jpg',
-      thumbnailvideo: 'videos/JuliusUberall_thumbnail_geometryProcessing.mp4',
-      year: '2025',
-    },
-    poissonImageEditing: {
-      title: 'Poisson Image Editing',
-      projectPage: 'poissonImageEditing.html',
-      projectcategory: ['category_1'],
-      thumbnail: 'images/Julius_Uberall_project_thumbnails_poissonImageEditing.jpg',
-      thumbnailvideo: 'videos/JuliusUberall_thumbnail_poissonImageEditing.mp4',
-      year: '2024',
-      quicklinks: {
-        'original paper': 'https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf',
-        },
-    },
     uberallFont: {
         title: 'Uberall Typography',
         projectPage: 'uberallFont.html',
@@ -492,17 +517,68 @@ if (!window.matchMedia("(orientation: portrait)").matches){
     });
 }
 
+// Research page specifics
 //Create quicklinks on research page
 if(document.getElementById('quicklinks')){
     const q = document.getElementById('quicklinks');
     const projectName = q.getAttribute('project-name');
     Object.entries(projects[projectName]['quicklinks']).forEach(([key, value]) => {
-        const newDiv = document.createElement('div');
-        newDiv.innerHTML = 
-            `<a href="${value}" target="_blank">
-                ${key} 
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </a>`
-        q.appendChild(newDiv);
+        const a = document.createElement('a');
+
+        if (key.toLowerCase().includes("bibtex")) {
+            a.onclick = function() {
+                showBibtex(projectName);
+                return false; // prevent default link behavior
+            };
+            a.href = "#";
+        } else {
+            a.href = value;
+            a.target = "_blank";
+        }
+
+        const button = document.createElement('button');
+        button.className = 'research-quicklink-button button-2';
+        // If no action added or not released yet
+        if (value == ''){
+            button.disabled = true;
+            button.title = "coming soon..."
+        }
+        button.textContent = key;
+
+        a.appendChild(button);
+        q.appendChild(a);
     });
+
+    // Create iFrame on research project page if presentation frame src provided
+    const abs_div = document.getElementById('abstract_wrapper');
+    if (abs_div && projects[projectName]['presentation_iframe']) {
+        const mediaWrapper = document.createElement('div');
+        mediaWrapper.className = 'media_wrapper presentation_video_wrapper';
+        const innerDiv = document.createElement('div');
+
+        // Create iframe
+        const iframe = document.createElement('iframe');
+        iframe.src = projects[projectName]['presentation_iframe'];
+        iframe.frameBorder = "0";
+        iframe.allowFullscreen = true;
+
+        // Build hierarchy and Insert after abstractWrapper
+        innerDiv.appendChild(iframe);
+        mediaWrapper.appendChild(innerDiv);
+        abs_div.insertAdjacentElement('afterend', mediaWrapper);
+    }
 };
+
+//Create correct BibTex button
+function showBibtex(project_key) {
+    const bibtex = projects[project_key]['bibtex'];
+    const w = window.open('', '_blank');
+    w.document.write(`
+        <html>
+        <head><title>Project — BibTeX</title></head>
+        <body>
+            <pre><code>${bibtex}</code></pre>
+        </body>
+        </html>
+    `);
+}

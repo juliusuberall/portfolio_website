@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bounding Expert Hierarchies</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon_image.png"/>
+    <link rel="stylesheet" type="text/css" href="css/research_project_style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <!-- Override color for figures because this project uses a distinct figure background color -->
+    <style>
+    body {
+        background-color: var(--bright-white) !important;
+    }
+    .media_wrapper figure {
+        background-color: #f2f2e9 !important;
+    }
+    .button-2::before{
+        background-color: #f2f2e9 !important;
+    }
+  </style>
+</head>
+<body>
+    <div class="home-button-wrapper">
+        <a href="index.html"><ion-icon class="home_button" name="grid-outline"></ion-icon></a>
+    </div>
+    <div id="main">
+        <div id="project_headline_wrapper">
+            <div id="type_date"> In Submission | 2025</div>
+            <div id="title">Bounding Expert Hierarchies</div>
+            <div id="team">J. Überall<sup>1</sup>, &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://scholar.google.com/citations?user=dPrZJWMAAAAJ&hl=en" target="_blank">T. Ritschel<sup>1,2</sup></a><br><sup>1</sup>University College London, United Kingdom &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup>Meta Reality Labs, USA</div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_1.svg">
+                <figcaption>Given an indicator function, here in 2D, that is 1 for occupied space and 0 otherwise (a), previous work has shown to approximate the indicator with a neural network such that it is strictly conservative (b). That method has no false negatives, i.e. it will never return 0 if the indicator was 1, but it will do so at the expense of a couple of false positives e.g. some holes in the leaves are missing. Essentially, speed is traded against some false positives. This combination of properties is visualized as bars below each figure. One can improve the quality, such that the holes between leaves are resolved, but at the expense of slower speed (c). Our method achieves both better quality and better speed (d), by using multiple independent <i>bounding expert networks</i> and a learned gating  to control which one needs to run where.</figcaption>
+            </figure>
+        </div>
+        <div id="abstract_wrapper">
+            <div>
+                <div></div>
+                <div class="section_headline"></div>
+            </div>
+            <div>            
+                <div project-name="boundingExpertHierarchies" id="quicklinks"></div>
+                <div id="abstract">We present a hierarchy of networks to perform bounding queries against high-dimensional geometric assets such as required in ray-tracing or collision detection. Using a mixture of experts, popularized in the context of large language models, we learn a spatial decomposition together with bounding volumes end-to-end. We demonstrate improvements in query speed and accuracy: instead of executing one monolithic network, only a subset of networks is evaluated, analogous to a bounding volume hierarchy traversal that visits only a fraction of internal nodes. This decomposes the global optimization objective into many smaller and simpler sub-problems distributed among all sub-networks. Unlike prior work, the spatial decomposition is not predefined and static (e.g. a grid), but emerges as a byproduct of the bounding optimization, allowing for non-trivial higher dimensional decompositions tailored to the task. The benefit of using neural bounding queries is that they extend naturally to higher-dimensional domains such as time, configuration space, or latent control spaces. We discuss the design choices required for branched learning and execution and evaluate our approach against alternatives.</div>
+            </div>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Method</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_4.svg">
+                <figcaption>There are three training objectives for a MoE after initialization (a): the experts should not overlap and rely on each other such that the top-1 expert must be sufficient enough for a query (b); the expert distribution across the space to bound must be uniform (c); the model must be conservative such that it has strictly zero false negatives (d).</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_2.svg">
+                <figcaption>Comparison of flow in MLPs, dense MoEs and sparse MoEs, from left to right. The MoE allows for sparse queries, by forward passing a query only through the single, top-1 expert (c). This uses only a fraction of the MoE's total parameters, such that a sparse inferred MoE will use fewer parameters during a forward pass by design when comparing to a monolithic MLP (a). Yet, during training the MoE is inferred dense, which evaluates every query with every expert to explore all routes and have best optimization control over the model (b).</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>
+                <div class="section_headline">Results</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_3.svg">
+                <figcaption>Scaling the number of experts utilized by the MoE partitions space further and further (left to right). But still, the MoE only requires a single expert to process a query. Meaning, the MoE can increase modeling complexity with minimal increased query time. The MLP can only scale monolithic such that query time increases at best linearly. We indicate the number of experts for each MoE as well as the equivalently sized MLP for a MoE with \numberOfExperts experts in the name above each figure. Increasing the expert pool lowers the bounding effort for each expert, as its region to bound becomes smaller and eventually less complex. Yet, the space partition to solve by the gate becomes more difficult.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_6.png">
+                <figcaption>Comparing bounding predictions for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (a,d) and MoE (b,e) in 2D and 3D. We highlight the space partitioning in the MoE by color coding each expert (c,f). All predictions are strictly conservative.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_5.svg">
+                <figcaption>Neural bounding of a six-dimensional robot control system in 3D space. The bounding expert hierarchy maps a nine-dimensional input to a binary bounding response. The top row visualizes four different 6D-configurations (knob controls) of the robot arm moving from some pose to a pose where the end-effector is close to a target. The bottom row visualizes the learned bounding of MLP and MoE while highlighting overlapping parts in dark.</figcaption>
+            </figure>
+        </div>
+        <div class="related_wrapper">
+            <div>
+                <div class="section_headline">More</div>
+            </div>
+            <div class="project_grid_wrapper columns_4 related_grid">
+                <a project-name="geometryProcessing"></a>
+                <a project-name="poissonImageEditing"></a>
+                <a project-name="masterthesis"></a>
+                <a project-name="uberallFont"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--https://ionic.io/ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- DYNAMIC JS SCRIPTS -->
+    <script src="js/global.js"></script>
+    <script src="js/researchProjectPage.js"></script>
+
+    <!---CHECK-IF-EVERYTHING-LOADED_PRE-LOADING-SCREEN-ON/OFF--->
+    <script>
+        var loader = document.getElementById("loading-icon-wrapper");
+        window.addEventListener("load",function(){loader.style.display = "none";})
+    </script>
+</body>
+</html>

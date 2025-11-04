@@ -1,6 +1,7 @@
 /*------------------------BASELINE--------------------------*/
 body{
     background-color: var(--invisible-grey);
+    counter-reset: figure; /* start counter at 0 */
 }
 a{
     color: unset;
@@ -10,7 +11,9 @@ pre{
     margin: 0;
 }
 #main{
-    padding: 0 24% 0 24%;
+    max-width: 1000px;
+    padding: 0 20%;
+    margin: 0 auto;
     text-align: justify;
     hyphens: auto;
 }
@@ -48,6 +51,10 @@ pre{
 #team a {
     font-family: var(--font-poppins-semibold);
 }
+sup {
+    padding-left: 3px;
+    padding-right: 3px
+}
 
 /*------------------------ABSTRACT--------------------------*/
 #abstract_wrapper{
@@ -60,35 +67,18 @@ pre{
     gap: var(--landing-medium-padding);
 }
 #quicklinks{
-    color: var(--accent-colour);
-    grid-template-rows: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: var(--landing-medium-padding);
-    overflow: hidden;
-    z-index: 0;
+    max-width: 70%;
 }
-#quicklinks a{
-    display: inline;
-    position: relative;
-}
-#quicklinks a:hover{
-    color: var(--bright-white);
-}
-#quicklinks a:hover::before{
-    left: 0;
-}
-#quicklinks a::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent-colour);
-    transition: left 0.2s ease;
-    z-index: -1;
-}
-#quicklinks ion-icon{
-    vertical-align: sub;
+.research-quicklink-button{
+    text-align: center;
+    font-family: var(--font-poppins-regular);
+    font-size: var(--font-size-smaller);
+    border-radius: var(--border-radius-medium);
+    justify-content: center;
+    padding: var(--landing-tiny-padding);
 }
 
 /*------------------------SECTION--------------------------*/
@@ -167,14 +157,23 @@ pre{
 /*------------------------MEDIA--------------------------*/
 figure{
     margin: 0;
+    counter-increment: figure; /* increase count for each figure */
 }
 figcaption {
     font-family: var(--font-poppins-regular);
     font-size: var(--font-size-extra-smaller);
     margin-top: var(--landing-small-padding);
+    font-style: italic;
+}
+figcaption::before {
+  content: "Figure " counter(figure) ": ";
+  font-weight: bold;
 }
 figure figcaption {
-    padding: 0 10%;
+    padding: 0 5%;
+}
+.full_fig figure{
+    padding: var(--landing-huge-padding);
 }
 .columns_2{
     grid-template-columns: repeat(2,1fr);
@@ -203,8 +202,19 @@ figure figcaption {
 .media_wrapper video {
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0 ;
 }
-.full_fig figure{
-    padding: var(--landing-huge-padding);
+.presentation_video_wrapper > div {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0
+}
+.presentation_video_wrapper > div > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-medium);
+    outline: var(--default-outline);
 }
 
 /*------------------------BibTex--------------------------*/
@@ -274,10 +284,21 @@ mjx-container[jax="CHTML"] {
         line-height: var(--font-size-mobile-extra-large);
         font-size: var(--font-size-mobile-normal);
     }
-
     #abstract_wrapper > div{
         grid-template-columns: repeat(1, 1fr);
     }
+    .research-quicklink-button{
+        font-size: var(--font-size-mobile-normal);
+        grid-area: unset !important;
+    }
+    button{
+        width: calc(100% - 2 * var(--mobile-side-padding));
+    }
+    #quicklinks{
+        gap: var(--mobile-side-padding);
+        max-width: unset;
+    }
+
 
     /*------------------------SECTION--------------------------*/
     .section_headline{
