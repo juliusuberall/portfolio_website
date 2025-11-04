@@ -22,12 +22,35 @@
     #textInput{
       outline: 2px solid black;
     }
+
+    /* Mobile style */
+    @media all and (orientation:portrait) {
+      #textInput{
+        text-align: center;
+        outline: 4px solid black;
+      }
+      #controls{
+        flex-wrap: wrap;
+        padding: 100px;
+        gap: 40px;
+      }
+      .main-ui-element{
+        font-size: 40px;
+        padding: 15px 30px;
+      }
+      input{
+        flex-basis: 100%;
+      }
+      button{
+        flex: 1;
+      }
+    }
   </style>
 </head>
 <body>
   <div id="controls">
     <input class="main-ui-element" id="textInput" type="text" placeholder="Type text..." />
-    <button class="main-ui-element" id="toggleMode">Jewellery Preview</button>
+    <button class="main-ui-element" id="toggleMode">Preview</button>
     <button class="main-ui-element" id="toggleSpin">Stop Spin</button>
   </div>
 
@@ -80,7 +103,7 @@
     document.getElementById('toggleMode').addEventListener('click', () => {
       modeLine = !modeLine;
       const txt = document.getElementById('textInput').value.toUpperCase();
-      document.getElementById('toggleMode').textContent = modeLine ? 'Jewellery Preview' : 'Pattern Preview';
+      document.getElementById('toggleMode').textContent = modeLine ? 'Preview' : 'Pattern';
       drawPattern(txt);
     });
 
@@ -118,10 +141,8 @@
       });
 
       // Enable physically correct lighting
-      renderer.physicallyCorrectLights = true;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
       renderer.toneMappingExposure = 1.0;
-      renderer.outputEncoding = THREE.sRGBEncoding;
 
       window.addEventListener('resize', () => {
         camera.aspect = window.innerWidth/window.innerHeight;
