@@ -291,6 +291,9 @@ mjx-container[jax="CHTML"] {
         font-size: var(--font-size-mobile-normal);
         grid-area: unset !important;
     }
+    button{
+        width: calc(100% - 2 * var(--mobile-side-padding));
+    }
     #quicklinks{
         gap: var(--mobile-side-padding);
         max-width: unset;

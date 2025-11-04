@@ -90,8 +90,10 @@
 
 /*------------------------General buttons--------------------------*/
 button {
-  all: unset;
-  width: 100%; 
+  border-width: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  width: 100%;
 }
 
 .button-1{
