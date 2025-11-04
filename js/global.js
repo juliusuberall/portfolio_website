@@ -56,6 +56,7 @@ const projects = {
         projectPage: 'uberallFont.html',
         projectcategory: ['category_3'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_uberallfont.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_uberallFont.mp4',
         year: '2022',
     },
     meshgrowth: {
