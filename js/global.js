@@ -127,6 +127,7 @@ const projects = {
         projectPage: 'artifacts.html',
         projectcategory: ['category_3'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_Artifact.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_artifacts.mp4',
         year: '2021',
     },
     b211: {
