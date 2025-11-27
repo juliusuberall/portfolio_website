@@ -72,6 +72,7 @@ const projects = {
         projectPage: 'curvegrowth.html',
         projectcategory: ['category_1'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_curvegrowth.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_curvegrowth.mp4',
         year: '2022',
     },
     digitaltwins: {
