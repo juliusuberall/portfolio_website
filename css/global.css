@@ -159,6 +159,7 @@ button {
   display: grid;
 }
 .project_grid_wrapper > a{
+  padding: 10px;
   outline: var(--default-outline);
   border-radius: var(--border-radius-medium);
   transition: box-shadow 0.1s ease-in-out;
@@ -185,7 +186,7 @@ button {
 }
 .project-cell > img, .project-cell > video{ /*thumbnail images/videos for projects*/
   width: 100%;
-  border-radius: calc(var(--border-radius-medium)*1.05);
+  border-radius: calc(var(--border-radius-medium)*0.6);
   display: block;
 }
 .project-cell > img {
@@ -204,7 +205,7 @@ button {
   font-family: 'Poppins Regular';
   font-size: var(--font-size-smaller);
   color: var(--light-grey);
-  padding: 10px 20px 20px 20px;
+  padding: 15px 10px 10px 10px;
 }
 @media all and (orientation:portrait) {
   .project-metadata{
