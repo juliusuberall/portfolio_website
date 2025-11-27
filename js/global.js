@@ -136,6 +136,7 @@ const projects = {
         projectPage: 'b211.html',
         projectcategory: ['category_2'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_bonnerstrasse211.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_b211.mp4',
         year: '2021',
     },
     b211thesis : {
