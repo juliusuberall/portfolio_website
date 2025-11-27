@@ -144,6 +144,7 @@ const projects = {
         projectPage: 'b211_thesis.html',
         projectcategory: ['category_2'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_bonnerstrasse211_thesis.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_b211_thesis.mp4',
         year: '2021',
     },
     habitatb: {
@@ -200,6 +201,7 @@ const projects = {
         projectPage: 'yu.html',
         projectcategory: ['category_1'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_YU.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_yu.mp4',
         year: '2018-22',
     },
     evolo: {
@@ -256,6 +258,7 @@ const projects = {
         projectPage: 'monchengladbach.html',
         projectcategory: ['category_2'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_monchengladbach.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_monchengladbach.mp4',
         year: '2018',
     },
     facades: {
@@ -466,7 +469,7 @@ aTags.forEach(selectedA => {
     </div> `;
   if ('thumbnailvideo' in projects[projectData]){
     newDiv.innerHTML = 
-        `<video width=100% height="100%" autoplay loop muted style="display: none;">
+        `<video width=100% height="100%" autoplay loop muted playsinline style="display: none;">
             <source src="${projects[projectData]['thumbnailvideo']}" type="video/mp4">
         </video>` 
         + newDiv.innerHTML;
@@ -503,7 +506,9 @@ function insertLoadingIcon() {
 insertLoadingIcon();
 
 // Switches between thumbnail video and thumbnail image on mouse hover and mouse out when screen horizontal
-if (!window.matchMedia("(orientation: portrait)").matches){
+// Check if using Safari Browser and either block videos or not on desktop as well - Safair does not autoplay thumbnail videos
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (!window.matchMedia("(orientation: portrait)").matches && !isSafari){
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.project-cell').forEach(function(cell) {
             if(cell.querySelector('video')){
