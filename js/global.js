@@ -152,6 +152,7 @@ const projects = {
         projectPage: 'habitatb.html',
         projectcategory: ['category_2'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_HabitatB.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_habitatb.mp4',
         year: '2020/21',
     },
     reuse: {
@@ -187,6 +188,7 @@ const projects = {
         projectPage: 'fredericksburg.html',
         projectcategory: ['category_2'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_fredericksburg.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_fredericksburg.mp4',
         year: '2019',
     },
     vtrobotics: {
