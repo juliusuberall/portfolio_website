@@ -108,6 +108,7 @@ const projects = {
         projectPage: 'adventitia.html',
         projectcategory: ['category_2'],
         thumbnail: 'images/Julius_Uberall_project_thumbnails_Bartlett_Workshop.jpg',
+        thumbnailvideo: 'videos/JuliusUberall_thumbnail_adventitia.mp4',
         year: '2021',
     },
     spacefashion: {
