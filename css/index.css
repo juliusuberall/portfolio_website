@@ -33,7 +33,9 @@ body{
 #about-text{
   font-family: 'Poppins Light';
   font-size: var(--medium-paragraph-font-size);
-  color: white;
+  color: var(--light-grey);
+  text-align: justify;
+  hyphens: auto;
 }
 #show-hide-extended-about-text{
   display: inline-flex;
@@ -92,8 +94,8 @@ body{
 .important-text{
   padding: 0 var(--font-size-tiny);
   border-radius: var(--border-radius-medium);
-  background-color: var(--light-light-grey);
-  color: var(--black-0-hard);
+  background-color: var(--light-grey);
+  color: #ffffff;
   font-size: var(--font-size-smaller);
 }
 /*------------------------NEWS--------------------------*/
@@ -141,6 +143,7 @@ body{
 }
 .n_text{
   grid-column: 2;
+  color: var(--light-grey);
 }
 
 /*------------------------PROJECT-category-filter-wrapper--------------------------*/
@@ -209,7 +212,9 @@ body{
   }
   #about-text{
     text-align: center;
-    font-size: var(--font-size-mobile-normal)
+    font-size: var(--font-size-mobile-normal);
+    text-align: justify;
+    hyphens: auto;
   }
   .important-text{
     padding: 0 var(--font-size-normal);
