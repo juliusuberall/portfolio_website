@@ -34,7 +34,7 @@ body{
   font-family: 'Poppins Light';
   font-size: var(--medium-paragraph-font-size);
   color: var(--light-grey);
-  text-align: justify;
+  text-align: left;
   hyphens: auto;
 }
 #show-hide-extended-about-text{
@@ -90,13 +90,6 @@ body{
 .about-quicklink-icon{
   justify-content: center;
   align-items: center;
-}
-.important-text{
-  padding: 0 var(--font-size-tiny);
-  border-radius: var(--border-radius-medium);
-  background-color: var(--light-grey);
-  color: #ffffff;
-  font-size: var(--font-size-smaller);
 }
 /*------------------------NEWS--------------------------*/
 #news_wrapper{
