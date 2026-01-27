@@ -74,17 +74,22 @@
 }
 .home_button {
   font-size: 25px;
-  padding: 25px 30px 0 0;
-  position: absolute;
-  top: 0;
-  right: 0;
+  padding: 11px;
+  right: var(--landing-medium-padding);
+  top: var(--landing-medium-padding);
   position: fixed;
   --ionicon-stroke-width: 20px;
+  background-color: #0000ff;
+  border-radius: 100%;
+  z-index: 1;
 }                                                                                                 
 @media all and (orientation:portrait){
   .home_button{
     font-size: 64px;
-    padding: 44px 30px 0 0;
+    padding: 25px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -150%);
   }
 }
 
