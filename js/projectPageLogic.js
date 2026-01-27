@@ -3,7 +3,6 @@ const classesToSwap = [
 ".project_headline",
 ".project_description",
 ".project_details",
-".home_button",
 "#partner_link",
 "#partner_link_bright_important"]  
 
