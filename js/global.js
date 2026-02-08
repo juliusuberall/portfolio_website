@@ -480,6 +480,15 @@ aTags.forEach(selectedA => {
   selectedA.appendChild(newDiv);
 });
 
+const grid = document.querySelector('.project_grid_wrapper');
+const filter = document.querySelector('.category-filter-wrapper');
+const update = () => {
+  const cols = Math.floor((grid.clientWidth - 142) / 300);
+  filter.style.gridTemplateColumns = `repeat(${cols * 2}, 1fr)`;
+};
+window.addEventListener('resize', update);
+update();
+
 //Create news feed
 const newsWrapper = document.getElementById('news_wrapper');
 if(newsWrapper != null){

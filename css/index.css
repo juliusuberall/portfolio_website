@@ -16,6 +16,8 @@ body{
 }
 /*------------------------ABOUT-section--------------------------*/
 #about-wrapper{
+  max-width: 1920px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5,1fr);
   column-gap: var(--landing-large-padding);
@@ -44,6 +46,7 @@ body{
   padding: 0 10px;
   font-size: var(--font-size-normal);
   line-height: 18px;
+  max-width: 50px;
 }
 #extended-about-text{
   display: none;
@@ -180,7 +183,7 @@ body{
   padding-top: 0;
 }
 .project_grid_wrapper{ /*grid cell container*/
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--landing-large-padding);
 }
 /*------------------------RESPONSIVE-DESIGN-------------------------------------------------------------------*/
