@@ -422,10 +422,15 @@ const projects = {
 
 // Dictionary of all news
 const news = {
+    n2607_01: {
+        date: "Jul '26", 
+        icon: '🔮',
+        text: 'Starting my PhD @ Max Planck Institute for Informatics (DE)',
+    },
     n2509_01: {
         date: "Sep '25", 
         icon: '✍️',
-        text: 'Finished my MSc Thesis "Bounding Expert Hierarchies"',
+        text: 'Finishing my MSc Thesis "Bounding Expert Hierarchies"',
     },
     n2504_02: {
         date: "Apr '25", 
@@ -435,23 +440,13 @@ const news = {
     n2504_01: {
         date: "Apr '25", 
         icon: '👟',
-        text: 'Ran the Milan marathon!',
+        text: 'Running the Milan marathon!',
     },
     n2409_02: {
         date: "Sep '24", 
         icon: '🎓',
-        text: 'Started a MSc in Computer Graphics, Vision and Imaging at UCL.',
-    },
-    n2409_01: {
-        date: "Sep '24",
-        icon: '👔',
-        text: 'Left the Applied R+D team at Foster + Partners after 2 exciting years.',
-    },
-    n2404_01: {
-        date: "Apr '24",
-        icon: '🇨🇾',
-        text: 'Going to attend Eurographics 2024 in Limassol.',
-    },
+        text: 'Starting a MSc in Computer Graphics, Vision and Imaging at UCL.',
+    }
 };
 
 //Create thumbnails
