@@ -1,13 +1,13 @@
 /*------------------------STYLE_CLASSES--------------------------*/
 body{
-  background-color: var(--bright-white);
+  background-color: var(--black-2);
 }
 .footer{
   padding: 0 var(--landing-large-padding) var(--landing-large-padding) var(--landing-large-padding);
 }
 .copyright{
   font-family: 'Poppins Regular';
-  color: var(--black-0-hard);
+  color: var(--bright-white);
   font-size: var(--medium-paragraph-font-size);
 }
 /*------------------------NAV--------------------------*/
@@ -29,7 +29,7 @@ body{
 #about-title{
   font-family: Uberall Regular;
   font-size: var(--font-size-large);
-  color: var(--black-0-hard);
+  color: var(--bright-white);
   padding-bottom: var(--landing-large-padding);
 }
 #about-text{
@@ -63,7 +63,7 @@ body{
 .image-credits{
   padding-top: 15px;
   font-family: 'Poppins Regular';
-  color: var(--light-grey);
+  color: var(--bright-white);
   font-size: var(--font-size-extra-smaller);
   text-align: right;
   text-decoration: none;
@@ -71,7 +71,7 @@ body{
 }
 .text-link{
   font-family: 'Poppins Regular';
-  color: var(--black-0-hard);
+  color: var(--bright-white);
   text-decoration: none;
 }
 .text-link:hover{
@@ -97,10 +97,11 @@ body{
 /*------------------------NEWS--------------------------*/
 #news_wrapper{
   margin-top: var(--landing-large-padding);
+  background: linear-gradient(to top, var(--black-3),var(--black-0-hard));
   border-radius: var(--border-radius-medium);
   outline: var(--default-outline);
   font-family: var(--font-poppins-regular);
-  color: var(--black-0-hard);
+  color: var(--bright-white);
   font-size: var(--font-size-smaller);
   height: 20%;
   overflow-y: scroll;
@@ -128,6 +129,7 @@ body{
 }
 .news .n_icon{
   font-size: var(--font-size-bigger);
+  background-color: var(--bright-white);
   width: var(--font-size-large);
   height: var(--font-size-large);
   border-radius: 100%;
@@ -184,6 +186,33 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--landing-large-padding);
 }
+
+/*------------------------LIGHT-MODE--------------------------*/
+@media (prefers-color-scheme: light) {
+  body{
+    background-color: var(--bright-white);
+  }
+  .copyright{
+    color: var(--black-0-hard);;
+  }
+  #about-title{
+    color: var(--black-0-hard);
+  }
+  .image-credits{
+    color: var(--light-grey);
+  }
+  .text-link{
+    color: var(--black-0-hard);
+  }
+  #news_wrapper{
+    background: None;
+    color: var(--black-0-hard);
+  }
+  .news .n_icon{
+    background-color: None;
+  }
+}
+
 /*------------------------RESPONSIVE-DESIGN-------------------------------------------------------------------*/
 @media all and (min-height: 65vw) {
   #show-hide-extended-about-text{
@@ -313,4 +342,4 @@ body{
     align-items: center;
     justify-content: center;
   }
-}                                                                 
+}                                                            

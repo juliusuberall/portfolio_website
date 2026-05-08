@@ -132,7 +132,7 @@ button {
 .button-1{
   outline: var(--default-outline);
   background-color: var(--black-0-hard);
-  color: var(--bright-white);
+  color: var(--light-grey);
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -199,7 +199,7 @@ button {
   position: relative;
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
-  background-color: var(--bright-white);
+  background-color: var(--black-0-hard);
   text-decoration: none;
 }
 @keyframes fadeInAnimation {
@@ -223,14 +223,14 @@ button {
   display: block;
 }
 .project-cell > img {
-  filter: grayscale(100%) invert(80%);
+  filter: grayscale(100%);
   transition: filter 0.1s ease;
 }
 .project-cell:hover > img {
   filter: grayscale(0%);
 }
 .project_grid_wrapper > a:hover .project-metadata{
-  color: var(--black-0-hard);
+    color: #ffffff;
 }
 .project-metadata{
   display: grid;
@@ -275,6 +275,22 @@ button {
   }
   .button-2:active::before{
     left: 0;
+  }
+}
+
+/*------------------------LIGHT-MODE--------------------------*/
+@media (prefers-color-scheme: light) {
+  .button-1{
+    color: var(--bright-white);
+  }
+  .project_grid_wrapper > a{
+    background-color: var(--bright-white);
+  }
+  .project-cell > img {
+    filter: grayscale(100%) invert(80%);
+  }
+  .project_grid_wrapper > a:hover .project-metadata{
+    color: var(--black-0-hard);
   }
 }
 
