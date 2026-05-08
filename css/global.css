@@ -230,7 +230,7 @@ button {
   filter: grayscale(0%);
 }
 .project_grid_wrapper > a:hover .project-metadata{
-  color: #ffffff;
+    color: #ffffff;
 }
 .project-metadata{
   display: grid;
@@ -275,6 +275,22 @@ button {
   }
   .button-2:active::before{
     left: 0;
+  }
+}
+
+/*------------------------LIGHT-MODE--------------------------*/
+@media (prefers-color-scheme: light) {
+  .button-1{
+    color: var(--bright-white);
+  }
+  .project_grid_wrapper > a{
+    background-color: var(--bright-white);
+  }
+  .project-cell > img {
+    filter: grayscale(100%) invert(80%);
+  }
+  .project_grid_wrapper > a:hover .project-metadata{
+    color: var(--black-0-hard);
   }
 }
 
