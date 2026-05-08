@@ -132,7 +132,7 @@ button {
 .button-1{
   outline: var(--default-outline);
   background-color: var(--black-0-hard);
-  color: var(--light-grey);
+  color: var(--bright-white);
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -199,7 +199,7 @@ button {
   position: relative;
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
-  background-color: var(--black-0-hard);
+  background-color: var(--bright-white);
   text-decoration: none;
 }
 @keyframes fadeInAnimation {
@@ -223,14 +223,14 @@ button {
   display: block;
 }
 .project-cell > img {
-  filter: grayscale(100%);
+  filter: grayscale(100%) invert(80%);
   transition: filter 0.1s ease;
 }
 .project-cell:hover > img {
   filter: grayscale(0%);
 }
 .project_grid_wrapper > a:hover .project-metadata{
-  color: #ffffff;
+  color: var(--black-0-hard);
 }
 .project-metadata{
   display: grid;
