@@ -477,12 +477,14 @@ aTags.forEach(selectedA => {
 
 const grid = document.querySelector('.project_grid_wrapper');
 const filter = document.querySelector('.category-filter-wrapper');
-const update = () => {
-  const cols = Math.floor((grid.clientWidth - 142) / 250);
-  filter.style.gridTemplateColumns = `repeat(${cols * 2}, 1fr)`;
-};
-window.addEventListener('resize', update);
-update();
+if (grid != null && filter != null) {
+  const update = () => {
+    const cols = Math.floor((grid.clientWidth - 142) / 250);
+    filter.style.gridTemplateColumns = `repeat(${cols * 2}, 1fr)`;
+  };
+  window.addEventListener('resize', update);
+  update();
+}
 
 //Create news feed
 const newsWrapper = document.getElementById('news_wrapper');
