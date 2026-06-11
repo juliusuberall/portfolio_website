@@ -223,6 +223,10 @@ figure figcaption {
     outline: var(--default-outline);
 }
 
+#columns_5 > video{
+    mix-blend-mode: darken;
+}
+
 /*------------------------BibTex--------------------------*/
 .bibtex_wrapper{
     background-color: var(--bright-white);
