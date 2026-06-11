@@ -34,7 +34,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_1.svg">
-                <figcaption>Given an indicator function, here in 2D, that is 1 for occupied space and 0 otherwise (a), a Bounding Volume Hierarchy (BVH) can be constructed acting as a simplified indicator to predetermine if the compute heavy, actual indicator even needs to be evaluated or not for a point query (b). A BVH is fast, yet relies on coarse bounding primitives which cause loose bounds and result in many false positives. Liu et al. approximate the indicator instead with a neural network such that its bounding becomes tighter (c). That method strives to achieve strict conservativeness and having no false negatives, i.e., it will never return 0 if the indicator was 1. However, a monolithic Multilayer Perceptron is slow. Essentially, bounding tightness is traded for query time. This combination of properties is visualized as bars below each figure. We propose a Mixture of Experts (MoE) to merge these approaches, achieving both tight bounds and fast query times (d), by using multiple independent bounding expert networks and a learned gating to control which expert to use where (colors).</figcaption>
+                <figcaption>Given an indicator function, here in 2D, that is 1 for occupied space and 0 otherwise (a), a <div class="inline_ref" ref="r1">Bounding Volume Hierarchy (BVH)</div> can be constructed acting as a simplified indicator to predetermine if the compute heavy, actual indicator even needs to be evaluated or not for a point query (b). A BVH is fast, yet relies on coarse bounding primitives which cause loose bounds and result in many false positives. <div class="inline_ref" ref="r2">Liu et al.</div> approximate the indicator instead with a neural network such that its bounding becomes tighter (c). That method strives to achieve strict conservativeness and having no false negatives, i.e., it will never return 0 if the indicator was 1. However, a monolithic Multilayer Perceptron is slow. Essentially, bounding tightness is traded for query time. This combination of properties is visualized as bars below each figure. We propose a Mixture of Experts (MoE) to merge these approaches, achieving both tight bounds and fast query times (d), by using multiple independent bounding expert networks and a learned gating to control which expert to use where (colors).</figcaption>
             </figure>
         </div>
         <div id="abstract_wrapper">
@@ -44,7 +44,7 @@
             </div>
             <div>            
                 <div project-name="boundingExpertHierarchies" id="quicklinks"></div>
-                <div id="abstract">We present a hierarchy of neural networks to perform bounding queries against geometric assets such as required in collision detection or ray-tracing. Using a mixture of experts, popularized in the context of large language models, we learn a space partitioning together with bounding volumes end-to-end. We demonstrate improvements in query speed and accuracy: instead of executing one monolithic network, only a subset of networks is evaluated, analogous to a bounding volume hierarchy traversal that visits only a fraction of internal nodes. This decomposes the global optimization objective into many smaller and simpler sub-problems distributed among all sub-networks. Unlike prior work, the space partitioning is not predefined and static (e.g. a grid), but emerges as a byproduct of the bounding optimization, allowing for non-trivial higher dimensional space partitioning tailored to the task. The benefit of using neural bounding queries is that they extend naturally to higher-dimensional domains such as time, configuration spaces, or robotic latent control spaces as we demonstrate. We discuss the design choices required for branched learning and execution and evaluate our approach against alternatives.</div>
+                <div id="abstract">We present a hierarchy of neural networks to perform bounding queries against geometric assets such as required in collision detection or ray-tracing. Using a <div class="inline_ref" ref="r3 r4 r5">mixture of experts</div>, popularized in the context of large language models, we learn a space partitioning together with bounding volumes end-to-end. We demonstrate improvements in query speed and accuracy: instead of executing one monolithic network, only a subset of networks is evaluated, analogous to a <div class="inline_ref" ref="r1">bounding volume hierarchy</div> traversal that visits only a fraction of internal nodes. This decomposes the global optimization objective into many smaller and simpler sub-problems distributed among all sub-networks. Unlike prior work, the space partitioning is not predefined and static (e.g. a grid), but emerges as a byproduct of the bounding optimization, allowing for non-trivial higher dimensional space partitioning tailored to the task. The benefit of using neural bounding queries is that they extend naturally to higher-dimensional domains such as time, configuration spaces, or robotic latent control spaces as we demonstrate. We discuss the design choices required for branched learning and execution and evaluate our approach against alternatives.</div>
             </div>
         </div>
         <div class="section_wrapper">
@@ -106,19 +106,22 @@
                 <figcaption>Neural bounding of a 6D robot control system in 3D space, mapping a 9D input to a binary bounding response. The top row visualizes four different 6D-configurations (knob controls) of the robot arm moving from some pose to another. The bottom row visualizes the learned bounding of MLP, grid routed MoE (MoEG) and gate routed MoE while highlighting overlapping parts. The MoEG scales poorly to 9D due to the hyper-grid based gating. For only two partitions per dimension the hyper-grid creates already 2^9 = 512 experts. This requires all experts to be tiny in order to be feasible, limiting bounding accuracy. The gate routed MoE can allocate any number of experts and can trade off quantity for quality by using 10x less experts and being 1000x more tight, using the same number of total parameters.</figcaption>
             </figure>
         </div>
-        <!-- <div class="section_wrapper">
+        <div class="section_wrapper">
             <div>
                 <div class="section_headline">References</div>
             </div>
             <div>            
                 <div class="references">
                     <ol>
-                        <li id="r1"><a href="https://www.nga.gov/collection/art-object-page.22.html">https://www.nga.gov/collection/art-object-page.22.html</a></li>
-                        <li id="r2"><a href="https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf">Pérez, Patrick, Michel Gangnet, and Andrew Blake. "Poisson image editing." In Seminal Graphics Papers: Pushing the Boundaries, Volume 2, pp. 577-582. 2023.</a></li>
+                        <li id="r1"><a href="https://www.nga.gov/collection/art-object-page.22.html">Rubin, Steven M., and Turner Whitted. "A 3-dimensional representation for fast rendering of complex scenes." In Proceedings of the 7th annual conference on Computer graphics and interactive techniques, pp. 110-116. 1980.</a></li>
+                        <li id="r2"><a href="https://www.nga.gov/collection/art-object-page.22.html">Liu, Stephanie Wenxin, Michael Fischer, Paul D. Yoo, and Tobias Ritschel. "Neural bounding." In ACM SIGGRAPH 2024 Conference Papers, pp. 1-10. 2024.</a></li>
+                        <li id="r3"><a href="https://www.nga.gov/collection/art-object-page.22.html">Jacobs, Robert A., Michael I. Jordan, Steven J. Nowlan, and Geoffrey E. Hinton. "Adaptive mixtures of local experts." Neural computation 3, no. 1 (1991): 79-87.</a></li>
+                        <li id="r4"><a href="https://www.nga.gov/collection/art-object-page.22.html">Xu, Lei, Michael Jordan, and Geoffrey E. Hinton. "An alternative model for mixtures of experts." Advances in neural information processing systems 7 (1994).</a></li>
+                        <li id="r5"><a href="https://www.nga.gov/collection/art-object-page.22.html">Shazeer, Noam, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean. "Outrageously large neural networks: The sparsely-gated mixture-of-experts layer." arXiv preprint arXiv:1701.06538 (2017).</a></li>
                     </ol>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="related_wrapper">
             <div>
                 <div class="section_headline">More</div>

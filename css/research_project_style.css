@@ -121,7 +121,7 @@ sup {
 
 /*------------------------REFERENCES--------------------------*/
 .section_wrapper .references{
-    font-size: var(--font-size-smaller);
+    font-size: var(--font-size-extra-smaller);
 }
 .references ol {
     counter-reset: list-counter;
