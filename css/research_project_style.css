@@ -186,6 +186,11 @@ figure figcaption {
 .columns_4 figure{
     padding: var(--landing-medium-padding) !important;
 }
+#columns_5{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: var(--landing-medium-padding);
+}
 .media_wrapper figure{
     border-radius: var(--border-radius-medium);
     background-color: rgb(255, 255, 255);

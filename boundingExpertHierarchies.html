@@ -25,14 +25,14 @@
     </div>
     <div id="main">
         <div id="project_headline_wrapper">
-            <div id="type_date"> In Submission | 2025</div>
+            <div id="type_date"> Eurographics Symposium on Rendering (EGSR) 2026</div>
             <div id="title">Bounding Expert Hierarchies</div>
             <div id="team">Julius Überall<sup>1</sup>, &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://scholar.google.de/citations?user=KP_UI7sAAAAJ&hl=de" target="_blank">Tobias Ritschel<sup>1,2</sup></a><br><sup>1</sup>University College London, United Kingdom &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup>Meta Reality Labs, USA</div>
         </div>
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_1.svg">
-                <figcaption>Given an indicator function, here in 2D, that is 1 for occupied space and 0 otherwise (a), previous work has shown to approximate the indicator with a neural network such that it is strictly conservative (b). That method has no false negatives, i.e. it will never return 0 if the indicator was 1, but it will do so at the expense of a couple of false positives e.g. some holes in the leaves are missing. Essentially, speed is traded against some false positives. This combination of properties is visualized as bars below each figure. One can improve the quality, such that the holes between leaves are resolved, but at the expense of slower speed (c). Our method achieves both better quality and better speed (d), by using multiple independent <i>bounding expert networks</i> and a learned gating  to control which one needs to run where.</figcaption>
+                <figcaption>Given an indicator function, here in 2D, that is 1 for occupied space and 0 otherwise (a), a Bounding Volume Hierarchy (BVH) can be constructed acting as a simplified indicator to predetermine if the compute heavy, actual indicator even needs to be evaluated or not for a point query (b). A BVH is fast, yet relies on coarse bounding primitives which cause loose bounds and result in many false positives. Liu et al. approximate the indicator instead with a neural network such that its bounding becomes tighter (c). That method strives to achieve strict conservativeness and having no false negatives, i.e., it will never return 0 if the indicator was 1. However, a monolithic Multilayer Perceptron is slow. Essentially, bounding tightness is traded for query time. This combination of properties is visualized as bars below each figure. We propose a Mixture of Experts (MoE) to merge these approaches, achieving both tight bounds and fast query times (d), by using multiple independent bounding expert networks and a learned gating to control which expert to use where (colors).</figcaption>
             </figure>
         </div>
         <div id="abstract_wrapper">
@@ -47,6 +47,17 @@
         </div>
         <div class="section_wrapper">
             <div>
+                <div class="section_headline">Research Context</div>
+            </div>
+        </div>
+        <div class="media_wrapper">
+            <figure>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_3.svg">
+                <figcaption>(Left) While a BVH is extremly fast, it bounds space with geometric primitives. This causes many false positives which add computational overhead for spatial queries. (Middle) Nerual Bounding (Liu et al. 2024) approximate a conservative bounding volume instead with a MLP, which is not restricted to primitives and can bound much tighter. However, scaling the bounding volume requires to scale the MLP and adding computational overhead. (Right) With Bounding Expert Hierarchies we marry the two approaches, by learning tight and space partioning, small expert networks.</figcaption>
+            </figure>
+        </div>
+        <div class="section_wrapper">
+            <div>
                 <div class="section_headline">Method</div>
             </div>
         </div>
@@ -54,10 +65,6 @@
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_4.svg">
                 <figcaption>There are three training objectives for a MoE after initialization (a): the experts should not overlap and rely on each other such that the top-1 expert must be sufficient enough for a query (b); the expert distribution across the space to bound must be uniform (c); the model must be conservative such that it has strictly zero false negatives (d).</figcaption>
-            </figure>
-            <figure>
-                <img src="images/JuliusUberall_boundingExpertHierarchies_2.svg">
-                <figcaption>Comparison of flow in MLPs, dense MoEs and sparse MoEs, from left to right. The MoE allows for sparse queries, by forward passing a query only through the single, top-1 expert (c). This uses only a fraction of the MoE's total parameters, such that a sparse inferred MoE will use fewer parameters during a forward pass by design when comparing to a monolithic MLP (a). Yet, during training the MoE is inferred dense, which evaluates every query with every expert to explore all routes and have best optimization control over the model (b).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -67,18 +74,49 @@
         </div>
         <div class="media_wrapper">
             <figure>
-                <img src="images/JuliusUberall_boundingExpertHierarchies_3.svg">
-                <figcaption>Scaling the number of experts utilized by the MoE partitions space further and further (left to right). But still, the MoE only requires a single expert to process a query. Meaning, the MoE can increase modeling complexity with minimal increased query time. The MLP can only scale monolithic such that query time increases at best linearly. We indicate the number of experts for each MoE as well as the equivalently sized MLP for a MoE with \numberOfExperts experts in the name above each figure. Increasing the expert pool lowers the bounding effort for each expert, as its region to bound becomes smaller and eventually less complex. Yet, the space partition to solve by the gate becomes more difficult.</figcaption>
+                <img src="images/JuliusUberall_boundingExpertHierarchies_2.svg">
+                <figcaption>Comparing bounding predictions in 2D for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (top), grid routed MoE (middle) and gate routed MoE (bottom). We highlight the space partitioning in the MoE by color coding each expert. All predictions are empirically conservative.</figcaption>
             </figure>
             <figure>
-                <img src="images/JuliusUberall_boundingExpertHierarchies_6.png">
-                <figcaption>Comparing bounding predictions for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (a,d) and MoE (b,e) in 2D and 3D. We highlight the space partitioning in the MoE by color coding each expert (c,f). All predictions are strictly conservative.</figcaption>
+                <div id="columns_5">
+                    <video src="videos/JuliusUberall_beh_bunny_mlp.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_deer_mlp.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_tree_mlp.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_apple_mlp.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_jade_mlp.mp4" autoplay loop muted playsinline></video>
+
+                    <video src="videos/JuliusUberall_beh_bunny_moeg.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_deer_moeg.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_tree_moeg.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_apple_moeg.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_jade_moeg.mp4" autoplay loop muted playsinline></video>
+
+                    <video src="videos/JuliusUberall_beh_bunny_moe.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_deer_moe.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_tree_moe.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_apple_moe.mp4" autoplay loop muted playsinline></video>
+                    <video src="videos/JuliusUberall_beh_jade_moe.mp4" autoplay loop muted playsinline></video>
+                </div>
+                <figcaption>Comparing bounding predictions in 3D for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (top), grid routed MoE (middle) and gate routed MoE (bottom). We highlight the space partitioning in the MoE by color coding each expert. All predictions are empirically conservative.</figcaption>
             </figure>
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_5.svg">
                 <figcaption>Neural bounding of a six-dimensional robot control system in 3D space. The bounding expert hierarchy maps a nine-dimensional input to a binary bounding response. The top row visualizes four different 6D-configurations (knob controls) of the robot arm moving from some pose to a pose where the end-effector is close to a target. The bottom row visualizes the learned bounding of MLP and MoE while highlighting overlapping parts in dark.</figcaption>
             </figure>
         </div>
+        <!-- <div class="section_wrapper">
+            <div>
+                <div class="section_headline">References</div>
+            </div>
+            <div>            
+                <div class="references">
+                    <ol>
+                        <li id="r1"><a href="https://www.nga.gov/collection/art-object-page.22.html">https://www.nga.gov/collection/art-object-page.22.html</a></li>
+                        <li id="r2"><a href="https://www.cs.jhu.edu/~misha/Fall07/Papers/Perez03.pdf">Pérez, Patrick, Michel Gangnet, and Andrew Blake. "Poisson image editing." In Seminal Graphics Papers: Pushing the Boundaries, Volume 2, pp. 577-582. 2023.</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
         <div class="related_wrapper">
             <div>
                 <div class="section_headline">More</div>
