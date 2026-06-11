@@ -38,6 +38,7 @@ pre{
 }
 #type_date{
     font-family: var(--font-poppins-regular);
+    font-style: italic;
 }
 #title{
     font-family: var(--font-poppins-semibold);
@@ -48,12 +49,12 @@ pre{
     line-height: var(--font-size-large);
     padding-bottom: 0 !important;
 }
-#team a {
-    font-family: var(--font-poppins-semibold);
-}
 sup {
     padding-left: 3px;
     padding-right: 3px
+}
+#affiliations{
+    font-size: var(--font-size-smaller);
 }
 
 /*------------------------ABSTRACT--------------------------*/
