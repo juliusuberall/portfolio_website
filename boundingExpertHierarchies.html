@@ -64,7 +64,7 @@
         <div class="media_wrapper">
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_4.svg">
-                <figcaption>There are three training objectives for a MoE after initialization (a): the experts should not overlap and rely on each other such that the top-1 expert must be sufficient enough for a query (b); the expert distribution across the space to bound must be uniform (c); the model must be conservative such that it has strictly zero false negatives (d).</figcaption>
+                <figcaption>We incentives three behaviours for a MoE after initialization using three loss terms (a): the experts should not overlap and rely on each other such that the top-1 expert must be sufficient enough for a query (b); the expert distribution across the space to bound must be uniform (c); the model must be conservative such that it has strictly zero false negatives (d).</figcaption>
             </figure>
         </div>
         <div class="section_wrapper">
@@ -101,7 +101,7 @@
             </figure>
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_5.svg">
-                <figcaption>Neural bounding of a six-dimensional robot control system in 3D space. The bounding expert hierarchy maps a nine-dimensional input to a binary bounding response. The top row visualizes four different 6D-configurations (knob controls) of the robot arm moving from some pose to a pose where the end-effector is close to a target. The bottom row visualizes the learned bounding of MLP and MoE while highlighting overlapping parts in dark.</figcaption>
+                <figcaption>Neural bounding of a 6D robot control system in 3D space, mapping a 9D input to a binary bounding response. The top row visualizes four different 6D-configurations (knob controls) of the robot arm moving from some pose to another. The bottom row visualizes the learned bounding of MLP, grid routed MoE (MoEG) and gate routed MoE while highlighting overlapping parts. The MoEG scales poorly to 9D due to the hyper-grid based gating. For only two partitions per dimension the hyper-grid creates already 2^9 = 512 experts. This requires all experts to be tiny in order to be feasible, limiting bounding accuracy. The gate routed MoE can allocate any number of experts and can trade off quantity for quality by using 10x less experts and being 1000x more tight, using the same number of total parameters.</figcaption>
             </figure>
         </div>
         <!-- <div class="section_wrapper">
