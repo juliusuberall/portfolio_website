@@ -12,7 +12,7 @@
         background-color: var(--bright-white) !important;
     }
     .media_wrapper figure {
-        background-color: #f2f2e9 !important;
+        background-color: #f2f2e9;
     }
     .button-2::before{
         background-color: #f2f2e9 !important;
@@ -80,26 +80,12 @@
                 <figcaption>Comparing bounding predictions in 2D for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (top), grid routed MoE (middle) and gate routed MoE (bottom). We highlight the space partitioning in the MoE by color coding each expert. All predictions are empirically conservative.</figcaption>
             </figure>
             <figure>
-                <div id="columns_5">
-                    <video src="videos/JuliusUberall_beh_bunny_mlp.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_deer_mlp.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_tree_mlp.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_apple_mlp.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_jade_mlp.mp4" autoplay loop muted playsinline></video>
-
-                    <video src="videos/JuliusUberall_beh_bunny_moeg.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_deer_moeg.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_tree_moeg.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_apple_moeg.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_jade_moeg.mp4" autoplay loop muted playsinline></video>
-
-                    <video src="videos/JuliusUberall_beh_bunny_moe.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_deer_moe.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_tree_moe.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_apple_moe.mp4" autoplay loop muted playsinline></video>
-                    <video src="videos/JuliusUberall_beh_jade_moe.mp4" autoplay loop muted playsinline></video>
-                </div>
+                <video src="videos/JuliusUberall_beh_3D.mp4" autoplay loop muted playsinline></video>
                 <figcaption>Comparing bounding predictions in 3D for varying complexities (left to right) of indicators learned with equally sized (~20K parameters) MLP (top), grid routed MoE (middle) and gate routed MoE (bottom). We highlight the space partitioning in the MoE by color coding each expert. All predictions are empirically conservative.</figcaption>
+            </figure>
+            <figure style="background-color: black;">
+                <video src="videos/JuliusUberall_beh_fluid_moe.mp4" autoplay loop muted playsinline></video>
+                <figcaption style="color: rgb(255, 255, 255);">We apply the MoE bounding to a 4D scene of a fluid simulation. Each expert is color coded. We can see that different experts are utilisied and allocated throughout space and time to bound the dynamic scene. This demonstrates the non-trival, higher dimensional space partioning modeled by the gate network which is infeasable with conventional, static space partitionings.</figcaption>
             </figure>
             <figure>
                 <img src="images/JuliusUberall_boundingExpertHierarchies_5.svg">
