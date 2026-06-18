@@ -15,3 +15,15 @@ divsWithRef.forEach(element => {
         element.appendChild(aTagRefLink)
     })
 });
+
+//Toggle visibility of the media_wrapper following a section_wrapper when clicked
+document.querySelectorAll('.section_wrapper').forEach(sectionWrapper => {
+    const mediaWrapper = sectionWrapper.nextElementSibling;
+    if (!mediaWrapper || !mediaWrapper.classList.contains('media_wrapper')) return;
+
+    sectionWrapper.classList.add('collapsible');
+    sectionWrapper.addEventListener('click', () => {
+        mediaWrapper.classList.toggle('hidden');
+        sectionWrapper.classList.toggle('collapsed', mediaWrapper.classList.contains('hidden'));
+    });
+});
