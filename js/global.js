@@ -10,7 +10,7 @@ const projects = {
         quicklinks: {
             '📄 PDF': '',
             '🗃️ arXiv': '',
-            '🛠️ Code': '',
+            '🛠️ Code': 'https://github.com/juliusuberall/bounding-expert-hierarchies',
             '💬 Bibtex': '',
         },
         bibtex: `@article{uberallBEH2025,
