@@ -24,7 +24,7 @@ const projects = {
             ISBN = {978-3-03868-320-9},
             DOI = {10.2312/sr.20261010}
             }`,
-        presentation_iframe: ''
+        presentation_iframe: 'https://www.youtube.com/embed/xI_0csrRB7w?si=V9U-kOtn6dxkcB-z'
     },
     geometryProcessing: {
         title: 'Geometry Processing',
