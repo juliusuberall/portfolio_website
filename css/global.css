@@ -278,22 +278,6 @@ button {
   }
 }
 
-/*------------------------LIGHT-MODE--------------------------*/
-@media (prefers-color-scheme: light) {
-  .button-1{
-    color: var(--bright-white);
-  }
-  .project_grid_wrapper > a{
-    background-color: var(--bright-white);
-  }
-  .project-cell > img {
-    filter: grayscale(100%) invert(80%);
-  }
-  .project_grid_wrapper > a:hover .project-metadata{
-    color: var(--black-0-hard);
-  }
-}
-
 /*------------------------GLOBAL-VARIABLES--------------------------*/
 :root {
     --accent-colour: #0000ff;
@@ -332,10 +316,11 @@ button {
   
     --medium-paragraph-font-size: 14px;
   
-    --default-outline: solid 1px var(--default-outline-colour);
+    --default-outline: solid 1px var(--default-outline-colour-dark-mode);
     --thick-outline: solid 3px var(--black-0-hard);
     --thick-outline-mobile: solid 6px var(--black-0-hard);
-    --default-outline-colour: #e2e1e1;
+    --default-outline-colour-dark-mode: #292929;
+    --default-outline-colour-light-mode: #e2e1e1;
   
     --font-size-tiny: 8px;
     --font-size-extra-smaller: 11px;
@@ -365,3 +350,22 @@ button {
     --font-poppins-semibold: Poppins Semibold;
     --font-poppins-bold: Poppins Bold;
   }
+
+/*------------------------LIGHT-MODE--------------------------*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --default-outline: solid 1px var(--default-outline-colour-light-mode);
+  }
+  .button-1{
+    color: var(--bright-white);
+  }
+  .project_grid_wrapper > a{
+    background-color: var(--bright-white);
+  }
+  .project-cell > img {
+    filter: grayscale(100%) invert(80%);
+  }
+  .project_grid_wrapper > a:hover .project-metadata{
+    color: var(--black-0-hard);
+  }
+}
