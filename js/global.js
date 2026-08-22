@@ -481,7 +481,7 @@ const filter = document.querySelector('.category-filter-wrapper');
 if (grid != null && filter != null) {
   const update = () => {
     const cols = Math.floor((grid.clientWidth - 142) / 250);
-    filter.style.gridTemplateColumns = `repeat(${cols * 2}, 1fr)`;
+    filter.style.setProperty('--filter-columns', cols * 2);
   };
   window.addEventListener('resize', update);
   update();

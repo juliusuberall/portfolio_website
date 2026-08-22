@@ -145,7 +145,7 @@ body{
 /*------------------------PROJECT-category-filter-wrapper--------------------------*/
 .category-filter-wrapper{
   display: grid;
-  grid-template-columns: repeat(10,1fr);
+  grid-template-columns: repeat(var(--filter-columns, 10),1fr);
   column-gap: var(--landing-large-padding);
   row-gap: var(--landing-large-padding);
   padding-bottom: var(--landing-large-padding);
