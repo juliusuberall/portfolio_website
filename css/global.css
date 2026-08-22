@@ -335,7 +335,7 @@ button {
     --default-outline: solid 1px var(--default-outline-colour);
     --thick-outline: solid 3px var(--black-0-hard);
     --thick-outline-mobile: solid 6px var(--black-0-hard);
-    --default-outline-colour: #444444;
+    --default-outline-colour: #e2e1e1;
   
     --font-size-tiny: 8px;
     --font-size-extra-smaller: 11px;

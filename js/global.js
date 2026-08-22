@@ -450,6 +450,32 @@ const news = {
     }
 };
 
+
+
+// Dictionary of hover info windows for tagged links in #about-text
+const timeline = {
+    cgvi: {
+        image: '/images/Julius_Uberall_timeline_ucl_24_25.jpg',
+        caption: 'Eurographics 2025 London',
+    },
+    ard: {
+        image: '/images/Julius_Uberall_timeline_ard_22_24.webp',
+        caption: '© 2023 Foster + Partners',
+    },
+    ac: {
+        image: '/images/Julius_Uberall_timeline_ac_21_22.JPG',
+        caption: 'AC Studio Celebration 2nd Term 2022',
+    },
+    hsd: {
+        image: '/images/Julius_Uberall_timeline_hsd_17_21.JPG',
+        caption: 'Ecole Primaire Santiguyah, Guinea 2019',
+    },
+    yu: {
+        image: '/images/Julius_Uberall_timeline_yu_19_22.jpg',
+        caption: 'Photo by Marvin Hillebrand 2020',
+    },
+};
+
 //Create thumbnails
 const aTags = document.querySelectorAll('a[project-name]');
 aTags.forEach(selectedA => {
@@ -485,6 +511,34 @@ if (grid != null && filter != null) {
   };
   window.addEventListener('resize', update);
   update();
+}
+
+//Timeline hover info window for tagged links in #about-text
+const timelineLinks = document.querySelectorAll('#about-text a[timeline-id]');
+if (timelineLinks.length > 0) {
+    const timelineTooltip = document.createElement('div');
+    timelineTooltip.id = 'timeline-tooltip';
+    timelineTooltip.innerHTML = `<img><div class="timeline-tooltip-caption"></div>`;
+    document.body.appendChild(timelineTooltip);
+    const timelineImg = timelineTooltip.querySelector('img');
+    const timelineCaption = timelineTooltip.querySelector('.timeline-tooltip-caption');
+
+    timelineLinks.forEach(link => {
+        const data = timeline[link.getAttribute('timeline-id')];
+        if (!data) return;
+        link.addEventListener('mouseenter', () => {
+            timelineImg.src = data.image;
+            timelineCaption.textContent = data.caption;
+            timelineTooltip.style.display = 'block';
+        });
+        link.addEventListener('mousemove', (e) => {
+            timelineTooltip.style.left = e.clientX + 'px';
+            timelineTooltip.style.top = e.clientY + 'px';
+        });
+        link.addEventListener('mouseleave', () => {
+            timelineTooltip.style.display = 'none';
+        });
+    });
 }
 
 //Create news feed

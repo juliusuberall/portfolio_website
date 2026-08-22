@@ -77,6 +77,31 @@ body{
 .text-link:hover{
   text-decoration: underline;
 }
+/*------------------------TIMELINE-HOVER-INFO-WINDOW--------------------------*/
+#timeline-tooltip{
+  display: none;
+  position: fixed;
+  transform: translate(-50%, 16px);
+  z-index: 1000;
+  background: linear-gradient(to top, var(--black-3), var(--black-0-hard));
+  border-radius: var(--border-radius-medium);
+  outline: var(--default-outline);
+  padding: var(--landing-small-padding);
+  pointer-events: none;
+}
+#timeline-tooltip img{
+  display: block;
+  height: auto;
+  max-height: 33vh;
+  border-radius: calc(var(--border-radius-medium)*0.6);
+}
+.timeline-tooltip-caption{
+  margin-top: var(--landing-small-padding);
+  color: var(--light-grey);
+  font-family: var(--font-poppins-regular);
+  font-size: var(--font-size-extra-smaller);
+  text-align: center;
+}
 #about-quicklinks{
   padding-top: var(--landing-large-padding);
   display: grid;
@@ -211,6 +236,9 @@ body{
   .news .n_icon{
     background-color: None;
   }
+  #timeline-tooltip{
+    background: var(--bright-white);
+  }
 }
 
 /*------------------------RESPONSIVE-DESIGN-------------------------------------------------------------------*/
@@ -228,6 +256,9 @@ body{
 }                                          
 @media all and (orientation:portrait){
   /*-----------------HEAD------------------*/
+  #timeline-tooltip{
+    display: none !important;
+  }
   #about-title{
     font-size: var(--font-size-mobile-extra-large);
     padding-bottom: var(--landing-mobile-headline-padding);
