@@ -53,12 +53,45 @@ body{
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
 }
-#about-portrait{
+#about-portrait-wrapper{
+  position: relative;
+}
+/* Portrait video on desktop, still image on mobile */
+#about-portrait-image{
+  display: none;
+}
+#about-portrait, #about-portrait-image{
   width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
   border-radius: var(--border-radius-medium);
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
   cursor: default;
+}
+/* Subtle play/pause toggle in the lower right corner of the portrait video */
+#about-portrait-toggle{
+  position: absolute;
+  right: var(--landing-medium-padding);
+  bottom: var(--landing-medium-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+#about-portrait-toggle[hidden]{
+  display: none; /* stays hidden until the video actually plays */
+}
+#about-portrait-toggle:hover{
+  opacity: 1;
 }
 .image-credits{
   padding-top: 15px;
@@ -423,7 +456,13 @@ body{
     contain: size; /* feed content must not stretch the row; it scrolls instead */
   }
   #about-quicklinks{ grid-area: 4 / 2 / 5 / span 2; }
-  #about-portrait{ grid-area: 1 / 4 / 4 / 5; }
+  #about-portrait-wrapper{
+    grid-area: 1 / 4 / 4 / 5;
+    align-self: start;
+  }
+  #about-portrait{
+    display: block; /* no inline gap, matching the former image grid item */
+  }
   #about-image .image-credits{ grid-area: 4 / 4 / 5 / 5; }
   #about-pills-wrapper{ grid-row: 5; }
 }
@@ -512,6 +551,10 @@ body{
     padding: 0 15%;
   }
   #about-portrait{
+    display: none;
+  }
+  #about-portrait-image{
+    display: inline;
     margin-bottom: -35%;
     z-index: -1;
     position: relative;
@@ -520,6 +563,9 @@ body{
   }
   .image-credits{
     display: none;
+  }
+  #about-portrait-toggle{
+    display: none; /* would sit outside the circular crop on mobile */
   }
   /*-----------------RESEARCH-AREAS-AND-MILESTONES------------------*/
   #about-pills-wrapper{

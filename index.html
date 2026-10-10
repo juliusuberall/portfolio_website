@@ -46,7 +46,13 @@
             </div>
         </div>
         <div id="about-image">
-            <img id="about-portrait" src="images/Julius_Uberall_portrait_smile.jpg"/>
+            <div id="about-portrait-wrapper">
+                <img id="about-portrait-image" src="images/Julius_Uberall_portrait_smile.jpg"/>
+                <video id="about-portrait" src="videos/Julius_Uberall_portrait_smile.mp4" poster="images/Julius_Uberall_portrait_smile.jpg" muted playsinline preload="none"></video>
+                <button id="about-portrait-toggle" hidden onclick="TogglePortraitVideo(this)" aria-label="Pause video">
+                    <ion-icon name="pause"></ion-icon>
+                </button>
+            </div>
             <div class="image-credits">Photo by <a class="image-credits" href="https://marvinhillebrandphotography.tumblr.com" target="blank">Marvin Hillebrand</a></div>
         </div>
         <!---RESEARCH-AREAS-AND-MILESTONES--->
