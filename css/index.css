@@ -53,12 +53,45 @@ body{
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
 }
-#about-portrait{
+#about-portrait-wrapper{
+  position: relative;
+}
+/* Portrait video on desktop, still image on mobile */
+#about-portrait-image{
+  display: none;
+}
+#about-portrait, #about-portrait-image{
   width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
   border-radius: var(--border-radius-medium);
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
   cursor: default;
+}
+/* Subtle play/pause toggle in the lower right corner of the portrait video */
+#about-portrait-toggle{
+  position: absolute;
+  right: var(--landing-medium-padding);
+  bottom: var(--landing-medium-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+#about-portrait-toggle[hidden]{
+  display: none; /* stays hidden until the video actually plays */
+}
+#about-portrait-toggle:hover{
+  opacity: 1;
 }
 .image-credits{
   padding-top: 15px;
@@ -119,6 +152,124 @@ body{
   justify-content: center;
   align-items: center;
 }
+/*------------------------RESEARCH-AREAS-AND-MILESTONES--------------------------*/
+#about-pills-wrapper{
+  grid-column: 2 / span 3;
+  min-width: 0;
+  padding-top: var(--landing-huge-padding);
+  padding-bottom: var(--landing-extra-huge-padding);
+  opacity: 0; /* Start with opacity set to 0 */
+  animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
+}
+.pill-section-title{
+  color: var(--bright-white);
+  font-family: var(--font-poppins-regular);
+  font-size: 18px;
+  padding-bottom: var(--landing-medium-padding);
+}
+.pill-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--landing-large-padding);
+  padding-bottom: var(--landing-extra-large-padding);
+}
+.pill{
+  background: var(--black-0-hard);
+  outline: var(--default-outline);
+  border-radius: var(--border-radius-medium);
+  padding: var(--landing-large-padding);
+  text-decoration: none;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.pill:hover{
+  box-shadow: 0 0 20px 2px var(--shadow-on-black);
+  outline: solid 1px var(--grey-hovered);
+}
+/* Logos/icons are drawn in colour or black and recoloured to match the theme */
+.pill-logo:not(.milestone-logo){
+  filter: brightness(0) invert(1);
+}
+.pill-header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--landing-medium-padding);
+}
+.pill-header > div{
+  min-width: 0;
+}
+.pill-icon{
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.pill-title{
+  font-family: var(--font-poppins-regular);
+  font-size: var(--font-size-normal);
+  color: var(--bright-white);
+  padding-bottom: var(--landing-tiny-padding);
+}
+.pill-text{
+  overflow-wrap: anywhere;
+  font-family: var(--font-poppins-light);
+  font-size: var(--font-size-smaller);
+  color: var(--light-grey);
+}
+.pill-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pill-list > li{
+  display: flex;
+  align-items: flex-start;
+  gap: var(--landing-small-padding);
+}
+.pill-list > li::before{
+  content: "+";
+  flex-shrink: 0;
+}
+.milestone-pill{
+  display: flex;
+  flex-direction: column;
+}
+.milestone-logo-row{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--landing-small-padding);
+  height: 44px;
+  margin-bottom: var(--landing-large-padding);
+}
+.milestone-logo{
+  height: 100%;
+  max-width: 60%;
+  object-fit: contain;
+  object-position: center;
+}
+.milestone-person{
+  font-family: var(--font-poppins-light);
+  font-size: var(--font-size-extra-smaller);
+  color: var(--light-grey);
+}
+.milestone-meta{
+  margin-top: auto;
+  padding-top: var(--landing-medium-padding);
+  display: grid;
+  row-gap: var(--landing-tiny-padding);
+  font-family: var(--font-poppins-light);
+  font-size: var(--font-size-smaller);
+  color: var(--light-grey);
+}
+.milestone-today{
+  color: var(--black-0-hard);
+}
+.milestone-meta > div{
+  display: flex;
+  align-items: center;
+  gap: var(--landing-small-padding);
+}
 /*------------------------NEWS--------------------------*/
 #news_wrapper{
   margin-top: var(--landing-large-padding);
@@ -129,14 +280,33 @@ body{
   color: var(--bright-white);
   font-size: var(--font-size-smaller);
   height: 20%;
-  overflow-y: scroll;
-  scrollbar-width: none;
+  overflow-y: auto;
 
   display: grid;
   grid-template-rows: repeat(1,1fr);
   row-gap: var(--landing-medium-padding);
   padding: var(--landing-large-padding);
   position: relative;
+}
+/* Thin scrollbar kept clear of the rounded corners (Chrome/Safari) */
+#news_wrapper::-webkit-scrollbar{
+  width: 10px;
+}
+#news_wrapper::-webkit-scrollbar-track{
+  background: transparent;
+  margin-block: var(--border-radius-medium);
+}
+#news_wrapper::-webkit-scrollbar-thumb{
+  background-color: var(--light-grey);
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+@supports not selector(::-webkit-scrollbar){
+  #news_wrapper{
+    scrollbar-width: thin;
+    scrollbar-color: var(--light-grey) transparent;
+  }
 }
 #news_wrapper::after {
   content: 'news';
@@ -242,9 +412,80 @@ body{
   #timeline-tooltip{
     background: var(--bright-white);
   }
+  .pill{
+    background: var(--bright-white);
+  }
+  .pill:hover{
+    box-shadow: 0 0 20px 2px var(--shadow-on-invisible-grey);
+  }
+  .pill-logo:not(.milestone-logo){
+    filter: brightness(0);
+  }
+  .pill-section-title, .pill-title{
+    color: var(--black-0-hard);
+  }
 }
 
 /*------------------------RESPONSIVE-DESIGN-------------------------------------------------------------------*/
+@media all and (orientation:landscape){
+  /* News feed has no intrinsic height, so the row is sized by the portrait or the text
+     (whichever is taller); the feed then fills the leftover space and scrolls */
+  #about-text-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  #news_wrapper{
+    flex: 1 1 0;
+    min-height: 6em;
+  }
+}
+@media all and (orientation:landscape) and (min-width: 1200px){
+  /* Desktop: flatten text + portrait wrappers into the about grid so the bottom edge
+     of the news feed lines up with the bottom edge of the portrait */
+  #about-wrapper{
+    grid-template-rows: auto auto 1fr auto auto;
+  }
+  #about-text-wrapper, #about-image{
+    display: contents;
+  }
+  #about-title{ grid-area: 1 / 2 / 2 / span 2; }
+  #about-text{ grid-area: 2 / 2 / 3 / span 2; }
+  #news_wrapper{
+    grid-area: 3 / 2 / 4 / span 2;
+    height: auto; /* override the base 20% so the feed stretches to the full row */
+    contain: size; /* feed content must not stretch the row; it scrolls instead */
+  }
+  #about-quicklinks{ grid-area: 4 / 2 / 5 / span 2; }
+  #about-portrait-wrapper{
+    grid-area: 1 / 4 / 4 / 5;
+    align-self: start;
+  }
+  #about-portrait{
+    display: block; /* no inline gap, matching the former image grid item */
+  }
+  #about-image .image-credits{ grid-area: 4 / 4 / 5 / 5; }
+  #about-pills-wrapper{ grid-row: 5; }
+}
+@media all and (orientation:landscape) and (min-width: 1200px) and (max-width: 1800px){
+  .project_grid_wrapper{
+    grid-template-columns: repeat(6,1fr);
+  }
+  /* About section fills the 4 center columns of the project grid,
+     split into 3 internal columns shared by text + portrait and the pills */
+  #about-wrapper{
+    --project-column: calc((100% - 5 * var(--landing-large-padding)) / 6);
+    grid-template-columns: var(--project-column) repeat(3,1fr) var(--project-column);
+  }
+  #about-text-wrapper{
+    grid-column: 2 / span 2;
+  }
+  #about-image{
+    grid-column: 4;
+  }
+  #about-pills-wrapper{
+    grid-column: 2 / span 3;
+  }
+}
 @media all and (min-height: 65vw) {
   #show-hide-extended-about-text{
     margin-left: 0px;
@@ -310,6 +551,10 @@ body{
     padding: 0 15%;
   }
   #about-portrait{
+    display: none;
+  }
+  #about-portrait-image{
+    display: inline;
     margin-bottom: -35%;
     z-index: -1;
     position: relative;
@@ -318,6 +563,47 @@ body{
   }
   .image-credits{
     display: none;
+  }
+  #about-portrait-toggle{
+    display: none; /* would sit outside the circular crop on mobile */
+  }
+  /*-----------------RESEARCH-AREAS-AND-MILESTONES------------------*/
+  #about-pills-wrapper{
+    grid-column: unset;
+    grid-row: 3;
+    padding-top: var(--landing-mobile-headline-padding);
+  }
+  .pill-section-title{
+    font-size: var(--font-size-mobile-normal);
+    padding-bottom: var(--landing-large-padding);
+  }
+  .pill-grid{
+    grid-template-columns: none;
+    gap: var(--landing-large-padding);
+    padding-bottom: var(--landing-mobile-headline-padding);
+  }
+  .pill{
+    padding: var(--landing-mobile-headline-padding);
+    border-radius: var(--border-radius-medium-mobile);
+  }
+  .pill-header{
+    gap: var(--landing-large-padding);
+  }
+  .pill-icon{
+    width: 110px;
+    height: 110px;
+  }
+  .pill-title{
+    font-size: var(--font-size-mobile-big);
+  }
+  .pill-text, .milestone-meta{
+    font-size: var(--font-size-mobile-normal);
+  }
+  .milestone-person{
+    font-size: var(--font-size-mobile-low);
+  }
+  .milestone-logo-row{
+    height: 90px;
   }
   .category-filter-wrapper{
     grid-template-rows:repeat();

@@ -319,7 +319,7 @@ button {
     --default-outline: solid 1px var(--default-outline-colour-dark-mode);
     --thick-outline: solid 3px var(--black-0-hard);
     --thick-outline-mobile: solid 6px var(--black-0-hard);
-    --default-outline-colour-dark-mode: #292929;
+    --default-outline-colour-dark-mode: #3f3f3f;
     --default-outline-colour-light-mode: #e2e1e1;
   
     --font-size-tiny: 8px;
@@ -358,6 +358,12 @@ button {
   }
   .button-1{
     color: var(--bright-white);
+  }
+  @media (orientation: landscape) {
+    /* Solid black buttons need no outline on light desktop backgrounds */
+    .button-1{
+      outline: none;
+    }
   }
   .project_grid_wrapper > a{
     background-color: var(--bright-white);

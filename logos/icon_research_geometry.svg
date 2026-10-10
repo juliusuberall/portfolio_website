@@ -1,0 +1,10 @@
+<!-- Research area icon: Geometry Processing. Baseline drawing, edit freely. Drawn in black, recoloured via CSS. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- SDF level sets -->
+  <circle cx="32" cy="32" r="28" stroke-dasharray="3 5" opacity="0.4"/>
+  <circle cx="32" cy="32" r="21" stroke-dasharray="3 5" opacity="0.7"/>
+  <!-- triangle mesh -->
+  <path d="M32 18 L44 25 L44 39 L32 46 L20 39 L20 25 Z"/>
+  <path d="M32 18 L32 46 M20 25 L44 39 M44 25 L20 39"/>
+  <circle cx="32" cy="32" r="2.5" fill="#000"/>
+</svg>

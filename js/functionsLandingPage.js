@@ -46,3 +46,55 @@ function RepositionFilterButtons() {
 
 //Functions to run on index
 RepositionFilterButtons();
+//Play / pause the autoplaying portrait video
+/**
+ * Toggles the portrait video between playing and paused and swaps
+ * the button icon and label accordingly. Pausing also cancels a pending
+ * restart while the video is holding its last frame.
+ */
+function TogglePortraitVideo(toggleButton) {
+    const portraitVideo = document.getElementById('about-portrait');
+    const icon = toggleButton.querySelector('ion-icon');
+    if (portraitVideo.userPaused) {
+        portraitVideo.userPaused = false;
+        portraitVideo.play(); // restarts from the beginning if the video had ended
+        icon.setAttribute('name', 'pause');
+        toggleButton.setAttribute('aria-label', 'Pause video');
+    }
+    else {
+        portraitVideo.userPaused = true;
+        clearTimeout(portraitVideo.restartTimeout);
+        portraitVideo.pause();
+        icon.setAttribute('name', 'play');
+        toggleButton.setAttribute('aria-label', 'Play video');
+    }
+}
+
+/**
+ * Holds the last frame of the portrait video for a few seconds before
+ * restarting it from the beginning (instead of looping straight away).
+ */
+function RestartPortraitVideoAfterHold() {
+    const holdLastFrameMs = 5000;
+    const portraitVideo = document.getElementById('about-portrait');
+    portraitVideo.restartTimeout = setTimeout(() => {
+        portraitVideo.currentTime = 0;
+        portraitVideo.play();
+    }, holdLastFrameMs);
+}
+
+//Block scoped because this file is included twice in index.html (head + body end)
+{
+    const portraitVideo = document.getElementById('about-portrait');
+    if (portraitVideo != null) {
+        portraitVideo.addEventListener('ended', RestartPortraitVideoAfterHold);
+        //Only show the play/pause button once the video is actually playable
+        const toggleButton = document.getElementById('about-portrait-toggle');
+        portraitVideo.addEventListener('playing', () => toggleButton.hidden = false, { once: true });
+        portraitVideo.addEventListener('error', () => toggleButton.hidden = true);
+        //Only start (and download) the video on desktop, mobile shows the still image
+        if (!window.matchMedia("(orientation: portrait)").matches) {
+            portraitVideo.play();
+        }
+    }
+}
