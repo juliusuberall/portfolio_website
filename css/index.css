@@ -223,6 +223,9 @@ body{
   #about-title{
     color: var(--black-0-hard);
   }
+  .grid-title{
+    color: var(--black-0-hard);
+  }
   .image-credits{
     color: var(--light-grey);
   }
