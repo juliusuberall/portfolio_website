@@ -215,6 +215,11 @@ body{
   object-fit: contain;
   object-position: center;
 }
+.milestone-person{
+  font-family: var(--font-poppins-light);
+  font-size: var(--font-size-extra-smaller);
+  color: var(--light-grey);
+}
 .milestone-meta{
   margin-top: auto;
   padding-top: var(--landing-medium-padding);
@@ -547,6 +552,9 @@ body{
   }
   .pill-text, .milestone-meta{
     font-size: var(--font-size-mobile-normal);
+  }
+  .milestone-person{
+    font-size: var(--font-size-mobile-low);
   }
   .milestone-logo-row{
     height: 90px;

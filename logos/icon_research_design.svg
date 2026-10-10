@@ -1,0 +1,12 @@
+<!-- Research area icon: Design. Baseline drawing, edit freely. Drawn in black, recoloured via CSS. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- form-found shell roof -->
+  <path d="M8 46 Q20 10 32 24 Q44 10 56 46"/>
+  <!-- shell ribs -->
+  <path d="M20 46 Q24 28 32 24" opacity="0.65"/>
+  <path d="M44 46 Q40 28 32 24" opacity="0.65"/>
+  <path d="M32 24 L32 46" opacity="0.35"/>
+  <!-- ground -->
+  <path d="M4 52 L60 52"/>
+  <circle cx="32" cy="52" r="2" fill="#000"/>
+</svg>
