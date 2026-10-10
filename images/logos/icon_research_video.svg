@@ -1,0 +1,13 @@
+<!-- Research area icon: Video Models. Baseline drawing, edit freely. Drawn in black, recoloured via CSS. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- earlier frames, only the visible top/right edges -->
+  <path d="M18 14 L18 10 Q18 6 22 6 L54 6 Q58 6 58 10 L58 30 Q58 34 54 34 L52 34" opacity="0.35"/>
+  <path d="M12 22 L12 18 Q12 14 16 14 L48 14 Q52 14 52 18 L52 38 Q52 42 48 42 L46 42" opacity="0.65"/>
+  <!-- current frame -->
+  <rect x="6" y="22" width="40" height="28" rx="4"/>
+  <!-- play -->
+  <path d="M21 29 L33 36 L21 43 Z" fill="#000"/>
+  <!-- time axis -->
+  <path d="M6 58 L46 58"/>
+  <circle cx="26" cy="58" r="2" fill="#000"/>
+</svg>

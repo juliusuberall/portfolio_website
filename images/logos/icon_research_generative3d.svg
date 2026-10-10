@@ -1,0 +1,10 @@
+<!-- Research area icon: Generative 3D. Baseline drawing, edit freely. Drawn in black, recoloured via CSS. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- wireframe cube -->
+  <path d="M28 18 L46 27 L46 47 L28 56 L10 47 L10 27 Z"/>
+  <path d="M10 27 L28 36 L46 27"/>
+  <path d="M28 36 L28 56"/>
+  <path d="M10 47 L28 38" stroke-dasharray="2 4" opacity="0.5"/>
+  <!-- generation sparkle -->
+  <path d="M50 4 C50 10 52 12 58 12 C52 12 50 14 50 20 C50 14 48 12 42 12 C48 12 50 10 50 4 Z" fill="#000"/>
+</svg>
