@@ -449,6 +449,11 @@ body{
   #about-wrapper{
     grid-template-rows: auto auto 1fr auto auto;
   }
+  /* About section fills at least the whole first screen, so the project grid only
+     appears once you scroll. Set on a wrapper so the grid's 1fr news row keeps its size */
+  #about-screen{
+    min-height: 100vh;
+  }
   #about-text-wrapper, #about-image{
     display: contents;
   }
