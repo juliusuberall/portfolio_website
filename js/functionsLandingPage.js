@@ -75,7 +75,7 @@ function TogglePortraitVideo(toggleButton) {
  * playing it from the beginning (used for the initial start and every loop).
  */
 function RestartPortraitVideoAfterHold() {
-    const holdLastFrameMs = 5000;
+    const holdLastFrameMs = 10000;
     const portraitVideo = document.getElementById('about-portrait');
     portraitVideo.restartTimeout = setTimeout(() => {
         portraitVideo.currentTime = 0;
