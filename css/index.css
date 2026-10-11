@@ -204,7 +204,7 @@ body{
 }
 /* Logos/icons are drawn in colour or black and recoloured to match the theme */
 .pill-logo{
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(0.53); /* ~ var(--light-grey) #888888 */
 }
 .pill-header{
   display: flex;
@@ -421,9 +421,6 @@ body{
   }
   .pill:hover{
     box-shadow: 0 0 20px 2px var(--shadow-on-invisible-grey);
-  }
-  .pill-logo{
-    filter: brightness(0);
   }
   .pill-section-title, .pill-title{
     color: var(--black-0-hard);
