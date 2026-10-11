@@ -60,24 +60,35 @@ window.addEventListener('scroll', HideScrollHint, { once: true });
 
 //Functions to run on index
 RepositionFilterButtons();
-//Play / pause the autoplaying portrait video
+//Play / pause the autoplaying portrait videos
+//The two portrait videos take turns: each plays twice (with a last-frame hold
+//between plays), then the other one takes over, and so on
+
 /**
- * Toggles the portrait video between playing and paused and swaps
+ * Returns the portrait video that is currently shown (the other one is hidden).
+ */
+function GetActivePortraitVideo() {
+    return document.querySelector('.about-portrait-video:not([hidden])');
+}
+
+/**
+ * Toggles the active portrait video between playing and paused and swaps
  * the button icon and label accordingly. Pausing also cancels a pending
  * restart while the video is holding its last frame.
  */
 function TogglePortraitVideo(toggleButton) {
-    const portraitVideo = document.getElementById('about-portrait');
+    const portraitVideo = GetActivePortraitVideo();
+    const wrapper = document.getElementById('about-portrait-wrapper');
     const icon = toggleButton.querySelector('ion-icon');
-    if (portraitVideo.userPaused) {
-        portraitVideo.userPaused = false;
+    if (wrapper.userPaused) {
+        wrapper.userPaused = false;
         portraitVideo.play(); // restarts from the beginning if the video had ended
         icon.setAttribute('name', 'pause');
         toggleButton.setAttribute('aria-label', 'Pause video');
     }
     else {
-        portraitVideo.userPaused = true;
-        clearTimeout(portraitVideo.restartTimeout);
+        wrapper.userPaused = true;
+        clearTimeout(wrapper.restartTimeout);
         portraitVideo.pause();
         icon.setAttribute('name', 'play');
         toggleButton.setAttribute('aria-label', 'Play video');
@@ -85,20 +96,43 @@ function TogglePortraitVideo(toggleButton) {
 }
 
 /**
- * Holds the last frame of the portrait video for a few seconds before
- * playing it from the beginning (used for the initial start and every loop).
+ * Holds the last frame of the active portrait video for a few seconds before
+ * playing again from the beginning (used for the initial start and every loop).
+ * Once the active video has played twice, the other video is shown and played instead.
  */
 function RestartPortraitVideoAfterHold() {
     const holdLastFrameMs = 10000;
-    const portraitVideo = document.getElementById('about-portrait');
-    portraitVideo.restartTimeout = setTimeout(() => {
+    const playsPerPortraitVideo = 2;
+    const wrapper = document.getElementById('about-portrait-wrapper');
+    wrapper.restartTimeout = setTimeout(() => {
+        let portraitVideo = GetActivePortraitVideo();
+
+        //Swap to the other video after enough plays
+        if (wrapper.playCount >= playsPerPortraitVideo) {
+            const nextVideo = Array.from(document.querySelectorAll('.about-portrait-video'))
+                .find(video => video != portraitVideo);
+            portraitVideo.hidden = true;
+            nextVideo.hidden = false;
+            portraitVideo = nextVideo;
+            wrapper.playCount = 0;
+        }
+
         portraitVideo.currentTime = 0;
         portraitVideo.play();
     }, holdLastFrameMs);
 }
 
 /**
- * Shows the last frame of the portrait video (it is sharper than the first)
+ * Counts a finished play of the active portrait video and starts the hold before the next one.
+ */
+function OnPortraitVideoEnded() {
+    const wrapper = document.getElementById('about-portrait-wrapper');
+    wrapper.playCount += 1;
+    RestartPortraitVideoAfterHold();
+}
+
+/**
+ * Shows the last frame of the first portrait video (it is sharper than the first)
  * and starts the hold-and-play cycle from there.
  */
 function StartPortraitVideoOnLastFrame() {
@@ -110,17 +144,21 @@ function StartPortraitVideoOnLastFrame() {
 
 //Block scoped because this file is included twice in index.html (head + body end)
 {
-    const portraitVideo = document.getElementById('about-portrait');
-    if (portraitVideo != null) {
-        portraitVideo.addEventListener('ended', RestartPortraitVideoAfterHold);
-        //Only show the play/pause button once the video is actually playable
+    const wrapper = document.getElementById('about-portrait-wrapper');
+    const portraitVideos = document.querySelectorAll('.about-portrait-video');
+    if (wrapper != null && portraitVideos.length > 0) {
+        wrapper.playCount = 0;
         const toggleButton = document.getElementById('about-portrait-toggle');
-        portraitVideo.addEventListener('playing', () => toggleButton.hidden = false, { once: true });
-        portraitVideo.addEventListener('error', () => toggleButton.hidden = true);
-        //Only start (and download) the video on desktop, mobile shows the still image
+        portraitVideos.forEach(portraitVideo => {
+            portraitVideo.addEventListener('ended', OnPortraitVideoEnded);
+            portraitVideo.addEventListener('error', () => toggleButton.hidden = true);
+        });
+        //Only show the play/pause button once the video is actually playable
+        portraitVideos[0].addEventListener('playing', () => toggleButton.hidden = false, { once: true });
+        //Only start (and download) the videos on desktop, mobile shows the still image
         if (!window.matchMedia("(orientation: portrait)").matches) {
-            portraitVideo.addEventListener('loadedmetadata', StartPortraitVideoOnLastFrame, { once: true });
-            portraitVideo.preload = 'auto'; // buffer during the last-frame hold
+            portraitVideos[0].addEventListener('loadedmetadata', StartPortraitVideoOnLastFrame, { once: true });
+            portraitVideos.forEach(portraitVideo => portraitVideo.preload = 'auto'); // buffer during the last-frame hold
         }
     }
 }

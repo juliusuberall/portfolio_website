@@ -77,7 +77,7 @@ body{
 #about-portrait-image{
   display: none;
 }
-#about-portrait, #about-portrait-image{
+.about-portrait-video, #about-portrait-image{
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
@@ -85,6 +85,14 @@ body{
   opacity: 0; /* Start with opacity set to 0 */
   animation: fadeInAnimation 2s forwards; /* Animation duration and timing */
   cursor: default;
+}
+/* The second video only appears after the first has played, so it needs no fade in */
+#about-portrait-2{
+  opacity: 1;
+  animation: none;
+}
+.about-portrait-video[hidden]{
+  display: none;
 }
 /* Subtle play/pause toggle in the lower right corner of the portrait video */
 #about-portrait-toggle{
@@ -507,7 +515,7 @@ body{
     grid-area: 1 / 4 / 4 / 5;
     align-self: start;
   }
-  #about-portrait{
+  .about-portrait-video{
     display: block; /* no inline gap, matching the former image grid item */
   }
   #about-image .image-credits{ grid-area: 4 / 4 / 5 / 5; }
@@ -594,7 +602,7 @@ body{
     grid-row: 1;
     padding: 0 15%;
   }
-  #about-portrait{
+  .about-portrait-video{
     display: none;
   }
   #about-portrait-image{
