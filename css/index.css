@@ -495,6 +495,20 @@ body{
     grid-column: 2 / span 3;
   }
 }
+@media all and (orientation:landscape) and (max-width: 1800px){
+  /* Outer columns shrink gradually as the window narrows, so the about content keeps a
+     minimum width and eases into using the full width instead of jumping to it.
+     The side padding moves into the outer columns: full size they equal the padding plus one
+     project column, collapsed only the column gap remains, matching the project grid edges */
+  #about-wrapper{
+    --about-min-width: 1000px;
+    --project-column: calc((100% - 7 * var(--landing-large-padding)) / 6);
+    --about-side-column: clamp(0px, (100% - var(--about-min-width)) / 2, var(--project-column) + var(--landing-large-padding));
+    grid-template-columns: var(--about-side-column) repeat(3,1fr) var(--about-side-column);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media all and (orientation:portrait){
   /*-----------------HEAD------------------*/
   #timeline-tooltip{
