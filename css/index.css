@@ -588,6 +588,8 @@ body{
   #about-text-wrapper{
     grid-column: unset;
     grid-row: 2;
+    position: relative;
+    z-index: 1; /* sit above the portrait, which overlaps it via its negative margin */
   }
   #about-quicklinks{
     grid-template-columns: repeat(5, 1fr);
@@ -607,11 +609,11 @@ body{
   }
   #about-portrait-image{
     display: inline;
-    margin-bottom: -35%;
-    z-index: -1;
-    position: relative;
+    margin-bottom: -35%; /* text below overlaps the faded bottom of the portrait */
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    clip-path: circle(39% at 50% 37%);
+    /* Largest circle that still fits inside the photo (no straight image edges visible)
+       while leaving room above the hair */
+    clip-path: circle(40.2% at 50% 36.4%);
   }
   .image-credits{
     display: none;
