@@ -21,17 +21,13 @@ function FilterProjects(categoryToFilter, filterButton) {
     filterButton.style.outline = "none";
 }
 
-//Extend collapse extended bio text on mobile
+//Extend collapse extended bio text
 function CollapseExtendBio(thisButton) {
     const extendedBio = document.getElementById('extended-about-text');
-    if(extendedBio.style.display == "inline") {
-        extendedBio.style.display = "none";
-        thisButton.textContent = '. . .';
-    }
-    else {
-        extendedBio.style.display = "inline";
-        thisButton.textContent = '. . .';
-    }
+    const expand = thisButton.getAttribute('aria-expanded') !== 'true';
+    extendedBio.style.display = expand ? 'inline' : 'none';
+    thisButton.setAttribute('aria-expanded', expand);
+    thisButton.querySelector('.about-text-toggle-label').textContent = expand ? 'Less' : 'More about me';
 }
 
 //Move all filter buttons to end of grid row desktop

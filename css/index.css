@@ -39,14 +39,31 @@ body{
   text-align: left;
   hyphens: auto;
 }
-#show-hide-extended-about-text{
+#about-text-toggle{
   display: inline-flex;
-  gap: 10px;
-  border-radius: var(--border-radius-large-mobile);
-  padding: 0 10px;
-  font-size: var(--font-size-normal);
-  line-height: 18px;
-  max-width: 50px;
+  align-items: center;
+  gap: var(--landing-tiny-padding);
+  margin-top: var(--landing-medium-padding);
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: var(--font-poppins-regular);
+  font-size: var(--font-size-smaller);
+  color: var(--light-grey);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+#about-text-toggle:hover{
+  color: var(--bright-white);
+}
+#about-text-toggle:hover .about-text-toggle-label{
+  text-decoration: underline;
+}
+#about-text-toggle ion-icon{
+  transition: transform 0.3s ease;
+}
+#about-text-toggle[aria-expanded="true"] ion-icon{
+  transform: rotate(180deg);
 }
 #extended-about-text{
   display: none;
@@ -362,6 +379,9 @@ body{
   .text-link{
     color: var(--black-0-hard);
   }
+  #about-text-toggle:hover{
+    color: var(--black-0-hard);
+  }
   #news_wrapper{
     background: None;
     color: var(--black-0-hard);
@@ -446,18 +466,6 @@ body{
     grid-column: 2 / span 3;
   }
 }
-@media all and (min-height: 65vw) {
-  #show-hide-extended-about-text{
-    margin-left: 0px;
-    position: relative;
-    display:flex;
-    justify-content: center;
-    border-radius: var(--border-radius-large-mobile);
-    padding: var(--landing-medium-padding) auto;
-    font-size: var(--font-size-normal);
-    margin-top: var(--landing-small-padding);
-  }
-}                                          
 @media all and (orientation:portrait){
   /*-----------------HEAD------------------*/
   #timeline-tooltip{
@@ -479,14 +487,9 @@ body{
     border-radius: var(--border-radius-large-mobile);
     font-size: var(--font-size-mobile-normal);
   }
-  #show-hide-extended-about-text{
-    margin-left: 0px;
-    position: relative;
-    display:flex !important;
-    padding: var(--landing-medium-padding) var(--landing-large-padding) !important;
-    font-size: var(--font-size-mobile-normal) !important;
-    margin-top: var(--landing-large-padding) !important;
-    line-height: unset;
+  #about-text-toggle{
+    margin-top: var(--landing-large-padding);
+    font-size: var(--font-size-mobile-normal);
   }
   #about-wrapper{
     grid-template-columns: none;
