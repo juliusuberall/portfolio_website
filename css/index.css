@@ -217,26 +217,50 @@ body{
   min-width: 0;
 }
 .pill-icon{
-  width: 48px;
-  height: 48px;
+  width: calc(2.25 * var(--medium-paragraph-font-size));
+  height: calc(2.25 * var(--medium-paragraph-font-size));
   flex-shrink: 0;
 }
 .pill-title{
   font-family: var(--font-poppins-regular);
-  font-size: var(--font-size-normal);
+  font-size: var(--medium-paragraph-font-size);
   color: var(--bright-white);
   padding-bottom: var(--landing-tiny-padding);
 }
 .pill-text{
   overflow-wrap: anywhere;
   font-family: var(--font-poppins-light);
-  font-size: var(--font-size-smaller);
+  font-size: var(--medium-paragraph-font-size);
   color: var(--light-grey);
 }
 .pill-list{
   list-style: none;
   margin: 0;
   padding: 0;
+}
+/* Interest details stay collapsed until the pill is hovered (always open on touch devices) */
+@media (hover: hover){
+  .pill-grid{
+    align-items: start; /* expanding one pill must not stretch its neighbours */
+  }
+  .pill{
+    padding: var(--landing-medium-padding) var(--landing-large-padding);
+    border-radius: 50px; /* >= half the collapsed height, so the ends are fully round */
+    transition: box-shadow 0.1s ease-in-out, border-radius 0.3s ease;
+  }
+  .pill:hover{
+    border-radius: var(--border-radius-medium);
+  }
+  .pill-list{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  .pill:hover .pill-list{
+    max-height: 6em;
+    opacity: 1;
+  }
 }
 .pill-list > li{
   display: flex;
@@ -553,11 +577,11 @@ body{
     gap: var(--landing-large-padding);
   }
   .pill-icon{
-    width: 110px;
-    height: 110px;
+    width: calc(2.25 * var(--font-size-mobile-normal));
+    height: calc(2.25 * var(--font-size-mobile-normal));
   }
   .pill-title{
-    font-size: var(--font-size-mobile-big);
+    font-size: var(--font-size-mobile-normal);
   }
   .pill-text{
     font-size: var(--font-size-mobile-normal);
