@@ -40,6 +40,24 @@ function RepositionFilterButtons() {
     }
 }
 
+//Scroll hint arrow at the bottom of the first screen
+/**
+ * Smoothly scrolls down to the project grid instead of jumping to the anchor.
+ */
+function ScrollToProjects(event) {
+    event.preventDefault();
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+}
+
+/**
+ * Fades out the scroll hint arrow once the user has scrolled, as it is no longer needed.
+ */
+function HideScrollHint() {
+    const scrollHint = document.getElementById('scroll-hint');
+    if (scrollHint != null) scrollHint.classList.add('scroll-hint-hidden');
+}
+window.addEventListener('scroll', HideScrollHint, { once: true });
+
 //Functions to run on index
 RepositionFilterButtons();
 //Play / pause the autoplaying portrait video

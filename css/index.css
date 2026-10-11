@@ -271,6 +271,40 @@ body{
   content: "+";
   flex-shrink: 0;
 }
+/*------------------------SCROLL-HINT--------------------------*/
+/* Arrow at the bottom of the first screen hinting that the page continues (desktop only) */
+#scroll-hint{
+  display: none;
+  position: absolute;
+  /* Pinned to the bottom of the first screen rather than of the about section,
+     so it stays put when expanding pills make the section taller */
+  top: 100vh;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - var(--landing-large-padding)));
+  font-size: var(--font-size-extra-big);
+  color: var(--light-grey);
+  transition: color 0.2s ease, opacity 0.5s ease;
+}
+#scroll-hint.scroll-hint-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+#scroll-hint:hover{
+  color: var(--bright-white);
+}
+#scroll-hint ion-icon{
+  display: block;
+  animation: scrollHintBob 2s ease-in-out infinite;
+}
+@keyframes scrollHintBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+@media (prefers-reduced-motion: reduce){
+  #scroll-hint ion-icon{
+    animation: none;
+  }
+}
 /*------------------------NEWS--------------------------*/
 #news_wrapper{
   margin-top: var(--landing-large-padding);
@@ -403,6 +437,9 @@ body{
   .text-link{
     color: var(--black-0-hard);
   }
+  #scroll-hint:hover{
+    color: var(--black-0-hard);
+  }
   #about-text-toggle:hover{
     color: var(--black-0-hard);
   }
@@ -449,7 +486,11 @@ body{
   /* About section fills at least the whole first screen, so the project grid only
      appears once you scroll. Set on a wrapper so the grid's 1fr news row keeps its size */
   #about-screen{
+    position: relative; /* anchors the scroll hint arrow */
     min-height: 100vh;
+  }
+  #scroll-hint{
+    display: block;
   }
   #about-text-wrapper, #about-image{
     display: contents;
